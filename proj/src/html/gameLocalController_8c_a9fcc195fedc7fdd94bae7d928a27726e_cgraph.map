@@ -1,0 +1,49 @@
+<map id="checkGameLocalClick" name="checkGameLocalClick">
+<area shape="rect" id="Node000001" title="Checks and processes mouse clicks during the local game." alt="" coords="5,371,171,397"/>
+<area shape="rect" id="Node000002" href="$gameLocalDraw_8c.html#a25747824dc02d3fe7652792fe5a91057" title="Draws the local game state on the screen." alt="" coords="219,233,345,258"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,369,251,264,254,268,109,373"/>
+<area shape="rect" id="Node000011" href="$gameLocalDraw_8c.html#a306e0f6aab0c984cce0a162786fe140d" title="Draws the secret board for a specified player." alt="" coords="411,409,586,434"/>
+<area shape="poly" id="edge26_Node000001_Node000011" title=" " alt="" coords="171,377,255,377,346,383,396,391,443,402,442,408,395,396,345,388,255,382,171,382"/>
+<area shape="rect" id="Node000018" href="$graphics_8c.html#a0d157d997329169f936545f9985e334b" title="Swaps the contents of the double buffer with the actual video memory." alt="" coords="228,397,336,422"/>
+<area shape="poly" id="edge27_Node000001_Node000018" title=" " alt="" coords="171,392,214,398,214,403,171,397"/>
+<area shape="rect" id="Node000019" href="$game_8c.html#a3eaa5a99d28d862ab7d2bc59e27ab3cf" title="This function is used to increase the damage in the boat hit, so that when the damage is max it sinks..." alt="" coords="221,446,343,471"/>
+<area shape="poly" id="edge28_Node000001_Node000019" title=" " alt="" coords="123,394,220,432,236,438,234,443,218,437,121,399"/>
+<area shape="rect" id="Node000003" href="$assetDraw_8c.html#aa2648feb6214b44043894f872d019cb6" title="Draws the end game sprite based on the winning player." alt="" coords="868,81,985,106"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="290,231,329,181,358,155,392,134,452,111,514,94,578,83,641,77,759,75,854,81,854,87,759,80,641,82,578,89,515,99,453,116,395,138,362,159,333,185,294,234"/>
+<area shape="rect" id="Node000006" href="$assetDraw_8c.html#a96cd32b56c00f559fd63ee06de41502d" title="Draws the game board sprite on the screen." alt="" coords="658,131,789,157"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="295,230,336,198,363,181,392,168,457,151,524,141,588,137,644,137,644,142,588,142,524,146,458,156,394,173,366,186,339,202,299,235"/>
+<area shape="rect" id="Node000007" href="$gameLocalDraw_8c.html#ac91fc4f78c6375eb03552f81654b6b5d" title="Draws the game cursor on the screen." alt="" coords="431,182,566,207"/>
+<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="337,230,430,208,431,213,338,235"/>
+<area shape="rect" id="Node000009" href="$assetDraw_8c.html#a3199ca9d94cea6cf260ef0542632e813" title="Draws the name sprite for player 1 on the screen." alt="" coords="855,231,998,257"/>
+<area shape="poly" id="edge10_Node000002_Node000009" title=" " alt="" coords="345,242,841,241,842,247,345,248"/>
+<area shape="rect" id="Node000010" href="$assetDraw_8c.html#a39346da9b816678a434a3f083d19d882" title="Draws the name sprite for player 2 on the screen." alt="" coords="652,283,795,309"/>
+<area shape="poly" id="edge12_Node000002_Node000010" title=" " alt="" coords="346,254,394,261,639,287,638,292,393,267,345,259"/>
+<area shape="poly" id="edge14_Node000002_Node000011" title=" " alt="" coords="294,256,334,310,363,341,395,370,422,387,450,401,448,406,419,392,392,374,359,345,330,313,290,260"/>
+<area shape="rect" id="Node000014" href="$gameLocalDraw_8c.html#abc63dbd12568254cb7a0ba64d5b1413e" title="Draws the small secret board for a specified player." alt="" coords="393,334,604,359"/>
+<area shape="poly" id="edge19_Node000002_Node000014" title=" " alt="" coords="302,256,343,284,394,312,435,327,433,332,392,317,340,288,299,260"/>
+<area shape="rect" id="Node000017" href="$assetDraw_8c.html#adc5d4ba9ffd0f297f903ce1f17338dd4" title="Draws the time left for player&#39;s turn to end." alt="" coords="455,30,542,55"/>
+<area shape="poly" id="edge24_Node000002_Node000017" title=" " alt="" coords="286,231,299,199,321,156,352,111,392,72,416,59,441,49,443,54,418,63,395,77,356,115,326,159,304,202,290,233"/>
+<area shape="rect" id="Node000004" href="$sprite_8c.html#a740994f8c16c38bf18eaabac1f5eeeb9" title="Draws a sprite on the screen." alt="" coords="1059,257,1157,282"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="977,104,1012,123,1041,151,1065,184,1098,243,1093,245,1061,186,1037,155,1009,127,974,108"/>
+<area shape="rect" id="Node000005" href="$graphics_8c.html#a6f895de9725f9f231f9a7f74b6087f60" title="Draws a pixel on the screen at the specified coordinates." alt="" coords="1205,257,1320,282"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="1157,267,1192,267,1192,272,1157,272"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="789,135,839,134,896,138,955,148,1012,168,1037,184,1060,204,1093,244,1089,247,1056,207,1034,188,1010,173,954,153,896,143,839,139,789,140"/>
+<area shape="rect" id="Node000008" href="$assetDraw_8c.html#a16e95c1aa375ed27180585335be4c819" title="Draws the crosshair sprite on the screen." alt="" coords="869,182,984,207"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="566,192,855,192,855,197,566,197"/>
+<area shape="poly" id="edge9_Node000008_Node000004" title=" " alt="" coords="976,205,1012,217,1074,248,1072,252,1010,222,974,210"/>
+<area shape="poly" id="edge11_Node000009_Node000004" title=" " alt="" coords="998,251,1045,258,1044,263,998,256"/>
+<area shape="poly" id="edge13_Node000010_Node000004" title=" " alt="" coords="795,288,1045,271,1045,276,795,294"/>
+<area shape="poly" id="edge15_Node000011_Node000004" title=" " alt="" coords="527,432,614,468,673,487,739,502,808,512,879,511,947,498,979,486,1009,470,1030,453,1048,433,1075,385,1092,336,1101,295,1106,296,1097,338,1080,387,1052,436,1034,457,1012,474,981,491,948,503,879,517,808,517,738,508,672,492,612,473,525,437"/>
+<area shape="rect" id="Node000012" href="$gameLocalDraw_8c.html#a6417f6c97a040704172cbd425bf3f540" title="Draws all sunken boats for a specified player." alt="" coords="673,434,774,459"/>
+<area shape="poly" id="edge16_Node000011_Node000012" title=" " alt="" coords="587,428,659,437,659,442,586,434"/>
+<area shape="rect" id="Node000013" href="$gameLocalDraw_8c.html#a489a9e82ff19241b8d425a338d0362ca" title="Draws a sunken boat on the screen." alt="" coords="861,434,992,459"/>
+<area shape="poly" id="edge17_Node000012_Node000013" title=" " alt="" coords="774,444,848,444,848,449,774,449"/>
+<area shape="poly" id="edge18_Node000013_Node000004" title=" " alt="" coords="974,431,1009,412,1037,385,1061,353,1094,293,1098,296,1065,356,1041,388,1012,417,977,436"/>
+<area shape="poly" id="edge20_Node000014_Node000004" title=" " alt="" coords="539,357,627,380,684,391,747,399,813,402,880,400,946,389,1010,368,1035,353,1057,333,1090,292,1094,295,1061,337,1038,358,1012,373,948,394,881,405,813,408,746,404,683,396,626,385,538,362"/>
+<area shape="rect" id="Node000015" href="$gameLocalDraw_8c.html#a7bced453140d78d6957d3b15cc3b2f3f" title="Draws all small sunken boats for a specified player." alt="" coords="654,333,793,358"/>
+<area shape="poly" id="edge21_Node000014_Node000015" title=" " alt="" coords="604,343,640,343,640,348,605,349"/>
+<area shape="rect" id="Node000016" href="$gameLocalDraw_8c.html#a42d8e02c2634ad2b3387a5788270b88a" title="Draws a small version of a sunken boat on the screen." alt="" coords="843,333,1011,358"/>
+<area shape="poly" id="edge22_Node000015_Node000016" title=" " alt="" coords="793,343,829,343,829,348,793,348"/>
+<area shape="poly" id="edge23_Node000016_Node000004" title=" " alt="" coords="961,330,1010,311,1066,285,1069,290,1012,316,963,335"/>
+<area shape="poly" id="edge25_Node000017_Node000004" title=" " alt="" coords="542,29,634,12,692,5,756,3,823,6,889,16,953,36,1012,67,1034,85,1052,106,1079,154,1096,202,1105,243,1100,244,1091,204,1074,156,1047,109,1030,88,1009,71,951,41,888,21,822,11,756,8,693,11,634,17,543,34"/>
+</map>

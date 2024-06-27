@@ -1,0 +1,22 @@
+<map id="drawSmallSunken" name="drawSmallSunken">
+<area shape="rect" id="Node000001" title="Draws all small sunken boats for a specified player." alt="" coords="1225,56,1364,81"/>
+<area shape="rect" id="Node000002" href="$gameLocalDraw_8c.html#abc63dbd12568254cb7a0ba64d5b1413e" title="Draws the small secret board for a specified player." alt="" coords="967,56,1177,81"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1211,71,1178,71,1178,66,1211,66"/>
+<area shape="rect" id="Node000003" href="$gameLocalDraw_8c.html#a25747824dc02d3fe7652792fe5a91057" title="Draws the local game state on the screen." alt="" coords="792,56,919,81"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="953,71,919,71,919,66,953,66"/>
+<area shape="rect" id="Node000004" href="$gameLocalController_8c.html#a9fcc195fedc7fdd94bae7d928a27726e" title="Checks and processes mouse clicks during the local game." alt="" coords="579,5,744,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="792,55,710,33,712,28,793,50"/>
+<area shape="rect" id="Node000006" href="$mainController_8c.html#a54b55b119fdadc6ceabfead41ef23be7" title="This function is the main function of the game, this is the function that checks the type of interrup..." alt="" coords="176,81,260,107"/>
+<area shape="poly" id="edge7_Node000003_Node000006" title=" " alt="" coords="778,73,566,79,308,90,261,93,260,88,308,85,566,74,778,68"/>
+<area shape="rect" id="Node000008" href="$mainController_8c.html#aab7430a217db9969c46ead48adffbd05" title="This function is used to draw the mouse." alt="" coords="613,107,710,132"/>
+<area shape="poly" id="edge8_Node000003_Node000008" title=" " alt="" coords="793,88,711,109,710,104,792,82"/>
+<area shape="rect" id="Node000005" href="$mainController_8c.html#a565ad7ccf48ae9f509fd64d69224cf18" title="This function is used to check mouse click." alt="" coords="373,5,465,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="565,21,466,21,466,15,565,15"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="361,35,309,52,243,84,241,79,307,48,359,30"/>
+<area shape="rect" id="Node000007" href="$main_8c.html#a7a72220d8366dd84709e79ce415862e5" title=" " alt="" coords="5,81,128,107"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="162,97,128,97,128,91,162,91"/>
+<area shape="poly" id="edge11_Node000008_Node000006" title=" " alt="" coords="599,118,260,99,260,94,599,113"/>
+<area shape="rect" id="Node000009" href="$menuController_8c.html#a7fa55fb20c2221fee17768c091656800" title="Handles keyboard input in the main menu." alt="" coords="308,157,531,183"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="599,135,481,160,480,155,598,130"/>
+<area shape="poly" id="edge10_Node000009_Node000006" title=" " alt="" coords="353,156,307,140,241,109,243,104,309,136,355,151"/>
+</map>

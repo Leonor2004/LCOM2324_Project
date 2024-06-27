@@ -1,0 +1,9 @@
+<map id="drawBoats" name="drawBoats">
+<area shape="rect" id="Node000001" title="Function that draws that draws all the boats." alt="" coords="5,5,96,31"/>
+<area shape="rect" id="Node000002" href="$boats_8c.html#a88b1c793d5cdec566a2c5e7d7e65e8f9" title="Function that draws the boat sprite by receiving its id." alt="" coords="144,5,228,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,15,130,15,130,21,96,21"/>
+<area shape="rect" id="Node000003" href="$sprite_8c.html#a740994f8c16c38bf18eaabac1f5eeeb9" title="Draws a sprite on the screen." alt="" coords="276,5,375,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="228,15,262,15,262,21,228,21"/>
+<area shape="rect" id="Node000004" href="$graphics_8c.html#a6f895de9725f9f231f9a7f74b6087f60" title="Draws a pixel on the screen at the specified coordinates." alt="" coords="423,5,537,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="375,15,409,15,409,21,375,21"/>
+</map>

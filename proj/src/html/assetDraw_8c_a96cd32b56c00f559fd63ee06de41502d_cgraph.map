@@ -1,0 +1,7 @@
+<map id="drawGameBoard" name="drawGameBoard">
+<area shape="rect" id="Node000001" title="Draws the game board sprite on the screen." alt="" coords="5,5,136,31"/>
+<area shape="rect" id="Node000002" href="$sprite_8c.html#a740994f8c16c38bf18eaabac1f5eeeb9" title="Draws a sprite on the screen." alt="" coords="184,5,283,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="136,15,170,15,170,21,136,21"/>
+<area shape="rect" id="Node000003" href="$graphics_8c.html#a6f895de9725f9f231f9a7f74b6087f60" title="Draws a pixel on the screen at the specified coordinates." alt="" coords="331,5,445,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="283,15,317,15,317,21,283,21"/>
+</map>

@@ -1,0 +1,174 @@
+\doxysection{view/menu\+Draw.c File Reference}
+\hypertarget{menuDraw_8c}{}\label{menuDraw_8c}\index{view/menuDraw.c@{view/menuDraw.c}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include "{}menu\+Draw.\+h"{}}\newline
+Include dependency graph for menu\+Draw.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{menuDraw_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{menuDraw_8c_a06326bc3ce2fdfe90cb6eb3172159fd0}{draw\+Main\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em Draws the main menu with different themes based on the current time. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{menuDraw_8c_af350fdd8d7eff205664291fb435669a1}{draw\+Main\+Cursor}} ()
+\begin{DoxyCompactList}\small\item\em Draws the appropriate cursor based on its position relative to menu buttons. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{menuDraw_8c_a927c5abcd2405d8307697c84e223c56d}{darkmenu}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{menuDraw_8c_adcf8834d54c2512caf251354f6161210}{lightmenu}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{menuDraw_8c_a2885219f7e2852342ebf04bde40eb151}{sunsetmenu}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{menuDraw_8c_acd64e087440a430bf9af752341b701a4}{helpmenu}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{menuDraw_8c_a7ed19362995df3f6b3e6f2705848df86}{title}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{menuDraw_8c_a2fc98c5bc0ab49c37bf712236e3992b6}{button\+\_\+local}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{menuDraw_8c_a083ce299d172c679414dc2ff5149bce3}{button\+\_\+help}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{menuDraw_8c_a63138439bc782b0b68997c28cc4a9952}{button\+\_\+quit}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{menuDraw_8c_ad73a51d2fac4744f4d942f9f37512492}{button\+\_\+remote}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{menuDraw_8c_a3a7ea4305773abf5347bb261a8a5c16b}{cursor}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{menuDraw_8c_abb237c399c863f3d0669d8564f6b6466}{hand\+\_\+cursor}}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{enum}} \mbox{\hyperlink{mainController_8h_a7eabd788dcab19ca586663bf73deddf5}{MODE}} \mbox{\hyperlink{menuDraw_8c_a992aeab9e3be201c5a129b90e4a3a10d}{menu}}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{menuDraw_8c_a6150e0515f7202e2fb518f7206ed97dc}{x}}
+\item 
+int \mbox{\hyperlink{menuDraw_8c_a0a2f84ed7838f07779ae24c5a9086d33}{y}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{menuDraw_8c_af350fdd8d7eff205664291fb435669a1}\label{menuDraw_8c_af350fdd8d7eff205664291fb435669a1} 
+\index{menuDraw.c@{menuDraw.c}!drawMainCursor@{drawMainCursor}}
+\index{drawMainCursor@{drawMainCursor}!menuDraw.c@{menuDraw.c}}
+\doxysubsubsection{\texorpdfstring{drawMainCursor()}{drawMainCursor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} draw\+Main\+Cursor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws the appropriate cursor based on its position relative to menu buttons. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{menuDraw_8c_af350fdd8d7eff205664291fb435669a1_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{menuDraw_8c_a06326bc3ce2fdfe90cb6eb3172159fd0}\label{menuDraw_8c_a06326bc3ce2fdfe90cb6eb3172159fd0} 
+\index{menuDraw.c@{menuDraw.c}!drawMainMenu@{drawMainMenu}}
+\index{drawMainMenu@{drawMainMenu}!menuDraw.c@{menuDraw.c}}
+\doxysubsubsection{\texorpdfstring{drawMainMenu()}{drawMainMenu()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} draw\+Main\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws the main menu with different themes based on the current time. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{menuDraw_8c_a06326bc3ce2fdfe90cb6eb3172159fd0_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{menuDraw_8c_a083ce299d172c679414dc2ff5149bce3}\label{menuDraw_8c_a083ce299d172c679414dc2ff5149bce3} 
+\index{menuDraw.c@{menuDraw.c}!button\_help@{button\_help}}
+\index{button\_help@{button\_help}!menuDraw.c@{menuDraw.c}}
+\doxysubsubsection{\texorpdfstring{button\_help}{button\_help}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}\texorpdfstring{$\ast$}{*} button\+\_\+help\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{menuDraw_8c_a2fc98c5bc0ab49c37bf712236e3992b6}\label{menuDraw_8c_a2fc98c5bc0ab49c37bf712236e3992b6} 
+\index{menuDraw.c@{menuDraw.c}!button\_local@{button\_local}}
+\index{button\_local@{button\_local}!menuDraw.c@{menuDraw.c}}
+\doxysubsubsection{\texorpdfstring{button\_local}{button\_local}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}\texorpdfstring{$\ast$}{*} button\+\_\+local\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{menuDraw_8c_a63138439bc782b0b68997c28cc4a9952}\label{menuDraw_8c_a63138439bc782b0b68997c28cc4a9952} 
+\index{menuDraw.c@{menuDraw.c}!button\_quit@{button\_quit}}
+\index{button\_quit@{button\_quit}!menuDraw.c@{menuDraw.c}}
+\doxysubsubsection{\texorpdfstring{button\_quit}{button\_quit}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}\texorpdfstring{$\ast$}{*} button\+\_\+quit\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{menuDraw_8c_ad73a51d2fac4744f4d942f9f37512492}\label{menuDraw_8c_ad73a51d2fac4744f4d942f9f37512492} 
+\index{menuDraw.c@{menuDraw.c}!button\_remote@{button\_remote}}
+\index{button\_remote@{button\_remote}!menuDraw.c@{menuDraw.c}}
+\doxysubsubsection{\texorpdfstring{button\_remote}{button\_remote}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}\texorpdfstring{$\ast$}{*} button\+\_\+remote\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{menuDraw_8c_a3a7ea4305773abf5347bb261a8a5c16b}\label{menuDraw_8c_a3a7ea4305773abf5347bb261a8a5c16b} 
+\index{menuDraw.c@{menuDraw.c}!cursor@{cursor}}
+\index{cursor@{cursor}!menuDraw.c@{menuDraw.c}}
+\doxysubsubsection{\texorpdfstring{cursor}{cursor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}\texorpdfstring{$\ast$}{*} cursor\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{menuDraw_8c_a927c5abcd2405d8307697c84e223c56d}\label{menuDraw_8c_a927c5abcd2405d8307697c84e223c56d} 
+\index{menuDraw.c@{menuDraw.c}!darkmenu@{darkmenu}}
+\index{darkmenu@{darkmenu}!menuDraw.c@{menuDraw.c}}
+\doxysubsubsection{\texorpdfstring{darkmenu}{darkmenu}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}\texorpdfstring{$\ast$}{*} darkmenu\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{menuDraw_8c_abb237c399c863f3d0669d8564f6b6466}\label{menuDraw_8c_abb237c399c863f3d0669d8564f6b6466} 
+\index{menuDraw.c@{menuDraw.c}!hand\_cursor@{hand\_cursor}}
+\index{hand\_cursor@{hand\_cursor}!menuDraw.c@{menuDraw.c}}
+\doxysubsubsection{\texorpdfstring{hand\_cursor}{hand\_cursor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}\texorpdfstring{$\ast$}{*} hand\+\_\+cursor\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{menuDraw_8c_acd64e087440a430bf9af752341b701a4}\label{menuDraw_8c_acd64e087440a430bf9af752341b701a4} 
+\index{menuDraw.c@{menuDraw.c}!helpmenu@{helpmenu}}
+\index{helpmenu@{helpmenu}!menuDraw.c@{menuDraw.c}}
+\doxysubsubsection{\texorpdfstring{helpmenu}{helpmenu}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}\texorpdfstring{$\ast$}{*} helpmenu\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{menuDraw_8c_adcf8834d54c2512caf251354f6161210}\label{menuDraw_8c_adcf8834d54c2512caf251354f6161210} 
+\index{menuDraw.c@{menuDraw.c}!lightmenu@{lightmenu}}
+\index{lightmenu@{lightmenu}!menuDraw.c@{menuDraw.c}}
+\doxysubsubsection{\texorpdfstring{lightmenu}{lightmenu}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}\texorpdfstring{$\ast$}{*} lightmenu\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{menuDraw_8c_a992aeab9e3be201c5a129b90e4a3a10d}\label{menuDraw_8c_a992aeab9e3be201c5a129b90e4a3a10d} 
+\index{menuDraw.c@{menuDraw.c}!menu@{menu}}
+\index{menu@{menu}!menuDraw.c@{menuDraw.c}}
+\doxysubsubsection{\texorpdfstring{menu}{menu}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{enum}} \mbox{\hyperlink{mainController_8h_a7eabd788dcab19ca586663bf73deddf5}{MODE}} menu\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{menuDraw_8c_a2885219f7e2852342ebf04bde40eb151}\label{menuDraw_8c_a2885219f7e2852342ebf04bde40eb151} 
+\index{menuDraw.c@{menuDraw.c}!sunsetmenu@{sunsetmenu}}
+\index{sunsetmenu@{sunsetmenu}!menuDraw.c@{menuDraw.c}}
+\doxysubsubsection{\texorpdfstring{sunsetmenu}{sunsetmenu}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}\texorpdfstring{$\ast$}{*} sunsetmenu\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{menuDraw_8c_a7ed19362995df3f6b3e6f2705848df86}\label{menuDraw_8c_a7ed19362995df3f6b3e6f2705848df86} 
+\index{menuDraw.c@{menuDraw.c}!title@{title}}
+\index{title@{title}!menuDraw.c@{menuDraw.c}}
+\doxysubsubsection{\texorpdfstring{title}{title}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}\texorpdfstring{$\ast$}{*} title\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{menuDraw_8c_a6150e0515f7202e2fb518f7206ed97dc}\label{menuDraw_8c_a6150e0515f7202e2fb518f7206ed97dc} 
+\index{menuDraw.c@{menuDraw.c}!x@{x}}
+\index{x@{x}!menuDraw.c@{menuDraw.c}}
+\doxysubsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} x\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{menuDraw_8c_a0a2f84ed7838f07779ae24c5a9086d33}\label{menuDraw_8c_a0a2f84ed7838f07779ae24c5a9086d33} 
+\index{menuDraw.c@{menuDraw.c}!y@{y}}
+\index{y@{y}!menuDraw.c@{menuDraw.c}}
+\doxysubsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily int y\hspace{0.3cm}{\ttfamily [extern]}}
+

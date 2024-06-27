@@ -1,0 +1,55 @@
+<map id="drawBoat" name="drawBoat">
+<area shape="rect" id="Node000001" title="Function that draws the boat sprite by receiving its id." alt="" coords="1443,319,1527,344"/>
+<area shape="rect" id="Node000002" href="$boats_8c.html#a283e28d26343249822bbe2fd8dd85606" title="Function that draws that draws all the boats." alt="" coords="1304,192,1395,217"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1458,311,1362,219,1366,216,1462,307"/>
+<area shape="rect" id="Node000015" href="$boats_8c.html#a1c183e0a7752db704948678ff5101423" title="Function that draws the selected boat with id b." alt="" coords="1104,420,1215,445"/>
+<area shape="poly" id="edge23_Node000001_Node000015" title=" " alt="" coords="1463,356,1433,381,1396,403,1350,418,1302,428,1215,436,1215,431,1301,423,1348,413,1394,398,1430,377,1460,352"/>
+<area shape="rect" id="Node000016" href="$boats_8c.html#af5c43372091bcc624a97b0840969c7ee" title="Function that fixes boats positions when overlapping." alt="" coords="883,417,1002,443"/>
+<area shape="poly" id="edge29_Node000001_Node000016" title=" " alt="" coords="1429,345,1395,351,1003,422,1002,417,1394,346,1428,339"/>
+<area shape="rect" id="Node000017" href="$boats_8c.html#a0fa1a91e4149e9653b0cea449df78b0c" title="Function that draws the boat in its new updated position." alt="" coords="885,368,1000,393"/>
+<area shape="poly" id="edge30_Node000001_Node000017" title=" " alt="" coords="1429,337,1265,348,1063,366,1000,374,1000,369,1062,361,1265,342,1429,332"/>
+<area shape="rect" id="Node000018" href="$boats_8c.html#a10010e7fb44c1ae6848555ca8b746ae4" title="Function that rotates the selected boat." alt="" coords="884,267,1001,292"/>
+<area shape="poly" id="edge33_Node000001_Node000018" title=" " alt="" coords="1429,328,1394,325,1001,287,1002,282,1395,319,1429,323"/>
+<area shape="rect" id="Node000003" href="$gameRemoteDraw_8c.html#aed93e22654c3131a9b15dcc9999bd8c0" title="Draws the remote game state on the screen." alt="" coords="871,217,1015,243"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1291,211,1015,228,1015,223,1290,206"/>
+<area shape="rect" id="Node000010" href="$placingDraw_8c.html#a0a7e8b71d4f37a8d0bb4e53971d4e352" title="Draws the placing menu on the screen." alt="" coords="874,116,1011,141"/>
+<area shape="poly" id="edge13_Node000002_Node000010" title=" " alt="" coords="1290,197,1062,155,1005,144,1006,139,1063,150,1291,192"/>
+<area shape="rect" id="Node000014" href="$placingDraw_8c.html#a40b9640e92602cf1b054debb21a4bdc1" title="Draws the previous state of placing menu on the screen." alt="" coords="1063,116,1256,141"/>
+<area shape="poly" id="edge21_Node000002_Node000014" title=" " alt="" coords="1310,188,1255,163,1201,144,1203,139,1257,158,1312,183"/>
+<area shape="rect" id="Node000004" href="$gameRemoteController_8c.html#aadc111b67a5257791c96975feb9bf4cf" title="Checks the keyboard input during the remote game." alt="" coords="579,369,823,395"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="878,252,872,256,862,268,855,280,850,306,844,332,837,345,824,357,800,372,797,367,821,353,832,342,839,330,845,305,850,279,857,265,869,252,875,247"/>
+<area shape="rect" id="Node000005" href="$mainController_8c.html#a54b55b119fdadc6ceabfead41ef23be7" title="This function is the main function of the game, this is the function that checks the type of interrup..." alt="" coords="176,193,260,219"/>
+<area shape="poly" id="edge6_Node000003_Node000005" title=" " alt="" coords="872,248,762,266,620,280,543,282,463,280,384,272,307,257,267,241,235,221,238,216,270,236,309,251,385,266,464,275,543,277,620,275,761,261,871,243"/>
+<area shape="rect" id="Node000007" href="$mainController_8c.html#aab7430a217db9969c46ead48adffbd05" title="This function is used to draw the mouse." alt="" coords="652,141,749,167"/>
+<area shape="poly" id="edge7_Node000003_Node000007" title=" " alt="" coords="887,216,741,169,743,164,889,211"/>
+<area shape="rect" id="Node000009" href="$gameRemoteController_8c.html#aeffc8e6ce1fc081fe37077e72444fedc" title="Function that receives the byte and uses it." alt="" coords="380,217,459,243"/>
+<area shape="poly" id="edge11_Node000003_Node000009" title=" " alt="" coords="857,233,459,233,459,227,857,227"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="612,399,542,403,463,400,382,385,343,371,306,352,273,322,248,285,230,248,220,220,225,218,235,246,252,282,277,319,310,348,345,366,383,380,463,395,542,398,612,394"/>
+<area shape="rect" id="Node000006" href="$main_8c.html#a7a72220d8366dd84709e79ce415862e5" title=" " alt="" coords="5,193,128,219"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="162,209,128,209,128,203,162,203"/>
+<area shape="poly" id="edge10_Node000007_Node000005" title=" " alt="" coords="638,147,570,141,487,138,397,142,309,158,269,175,237,195,234,191,267,170,307,153,396,137,487,132,570,135,639,142"/>
+<area shape="rect" id="Node000008" href="$menuController_8c.html#a7fa55fb20c2221fee17768c091656800" title="Handles keyboard input in the main menu." alt="" coords="308,168,531,193"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="638,163,531,173,531,167,638,157"/>
+<area shape="poly" id="edge9_Node000008_Node000005" title=" " alt="" coords="305,198,261,203,260,198,304,192"/>
+<area shape="poly" id="edge12_Node000009_Node000005" title=" " alt="" coords="366,226,260,214,261,208,366,221"/>
+<area shape="poly" id="edge19_Node000010_Node000005" title=" " alt="" coords="904,113,796,67,723,43,643,23,558,11,471,10,429,15,388,24,348,38,309,56,291,70,275,86,250,125,234,164,225,194,220,192,229,162,245,122,271,83,287,66,307,52,346,33,386,19,428,10,471,5,558,6,644,18,725,38,798,62,906,108"/>
+<area shape="poly" id="edge20_Node000010_Node000007" title=" " alt="" coords="860,140,750,152,749,146,860,135"/>
+<area shape="rect" id="Node000011" href="$placingController_8c.html#a8962834b25ea0f03b0bcbf36836a9000" title="Checks the keyboard input during the placing menu." alt="" coords="600,319,801,344"/>
+<area shape="poly" id="edge14_Node000010_Node000011" title=" " alt="" coords="918,152,719,321,715,317,914,148"/>
+<area shape="rect" id="Node000012" href="$placingController_8c.html#ade9c0cf310675c8eb75f86b239cb013d" title="Checks and processes mouse clicks in pop up menus in placing menu." alt="" coords="631,92,770,117"/>
+<area shape="poly" id="edge16_Node000010_Node000012" title=" " alt="" coords="860,123,770,114,770,109,860,118"/>
+<area shape="poly" id="edge15_Node000011_Node000005" title=" " alt="" coords="586,346,520,346,449,341,376,327,307,302,280,284,256,262,225,220,229,217,260,258,283,280,309,297,377,322,449,335,521,341,586,340"/>
+<area shape="rect" id="Node000013" href="$mainController_8c.html#a565ad7ccf48ae9f509fd64d69224cf18" title="This function is used to check mouse click." alt="" coords="373,67,465,92"/>
+<area shape="poly" id="edge17_Node000012_Node000013" title=" " alt="" coords="617,100,465,86,466,81,618,95"/>
+<area shape="poly" id="edge18_Node000013_Node000005" title=" " alt="" coords="361,93,334,101,309,114,284,132,262,154,230,195,226,191,258,151,281,128,307,109,332,96,359,88"/>
+<area shape="poly" id="edge22_Node000014_Node000010" title=" " alt="" coords="1049,131,1011,131,1011,126,1049,126"/>
+<area shape="poly" id="edge24_Node000015_Node000004" title=" " alt="" coords="1094,451,1045,459,988,465,929,465,870,458,828,446,787,430,722,397,725,392,789,425,829,441,871,453,929,460,988,459,1044,454,1093,445"/>
+<area shape="poly" id="edge25_Node000015_Node000011" title=" " alt="" coords="1127,414,1076,384,1014,358,960,345,905,337,801,331,802,326,906,332,961,340,1015,353,1078,379,1130,410"/>
+<area shape="poly" id="edge26_Node000015_Node000016" title=" " alt="" coords="1090,434,1002,433,1002,428,1090,429"/>
+<area shape="poly" id="edge27_Node000016_Node000004" title=" " alt="" coords="869,418,765,397,766,392,870,413"/>
+<area shape="poly" id="edge28_Node000016_Node000011" title=" " alt="" coords="880,414,869,408,854,395,845,382,836,370,821,359,791,347,793,342,824,354,840,366,849,379,858,392,872,404,882,409"/>
+<area shape="poly" id="edge31_Node000017_Node000004" title=" " alt="" coords="872,384,823,384,823,379,872,378"/>
+<area shape="poly" id="edge32_Node000017_Node000011" title=" " alt="" coords="871,369,763,347,764,341,873,364"/>
+<area shape="poly" id="edge34_Node000018_Node000004" title=" " alt="" coords="916,303,874,331,824,358,780,372,778,367,822,353,871,327,913,298"/>
+<area shape="poly" id="edge35_Node000018_Node000011" title=" " alt="" coords="871,297,761,321,760,316,870,292"/>
+</map>

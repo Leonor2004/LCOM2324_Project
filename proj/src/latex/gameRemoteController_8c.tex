@@ -1,0 +1,208 @@
+\doxysection{handler/game\+Remote\+Controller.c File Reference}
+\hypertarget{gameRemoteController_8c}{}\label{gameRemoteController_8c}\index{handler/gameRemoteController.c@{handler/gameRemoteController.c}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include "{}game\+Remote\+Controller.\+h"{}}\newline
+{\ttfamily \#include "{}../view/asset\+Draw.\+h"{}}\newline
+{\ttfamily \#include "{}controllers/keyboard/kbd.\+h"{}}\newline
+{\ttfamily \#include "{}controllers/mouse/mouse.\+h"{}}\newline
+{\ttfamily \#include "{}controllers/video\+\_\+graphics/graphics.\+h"{}}\newline
+{\ttfamily \#include "{}controllers/timer/timer.\+h"{}}\newline
+{\ttfamily \#include "{}controllers/serialport/serialport.\+h"{}}\newline
+{\ttfamily \#include "{}controllers/sprites/sprite.\+h"{}}\newline
+{\ttfamily \#include "{}controllers/macros.\+h"{}}\newline
+{\ttfamily \#include "{}view/game\+Remote\+Draw.\+h"{}}\newline
+{\ttfamily \#include "{}model/boats.\+h"{}}\newline
+{\ttfamily \#include "{}model/game.\+h"{}}\newline
+{\ttfamily \#include "{}menu\+Controller.\+h"{}}\newline
+Include dependency graph for game\+Remote\+Controller.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{gameRemoteController_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{gameRemoteController_8c_aadc111b67a5257791c96975feb9bf4cf}{check\+Keyboard\+Input\+Game\+Remote}} (\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint8\+\_\+t}} \mbox{\hyperlink{mainController_8c_aa1de7a5557e9d96b83cf03f73c92163f}{scancode}})
+\begin{DoxyCompactList}\small\item\em Checks the keyboard input during the remote game. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{gameRemoteController_8c_a480128a793bcc06ba123bf9938c647d8}{check\+Game\+Remote\+Click}} ()
+\begin{DoxyCompactList}\small\item\em Checks and processes mouse clicks during the remote game. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{gameRemoteController_8c_aeffc8e6ce1fc081fe37077e72444fedc}{received}} (\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint8\+\_\+t}} \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{val}})
+\begin{DoxyCompactList}\small\item\em Function that receives the byte and uses it. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structPlayer}{Player}} \mbox{\hyperlink{gameRemoteController_8c_a84ca794211044aa1810646b2e9b6177e}{p1}}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{bool}} \mbox{\hyperlink{gameRemoteController_8c_a23a1d1b9c813b5e78e6b616211f4fc96}{cursor\+Is\+Active}} = \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{true}}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{bool}} \mbox{\hyperlink{gameRemoteController_8c_a5d9bbe8f834b74032cb7c33cdeb39a71}{keyboard\+Is\+Active}} = \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{false}}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{gameRemoteController_8c_a6150e0515f7202e2fb518f7206ed97dc}{x}}
+\item 
+int \mbox{\hyperlink{gameRemoteController_8c_a0a2f84ed7838f07779ae24c5a9086d33}{y}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{gameRemoteController_8c_af37a893f866053706519a828940184d7}{crosshair}}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{bool}} \mbox{\hyperlink{gameRemoteController_8c_ab67f2b1e1a5800c11585a29a34d38c29}{one\+Is\+Selected}}
+\item 
+\mbox{\hyperlink{structSpot}{Spot}} \mbox{\hyperlink{gameRemoteController_8c_a2e5dc26fdbee50113bc04e638c865dad}{matrix}} \mbox{[}10\mbox{]}\mbox{[}10\mbox{]}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{enum}} \mbox{\hyperlink{mainController_8h_a7eabd788dcab19ca586663bf73deddf5}{MODE}} \mbox{\hyperlink{gameRemoteController_8c_a992aeab9e3be201c5a129b90e4a3a10d}{menu}}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{gameRemoteController_8c_a676f806010ebbf692be12b4aae2f6681}{c\+\_\+attack}} = -\/1
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{gameRemoteController_8c_a8c871176b73e372e6841779693c61f84}{l\+\_\+attack}} = -\/1
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{enum}} \mbox{\hyperlink{gameRemoteController_8h_aeedefe5b5e9c6b92d0cb54739df45e93}{THISPLAYER}} \mbox{\hyperlink{gameRemoteController_8c_a0d249cce3fd13d6e3b6fe1ad3c4995ff}{player\+\_\+status}} = \mbox{\hyperlink{gameRemoteController_8h_aeedefe5b5e9c6b92d0cb54739df45e93a529456632332bae1fa406625c56e30b8}{PLACING}}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{bool}} \mbox{\hyperlink{gameRemoteController_8c_ad32ac14df3f56b4e8fdf2f563205a55d}{second}} = \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{false}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{gameRemoteController_8c_a480128a793bcc06ba123bf9938c647d8}\label{gameRemoteController_8c_a480128a793bcc06ba123bf9938c647d8} 
+\index{gameRemoteController.c@{gameRemoteController.c}!checkGameRemoteClick@{checkGameRemoteClick}}
+\index{checkGameRemoteClick@{checkGameRemoteClick}!gameRemoteController.c@{gameRemoteController.c}}
+\doxysubsubsection{\texorpdfstring{checkGameRemoteClick()}{checkGameRemoteClick()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} check\+Game\+Remote\+Click (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks and processes mouse clicks during the remote game. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{gameRemoteController_8c_a480128a793bcc06ba123bf9938c647d8_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{gameRemoteController_8c_aadc111b67a5257791c96975feb9bf4cf}\label{gameRemoteController_8c_aadc111b67a5257791c96975feb9bf4cf} 
+\index{gameRemoteController.c@{gameRemoteController.c}!checkKeyboardInputGameRemote@{checkKeyboardInputGameRemote}}
+\index{checkKeyboardInputGameRemote@{checkKeyboardInputGameRemote}!gameRemoteController.c@{gameRemoteController.c}}
+\doxysubsubsection{\texorpdfstring{checkKeyboardInputGameRemote()}{checkKeyboardInputGameRemote()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} check\+Keyboard\+Input\+Game\+Remote (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint8\+\_\+t}}}]{scancode }\end{DoxyParamCaption})}
+
+
+
+Checks the keyboard input during the remote game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scancode} & \+: The scancode of the key pressed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int \+: Returns 1 if the ESC key was pressed, otherwise returns 0. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{gameRemoteController_8c_aadc111b67a5257791c96975feb9bf4cf_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{gameRemoteController_8c_aeffc8e6ce1fc081fe37077e72444fedc}\label{gameRemoteController_8c_aeffc8e6ce1fc081fe37077e72444fedc} 
+\index{gameRemoteController.c@{gameRemoteController.c}!received@{received}}
+\index{received@{received}!gameRemoteController.c@{gameRemoteController.c}}
+\doxysubsubsection{\texorpdfstring{received()}{received()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} received (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint8\+\_\+t}}}]{val }\end{DoxyParamCaption})}
+
+
+
+Function that receives the byte and uses it. 
+
+\begin{DoxyReturn}{Returns}
+int \+: 0 if sucess and 1 otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{gameRemoteController_8c_aeffc8e6ce1fc081fe37077e72444fedc_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{gameRemoteController_8c_a676f806010ebbf692be12b4aae2f6681}\label{gameRemoteController_8c_a676f806010ebbf692be12b4aae2f6681} 
+\index{gameRemoteController.c@{gameRemoteController.c}!c\_attack@{c\_attack}}
+\index{c\_attack@{c\_attack}!gameRemoteController.c@{gameRemoteController.c}}
+\doxysubsubsection{\texorpdfstring{c\_attack}{c\_attack}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} c\+\_\+attack = -\/1}
+
+\Hypertarget{gameRemoteController_8c_af37a893f866053706519a828940184d7}\label{gameRemoteController_8c_af37a893f866053706519a828940184d7} 
+\index{gameRemoteController.c@{gameRemoteController.c}!crosshair@{crosshair}}
+\index{crosshair@{crosshair}!gameRemoteController.c@{gameRemoteController.c}}
+\doxysubsubsection{\texorpdfstring{crosshair}{crosshair}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}\texorpdfstring{$\ast$}{*} crosshair\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{gameRemoteController_8c_a23a1d1b9c813b5e78e6b616211f4fc96}\label{gameRemoteController_8c_a23a1d1b9c813b5e78e6b616211f4fc96} 
+\index{gameRemoteController.c@{gameRemoteController.c}!cursorIsActive@{cursorIsActive}}
+\index{cursorIsActive@{cursorIsActive}!gameRemoteController.c@{gameRemoteController.c}}
+\doxysubsubsection{\texorpdfstring{cursorIsActive}{cursorIsActive}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{bool}} cursor\+Is\+Active = \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{true}}}
+
+\Hypertarget{gameRemoteController_8c_a5d9bbe8f834b74032cb7c33cdeb39a71}\label{gameRemoteController_8c_a5d9bbe8f834b74032cb7c33cdeb39a71} 
+\index{gameRemoteController.c@{gameRemoteController.c}!keyboardIsActive@{keyboardIsActive}}
+\index{keyboardIsActive@{keyboardIsActive}!gameRemoteController.c@{gameRemoteController.c}}
+\doxysubsubsection{\texorpdfstring{keyboardIsActive}{keyboardIsActive}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{bool}} keyboard\+Is\+Active = \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{false}}}
+
+\Hypertarget{gameRemoteController_8c_a8c871176b73e372e6841779693c61f84}\label{gameRemoteController_8c_a8c871176b73e372e6841779693c61f84} 
+\index{gameRemoteController.c@{gameRemoteController.c}!l\_attack@{l\_attack}}
+\index{l\_attack@{l\_attack}!gameRemoteController.c@{gameRemoteController.c}}
+\doxysubsubsection{\texorpdfstring{l\_attack}{l\_attack}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} l\+\_\+attack = -\/1}
+
+\Hypertarget{gameRemoteController_8c_a2e5dc26fdbee50113bc04e638c865dad}\label{gameRemoteController_8c_a2e5dc26fdbee50113bc04e638c865dad} 
+\index{gameRemoteController.c@{gameRemoteController.c}!matrix@{matrix}}
+\index{matrix@{matrix}!gameRemoteController.c@{gameRemoteController.c}}
+\doxysubsubsection{\texorpdfstring{matrix}{matrix}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSpot}{Spot}} matrix\mbox{[}10\mbox{]}\mbox{[}10\mbox{]}\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{gameRemoteController_8c_a992aeab9e3be201c5a129b90e4a3a10d}\label{gameRemoteController_8c_a992aeab9e3be201c5a129b90e4a3a10d} 
+\index{gameRemoteController.c@{gameRemoteController.c}!menu@{menu}}
+\index{menu@{menu}!gameRemoteController.c@{gameRemoteController.c}}
+\doxysubsubsection{\texorpdfstring{menu}{menu}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{enum}} \mbox{\hyperlink{mainController_8h_a7eabd788dcab19ca586663bf73deddf5}{MODE}} menu\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{gameRemoteController_8c_ab67f2b1e1a5800c11585a29a34d38c29}\label{gameRemoteController_8c_ab67f2b1e1a5800c11585a29a34d38c29} 
+\index{gameRemoteController.c@{gameRemoteController.c}!oneIsSelected@{oneIsSelected}}
+\index{oneIsSelected@{oneIsSelected}!gameRemoteController.c@{gameRemoteController.c}}
+\doxysubsubsection{\texorpdfstring{oneIsSelected}{oneIsSelected}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{bool}} one\+Is\+Selected\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{gameRemoteController_8c_a84ca794211044aa1810646b2e9b6177e}\label{gameRemoteController_8c_a84ca794211044aa1810646b2e9b6177e} 
+\index{gameRemoteController.c@{gameRemoteController.c}!p1@{p1}}
+\index{p1@{p1}!gameRemoteController.c@{gameRemoteController.c}}
+\doxysubsubsection{\texorpdfstring{p1}{p1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPlayer}{Player}} p1\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{gameRemoteController_8c_a0d249cce3fd13d6e3b6fe1ad3c4995ff}\label{gameRemoteController_8c_a0d249cce3fd13d6e3b6fe1ad3c4995ff} 
+\index{gameRemoteController.c@{gameRemoteController.c}!player\_status@{player\_status}}
+\index{player\_status@{player\_status}!gameRemoteController.c@{gameRemoteController.c}}
+\doxysubsubsection{\texorpdfstring{player\_status}{player\_status}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{enum}} \mbox{\hyperlink{gameRemoteController_8h_aeedefe5b5e9c6b92d0cb54739df45e93}{THISPLAYER}} player\+\_\+status = \mbox{\hyperlink{gameRemoteController_8h_aeedefe5b5e9c6b92d0cb54739df45e93a529456632332bae1fa406625c56e30b8}{PLACING}}}
+
+\Hypertarget{gameRemoteController_8c_ad32ac14df3f56b4e8fdf2f563205a55d}\label{gameRemoteController_8c_ad32ac14df3f56b4e8fdf2f563205a55d} 
+\index{gameRemoteController.c@{gameRemoteController.c}!second@{second}}
+\index{second@{second}!gameRemoteController.c@{gameRemoteController.c}}
+\doxysubsubsection{\texorpdfstring{second}{second}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{bool}} second = \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{false}}}
+
+\Hypertarget{gameRemoteController_8c_a6150e0515f7202e2fb518f7206ed97dc}\label{gameRemoteController_8c_a6150e0515f7202e2fb518f7206ed97dc} 
+\index{gameRemoteController.c@{gameRemoteController.c}!x@{x}}
+\index{x@{x}!gameRemoteController.c@{gameRemoteController.c}}
+\doxysubsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} x\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{gameRemoteController_8c_a0a2f84ed7838f07779ae24c5a9086d33}\label{gameRemoteController_8c_a0a2f84ed7838f07779ae24c5a9086d33} 
+\index{gameRemoteController.c@{gameRemoteController.c}!y@{y}}
+\index{y@{y}!gameRemoteController.c@{gameRemoteController.c}}
+\doxysubsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily int y\hspace{0.3cm}{\ttfamily [extern]}}
+

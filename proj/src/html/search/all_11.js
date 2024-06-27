@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['r_0',['r',['../graphics_8c.html#acab531abaa74a7e664e3986f2522b33a',1,'graphics.c']]],
+  ['rbr_1',['RBR',['../macros_8h.html#aa6f7e7a9f4551d6151f9d45362118a50',1,'macros.h']]],
+  ['read_5fcommand_5fback_2',['READ_COMMAND_BACK',['../macros_8h.html#a7dd5b5400a8aa20edae39b21891283a1',1,'macros.h']]],
+  ['read_5fdata_3',['READ_DATA',['../macros_8h.html#a8d406d5aff787991429e62cfd9bac721',1,'macros.h']]],
+  ['read_5foutput_4',['read_output',['../kbd_8c.html#a5d86607e1025febd59f2b9d2738bbb1a',1,'read_output(uint8_t port, uint8_t *scancode, uint8_t mouse):&#160;kbd.c'],['../kbd_8h.html#a5d86607e1025febd59f2b9d2738bbb1a',1,'read_output(uint8_t port, uint8_t *scancode, uint8_t mouse):&#160;kbd.c']]],
+  ['readrtc_5',['readrtc',['../rtc_8c.html#ab9433da44c1754d5b1df443d08832c1c',1,'readRTC(uint8_t *time, uint8_t port):&#160;rtc.c'],['../rtc_8h.html#ab9433da44c1754d5b1df443d08832c1c',1,'readRTC(uint8_t *time, uint8_t port):&#160;rtc.c']]],
+  ['received_6',['received',['../gameRemoteController_8c.html#aeffc8e6ce1fc081fe37077e72444fedc',1,'received(uint8_t val):&#160;gameRemoteController.c'],['../gameRemoteController_8h.html#aeffc8e6ce1fc081fe37077e72444fedc',1,'received(uint8_t val):&#160;gameRemoteController.c']]],
+  ['reg_5fa_7',['REG_A',['../macros_8h.html#aa0e40d1cb9fea79e800aa79b8ca291f7',1,'macros.h']]],
+  ['reg_5fb_8',['REG_B',['../macros_8h.html#a28ed75c6727784e56c2bb8d828c876c9',1,'macros.h']]],
+  ['register_5finput_9',['REGISTER_INPUT',['../macros_8h.html#ac7ccdd8e98d8f7fdad8dfe99c467d5d8',1,'macros.h']]],
+  ['register_5foutput_10',['REGISTER_OUTPUT',['../macros_8h.html#a5e3f3a35c56673c2a54d9f4eadb759a9',1,'macros.h']]],
+  ['remote_11',['REMOTE',['../macros_8h.html#a62ca51b78468397b2ef98ee55a5e6e2a',1,'macros.h']]],
+  ['restorekbd_12',['restorekbd',['../kbd_8c.html#ab9e6a05785f0f86cb2cdb7be9cfd5850',1,'restoreKBD():&#160;kbd.c'],['../kbd_8h.html#ab9e6a05785f0f86cb2cdb7be9cfd5850',1,'restoreKBD():&#160;kbd.c']]],
+  ['return_5fvbe_5fctrl_5finfo_13',['RETURN_VBE_CTRL_INFO',['../macros_8h.html#ac5f50a3d7bcc0307dc8f1abad0ce732e',1,'macros.h']]],
+  ['return_5fvbe_5fmode_5finfo_14',['RETURN_VBE_MODE_INFO',['../macros_8h.html#a1f92af4fc5b5e9a78c99f725fab3da11',1,'macros.h']]],
+  ['rigth_15',['RIGTH',['../macros_8h.html#a68d3b4844af3c14895cc69ef48f2c077',1,'macros.h']]],
+  ['rotate_16',['ROTATE',['../macros_8h.html#ae38c87f421906975bf7500c3b779fbd1',1,'macros.h']]],
+  ['rotateboat_17',['rotateBoat',['../boats_8c.html#a30b70b17eb1145743b12c162ea7d2cfb',1,'boats.c']]],
+  ['rotated_18',['rotated',['../structBoat.html#a4ba875615e856b7862eeec530d87f747',1,'Boat']]],
+  ['rotateselected_19',['rotateselected',['../boats_8c.html#a10010e7fb44c1ae6848555ca8b746ae4',1,'rotateSelected():&#160;boats.c'],['../boats_8h.html#a10010e7fb44c1ae6848555ca8b746ae4',1,'rotateSelected():&#160;boats.c']]],
+  ['rtc_2ec_20',['rtc.c',['../rtc_8c.html',1,'']]],
+  ['rtc_2eh_21',['rtc.h',['../rtc_8h.html',1,'']]],
+  ['rtcbinary_22',['rtcbinary',['../rtc_8c.html#a304cf3d62230335c63a17a8328a90677',1,'RTCBinary(uint8_t *bcd):&#160;rtc.c'],['../rtc_8h.html#a304cf3d62230335c63a17a8328a90677',1,'RTCBinary(uint8_t *bcd):&#160;rtc.c']]]
+];

@@ -1,0 +1,17 @@
+<map id="drawMainMenu" name="drawMainMenu">
+<area shape="rect" id="Node000001" title="Draws the main menu with different themes based on the current time." alt="" coords="5,31,128,56"/>
+<area shape="rect" id="Node000002" href="$sprite_8c.html#a740994f8c16c38bf18eaabac1f5eeeb9" title="Draws a sprite on the screen." alt="" coords="176,5,275,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="128,31,162,25,163,31,129,36"/>
+<area shape="rect" id="Node000004" href="$rtc_8c.html#a6d24a0e2c6824a269b0f859d3cc1c3af" title="Test the results of the rtc to find the adequate background for main menu." alt="" coords="187,55,263,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="129,50,174,57,174,62,128,55"/>
+<area shape="rect" id="Node000003" href="$graphics_8c.html#a6f895de9725f9f231f9a7f74b6087f60" title="Draws a pixel on the screen at the specified coordinates." alt="" coords="323,5,437,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="275,15,309,15,309,21,275,21"/>
+<area shape="rect" id="Node000005" href="$rtc_8c.html#ab9433da44c1754d5b1df443d08832c1c" title="Read a register from the RTC." alt="" coords="343,55,417,80"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="263,65,329,65,329,70,263,70"/>
+<area shape="rect" id="Node000006" href="$rtc_8c.html#a304cf3d62230335c63a17a8328a90677" title="Check if the number of the RTC is in binary&#45;coded decimal (BCD)." alt="" coords="485,29,573,55"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="417,58,471,49,472,54,418,64"/>
+<area shape="rect" id="Node000008" href="$rtc_8c.html#ab22b4f35e8577da01f7112e637be079f" title="Transform the RTC from BCD to binary." alt="" coords="491,79,568,104"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="418,71,478,80,477,86,417,76"/>
+<area shape="rect" id="Node000007" href="$utils_8c.html#a2b56f50ba159e9d5115ed1a75eff15d9" title=" " alt="" coords="621,29,720,55"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="573,39,608,39,608,45,573,45"/>
+</map>

@@ -1,0 +1,162 @@
+\doxysection{controllers/mouse/mouse.h File Reference}
+\hypertarget{mouse_8h}{}\label{mouse_8h}\index{controllers/mouse/mouse.h@{controllers/mouse/mouse.h}}
+
+
+This file contains the mouse functions.  
+
+
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mouse_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{mouse_8h_a834b6d7efe311484d6da234db333cb97}{mouse\+\_\+ih}} ()
+\begin{DoxyCompactList}\small\item\em Mouse interrupt handler. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{bool}} \mbox{\hyperlink{mouse_8h_aee40198657f4994df246ee8c8e584e20}{mouse\+\_\+output}} ()
+\begin{DoxyCompactList}\small\item\em Processes the mouse output. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{mouse_8h_aa02a132ad1773176c6cd6b6ad223757b}{mouse\+\_\+subscribe\+\_\+int}} (\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint8\+\_\+t}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{irq\+\_\+set}})
+\begin{DoxyCompactList}\small\item\em Subscribes to mouse interrupts. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{mouse_8h_a685ad2706aca36d9869a30a19b9f446a}{mouse\+\_\+unsubscribe\+\_\+int}} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribes to mouse interrupts. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{mouse_8h_a570eacf2c5092ffef244148d6afb5b28}{create\+\_\+mpacket}} ()
+\begin{DoxyCompactList}\small\item\em Creates a mouse packet from the byte array. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{mouse_8h_a737402ed874a7e20677ef6495f6cd0d3}{mouse\+\_\+data\+\_\+report}} (\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint8\+\_\+t}} \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{command}})
+\begin{DoxyCompactList}\small\item\em Sends a mouse command and waits for an acknowledgment. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{mouse_8h_aee5c2370851934948db8bdb3004e3070}{write\+\_\+command}} (\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint8\+\_\+t}} \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{port}}, \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint8\+\_\+t}} \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{cmd}})
+\begin{DoxyCompactList}\small\item\em Writes a command to the specified port. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file contains the mouse functions. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{mouse_8h_a570eacf2c5092ffef244148d6afb5b28}\label{mouse_8h_a570eacf2c5092ffef244148d6afb5b28} 
+\index{mouse.h@{mouse.h}!create\_mpacket@{create\_mpacket}}
+\index{create\_mpacket@{create\_mpacket}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{create\_mpacket()}{create\_mpacket()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} create\+\_\+mpacket (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates a mouse packet from the byte array. 
+
+\Hypertarget{mouse_8h_a737402ed874a7e20677ef6495f6cd0d3}\label{mouse_8h_a737402ed874a7e20677ef6495f6cd0d3} 
+\index{mouse.h@{mouse.h}!mouse\_data\_report@{mouse\_data\_report}}
+\index{mouse\_data\_report@{mouse\_data\_report}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{mouse\_data\_report()}{mouse\_data\_report()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} mouse\+\_\+data\+\_\+report (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint8\+\_\+t}}}]{command }\end{DoxyParamCaption})}
+
+
+
+Sends a mouse command and waits for an acknowledgment. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em command} & \+: The mouse command to send. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int \+: 0 if sucess and 1 otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mouse_8h_a737402ed874a7e20677ef6495f6cd0d3_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{mouse_8h_a834b6d7efe311484d6da234db333cb97}\label{mouse_8h_a834b6d7efe311484d6da234db333cb97} 
+\index{mouse.h@{mouse.h}!mouse\_ih@{mouse\_ih}}
+\index{mouse\_ih@{mouse\_ih}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{mouse\_ih()}{mouse\_ih()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} mouse\+\_\+ih (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Mouse interrupt handler. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mouse_8h_a834b6d7efe311484d6da234db333cb97_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{mouse_8h_aee40198657f4994df246ee8c8e584e20}\label{mouse_8h_aee40198657f4994df246ee8c8e584e20} 
+\index{mouse.h@{mouse.h}!mouse\_output@{mouse\_output}}
+\index{mouse\_output@{mouse\_output}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{mouse\_output()}{mouse\_output()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{bool}} mouse\+\_\+output (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Processes the mouse output. 
+
+\begin{DoxyReturn}{Returns}
+bool \+: True if a compleated packet is recived and false otherwise 
+\end{DoxyReturn}
+\Hypertarget{mouse_8h_aa02a132ad1773176c6cd6b6ad223757b}\label{mouse_8h_aa02a132ad1773176c6cd6b6ad223757b} 
+\index{mouse.h@{mouse.h}!mouse\_subscribe\_int@{mouse\_subscribe\_int}}
+\index{mouse\_subscribe\_int@{mouse\_subscribe\_int}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{mouse\_subscribe\_int()}{mouse\_subscribe\_int()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} mouse\+\_\+subscribe\+\_\+int (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint8\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{irq\+\_\+set }\end{DoxyParamCaption})}
+
+
+
+Subscribes to mouse interrupts. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em irq\+\_\+set} & \+: IRQ. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int \+: 0 if sucess and 1 otherwise. 
+\end{DoxyReturn}
+\Hypertarget{mouse_8h_a685ad2706aca36d9869a30a19b9f446a}\label{mouse_8h_a685ad2706aca36d9869a30a19b9f446a} 
+\index{mouse.h@{mouse.h}!mouse\_unsubscribe\_int@{mouse\_unsubscribe\_int}}
+\index{mouse\_unsubscribe\_int@{mouse\_unsubscribe\_int}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{mouse\_unsubscribe\_int()}{mouse\_unsubscribe\_int()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} mouse\+\_\+unsubscribe\+\_\+int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Unsubscribes to mouse interrupts. 
+
+\begin{DoxyReturn}{Returns}
+int \+: 0 if sucess and 1 otherwise. 
+\end{DoxyReturn}
+\Hypertarget{mouse_8h_aee5c2370851934948db8bdb3004e3070}\label{mouse_8h_aee5c2370851934948db8bdb3004e3070} 
+\index{mouse.h@{mouse.h}!write\_command@{write\_command}}
+\index{write\_command@{write\_command}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{write\_command()}{write\_command()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} write\+\_\+command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint8\+\_\+t}}}]{port,  }\item[{\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint8\+\_\+t}}}]{cmd }\end{DoxyParamCaption})}
+
+
+
+Writes a command to the specified port. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em port} & \+: The port to write the command to. \\
+\hline
+{\em cmd} & \+: The command to write. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int \+: 0 if sucess and 1 otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{mouse_8h_aee5c2370851934948db8bdb3004e3070_cgraph}
+\end{center}
+\end{figure}

@@ -1,0 +1,127 @@
+\doxysection{handler/game\+Local\+Controller.c File Reference}
+\hypertarget{gameLocalController_8c}{}\label{gameLocalController_8c}\index{handler/gameLocalController.c@{handler/gameLocalController.c}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include "{}game\+Local\+Controller.\+h"{}}\newline
+Include dependency graph for game\+Local\+Controller.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{gameLocalController_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{gameLocalController_8c_a648d9a30fd57790b0a20c733c91fa64d}{check\+Keyboard\+Input\+Game\+Local}} (\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint8\+\_\+t}} \mbox{\hyperlink{mainController_8c_aa1de7a5557e9d96b83cf03f73c92163f}{scancode}})
+\begin{DoxyCompactList}\small\item\em Checks the keyboard input during the local game. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{gameLocalController_8c_a9fcc195fedc7fdd94bae7d928a27726e}{check\+Game\+Local\+Click}} ()
+\begin{DoxyCompactList}\small\item\em Checks and processes mouse clicks during the local game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{bool}} \mbox{\hyperlink{gameLocalController_8c_a57a516bba0298057ffbc3433a650fad3}{cursor\+\_\+active}}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{gameLocalController_8c_aa135bb051c7a68877c688aaa5a9c64ab}{global\+\_\+counter}}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{bool}} \mbox{\hyperlink{gameLocalController_8c_a651940b4926afd229740c05195719e06}{change\+Turn}}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{enum}} \mbox{\hyperlink{gameLocalDraw_8h_a4fafe7abe8f831b458c3e05384a3fff6}{GAMESTATE}} \mbox{\hyperlink{gameLocalController_8c_ac65f21024c62203b384b8c36d88a7d7a}{game\+State}}
+\item 
+\mbox{\hyperlink{structPlayer}{Player}} \mbox{\hyperlink{gameLocalController_8c_a84ca794211044aa1810646b2e9b6177e}{p1}}
+\item 
+\mbox{\hyperlink{structPlayer}{Player}} \mbox{\hyperlink{gameLocalController_8c_a5b2fd7a008c2231968a9736a14aab00f}{p2}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{gameLocalController_8c_af37a893f866053706519a828940184d7}{crosshair}}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{gameLocalController_8c_ac3897a350075920efc6bab8d04cc1215}{winner}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{gameLocalController_8c_a9fcc195fedc7fdd94bae7d928a27726e}\label{gameLocalController_8c_a9fcc195fedc7fdd94bae7d928a27726e} 
+\index{gameLocalController.c@{gameLocalController.c}!checkGameLocalClick@{checkGameLocalClick}}
+\index{checkGameLocalClick@{checkGameLocalClick}!gameLocalController.c@{gameLocalController.c}}
+\doxysubsubsection{\texorpdfstring{checkGameLocalClick()}{checkGameLocalClick()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} check\+Game\+Local\+Click (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks and processes mouse clicks during the local game. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{gameLocalController_8c_a9fcc195fedc7fdd94bae7d928a27726e_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{gameLocalController_8c_a648d9a30fd57790b0a20c733c91fa64d}\label{gameLocalController_8c_a648d9a30fd57790b0a20c733c91fa64d} 
+\index{gameLocalController.c@{gameLocalController.c}!checkKeyboardInputGameLocal@{checkKeyboardInputGameLocal}}
+\index{checkKeyboardInputGameLocal@{checkKeyboardInputGameLocal}!gameLocalController.c@{gameLocalController.c}}
+\doxysubsubsection{\texorpdfstring{checkKeyboardInputGameLocal()}{checkKeyboardInputGameLocal()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} check\+Keyboard\+Input\+Game\+Local (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint8\+\_\+t}}}]{scancode }\end{DoxyParamCaption})}
+
+
+
+Checks the keyboard input during the local game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scancode} & \+: The scancode of the key pressed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int \+: Returns 1 if the ESC key was pressed, otherwise returns 0. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{gameLocalController_8c_a651940b4926afd229740c05195719e06}\label{gameLocalController_8c_a651940b4926afd229740c05195719e06} 
+\index{gameLocalController.c@{gameLocalController.c}!changeTurn@{changeTurn}}
+\index{changeTurn@{changeTurn}!gameLocalController.c@{gameLocalController.c}}
+\doxysubsubsection{\texorpdfstring{changeTurn}{changeTurn}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{bool}} change\+Turn\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{gameLocalController_8c_af37a893f866053706519a828940184d7}\label{gameLocalController_8c_af37a893f866053706519a828940184d7} 
+\index{gameLocalController.c@{gameLocalController.c}!crosshair@{crosshair}}
+\index{crosshair@{crosshair}!gameLocalController.c@{gameLocalController.c}}
+\doxysubsubsection{\texorpdfstring{crosshair}{crosshair}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}\texorpdfstring{$\ast$}{*} crosshair\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{gameLocalController_8c_a57a516bba0298057ffbc3433a650fad3}\label{gameLocalController_8c_a57a516bba0298057ffbc3433a650fad3} 
+\index{gameLocalController.c@{gameLocalController.c}!cursor\_active@{cursor\_active}}
+\index{cursor\_active@{cursor\_active}!gameLocalController.c@{gameLocalController.c}}
+\doxysubsubsection{\texorpdfstring{cursor\_active}{cursor\_active}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{bool}} cursor\+\_\+active\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{gameLocalController_8c_ac65f21024c62203b384b8c36d88a7d7a}\label{gameLocalController_8c_ac65f21024c62203b384b8c36d88a7d7a} 
+\index{gameLocalController.c@{gameLocalController.c}!gameState@{gameState}}
+\index{gameState@{gameState}!gameLocalController.c@{gameLocalController.c}}
+\doxysubsubsection{\texorpdfstring{gameState}{gameState}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{enum}} \mbox{\hyperlink{gameLocalDraw_8h_a4fafe7abe8f831b458c3e05384a3fff6}{GAMESTATE}} game\+State\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{gameLocalController_8c_aa135bb051c7a68877c688aaa5a9c64ab}\label{gameLocalController_8c_aa135bb051c7a68877c688aaa5a9c64ab} 
+\index{gameLocalController.c@{gameLocalController.c}!global\_counter@{global\_counter}}
+\index{global\_counter@{global\_counter}!gameLocalController.c@{gameLocalController.c}}
+\doxysubsubsection{\texorpdfstring{global\_counter}{global\_counter}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} global\+\_\+counter\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{gameLocalController_8c_a84ca794211044aa1810646b2e9b6177e}\label{gameLocalController_8c_a84ca794211044aa1810646b2e9b6177e} 
+\index{gameLocalController.c@{gameLocalController.c}!p1@{p1}}
+\index{p1@{p1}!gameLocalController.c@{gameLocalController.c}}
+\doxysubsubsection{\texorpdfstring{p1}{p1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPlayer}{Player}} p1\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{gameLocalController_8c_a5b2fd7a008c2231968a9736a14aab00f}\label{gameLocalController_8c_a5b2fd7a008c2231968a9736a14aab00f} 
+\index{gameLocalController.c@{gameLocalController.c}!p2@{p2}}
+\index{p2@{p2}!gameLocalController.c@{gameLocalController.c}}
+\doxysubsubsection{\texorpdfstring{p2}{p2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPlayer}{Player}} p2\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{gameLocalController_8c_ac3897a350075920efc6bab8d04cc1215}\label{gameLocalController_8c_ac3897a350075920efc6bab8d04cc1215} 
+\index{gameLocalController.c@{gameLocalController.c}!winner@{winner}}
+\index{winner@{winner}!gameLocalController.c@{gameLocalController.c}}
+\doxysubsubsection{\texorpdfstring{winner}{winner}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} winner}
+

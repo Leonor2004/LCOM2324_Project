@@ -1,0 +1,9 @@
+<map id="checkMainClick" name="checkMainClick">
+<area shape="rect" id="Node000001" title="Checks if a click is within the bounds of any main menu button." alt="" coords="5,31,129,56"/>
+<area shape="rect" id="Node000002" href="$game_8c.html#aa28fe08993f286a9e0e82fc84e94e9b8" title="This function is used to clear the board matrix, so the next player can choose their boats&#39; positions..." alt="" coords="177,5,269,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,31,163,25,164,30,130,36"/>
+<area shape="rect" id="Node000003" href="$serialport_8c.html#ab6648184bd83982ac14d483b7642f20f" title="Function that sends a byte through serial port." alt="" coords="197,55,250,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="130,50,183,59,183,64,129,56"/>
+<area shape="rect" id="Node000004" href="$utils_8c.html#a2b56f50ba159e9d5115ed1a75eff15d9" title=" " alt="" coords="317,55,416,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="250,65,304,65,304,70,250,70"/>
+</map>

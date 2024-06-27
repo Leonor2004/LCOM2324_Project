@@ -1,0 +1,181 @@
+\doxysection{view/game\+Remote\+Draw.c File Reference}
+\hypertarget{gameRemoteDraw_8c}{}\label{gameRemoteDraw_8c}\index{view/gameRemoteDraw.c@{view/gameRemoteDraw.c}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include "{}game\+Remote\+Draw.\+h"{}}\newline
+{\ttfamily \#include "{}../view/asset\+Draw.\+h"{}}\newline
+{\ttfamily \#include "{}controllers/keyboard/kbd.\+h"{}}\newline
+{\ttfamily \#include "{}controllers/mouse/mouse.\+h"{}}\newline
+{\ttfamily \#include "{}controllers/video\+\_\+graphics/graphics.\+h"{}}\newline
+{\ttfamily \#include "{}controllers/timer/timer.\+h"{}}\newline
+{\ttfamily \#include "{}controllers/serialport/serialport.\+h"{}}\newline
+{\ttfamily \#include "{}controllers/sprites/sprite.\+h"{}}\newline
+{\ttfamily \#include "{}controllers/macros.\+h"{}}\newline
+{\ttfamily \#include "{}handler/game\+Remote\+Controller.\+h"{}}\newline
+{\ttfamily \#include "{}model/boats.\+h"{}}\newline
+{\ttfamily \#include "{}model/game.\+h"{}}\newline
+{\ttfamily \#include "{}handler/menu\+Controller.\+h"{}}\newline
+Include dependency graph for game\+Remote\+Draw.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{gameRemoteDraw_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{gameRemoteDraw_8c_aed93e22654c3131a9b15dcc9999bd8c0}{draw\+Game\+Remote}} ()
+\begin{DoxyCompactList}\small\item\em Draws the remote game state on the screen. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{gameRemoteDraw_8c_adc42a114a522b76970f9bd78050a5054}{draw\+Remote\+Board}} ()
+\begin{DoxyCompactList}\small\item\em Draws the remote board state on the screen. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{gameRemoteDraw_8c_a3134fe0682c1c1c338821f52430c0f52}{draw\+Game\+Remote\+Cursor}} ()
+\begin{DoxyCompactList}\small\item\em Draws the game remote cursor state on the screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structPlayer}{Player}} \mbox{\hyperlink{gameRemoteDraw_8c_a84ca794211044aa1810646b2e9b6177e}{p1}}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{bool}} \mbox{\hyperlink{gameRemoteDraw_8c_a23a1d1b9c813b5e78e6b616211f4fc96}{cursor\+Is\+Active}}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{bool}} \mbox{\hyperlink{gameRemoteDraw_8c_a5d9bbe8f834b74032cb7c33cdeb39a71}{keyboard\+Is\+Active}}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{gameRemoteDraw_8c_a6150e0515f7202e2fb518f7206ed97dc}{x}}
+\item 
+int \mbox{\hyperlink{gameRemoteDraw_8c_a0a2f84ed7838f07779ae24c5a9086d33}{y}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{gameRemoteDraw_8c_af37a893f866053706519a828940184d7}{crosshair}}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{bool}} \mbox{\hyperlink{gameRemoteDraw_8c_a113876f97f3819f5ad5124b9d982fc11}{boats\+Drawn}} = \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{false}}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{bool}} \mbox{\hyperlink{gameRemoteDraw_8c_ab67f2b1e1a5800c11585a29a34d38c29}{one\+Is\+Selected}}
+\item 
+\mbox{\hyperlink{structSpot}{Spot}} \mbox{\hyperlink{gameRemoteDraw_8c_a2e5dc26fdbee50113bc04e638c865dad}{matrix}} \mbox{[}10\mbox{]}\mbox{[}10\mbox{]}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{enum}} \mbox{\hyperlink{mainController_8h_a7eabd788dcab19ca586663bf73deddf5}{MODE}} \mbox{\hyperlink{gameRemoteDraw_8c_a992aeab9e3be201c5a129b90e4a3a10d}{menu}}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{enum}} \mbox{\hyperlink{gameRemoteController_8h_aeedefe5b5e9c6b92d0cb54739df45e93}{THISPLAYER}} \mbox{\hyperlink{gameRemoteDraw_8c_a0d249cce3fd13d6e3b6fe1ad3c4995ff}{player\+\_\+status}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{gameRemoteDraw_8c_aed93e22654c3131a9b15dcc9999bd8c0}\label{gameRemoteDraw_8c_aed93e22654c3131a9b15dcc9999bd8c0} 
+\index{gameRemoteDraw.c@{gameRemoteDraw.c}!drawGameRemote@{drawGameRemote}}
+\index{drawGameRemote@{drawGameRemote}!gameRemoteDraw.c@{gameRemoteDraw.c}}
+\doxysubsubsection{\texorpdfstring{drawGameRemote()}{drawGameRemote()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} draw\+Game\+Remote (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws the remote game state on the screen. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{gameRemoteDraw_8c_aed93e22654c3131a9b15dcc9999bd8c0_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{gameRemoteDraw_8c_a3134fe0682c1c1c338821f52430c0f52}\label{gameRemoteDraw_8c_a3134fe0682c1c1c338821f52430c0f52} 
+\index{gameRemoteDraw.c@{gameRemoteDraw.c}!drawGameRemoteCursor@{drawGameRemoteCursor}}
+\index{drawGameRemoteCursor@{drawGameRemoteCursor}!gameRemoteDraw.c@{gameRemoteDraw.c}}
+\doxysubsubsection{\texorpdfstring{drawGameRemoteCursor()}{drawGameRemoteCursor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} draw\+Game\+Remote\+Cursor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws the game remote cursor state on the screen. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{gameRemoteDraw_8c_a3134fe0682c1c1c338821f52430c0f52_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{gameRemoteDraw_8c_adc42a114a522b76970f9bd78050a5054}\label{gameRemoteDraw_8c_adc42a114a522b76970f9bd78050a5054} 
+\index{gameRemoteDraw.c@{gameRemoteDraw.c}!drawRemoteBoard@{drawRemoteBoard}}
+\index{drawRemoteBoard@{drawRemoteBoard}!gameRemoteDraw.c@{gameRemoteDraw.c}}
+\doxysubsubsection{\texorpdfstring{drawRemoteBoard()}{drawRemoteBoard()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} draw\+Remote\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws the remote board state on the screen. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{gameRemoteDraw_8c_adc42a114a522b76970f9bd78050a5054_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{gameRemoteDraw_8c_a113876f97f3819f5ad5124b9d982fc11}\label{gameRemoteDraw_8c_a113876f97f3819f5ad5124b9d982fc11} 
+\index{gameRemoteDraw.c@{gameRemoteDraw.c}!boatsDrawn@{boatsDrawn}}
+\index{boatsDrawn@{boatsDrawn}!gameRemoteDraw.c@{gameRemoteDraw.c}}
+\doxysubsubsection{\texorpdfstring{boatsDrawn}{boatsDrawn}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{bool}} boats\+Drawn = \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{false}}}
+
+\Hypertarget{gameRemoteDraw_8c_af37a893f866053706519a828940184d7}\label{gameRemoteDraw_8c_af37a893f866053706519a828940184d7} 
+\index{gameRemoteDraw.c@{gameRemoteDraw.c}!crosshair@{crosshair}}
+\index{crosshair@{crosshair}!gameRemoteDraw.c@{gameRemoteDraw.c}}
+\doxysubsubsection{\texorpdfstring{crosshair}{crosshair}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}\texorpdfstring{$\ast$}{*} crosshair\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{gameRemoteDraw_8c_a23a1d1b9c813b5e78e6b616211f4fc96}\label{gameRemoteDraw_8c_a23a1d1b9c813b5e78e6b616211f4fc96} 
+\index{gameRemoteDraw.c@{gameRemoteDraw.c}!cursorIsActive@{cursorIsActive}}
+\index{cursorIsActive@{cursorIsActive}!gameRemoteDraw.c@{gameRemoteDraw.c}}
+\doxysubsubsection{\texorpdfstring{cursorIsActive}{cursorIsActive}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{bool}} cursor\+Is\+Active\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{gameRemoteDraw_8c_a5d9bbe8f834b74032cb7c33cdeb39a71}\label{gameRemoteDraw_8c_a5d9bbe8f834b74032cb7c33cdeb39a71} 
+\index{gameRemoteDraw.c@{gameRemoteDraw.c}!keyboardIsActive@{keyboardIsActive}}
+\index{keyboardIsActive@{keyboardIsActive}!gameRemoteDraw.c@{gameRemoteDraw.c}}
+\doxysubsubsection{\texorpdfstring{keyboardIsActive}{keyboardIsActive}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{bool}} keyboard\+Is\+Active\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{gameRemoteDraw_8c_a2e5dc26fdbee50113bc04e638c865dad}\label{gameRemoteDraw_8c_a2e5dc26fdbee50113bc04e638c865dad} 
+\index{gameRemoteDraw.c@{gameRemoteDraw.c}!matrix@{matrix}}
+\index{matrix@{matrix}!gameRemoteDraw.c@{gameRemoteDraw.c}}
+\doxysubsubsection{\texorpdfstring{matrix}{matrix}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSpot}{Spot}} matrix\mbox{[}10\mbox{]}\mbox{[}10\mbox{]}\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{gameRemoteDraw_8c_a992aeab9e3be201c5a129b90e4a3a10d}\label{gameRemoteDraw_8c_a992aeab9e3be201c5a129b90e4a3a10d} 
+\index{gameRemoteDraw.c@{gameRemoteDraw.c}!menu@{menu}}
+\index{menu@{menu}!gameRemoteDraw.c@{gameRemoteDraw.c}}
+\doxysubsubsection{\texorpdfstring{menu}{menu}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{enum}} \mbox{\hyperlink{mainController_8h_a7eabd788dcab19ca586663bf73deddf5}{MODE}} menu\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{gameRemoteDraw_8c_ab67f2b1e1a5800c11585a29a34d38c29}\label{gameRemoteDraw_8c_ab67f2b1e1a5800c11585a29a34d38c29} 
+\index{gameRemoteDraw.c@{gameRemoteDraw.c}!oneIsSelected@{oneIsSelected}}
+\index{oneIsSelected@{oneIsSelected}!gameRemoteDraw.c@{gameRemoteDraw.c}}
+\doxysubsubsection{\texorpdfstring{oneIsSelected}{oneIsSelected}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{bool}} one\+Is\+Selected\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{gameRemoteDraw_8c_a84ca794211044aa1810646b2e9b6177e}\label{gameRemoteDraw_8c_a84ca794211044aa1810646b2e9b6177e} 
+\index{gameRemoteDraw.c@{gameRemoteDraw.c}!p1@{p1}}
+\index{p1@{p1}!gameRemoteDraw.c@{gameRemoteDraw.c}}
+\doxysubsubsection{\texorpdfstring{p1}{p1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPlayer}{Player}} p1\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{gameRemoteDraw_8c_a0d249cce3fd13d6e3b6fe1ad3c4995ff}\label{gameRemoteDraw_8c_a0d249cce3fd13d6e3b6fe1ad3c4995ff} 
+\index{gameRemoteDraw.c@{gameRemoteDraw.c}!player\_status@{player\_status}}
+\index{player\_status@{player\_status}!gameRemoteDraw.c@{gameRemoteDraw.c}}
+\doxysubsubsection{\texorpdfstring{player\_status}{player\_status}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{enum}} \mbox{\hyperlink{gameRemoteController_8h_aeedefe5b5e9c6b92d0cb54739df45e93}{THISPLAYER}} player\+\_\+status\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{gameRemoteDraw_8c_a6150e0515f7202e2fb518f7206ed97dc}\label{gameRemoteDraw_8c_a6150e0515f7202e2fb518f7206ed97dc} 
+\index{gameRemoteDraw.c@{gameRemoteDraw.c}!x@{x}}
+\index{x@{x}!gameRemoteDraw.c@{gameRemoteDraw.c}}
+\doxysubsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} x\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{gameRemoteDraw_8c_a0a2f84ed7838f07779ae24c5a9086d33}\label{gameRemoteDraw_8c_a0a2f84ed7838f07779ae24c5a9086d33} 
+\index{gameRemoteDraw.c@{gameRemoteDraw.c}!y@{y}}
+\index{y@{y}!gameRemoteDraw.c@{gameRemoteDraw.c}}
+\doxysubsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily int y\hspace{0.3cm}{\ttfamily [extern]}}
+

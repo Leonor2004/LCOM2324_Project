@@ -1,0 +1,12 @@
+<map id="drawPlayerSecretBoard" name="drawPlayerSecretBoard">
+<area shape="rect" id="Node000001" title="Draws the secret board for a specified player." alt="" coords="5,5,180,31"/>
+<area shape="rect" id="Node000002" href="$sprite_8c.html#a740994f8c16c38bf18eaabac1f5eeeb9" title="Draws a sprite on the screen." alt="" coords="556,5,655,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="181,15,542,15,542,21,181,21"/>
+<area shape="rect" id="Node000004" href="$gameLocalDraw_8c.html#a6417f6c97a040704172cbd425bf3f540" title="Draws all sunken boats for a specified player." alt="" coords="228,31,329,56"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="181,27,215,32,214,37,180,33"/>
+<area shape="rect" id="Node000003" href="$graphics_8c.html#a6f895de9725f9f231f9a7f74b6087f60" title="Draws a pixel on the screen at the specified coordinates." alt="" coords="703,5,817,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="655,15,689,15,689,21,655,21"/>
+<area shape="rect" id="Node000005" href="$gameLocalDraw_8c.html#a489a9e82ff19241b8d425a338d0362ca" title="Draws a sunken boat on the screen." alt="" coords="377,31,508,56"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="330,41,364,41,364,46,330,46"/>
+<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="508,31,542,25,543,30,509,36"/>
+</map>

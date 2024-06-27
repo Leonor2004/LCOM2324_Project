@@ -1,0 +1,11 @@
+var searchData=
+[
+  ['p1_0',['p1',['../gameRemoteController_8c.html#a84ca794211044aa1810646b2e9b6177e',1,'p1:&#160;game.c'],['../game_8c.html#a84ca794211044aa1810646b2e9b6177e',1,'p1:&#160;game.c'],['../assetDraw_8c.html#a84ca794211044aa1810646b2e9b6177e',1,'p1:&#160;game.c'],['../gameLocalDraw_8c.html#a84ca794211044aa1810646b2e9b6177e',1,'p1:&#160;game.c'],['../gameRemoteDraw_8c.html#a84ca794211044aa1810646b2e9b6177e',1,'p1:&#160;game.c'],['../gameLocalController_8c.html#a84ca794211044aa1810646b2e9b6177e',1,'p1:&#160;game.c']]],
+  ['p2_1',['p2',['../gameLocalController_8c.html#a5b2fd7a008c2231968a9736a14aab00f',1,'p2:&#160;game.c'],['../game_8c.html#a5b2fd7a008c2231968a9736a14aab00f',1,'p2:&#160;game.c'],['../assetDraw_8c.html#a5b2fd7a008c2231968a9736a14aab00f',1,'p2:&#160;game.c'],['../gameLocalDraw_8c.html#a5b2fd7a008c2231968a9736a14aab00f',1,'p2:&#160;game.c']]],
+  ['player1_2',['player1',['../assetDraw_8c.html#a2b671abef1747815d90695e78d87efdf',1,'player1:&#160;sprite.c'],['../sprite_8c.html#a2b671abef1747815d90695e78d87efdf',1,'player1:&#160;sprite.c']]],
+  ['player1_5fwon_3',['player1_won',['../sprite_8c.html#a46e6d416cec4bfabf55d628231908466',1,'player1_won:&#160;sprite.c'],['../assetDraw_8c.html#a46e6d416cec4bfabf55d628231908466',1,'player1_won:&#160;sprite.c']]],
+  ['player2_4',['player2',['../sprite_8c.html#adb299685d4ece460f5c798bd2a180a69',1,'player2:&#160;sprite.c'],['../assetDraw_8c.html#adb299685d4ece460f5c798bd2a180a69',1,'player2:&#160;sprite.c']]],
+  ['player2_5fwon_5',['player2_won',['../sprite_8c.html#a272e2f246bb4612c684d75ea0cf6773d',1,'player2_won:&#160;sprite.c'],['../assetDraw_8c.html#a272e2f246bb4612c684d75ea0cf6773d',1,'player2_won:&#160;sprite.c']]],
+  ['player_5fstatus_6',['player_status',['../gameRemoteController_8c.html#a0d249cce3fd13d6e3b6fe1ad3c4995ff',1,'player_status:&#160;gameRemoteController.c'],['../mainController_8c.html#a0d249cce3fd13d6e3b6fe1ad3c4995ff',1,'player_status:&#160;gameRemoteController.c'],['../gameRemoteDraw_8c.html#a0d249cce3fd13d6e3b6fe1ad3c4995ff',1,'player_status:&#160;gameRemoteController.c']]],
+  ['previousstate_7',['previousstate',['../placingController_8c.html#ad96d2c0a642b29108768ba8aaa618487',1,'previousState:&#160;placingDraw.c'],['../placingDraw_8c.html#ad96d2c0a642b29108768ba8aaa618487',1,'previousState:&#160;placingDraw.c']]]
+];

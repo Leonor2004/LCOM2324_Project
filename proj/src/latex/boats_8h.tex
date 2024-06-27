@@ -1,0 +1,354 @@
+\doxysection{model/boats.h File Reference}
+\hypertarget{boats_8h}{}\label{boats_8h}\index{model/boats.h@{model/boats.h}}
+
+
+This file contains the boats functions.  
+
+
+{\ttfamily \#include "{}controllers/keyboard/kbd.\+h"{}}\newline
+{\ttfamily \#include "{}controllers/mouse/mouse.\+h"{}}\newline
+{\ttfamily \#include "{}controllers/video\+\_\+graphics/graphics.\+h"{}}\newline
+{\ttfamily \#include "{}controllers/timer/timer.\+h"{}}\newline
+{\ttfamily \#include "{}controllers/sprites/sprite.\+h"{}}\newline
+{\ttfamily \#include "{}controllers/macros.\+h"{}}\newline
+{\ttfamily \#include "{}view/placing\+Draw.\+h"{}}\newline
+{\ttfamily \#include "{}game.\+h"{}}\newline
+Include dependency graph for boats.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{boats_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{boats_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structBoat}{Boat}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{boats_8h_a53ecda37212e8cb10a4e0b03ee480178}{create\+\_\+boat}} (\mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*}sprite, \mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*}s\+\_\+sprite, \mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*}v\+\_\+sprite, \mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*}sv\+\_\+sprite, \mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*}small\+\_\+sprite, \mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*}small\+\_\+v\+\_\+sprite, \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{h}}, \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{w}}, \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} id)
+\begin{DoxyCompactList}\small\item\em Function that constructs and returns the boat created. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{boats_8h_aeb0beb1c033bb6b8296b5257ffd29f9f}{destroy\+\_\+boat}} (\mbox{\hyperlink{structBoat}{Boat}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{boat}})
+\begin{DoxyCompactList}\small\item\em Function that destroys a given boat. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{boats_8h_a2193e48de945895815551c92760fb0e4}{update\+Boat\+Pos}} (\mbox{\hyperlink{structBoat}{Boat}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{boat}}, \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{mouse_8c_a6150e0515f7202e2fb518f7206ed97dc}{x}}, \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{y}})
+\begin{DoxyCompactList}\small\item\em Function that updates the given boat\textquotesingle{}s position. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{boats_8h_a22e98b0e1d6fbf7d0c03c366417078ec}{load\+\_\+boats}} ()
+\begin{DoxyCompactList}\small\item\em Function that loads and creates the different boats sprites and attributes. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{boats_8h_a1c183e0a7752db704948678ff5101423}{draw\+Selected}} (\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{b}})
+\begin{DoxyCompactList}\small\item\em Function that draws the selected boat with id b. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{boats_8h_a283e28d26343249822bbe2fd8dd85606}{draw\+Boats}} ()
+\begin{DoxyCompactList}\small\item\em Function that draws that draws all the boats. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{boats_8h_af5c43372091bcc624a97b0840969c7ee}{fix\+The\+Selected}} ()
+\begin{DoxyCompactList}\small\item\em Function that fixes boats positions when overlapping. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{boats_8h_aaf196253a3fdd7bd12b7476ae7554f26}{move\+Selected}} (\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{y}}, \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{mouse_8c_a6150e0515f7202e2fb518f7206ed97dc}{x}})
+\begin{DoxyCompactList}\small\item\em Function that draws the boat in its new updated position. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{boats_8h_a88b1c793d5cdec566a2c5e7d7e65e8f9}{draw\+Boat}} (\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{b}})
+\begin{DoxyCompactList}\small\item\em Function that draws the boat sprite by receiving its id. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{boats_8h_a10010e7fb44c1ae6848555ca8b746ae4}{rotate\+Selected}} ()
+\begin{DoxyCompactList}\small\item\em Function that rotates the selected boat. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{bool}} \mbox{\hyperlink{boats_8h_a3362bc80faa6573567b18abb4132c1cb}{overlap\+Boats}} (\mbox{\hyperlink{structBoat}{Boat}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{boat}})
+\begin{DoxyCompactList}\small\item\em Function that checks overlapping between selected boat and already placed boat. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{boats_8h_a02ba0098b9adf06a01132eaa2f7c18f4}{set\+Spots}} (\mbox{\hyperlink{structBoat}{Boat}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{boat}})
+\begin{DoxyCompactList}\small\item\em Function that sets the spots occupied by the boat as taken by it. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{boats_8h_a7019bbff2024069ff0e47c6efd15bfe6}{clear\+Spots}} (\mbox{\hyperlink{structBoat}{Boat}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{boat}})
+\begin{DoxyCompactList}\small\item\em Function that sets the spots occupied by the given boat of the board set as untaken. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{bool}} \mbox{\hyperlink{boats_8h_ae61b80a9aa83df556264f5a488217f39}{all\+Boats\+Fixed}} ()
+\begin{DoxyCompactList}\small\item\em Function that returns true if all the boats are fixed and false otherwise. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file contains the boats functions. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{boats_8h_ae61b80a9aa83df556264f5a488217f39}\label{boats_8h_ae61b80a9aa83df556264f5a488217f39} 
+\index{boats.h@{boats.h}!allBoatsFixed@{allBoatsFixed}}
+\index{allBoatsFixed@{allBoatsFixed}!boats.h@{boats.h}}
+\doxysubsubsection{\texorpdfstring{allBoatsFixed()}{allBoatsFixed()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{bool}} all\+Boats\+Fixed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function that returns true if all the boats are fixed and false otherwise. 
+
+Evaluates if all boats are fixed.
+
+\begin{DoxyReturn}{Returns}
+bool \+: true if all fixed and false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{boats_8h_a7019bbff2024069ff0e47c6efd15bfe6}\label{boats_8h_a7019bbff2024069ff0e47c6efd15bfe6} 
+\index{boats.h@{boats.h}!clearSpots@{clearSpots}}
+\index{clearSpots@{clearSpots}!boats.h@{boats.h}}
+\doxysubsubsection{\texorpdfstring{clearSpots()}{clearSpots()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} clear\+Spots (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structBoat}{Boat}} \texorpdfstring{$\ast$}{*}}]{boat }\end{DoxyParamCaption})}
+
+
+
+Function that sets the spots occupied by the given boat of the board set as untaken. 
+
+Sets the spots occupied by the boat as untaken by it by setting the taken attribute to 0.
+
+
+\begin{DoxyParams}{Parameters}
+{\em boat} & \+: Spots occupied by the given boat will be set as untaken. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{boats_8h_a53ecda37212e8cb10a4e0b03ee480178}\label{boats_8h_a53ecda37212e8cb10a4e0b03ee480178} 
+\index{boats.h@{boats.h}!create\_boat@{create\_boat}}
+\index{create\_boat@{create\_boat}!boats.h@{boats.h}}
+\doxysubsubsection{\texorpdfstring{create\_boat()}{create\_boat()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structBoat}{Boat}} \texorpdfstring{$\ast$}{*} create\+\_\+boat (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*}}]{sprite,  }\item[{\mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*}}]{s\+\_\+sprite,  }\item[{\mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*}}]{v\+\_\+sprite,  }\item[{\mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*}}]{sv\+\_\+sprite,  }\item[{\mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*}}]{small\+\_\+sprite,  }\item[{\mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*}}]{small\+\_\+v\+\_\+sprite,  }\item[{\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}}}]{h,  }\item[{\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}}}]{w,  }\item[{\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}}}]{id }\end{DoxyParamCaption})}
+
+
+
+Function that constructs and returns the boat created. 
+
+It constructs the \doxylink{structBoat}{Boat}, allocates the boat object in a memory block and returns the boat that the construction fuction creates.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sprite} & \+: Horizontal boat\textquotesingle{}s sprite. \\
+\hline
+{\em s\+\_\+sprite} & \+: Horizontal selected boat\textquotesingle{}s sprite. \\
+\hline
+{\em v\+\_\+sprite} & \+: Vertical boat\textquotesingle{}s sprite. \\
+\hline
+{\em sv\+\_\+sprite} & \+: Vertical selected boat\textquotesingle{}s sprite. \\
+\hline
+{\em small\+\_\+sprite} & \+: Horizontal small boat\textquotesingle{}s sprite. \\
+\hline
+{\em small\+\_\+v\+\_\+sprite} & \+: Vertical small boat\textquotesingle{}s sprite. \\
+\hline
+{\em h} & \+: \doxylink{structBoat}{Boat}\textquotesingle{}s desired height. \\
+\hline
+{\em w} & \+: \doxylink{structBoat}{Boat}\textquotesingle{}s desired width. \\
+\hline
+{\em id} & \+: \doxylink{structBoat}{Boat}\textquotesingle{}s id. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Boat\texorpdfstring{$\ast$}{*} \+: \doxylink{structBoat}{Boat} created. 
+\end{DoxyReturn}
+\Hypertarget{boats_8h_aeb0beb1c033bb6b8296b5257ffd29f9f}\label{boats_8h_aeb0beb1c033bb6b8296b5257ffd29f9f} 
+\index{boats.h@{boats.h}!destroy\_boat@{destroy\_boat}}
+\index{destroy\_boat@{destroy\_boat}!boats.h@{boats.h}}
+\doxysubsubsection{\texorpdfstring{destroy\_boat()}{destroy\_boat()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} destroy\+\_\+boat (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structBoat}{Boat}} \texorpdfstring{$\ast$}{*}}]{boat }\end{DoxyParamCaption})}
+
+
+
+Function that destroys a given boat. 
+
+It destroys the boat and frees the block that was allocated for the boat.
+
+
+\begin{DoxyParams}{Parameters}
+{\em boat} & \+: \doxylink{structBoat}{Boat} to be destroyed. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{boats_8h_a88b1c793d5cdec566a2c5e7d7e65e8f9}\label{boats_8h_a88b1c793d5cdec566a2c5e7d7e65e8f9} 
+\index{boats.h@{boats.h}!drawBoat@{drawBoat}}
+\index{drawBoat@{drawBoat}!boats.h@{boats.h}}
+\doxysubsubsection{\texorpdfstring{drawBoat()}{drawBoat()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} draw\+Boat (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}}}]{b }\end{DoxyParamCaption})}
+
+
+
+Function that draws the boat sprite by receiving its id. 
+
+Receives boat\textquotesingle{}s id, checks its attributes and draws its sprite.
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & \+: \doxylink{structBoat}{Boat}\textquotesingle{}s id. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{boats_8h_a88b1c793d5cdec566a2c5e7d7e65e8f9_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{boats_8h_a283e28d26343249822bbe2fd8dd85606}\label{boats_8h_a283e28d26343249822bbe2fd8dd85606} 
+\index{boats.h@{boats.h}!drawBoats@{drawBoats}}
+\index{drawBoats@{drawBoats}!boats.h@{boats.h}}
+\doxysubsubsection{\texorpdfstring{drawBoats()}{drawBoats()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} draw\+Boats (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function that draws that draws all the boats. 
+
+Draws all the boats\textquotesingle{} sprites. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{boats_8h_a283e28d26343249822bbe2fd8dd85606_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{boats_8h_a1c183e0a7752db704948678ff5101423}\label{boats_8h_a1c183e0a7752db704948678ff5101423} 
+\index{boats.h@{boats.h}!drawSelected@{drawSelected}}
+\index{drawSelected@{drawSelected}!boats.h@{boats.h}}
+\doxysubsubsection{\texorpdfstring{drawSelected()}{drawSelected()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} draw\+Selected (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}}}]{b }\end{DoxyParamCaption})}
+
+
+
+Function that draws the selected boat with id b. 
+
+Draws selected boat.
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & \+: \doxylink{structBoat}{Boat}\textquotesingle{}s id. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{boats_8h_a1c183e0a7752db704948678ff5101423_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{boats_8h_af5c43372091bcc624a97b0840969c7ee}\label{boats_8h_af5c43372091bcc624a97b0840969c7ee} 
+\index{boats.h@{boats.h}!fixTheSelected@{fixTheSelected}}
+\index{fixTheSelected@{fixTheSelected}!boats.h@{boats.h}}
+\doxysubsubsection{\texorpdfstring{fixTheSelected()}{fixTheSelected()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} fix\+The\+Selected (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function that fixes boats positions when overlapping. 
+
+Bypasses overlap of Boats and adjusts their positions. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{boats_8h_af5c43372091bcc624a97b0840969c7ee_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{boats_8h_a22e98b0e1d6fbf7d0c03c366417078ec}\label{boats_8h_a22e98b0e1d6fbf7d0c03c366417078ec} 
+\index{boats.h@{boats.h}!load\_boats@{load\_boats}}
+\index{load\_boats@{load\_boats}!boats.h@{boats.h}}
+\doxysubsubsection{\texorpdfstring{load\_boats()}{load\_boats()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} load\+\_\+boats (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function that loads and creates the different boats sprites and attributes. 
+
+Creates all the different boats and loads them. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{boats_8h_a22e98b0e1d6fbf7d0c03c366417078ec_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{boats_8h_aaf196253a3fdd7bd12b7476ae7554f26}\label{boats_8h_aaf196253a3fdd7bd12b7476ae7554f26} 
+\index{boats.h@{boats.h}!moveSelected@{moveSelected}}
+\index{moveSelected@{moveSelected}!boats.h@{boats.h}}
+\doxysubsubsection{\texorpdfstring{moveSelected()}{moveSelected()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} move\+Selected (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}}}]{y,  }\item[{\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}}}]{x }\end{DoxyParamCaption})}
+
+
+
+Function that draws the boat in its new updated position. 
+
+Updates the boat position and redraws it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em y} & \+: \doxylink{structBoat}{Boat}\textquotesingle{}s vertical position. \\
+\hline
+{\em x} & \+: \doxylink{structBoat}{Boat}\textquotesingle{}s horizontal position. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{boats_8h_aaf196253a3fdd7bd12b7476ae7554f26_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{boats_8h_a3362bc80faa6573567b18abb4132c1cb}\label{boats_8h_a3362bc80faa6573567b18abb4132c1cb} 
+\index{boats.h@{boats.h}!overlapBoats@{overlapBoats}}
+\index{overlapBoats@{overlapBoats}!boats.h@{boats.h}}
+\doxysubsubsection{\texorpdfstring{overlapBoats()}{overlapBoats()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{bool}} overlap\+Boats (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structBoat}{Boat}} \texorpdfstring{$\ast$}{*}}]{boat }\end{DoxyParamCaption})}
+
+
+
+Function that checks overlapping between selected boat and already placed boat. 
+
+Checks if spot occuped by boat is already taken or not and returns true or false.
+
+
+\begin{DoxyParams}{Parameters}
+{\em boat} & \+: \doxylink{structBoat}{Boat} to be checked if overlaps with another one.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool \+: true if overlapps and false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{boats_8h_a10010e7fb44c1ae6848555ca8b746ae4}\label{boats_8h_a10010e7fb44c1ae6848555ca8b746ae4} 
+\index{boats.h@{boats.h}!rotateSelected@{rotateSelected}}
+\index{rotateSelected@{rotateSelected}!boats.h@{boats.h}}
+\doxysubsubsection{\texorpdfstring{rotateSelected()}{rotateSelected()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} rotate\+Selected (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function that rotates the selected boat. 
+
+Rotates boat so player can change from vertical to horizontal position or vice versa. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{boats_8h_a10010e7fb44c1ae6848555ca8b746ae4_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{boats_8h_a02ba0098b9adf06a01132eaa2f7c18f4}\label{boats_8h_a02ba0098b9adf06a01132eaa2f7c18f4} 
+\index{boats.h@{boats.h}!setSpots@{setSpots}}
+\index{setSpots@{setSpots}!boats.h@{boats.h}}
+\doxysubsubsection{\texorpdfstring{setSpots()}{setSpots()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} set\+Spots (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structBoat}{Boat}} \texorpdfstring{$\ast$}{*}}]{boat }\end{DoxyParamCaption})}
+
+
+
+Function that sets the spots occupied by the boat as taken by it. 
+
+Sets the spots occupied by the boat as taken by it by setting the .taken attribute of the spot to the boat\textquotesingle{}s id.
+
+
+\begin{DoxyParams}{Parameters}
+{\em boat} & \+: Spots will be set as taken by the id of the given boat. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{boats_8h_a2193e48de945895815551c92760fb0e4}\label{boats_8h_a2193e48de945895815551c92760fb0e4} 
+\index{boats.h@{boats.h}!updateBoatPos@{updateBoatPos}}
+\index{updateBoatPos@{updateBoatPos}!boats.h@{boats.h}}
+\doxysubsubsection{\texorpdfstring{updateBoatPos()}{updateBoatPos()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} update\+Boat\+Pos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structBoat}{Boat}} \texorpdfstring{$\ast$}{*}}]{boat,  }\item[{\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}}}]{x,  }\item[{\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}}}]{y }\end{DoxyParamCaption})}
+
+
+
+Function that updates the given boat\textquotesingle{}s position. 
+
+Moves the boat to a given (x,y) coordinates.
+
+
+\begin{DoxyParams}{Parameters}
+{\em boat} & \+: \doxylink{structBoat}{Boat} to be positioned. \\
+\hline
+{\em x} & \+: Horizontal position. \\
+\hline
+{\em y} & \+: Vertical position. \\
+\hline
+\end{DoxyParams}

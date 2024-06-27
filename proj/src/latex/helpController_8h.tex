@@ -1,0 +1,60 @@
+\doxysection{handler/help\+Controller.h File Reference}
+\hypertarget{helpController_8h}{}\label{helpController_8h}\index{handler/helpController.h@{handler/helpController.h}}
+
+
+This file contains the controllers of the help menu.  
+
+
+{\ttfamily \#include "{}controllers/keyboard/kbd.\+h"{}}\newline
+{\ttfamily \#include "{}controllers/mouse/mouse.\+h"{}}\newline
+{\ttfamily \#include "{}controllers/video\+\_\+graphics/graphics.\+h"{}}\newline
+{\ttfamily \#include "{}controllers/timer/timer.\+h"{}}\newline
+{\ttfamily \#include "{}controllers/macros.\+h"{}}\newline
+{\ttfamily \#include "{}model/game.\+h"{}}\newline
+{\ttfamily \#include "{}view/asset\+Draw.\+h"{}}\newline
+Include dependency graph for help\+Controller.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{helpController_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{helpController_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{helpController_8h_ad352355588997a5ac0255eb518b31880}{check\+Keyboard\+Input\+Help}} (\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint8\+\_\+t}} \mbox{\hyperlink{mainController_8c_aa1de7a5557e9d96b83cf03f73c92163f}{scancode}})
+\begin{DoxyCompactList}\small\item\em Checks if a given scancode corresponds to the ESC key break code. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file contains the controllers of the help menu. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{helpController_8h_ad352355588997a5ac0255eb518b31880}\label{helpController_8h_ad352355588997a5ac0255eb518b31880} 
+\index{helpController.h@{helpController.h}!checkKeyboardInputHelp@{checkKeyboardInputHelp}}
+\index{checkKeyboardInputHelp@{checkKeyboardInputHelp}!helpController.h@{helpController.h}}
+\doxysubsubsection{\texorpdfstring{checkKeyboardInputHelp()}{checkKeyboardInputHelp()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} check\+Keyboard\+Input\+Help (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint8\+\_\+t}}}]{scancode }\end{DoxyParamCaption})}
+
+
+
+Checks if a given scancode corresponds to the ESC key break code. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scancode} & \+: The scancode to be checked. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int \+: Returns 1 if the ESC key was pressed, otherwise returns 0. 
+\end{DoxyReturn}

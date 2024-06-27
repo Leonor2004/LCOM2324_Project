@@ -1,0 +1,23 @@
+<map id="drawPreviousPlacingMenu" name="drawPreviousPlacingMenu">
+<area shape="rect" id="Node000001" title="Draws the previous state of placing menu on the screen." alt="" coords="951,81,1144,107"/>
+<area shape="rect" id="Node000002" href="$placingDraw_8c.html#a0a7e8b71d4f37a8d0bb4e53971d4e352" title="Draws the placing menu on the screen." alt="" coords="765,81,903,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="937,97,903,97,903,91,937,91"/>
+<area shape="rect" id="Node000003" href="$placingController_8c.html#a8962834b25ea0f03b0bcbf36836a9000" title="Checks the keyboard input during the placing menu." alt="" coords="319,5,520,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="792,78,717,53,616,35,520,25,521,20,617,29,718,47,793,73"/>
+<area shape="rect" id="Node000004" href="$mainController_8c.html#a54b55b119fdadc6ceabfead41ef23be7" title="This function is the main function of the game, this is the function that checks the type of interrup..." alt="" coords="176,107,260,132"/>
+<area shape="poly" id="edge8_Node000002_Node000004" title=" " alt="" coords="752,90,661,85,550,82,429,85,308,97,256,109,254,104,308,91,428,80,549,77,661,79,752,84"/>
+<area shape="rect" id="Node000006" href="$placingController_8c.html#ade9c0cf310675c8eb75f86b239cb013d" title="Checks and processes mouse clicks in pop up menus in placing menu." alt="" coords="579,107,717,132"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="752,108,718,113,717,107,751,103"/>
+<area shape="rect" id="Node000008" href="$mainController_8c.html#aab7430a217db9969c46ead48adffbd05" title="This function is used to draw the mouse." alt="" coords="599,157,697,183"/>
+<area shape="poly" id="edge9_Node000002_Node000008" title=" " alt="" coords="792,115,718,146,683,160,681,155,716,141,790,110"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="347,37,309,52,267,80,234,108,231,104,264,76,307,48,345,32"/>
+<area shape="rect" id="Node000005" href="$main_8c.html#a7a72220d8366dd84709e79ce415862e5" title=" " alt="" coords="5,107,128,132"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="162,122,128,122,128,117,162,117"/>
+<area shape="rect" id="Node000007" href="$mainController_8c.html#a565ad7ccf48ae9f509fd64d69224cf18" title="This function is used to check mouse click." alt="" coords="373,107,465,132"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="565,122,466,122,466,117,565,117"/>
+<area shape="poly" id="edge7_Node000007_Node000004" title=" " alt="" coords="359,122,260,122,260,117,359,117"/>
+<area shape="poly" id="edge12_Node000008_Node000004" title=" " alt="" coords="586,171,457,164,308,146,259,135,261,129,308,141,458,159,586,166"/>
+<area shape="rect" id="Node000009" href="$menuController_8c.html#a7fa55fb20c2221fee17768c091656800" title="Handles keyboard input in the main menu." alt="" coords="308,208,531,233"/>
+<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="587,186,478,211,477,205,586,181"/>
+<area shape="poly" id="edge11_Node000009_Node000004" title=" " alt="" coords="345,206,307,191,264,163,231,134,234,130,267,159,309,186,347,202"/>
+</map>

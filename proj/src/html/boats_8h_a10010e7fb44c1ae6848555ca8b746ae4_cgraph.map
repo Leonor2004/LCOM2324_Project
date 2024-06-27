@@ -1,0 +1,13 @@
+<map id="rotateSelected" name="rotateSelected">
+<area shape="rect" id="Node000001" title="Function that rotates the selected boat." alt="" coords="5,31,123,56"/>
+<area shape="rect" id="Node000002" href="$boats_8c.html#a88b1c793d5cdec566a2c5e7d7e65e8f9" title="Function that draws the boat sprite by receiving its id." alt="" coords="174,5,258,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="123,31,160,25,161,30,124,36"/>
+<area shape="rect" id="Node000005" href="$boats_8c.html#a30b70b17eb1145743b12c162ea7d2cfb" title=" " alt="" coords="171,55,261,80"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="123,50,158,55,157,61,123,55"/>
+<area shape="rect" id="Node000003" href="$sprite_8c.html#a740994f8c16c38bf18eaabac1f5eeeb9" title="Draws a sprite on the screen." alt="" coords="320,5,419,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="258,15,306,15,306,21,258,21"/>
+<area shape="rect" id="Node000004" href="$graphics_8c.html#a6f895de9725f9f231f9a7f74b6087f60" title="Draws a pixel on the screen at the specified coordinates." alt="" coords="477,5,592,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="419,15,463,15,463,21,419,21"/>
+<area shape="rect" id="Node000006" href="$boats_8c.html#a2193e48de945895815551c92760fb0e4" title="Function that updates the given boat&#39;s position." alt="" coords="309,55,429,80"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="262,65,295,65,295,70,262,70"/>
+</map>

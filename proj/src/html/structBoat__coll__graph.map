@@ -1,0 +1,8 @@
+<map id="Boat" name="Boat">
+<area shape="rect" id="Node000001" title="struct that has information about a boat" alt="" coords="9,288,61,313"/>
+<area shape="rect" id="Node000002" href="$structSprite.html" title="Struct that has information about a Sprite." alt="" coords="5,5,65,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="35,44,29,125,29,225,36,288,31,288,23,225,24,125,30,44"/>
+<area shape="rect" id="Node000003" href="$structSpot.html" title="struct that has information about a spot in the board" alt="" coords="134,169,185,194"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="55,40,153,167,148,170,51,43"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="140,206,117,227,50,290,46,286,114,223,136,202"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="savePlayer1" name="savePlayer1">
+<area shape="rect" id="Node000001" title="This function is used to save the current matrix in matrix from player 1 struct." alt="" coords="5,5,108,31"/>
+<area shape="rect" id="Node000002" href="$game_8c.html#a92d59b43b0145d881f3463337ab94e95" title="This function is used to adjust boats positions from the spots in placing menu and in game." alt="" coords="156,5,256,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="108,15,142,15,142,21,108,21"/>
+</map>

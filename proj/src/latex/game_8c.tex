@@ -1,0 +1,202 @@
+\doxysection{model/game.c File Reference}
+\hypertarget{game_8c}{}\label{game_8c}\index{model/game.c@{model/game.c}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include "{}game.\+h"{}}\newline
+Include dependency graph for game.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{game_8c_ab305be39fd96600d4e529ba4e73f6360}{save\+Player1}} ()
+\begin{DoxyCompactList}\small\item\em This function is used to save the current matrix in matrix from player 1 struct. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{game_8c_a78c123d7a0a50be09784f9f2c422702c}{save\+Player2}} ()
+\begin{DoxyCompactList}\small\item\em This function is used to save the current matrix in matrix from player 2 struct. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{game_8c_a92d59b43b0145d881f3463337ab94e95}{adjust\+Board}} (\mbox{\hyperlink{structBoat}{Boat}} \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{boat}})
+\begin{DoxyCompactList}\small\item\em This function is used to adjust boats positions from the spots in placing menu and in game. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{game_8c_aa28fe08993f286a9e0e82fc84e94e9b8}{clear\+Board}} ()
+\begin{DoxyCompactList}\small\item\em This function is used to clear the board matrix, so the next player can choose their boats\textquotesingle{} positions. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{game_8c_a74a9dc049e8db47fa98c771368c0a463}{create\+Matrix}} (\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{mouse_8c_a6150e0515f7202e2fb518f7206ed97dc}{x}}, \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{y}}, \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{size}})
+\begin{DoxyCompactList}\small\item\em This function is used to create the board matrix. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{game_8c_a3eaa5a99d28d862ab7d2bc59e27ab3cf}{update\+Damage}} (\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} taken, \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{p}})
+\begin{DoxyCompactList}\small\item\em This function is used to increase the damage in the boat hit, so that when the damage is max it sinks. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structSpot}{Spot}} \mbox{\hyperlink{game_8c_a3a10f59604a5f26f54a953ba3d1b5cd1}{matrix}} \mbox{[}\mbox{\hyperlink{macros_8h_a2bd32349fcbeb6ee86434a65226cba1a}{MATRIX\+\_\+\+SIZE}}\mbox{]}\mbox{[}\mbox{\hyperlink{macros_8h_a2bd32349fcbeb6ee86434a65226cba1a}{MATRIX\+\_\+\+SIZE}}\mbox{]}
+\item 
+\mbox{\hyperlink{structPlayer}{Player}} \mbox{\hyperlink{game_8c_a84ca794211044aa1810646b2e9b6177e}{p1}}
+\item 
+\mbox{\hyperlink{structPlayer}{Player}} \mbox{\hyperlink{game_8c_a5b2fd7a008c2231968a9736a14aab00f}{p2}}
+\item 
+\mbox{\hyperlink{structBoat}{Boat}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{game_8c_a4752a3025dfb55d6bccc5352a30c94ed}{boat\+\_\+2p}}
+\item 
+\mbox{\hyperlink{structBoat}{Boat}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{game_8c_a2eed0596eb78f002d5d76497a320a4b0}{boat\+\_\+3p1}}
+\item 
+\mbox{\hyperlink{structBoat}{Boat}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{game_8c_acaae4ce98d433120032032eebab29b83}{boat\+\_\+3p2}}
+\item 
+\mbox{\hyperlink{structBoat}{Boat}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{game_8c_ae590ad2a81a6628d3c2b36ea0ed8ebaf}{boat\+\_\+4p}}
+\item 
+\mbox{\hyperlink{structBoat}{Boat}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{game_8c_aca812e1cf0515ae3438b2644f7b844bc}{boat\+\_\+5p}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{game_8c_a92d59b43b0145d881f3463337ab94e95}\label{game_8c_a92d59b43b0145d881f3463337ab94e95} 
+\index{game.c@{game.c}!adjustBoard@{adjustBoard}}
+\index{adjustBoard@{adjustBoard}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{adjustBoard()}{adjustBoard()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} adjust\+Board (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structBoat}{Boat}}}]{boat }\end{DoxyParamCaption})}
+
+
+
+This function is used to adjust boats positions from the spots in placing menu and in game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em boat} & \+: boat to adjust position. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{game_8c_aa28fe08993f286a9e0e82fc84e94e9b8}\label{game_8c_aa28fe08993f286a9e0e82fc84e94e9b8} 
+\index{game.c@{game.c}!clearBoard@{clearBoard}}
+\index{clearBoard@{clearBoard}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{clearBoard()}{clearBoard()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} clear\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function is used to clear the board matrix, so the next player can choose their boats\textquotesingle{} positions. 
+
+\Hypertarget{game_8c_a74a9dc049e8db47fa98c771368c0a463}\label{game_8c_a74a9dc049e8db47fa98c771368c0a463} 
+\index{game.c@{game.c}!createMatrix@{createMatrix}}
+\index{createMatrix@{createMatrix}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{createMatrix()}{createMatrix()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} create\+Matrix (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}}}]{x,  }\item[{\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}}}]{y,  }\item[{\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}}}]{size }\end{DoxyParamCaption})}
+
+
+
+This function is used to create the board matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \+: x coordinate. \\
+\hline
+{\em y} & \+: y coordinate. \\
+\hline
+{\em size} & \+: size of spot. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=275pt]{game_8c_a74a9dc049e8db47fa98c771368c0a463_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{game_8c_ab305be39fd96600d4e529ba4e73f6360}\label{game_8c_ab305be39fd96600d4e529ba4e73f6360} 
+\index{game.c@{game.c}!savePlayer1@{savePlayer1}}
+\index{savePlayer1@{savePlayer1}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{savePlayer1()}{savePlayer1()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} save\+Player1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function is used to save the current matrix in matrix from player 1 struct. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{game_8c_ab305be39fd96600d4e529ba4e73f6360_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{game_8c_a78c123d7a0a50be09784f9f2c422702c}\label{game_8c_a78c123d7a0a50be09784f9f2c422702c} 
+\index{game.c@{game.c}!savePlayer2@{savePlayer2}}
+\index{savePlayer2@{savePlayer2}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{savePlayer2()}{savePlayer2()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} save\+Player2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function is used to save the current matrix in matrix from player 2 struct. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{game_8c_a78c123d7a0a50be09784f9f2c422702c_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{game_8c_a3eaa5a99d28d862ab7d2bc59e27ab3cf}\label{game_8c_a3eaa5a99d28d862ab7d2bc59e27ab3cf} 
+\index{game.c@{game.c}!updateDamage@{updateDamage}}
+\index{updateDamage@{updateDamage}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{updateDamage()}{updateDamage()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} update\+Damage (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}}}]{taken,  }\item[{\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}}}]{p }\end{DoxyParamCaption})}
+
+
+
+This function is used to increase the damage in the boat hit, so that when the damage is max it sinks. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em taken} & \+: id of the boat that was hit. \\
+\hline
+{\em p} & \+: id of the player. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{game_8c_a4752a3025dfb55d6bccc5352a30c94ed}\label{game_8c_a4752a3025dfb55d6bccc5352a30c94ed} 
+\index{game.c@{game.c}!boat\_2p@{boat\_2p}}
+\index{boat\_2p@{boat\_2p}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{boat\_2p}{boat\_2p}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structBoat}{Boat}}\texorpdfstring{$\ast$}{*} boat\+\_\+2p}
+
+\Hypertarget{game_8c_a2eed0596eb78f002d5d76497a320a4b0}\label{game_8c_a2eed0596eb78f002d5d76497a320a4b0} 
+\index{game.c@{game.c}!boat\_3p1@{boat\_3p1}}
+\index{boat\_3p1@{boat\_3p1}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{boat\_3p1}{boat\_3p1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structBoat}{Boat}}\texorpdfstring{$\ast$}{*} boat\+\_\+3p1}
+
+\Hypertarget{game_8c_acaae4ce98d433120032032eebab29b83}\label{game_8c_acaae4ce98d433120032032eebab29b83} 
+\index{game.c@{game.c}!boat\_3p2@{boat\_3p2}}
+\index{boat\_3p2@{boat\_3p2}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{boat\_3p2}{boat\_3p2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structBoat}{Boat}}\texorpdfstring{$\ast$}{*} boat\+\_\+3p2}
+
+\Hypertarget{game_8c_ae590ad2a81a6628d3c2b36ea0ed8ebaf}\label{game_8c_ae590ad2a81a6628d3c2b36ea0ed8ebaf} 
+\index{game.c@{game.c}!boat\_4p@{boat\_4p}}
+\index{boat\_4p@{boat\_4p}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{boat\_4p}{boat\_4p}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structBoat}{Boat}}\texorpdfstring{$\ast$}{*} boat\+\_\+4p}
+
+\Hypertarget{game_8c_aca812e1cf0515ae3438b2644f7b844bc}\label{game_8c_aca812e1cf0515ae3438b2644f7b844bc} 
+\index{game.c@{game.c}!boat\_5p@{boat\_5p}}
+\index{boat\_5p@{boat\_5p}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{boat\_5p}{boat\_5p}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structBoat}{Boat}}\texorpdfstring{$\ast$}{*} boat\+\_\+5p}
+
+\Hypertarget{game_8c_a3a10f59604a5f26f54a953ba3d1b5cd1}\label{game_8c_a3a10f59604a5f26f54a953ba3d1b5cd1} 
+\index{game.c@{game.c}!matrix@{matrix}}
+\index{matrix@{matrix}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{matrix}{matrix}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSpot}{Spot}} matrix\mbox{[}\mbox{\hyperlink{macros_8h_a2bd32349fcbeb6ee86434a65226cba1a}{MATRIX\+\_\+\+SIZE}}\mbox{]}\mbox{[}\mbox{\hyperlink{macros_8h_a2bd32349fcbeb6ee86434a65226cba1a}{MATRIX\+\_\+\+SIZE}}\mbox{]}}
+
+\Hypertarget{game_8c_a84ca794211044aa1810646b2e9b6177e}\label{game_8c_a84ca794211044aa1810646b2e9b6177e} 
+\index{game.c@{game.c}!p1@{p1}}
+\index{p1@{p1}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{p1}{p1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPlayer}{Player}} p1}
+
+\Hypertarget{game_8c_a5b2fd7a008c2231968a9736a14aab00f}\label{game_8c_a5b2fd7a008c2231968a9736a14aab00f} 
+\index{game.c@{game.c}!p2@{p2}}
+\index{p2@{p2}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{p2}{p2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPlayer}{Player}} p2}
+

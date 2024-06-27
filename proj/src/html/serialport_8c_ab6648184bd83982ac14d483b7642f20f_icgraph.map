@@ -1,0 +1,20 @@
+<map id="send" name="send">
+<area shape="rect" id="Node000001" title="Function that sends a byte through serial port." alt="" coords="831,80,884,105"/>
+<area shape="rect" id="Node000002" href="$gameRemoteController_8c.html#a480128a793bcc06ba123bf9938c647d8" title="Checks and processes mouse clicks during the remote game." alt="" coords="600,5,783,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="828,74,781,44,751,33,753,28,784,40,831,69"/>
+<area shape="rect" id="Node000006" href="$gameRemoteController_8c.html#aadc111b67a5257791c96975feb9bf4cf" title="Checks the keyboard input during the remote game." alt="" coords="308,105,552,131"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="817,98,552,113,552,108,816,92"/>
+<area shape="rect" id="Node000007" href="$menuController_8c.html#a38f56dd6aff5e254e2d7a950a5315e6f" title="Checks if a click is within the bounds of any main menu button." alt="" coords="629,55,753,80"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="817,89,753,79,754,74,817,84"/>
+<area shape="rect" id="Node000008" href="$gameRemoteController_8c.html#aeffc8e6ce1fc081fe37077e72444fedc" title="Function that receives the byte and uses it." alt="" coords="391,155,469,180"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="818,107,783,117,609,148,470,166,469,161,608,143,782,111,817,102"/>
+<area shape="rect" id="Node000003" href="$mainController_8c.html#a565ad7ccf48ae9f509fd64d69224cf18" title="This function is used to check mouse click." alt="" coords="384,55,476,80"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="611,36,477,61,476,56,610,31"/>
+<area shape="rect" id="Node000004" href="$mainController_8c.html#a54b55b119fdadc6ceabfead41ef23be7" title="This function is the main function of the game, this is the function that checks the type of interrup..." alt="" coords="176,105,260,131"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="371,81,309,95,261,108,260,103,307,90,370,76"/>
+<area shape="rect" id="Node000005" href="$main_8c.html#a7a72220d8366dd84709e79ce415862e5" title=" " alt="" coords="5,105,128,131"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="162,121,128,121,128,115,162,115"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="294,121,260,121,260,115,294,115"/>
+<area shape="poly" id="edge8_Node000007_Node000003" title=" " alt="" coords="615,70,476,70,476,65,615,65"/>
+<area shape="poly" id="edge10_Node000008_Node000004" title=" " alt="" coords="376,160,307,145,260,132,261,127,309,139,378,155"/>
+</map>

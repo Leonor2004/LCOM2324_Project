@@ -1,0 +1,10 @@
+<map id="serial_clear" name="serial_clear">
+<area shape="rect" id="Node000001" title="Function that clears serial port interrupts." alt="" coords="435,5,532,31"/>
+<area shape="rect" id="Node000002" href="$mainController_8c.html#a54b55b119fdadc6ceabfead41ef23be7" title="This function is the main function of the game, this is the function that checks the type of interrup..." alt="" coords="176,5,260,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="421,21,260,21,260,15,421,15"/>
+<area shape="rect" id="Node000004" href="$gameRemoteController_8c.html#aeffc8e6ce1fc081fe37077e72444fedc" title="Function that receives the byte and uses it." alt="" coords="308,31,387,56"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="422,32,387,39,386,33,421,27"/>
+<area shape="rect" id="Node000003" href="$main_8c.html#a7a72220d8366dd84709e79ce415862e5" title=" " alt="" coords="5,5,128,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="162,21,128,21,128,15,162,15"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="294,36,260,29,261,24,295,30"/>
+</map>

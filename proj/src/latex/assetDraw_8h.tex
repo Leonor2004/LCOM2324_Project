@@ -1,0 +1,308 @@
+\doxysection{view/asset\+Draw.h File Reference}
+\hypertarget{assetDraw_8h}{}\label{assetDraw_8h}\index{view/assetDraw.h@{view/assetDraw.h}}
+
+
+This file contains the main draws for the game.  
+
+
+{\ttfamily \#include "{}controllers/sprites/sprite.\+h"{}}\newline
+{\ttfamily \#include "{}model/boats.\+h"{}}\newline
+{\ttfamily \#include "{}model/game.\+h"{}}\newline
+{\ttfamily \#include "{}game\+Local\+Draw.\+h"{}}\newline
+Include dependency graph for asset\+Draw.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{assetDraw_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{assetDraw_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{assetDraw_8h_a435ba4a0d4fc47fbf7b4e13acaa312e4}{draw\+Board}} ()
+\begin{DoxyCompactList}\small\item\em Draws the board sprite on the screen. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{assetDraw_8h_a96cd32b56c00f559fd63ee06de41502d}{draw\+Game\+Board}} ()
+\begin{DoxyCompactList}\small\item\em Draws the game board sprite on the screen. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{assetDraw_8h_a3199ca9d94cea6cf260ef0542632e813}{draw\+Name\+Player1}} ()
+\begin{DoxyCompactList}\small\item\em Draws the name sprite for player 1 on the screen. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{assetDraw_8h_ab2eb2696b133afbe8e58c53db488f993}{draw\+Quit\+Text}} ()
+\begin{DoxyCompactList}\small\item\em Draws the quit text sprite on the screen. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{assetDraw_8h_a1de89a090f9e55b6f7cc8a3e5acd0b75}{draw\+Go\+Game\+Text}} ()
+\begin{DoxyCompactList}\small\item\em Draws the go to game text text sprite on the screen. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{assetDraw_8h_aa397c407dfafda85a13a2089b2a39bac}{draw\+Next\+Player\+Text}} ()
+\begin{DoxyCompactList}\small\item\em Draws the go to next player text sprite on the screen. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{assetDraw_8h_a39346da9b816678a434a3f083d19d882}{draw\+Name\+Player2}} ()
+\begin{DoxyCompactList}\small\item\em Draws the name sprite for player 2 on the screen. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{assetDraw_8h_af8d7cbfa968959baff86edbd3ca36c01}{draw\+Cursor}} ()
+\begin{DoxyCompactList}\small\item\em Draws the cursor sprite on the screen. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{assetDraw_8h_a8cc3dfc68649cb8144885b11120b00a8}{draw\+Hand\+Cursor}} ()
+\begin{DoxyCompactList}\small\item\em Draws the hand cursor sprite on the screen. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{assetDraw_8h_a16e95c1aa375ed27180585335be4c819}{draw\+Crosshair}} ()
+\begin{DoxyCompactList}\small\item\em Draws the crosshair sprite on the screen. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{assetDraw_8h_aa2648feb6214b44043894f872d019cb6}{draw\+End\+Game}} (\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{p}})
+\begin{DoxyCompactList}\small\item\em Draws the end game sprite based on the winning player. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{assetDraw_8h_ae6eff9d8f2ea3166b8e3aeb31a188e08}{draw\+Waiting}} ()
+\begin{DoxyCompactList}\small\item\em Draws the waiting sprite on the screen. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{assetDraw_8h_ac7fd4bf9849e876154c6ded6c4dc6025}{draw\+My\+Turn}} ()
+\begin{DoxyCompactList}\small\item\em Draws the my\+Turn sprite on the screen. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{assetDraw_8h_adc5d4ba9ffd0f297f903ce1f17338dd4}{draw\+Time}} ()
+\begin{DoxyCompactList}\small\item\em Draws the time left for player\textquotesingle{}s turn to end. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file contains the main draws for the game. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{assetDraw_8h_a435ba4a0d4fc47fbf7b4e13acaa312e4}\label{assetDraw_8h_a435ba4a0d4fc47fbf7b4e13acaa312e4} 
+\index{assetDraw.h@{assetDraw.h}!drawBoard@{drawBoard}}
+\index{drawBoard@{drawBoard}!assetDraw.h@{assetDraw.h}}
+\doxysubsubsection{\texorpdfstring{drawBoard()}{drawBoard()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} draw\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws the board sprite on the screen. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{assetDraw_8h_a435ba4a0d4fc47fbf7b4e13acaa312e4_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{assetDraw_8h_a16e95c1aa375ed27180585335be4c819}\label{assetDraw_8h_a16e95c1aa375ed27180585335be4c819} 
+\index{assetDraw.h@{assetDraw.h}!drawCrosshair@{drawCrosshair}}
+\index{drawCrosshair@{drawCrosshair}!assetDraw.h@{assetDraw.h}}
+\doxysubsubsection{\texorpdfstring{drawCrosshair()}{drawCrosshair()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} draw\+Crosshair (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws the crosshair sprite on the screen. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{assetDraw_8h_a16e95c1aa375ed27180585335be4c819_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{assetDraw_8h_af8d7cbfa968959baff86edbd3ca36c01}\label{assetDraw_8h_af8d7cbfa968959baff86edbd3ca36c01} 
+\index{assetDraw.h@{assetDraw.h}!drawCursor@{drawCursor}}
+\index{drawCursor@{drawCursor}!assetDraw.h@{assetDraw.h}}
+\doxysubsubsection{\texorpdfstring{drawCursor()}{drawCursor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} draw\+Cursor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws the cursor sprite on the screen. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{assetDraw_8h_af8d7cbfa968959baff86edbd3ca36c01_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{assetDraw_8h_aa2648feb6214b44043894f872d019cb6}\label{assetDraw_8h_aa2648feb6214b44043894f872d019cb6} 
+\index{assetDraw.h@{assetDraw.h}!drawEndGame@{drawEndGame}}
+\index{drawEndGame@{drawEndGame}!assetDraw.h@{assetDraw.h}}
+\doxysubsubsection{\texorpdfstring{drawEndGame()}{drawEndGame()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} draw\+End\+Game (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}}}]{p }\end{DoxyParamCaption})}
+
+
+
+Draws the end game sprite based on the winning player. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \+: The number representing the winning player (1 or 2). \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{assetDraw_8h_aa2648feb6214b44043894f872d019cb6_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{assetDraw_8h_a96cd32b56c00f559fd63ee06de41502d}\label{assetDraw_8h_a96cd32b56c00f559fd63ee06de41502d} 
+\index{assetDraw.h@{assetDraw.h}!drawGameBoard@{drawGameBoard}}
+\index{drawGameBoard@{drawGameBoard}!assetDraw.h@{assetDraw.h}}
+\doxysubsubsection{\texorpdfstring{drawGameBoard()}{drawGameBoard()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} draw\+Game\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws the game board sprite on the screen. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{assetDraw_8h_a96cd32b56c00f559fd63ee06de41502d_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{assetDraw_8h_a1de89a090f9e55b6f7cc8a3e5acd0b75}\label{assetDraw_8h_a1de89a090f9e55b6f7cc8a3e5acd0b75} 
+\index{assetDraw.h@{assetDraw.h}!drawGoGameText@{drawGoGameText}}
+\index{drawGoGameText@{drawGoGameText}!assetDraw.h@{assetDraw.h}}
+\doxysubsubsection{\texorpdfstring{drawGoGameText()}{drawGoGameText()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} draw\+Go\+Game\+Text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws the go to game text text sprite on the screen. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{assetDraw_8h_a1de89a090f9e55b6f7cc8a3e5acd0b75_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{assetDraw_8h_a8cc3dfc68649cb8144885b11120b00a8}\label{assetDraw_8h_a8cc3dfc68649cb8144885b11120b00a8} 
+\index{assetDraw.h@{assetDraw.h}!drawHandCursor@{drawHandCursor}}
+\index{drawHandCursor@{drawHandCursor}!assetDraw.h@{assetDraw.h}}
+\doxysubsubsection{\texorpdfstring{drawHandCursor()}{drawHandCursor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} draw\+Hand\+Cursor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws the hand cursor sprite on the screen. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{assetDraw_8h_a8cc3dfc68649cb8144885b11120b00a8_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{assetDraw_8h_ac7fd4bf9849e876154c6ded6c4dc6025}\label{assetDraw_8h_ac7fd4bf9849e876154c6ded6c4dc6025} 
+\index{assetDraw.h@{assetDraw.h}!drawMyTurn@{drawMyTurn}}
+\index{drawMyTurn@{drawMyTurn}!assetDraw.h@{assetDraw.h}}
+\doxysubsubsection{\texorpdfstring{drawMyTurn()}{drawMyTurn()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} draw\+My\+Turn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws the my\+Turn sprite on the screen. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{assetDraw_8h_ac7fd4bf9849e876154c6ded6c4dc6025_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{assetDraw_8h_a3199ca9d94cea6cf260ef0542632e813}\label{assetDraw_8h_a3199ca9d94cea6cf260ef0542632e813} 
+\index{assetDraw.h@{assetDraw.h}!drawNamePlayer1@{drawNamePlayer1}}
+\index{drawNamePlayer1@{drawNamePlayer1}!assetDraw.h@{assetDraw.h}}
+\doxysubsubsection{\texorpdfstring{drawNamePlayer1()}{drawNamePlayer1()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} draw\+Name\+Player1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws the name sprite for player 1 on the screen. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{assetDraw_8h_a3199ca9d94cea6cf260ef0542632e813_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{assetDraw_8h_a39346da9b816678a434a3f083d19d882}\label{assetDraw_8h_a39346da9b816678a434a3f083d19d882} 
+\index{assetDraw.h@{assetDraw.h}!drawNamePlayer2@{drawNamePlayer2}}
+\index{drawNamePlayer2@{drawNamePlayer2}!assetDraw.h@{assetDraw.h}}
+\doxysubsubsection{\texorpdfstring{drawNamePlayer2()}{drawNamePlayer2()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} draw\+Name\+Player2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws the name sprite for player 2 on the screen. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{assetDraw_8h_a39346da9b816678a434a3f083d19d882_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{assetDraw_8h_aa397c407dfafda85a13a2089b2a39bac}\label{assetDraw_8h_aa397c407dfafda85a13a2089b2a39bac} 
+\index{assetDraw.h@{assetDraw.h}!drawNextPlayerText@{drawNextPlayerText}}
+\index{drawNextPlayerText@{drawNextPlayerText}!assetDraw.h@{assetDraw.h}}
+\doxysubsubsection{\texorpdfstring{drawNextPlayerText()}{drawNextPlayerText()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} draw\+Next\+Player\+Text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws the go to next player text sprite on the screen. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{assetDraw_8h_aa397c407dfafda85a13a2089b2a39bac_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{assetDraw_8h_ab2eb2696b133afbe8e58c53db488f993}\label{assetDraw_8h_ab2eb2696b133afbe8e58c53db488f993} 
+\index{assetDraw.h@{assetDraw.h}!drawQuitText@{drawQuitText}}
+\index{drawQuitText@{drawQuitText}!assetDraw.h@{assetDraw.h}}
+\doxysubsubsection{\texorpdfstring{drawQuitText()}{drawQuitText()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} draw\+Quit\+Text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws the quit text sprite on the screen. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{assetDraw_8h_ab2eb2696b133afbe8e58c53db488f993_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{assetDraw_8h_adc5d4ba9ffd0f297f903ce1f17338dd4}\label{assetDraw_8h_adc5d4ba9ffd0f297f903ce1f17338dd4} 
+\index{assetDraw.h@{assetDraw.h}!drawTime@{drawTime}}
+\index{drawTime@{drawTime}!assetDraw.h@{assetDraw.h}}
+\doxysubsubsection{\texorpdfstring{drawTime()}{drawTime()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} draw\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws the time left for player\textquotesingle{}s turn to end. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{assetDraw_8h_adc5d4ba9ffd0f297f903ce1f17338dd4_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{assetDraw_8h_ae6eff9d8f2ea3166b8e3aeb31a188e08}\label{assetDraw_8h_ae6eff9d8f2ea3166b8e3aeb31a188e08} 
+\index{assetDraw.h@{assetDraw.h}!drawWaiting@{drawWaiting}}
+\index{drawWaiting@{drawWaiting}!assetDraw.h@{assetDraw.h}}
+\doxysubsubsection{\texorpdfstring{drawWaiting()}{drawWaiting()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} draw\+Waiting (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws the waiting sprite on the screen. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{assetDraw_8h_ae6eff9d8f2ea3166b8e3aeb31a188e08_cgraph}
+\end{center}
+\end{figure}

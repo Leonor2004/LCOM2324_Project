@@ -1,0 +1,9 @@
+<map id="load_boats" name="load_boats">
+<area shape="rect" id="Node000001" title="Function that loads and creates the different boats sprites and attributes." alt="" coords="5,31,99,56"/>
+<area shape="rect" id="Node000002" href="$boats_8c.html#a53ecda37212e8cb10a4e0b03ee480178" title="Function that constructs and returns the boat created." alt="" coords="166,5,265,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,34,152,25,153,30,99,39"/>
+<area shape="rect" id="Node000003" href="$sprite_8c.html#a1ee15a80618d000d7d451c09f4ed347e" title="Loads boat sprites." alt="" coords="147,55,284,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="99,48,133,53,132,58,99,53"/>
+<area shape="rect" id="Node000004" href="$sprite_8c.html#ad5648ba77a90e532ec556dda3a76716a" title="Create a sprite object." alt="" coords="332,55,439,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="284,65,318,65,318,70,284,70"/>
+</map>

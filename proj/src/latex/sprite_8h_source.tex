@@ -1,0 +1,108 @@
+\doxysection{sprite.\+h}
+\hypertarget{sprite_8h_source}{}\label{sprite_8h_source}\index{controllers/sprites/sprite.h@{controllers/sprites/sprite.h}}
+\mbox{\hyperlink{sprite_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ \_LCOM\_SPRITE\_H\_}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ \_LCOM\_SPRITE\_H\_}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structSprite}{Sprite}}\{}
+\DoxyCodeLine{00016\ \ \ \ \ uint16\_t\ \mbox{\hyperlink{structSprite_a7d2d72b3ea47dab6db0ada4b36017d7a}{height}},\ \mbox{\hyperlink{structSprite_a126fa60a3de74e112dc5fa7ab1809f37}{width}};}
+\DoxyCodeLine{00017\ \ \ \ \ uint32\_t\ *\mbox{\hyperlink{structSprite_a394114f3fce04459a1593a68166c8621}{colors}};}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structSprite_ab36028dcefdd4bf024c52c8d9519a283}{x}};}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structSprite_a363e26017ee2aaed8636f7dab92af2cd}{y}};}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{enum}\ xpm\_image\_type\ \mbox{\hyperlink{structSprite_aab49911cba4886bb8091336391c5b034}{type}};}
+\DoxyCodeLine{00021\ \}\ \mbox{\hyperlink{structSprite}{Sprite}};\ }
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#include\ "{}../macros.h"{}}}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#include\ "{}assets/images/darkMain.xpm"{}}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#include\ "{}assets/images/lightMain.xpm"{}}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#include\ "{}assets/images/sunsetMain.xpm"{}}}
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#include\ "{}assets/title.xpm"{}}}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#include\ "{}assets/board.xpm"{}}}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#include\ "{}assets/images/helpMenu.xpm"{}}}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \textcolor{preprocessor}{\#include\ "{}assets/cursor/cursor.xpm"{}}}
+\DoxyCodeLine{00034\ \textcolor{preprocessor}{\#include\ "{}assets/cursor/hand\_cursor.xpm"{}}}
+\DoxyCodeLine{00035\ \textcolor{preprocessor}{\#include\ "{}assets/cursor/crosshair.xpm"{}}}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#include\ "{}assets/buttons/button\_local.xpm"{}}}
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#include\ "{}assets/buttons/button\_help.xpm"{}}}
+\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#include\ "{}assets/buttons/button\_quit.xpm"{}}}
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#include\ "{}assets/buttons/button\_next.xpm"{}}}
+\DoxyCodeLine{00041\ \textcolor{preprocessor}{\#include\ "{}assets/buttons/button\_remote.xpm"{}}}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \textcolor{preprocessor}{\#include\ "{}assets/boats/boat\_2p\_w.xpm"{}}}
+\DoxyCodeLine{00044\ \textcolor{preprocessor}{\#include\ "{}assets/boats/boat\_3p\_w.xpm"{}}}
+\DoxyCodeLine{00045\ \textcolor{preprocessor}{\#include\ "{}assets/boats/boat\_4p\_w.xpm"{}}}
+\DoxyCodeLine{00046\ \textcolor{preprocessor}{\#include\ "{}assets/boats/boat\_5p\_w.xpm"{}}}
+\DoxyCodeLine{00047\ \textcolor{preprocessor}{\#include\ "{}assets/boats/boat\_2p\_b.xpm"{}}}
+\DoxyCodeLine{00048\ \textcolor{preprocessor}{\#include\ "{}assets/boats/boat\_3p\_b.xpm"{}}}
+\DoxyCodeLine{00049\ \textcolor{preprocessor}{\#include\ "{}assets/boats/boat\_4p\_b.xpm"{}}}
+\DoxyCodeLine{00050\ \textcolor{preprocessor}{\#include\ "{}assets/boats/boat\_5p\_b.xpm"{}}}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \textcolor{preprocessor}{\#include\ "{}assets/boats/boat\_2p\_w\_V.xpm"{}}}
+\DoxyCodeLine{00053\ \textcolor{preprocessor}{\#include\ "{}assets/boats/boat\_3p\_w\_V.xpm"{}}}
+\DoxyCodeLine{00054\ \textcolor{preprocessor}{\#include\ "{}assets/boats/boat\_4p\_w\_V.xpm"{}}}
+\DoxyCodeLine{00055\ \textcolor{preprocessor}{\#include\ "{}assets/boats/boat\_5p\_w\_V.xpm"{}}}
+\DoxyCodeLine{00056\ \textcolor{preprocessor}{\#include\ "{}assets/boats/boat\_2p\_b\_V.xpm"{}}}
+\DoxyCodeLine{00057\ \textcolor{preprocessor}{\#include\ "{}assets/boats/boat\_3p\_b\_V.xpm"{}}}
+\DoxyCodeLine{00058\ \textcolor{preprocessor}{\#include\ "{}assets/boats/boat\_4p\_b\_V.xpm"{}}}
+\DoxyCodeLine{00059\ \textcolor{preprocessor}{\#include\ "{}assets/boats/boat\_5p\_b\_V.xpm"{}}}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \textcolor{preprocessor}{\#include\ "{}assets/popups/sure\_quit\_text.xpm"{}}}
+\DoxyCodeLine{00062\ \textcolor{preprocessor}{\#include\ "{}assets/popups/sure\_next\_player.xpm"{}}}
+\DoxyCodeLine{00063\ \textcolor{preprocessor}{\#include\ "{}assets/popups/sure\_go\_game.xpm"{}}}
+\DoxyCodeLine{00064\ \textcolor{preprocessor}{\#include\ "{}assets/popups/player1.xpm"{}}}
+\DoxyCodeLine{00065\ \textcolor{preprocessor}{\#include\ "{}assets/popups/player2.xpm"{}}}
+\DoxyCodeLine{00066\ \textcolor{preprocessor}{\#include\ "{}assets/popups/player1\_won.xpm"{}}}
+\DoxyCodeLine{00067\ \textcolor{preprocessor}{\#include\ "{}assets/popups/player2\_won.xpm"{}}}
+\DoxyCodeLine{00068\ \textcolor{preprocessor}{\#include\ "{}assets/popups/waiting1.xpm"{}}}
+\DoxyCodeLine{00069\ \textcolor{preprocessor}{\#include\ "{}assets/popups/myTurn.xpm"{}}}
+\DoxyCodeLine{00070\ \textcolor{preprocessor}{\#include\ "{}assets/choosing.xpm"{}}}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ \textcolor{preprocessor}{\#include\ "{}assets/game\_board.xpm"{}}}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ \textcolor{preprocessor}{\#include\ "{}assets/small\_boats/small\_boat\_2p\_b.xpm"{}}}
+\DoxyCodeLine{00075\ \textcolor{preprocessor}{\#include\ "{}assets/small\_boats/small\_boat\_3p\_b.xpm"{}}}
+\DoxyCodeLine{00076\ \textcolor{preprocessor}{\#include\ "{}assets/small\_boats/small\_boat\_4p\_b.xpm"{}}}
+\DoxyCodeLine{00077\ \textcolor{preprocessor}{\#include\ "{}assets/small\_boats/small\_boat\_5p\_b.xpm"{}}}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00079\ \textcolor{preprocessor}{\#include\ "{}assets/small\_boats/small\_boat\_2p\_b\_V.xpm"{}}}
+\DoxyCodeLine{00080\ \textcolor{preprocessor}{\#include\ "{}assets/small\_boats/small\_boat\_3p\_b\_V.xpm"{}}}
+\DoxyCodeLine{00081\ \textcolor{preprocessor}{\#include\ "{}assets/small\_boats/small\_boat\_4p\_b\_V.xpm"{}}}
+\DoxyCodeLine{00082\ \textcolor{preprocessor}{\#include\ "{}assets/small\_boats/small\_boat\_5p\_b\_V.xpm"{}}}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00084\ \textcolor{preprocessor}{\#include\ "{}assets/numbers/zero.xpm"{}}}
+\DoxyCodeLine{00085\ \textcolor{preprocessor}{\#include\ "{}assets/numbers/one.xpm"{}}}
+\DoxyCodeLine{00086\ \textcolor{preprocessor}{\#include\ "{}assets/numbers/two.xpm"{}}}
+\DoxyCodeLine{00087\ \textcolor{preprocessor}{\#include\ "{}assets/numbers/three.xpm"{}}}
+\DoxyCodeLine{00088\ \textcolor{preprocessor}{\#include\ "{}assets/numbers/four.xpm"{}}}
+\DoxyCodeLine{00089\ \textcolor{preprocessor}{\#include\ "{}assets/numbers/five.xpm"{}}}
+\DoxyCodeLine{00090\ \textcolor{preprocessor}{\#include\ "{}assets/numbers/six.xpm"{}}}
+\DoxyCodeLine{00091\ \textcolor{preprocessor}{\#include\ "{}assets/numbers/seven.xpm"{}}}
+\DoxyCodeLine{00092\ \textcolor{preprocessor}{\#include\ "{}assets/numbers/eight.xpm"{}}}
+\DoxyCodeLine{00093\ \textcolor{preprocessor}{\#include\ "{}assets/numbers/nine.xpm"{}}}
+\DoxyCodeLine{00094\ \textcolor{preprocessor}{\#include\ "{}assets/numbers/ten.xpm"{}}}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00096\ \textcolor{preprocessor}{\#include\ "{}../video\_graphics/graphics.h"{}}}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00106\ \mbox{\hyperlink{structSprite}{Sprite}}\ *\mbox{\hyperlink{sprite_8h_ad5648ba77a90e532ec556dda3a76716a}{create\_sprite}}(xpm\_map\_t\ sprite,\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{mouse_8c_a6150e0515f7202e2fb518f7206ed97dc}{x}},\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{y}});}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00113\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{sprite_8h_af16c6befaac9ffb673b9e3c798d542ed}{destroy\_sprite}}(\mbox{\hyperlink{structSprite}{Sprite}}\ *sp);}
+\DoxyCodeLine{00114\ }
+\DoxyCodeLine{00119\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{sprite_8h_a0c563ef8fad5087ec7af8a790a283203}{load\_game\_sprites}}();}
+\DoxyCodeLine{00120\ }
+\DoxyCodeLine{00127\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{sprite_8h_a1ee15a80618d000d7d451c09f4ed347e}{load\_boat\_sprites}}(\textcolor{keywordtype}{int}\ \mbox{\hyperlink{mouse_8c_a6150e0515f7202e2fb518f7206ed97dc}{x}},\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{y}});}
+\DoxyCodeLine{00128\ }
+\DoxyCodeLine{00135\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{sprite_8h_a9dfa3ebee661298759b6509e8b5ff335}{load\_small\_boat\_sprites}}(\textcolor{keywordtype}{int}\ \mbox{\hyperlink{mouse_8c_a6150e0515f7202e2fb518f7206ed97dc}{x}},\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{y}});}
+\DoxyCodeLine{00136\ }
+\DoxyCodeLine{00141\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{sprite_8h_ab400ea69c15b7ebc9a5cc15b26d7429b}{destroy\_game\_sprites}}();}
+\DoxyCodeLine{00142\ }
+\DoxyCodeLine{00148\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{sprite_8h_a740994f8c16c38bf18eaabac1f5eeeb9}{draw\_sprite}}(\mbox{\hyperlink{structSprite}{Sprite}}\ *sp);}
+\DoxyCodeLine{00149\ }
+\DoxyCodeLine{00150\ }
+\DoxyCodeLine{00151\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,7 @@
+<map id="checkGameRemoteClick" name="checkGameRemoteClick">
+<area shape="rect" id="Node000001" title="Checks and processes mouse clicks during the remote game." alt="" coords="5,5,188,31"/>
+<area shape="rect" id="Node000002" href="$serialport_8c.html#ab6648184bd83982ac14d483b7642f20f" title="Function that sends a byte through serial port." alt="" coords="236,5,289,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="188,15,222,15,222,21,188,21"/>
+<area shape="rect" id="Node000003" href="$utils_8c.html#a2b56f50ba159e9d5115ed1a75eff15d9" title=" " alt="" coords="337,5,436,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="290,15,324,15,324,21,290,21"/>
+</map>

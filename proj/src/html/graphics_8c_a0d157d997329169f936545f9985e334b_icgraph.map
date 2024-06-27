@@ -1,0 +1,27 @@
+<map id="swap_buffers" name="swap_buffers">
+<area shape="rect" id="Node000001" title="Swaps the contents of the double buffer with the actual video memory." alt="" coords="959,56,1067,81"/>
+<area shape="rect" id="Node000002" href="$gameLocalController_8c.html#a9fcc195fedc7fdd94bae7d928a27726e" title="Checks and processes mouse clicks during the local game." alt="" coords="745,5,911,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="952,55,875,33,876,28,953,50"/>
+<area shape="rect" id="Node000004" href="$mainController_8c.html#a54b55b119fdadc6ceabfead41ef23be7" title="This function is the main function of the game, this is the function that checks the type of interrup..." alt="" coords="176,157,260,183"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="945,67,823,63,664,67,576,74,485,85,396,101,309,123,270,140,239,159,236,155,268,135,307,118,394,96,485,80,575,69,663,62,823,58,945,62"/>
+<area shape="rect" id="Node000006" href="$gameRemoteDraw_8c.html#aed93e22654c3131a9b15dcc9999bd8c0" title="Draws the remote game state on the screen." alt="" coords="756,157,900,183"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="978,91,853,160,851,155,975,86"/>
+<area shape="rect" id="Node000003" href="$mainController_8c.html#a565ad7ccf48ae9f509fd64d69224cf18" title="This function is used to check mouse click." alt="" coords="384,5,476,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="732,21,476,21,476,15,732,15"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="371,28,339,37,309,52,281,77,258,106,227,159,223,156,253,103,277,73,307,48,337,32,370,23"/>
+<area shape="rect" id="Node000005" href="$main_8c.html#a7a72220d8366dd84709e79ce415862e5" title=" " alt="" coords="5,157,128,183"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="162,173,128,173,128,167,162,167"/>
+<area shape="poly" id="edge9_Node000006_Node000004" title=" " alt="" coords="742,159,697,154,502,136,417,136,308,147,256,160,254,155,308,142,417,131,502,130,698,149,743,154"/>
+<area shape="rect" id="Node000007" href="$gameRemoteController_8c.html#aadc111b67a5257791c96975feb9bf4cf" title="Checks the keyboard input during the remote game." alt="" coords="308,157,552,183"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="742,173,552,173,552,167,742,167"/>
+<area shape="rect" id="Node000008" href="$mainController_8c.html#aab7430a217db9969c46ead48adffbd05" title="This function is used to draw the mouse." alt="" coords="600,208,697,233"/>
+<area shape="poly" id="edge10_Node000006_Node000008" title=" " alt="" coords="770,189,695,210,694,205,768,184"/>
+<area shape="rect" id="Node000010" href="$gameRemoteController_8c.html#aeffc8e6ce1fc081fe37077e72444fedc" title="Function that receives the byte and uses it." alt="" coords="609,283,688,308"/>
+<area shape="poly" id="edge14_Node000006_Node000010" title=" " alt="" coords="799,193,669,285,666,280,796,189"/>
+<area shape="poly" id="edge8_Node000007_Node000004" title=" " alt="" coords="294,173,260,173,260,167,294,167"/>
+<area shape="poly" id="edge13_Node000008_Node000004" title=" " alt="" coords="586,222,457,215,308,197,259,185,261,180,308,191,458,209,586,217"/>
+<area shape="rect" id="Node000009" href="$menuController_8c.html#a7fa55fb20c2221fee17768c091656800" title="Handles keyboard input in the main menu." alt="" coords="319,259,541,284"/>
+<area shape="poly" id="edge11_Node000008_Node000009" title=" " alt="" coords="587,237,486,261,485,256,586,232"/>
+<area shape="poly" id="edge12_Node000009_Node000004" title=" " alt="" coords="347,257,307,242,264,214,231,185,234,181,267,209,309,237,349,252"/>
+<area shape="poly" id="edge15_Node000010_Node000004" title=" " alt="" coords="596,312,535,324,460,330,421,329,382,324,343,314,307,299,274,274,250,242,232,210,221,184,226,182,237,207,254,239,278,270,309,294,345,309,383,319,421,323,460,325,534,319,595,307"/>
+</map>

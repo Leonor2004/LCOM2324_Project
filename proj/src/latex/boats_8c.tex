@@ -1,0 +1,648 @@
+\doxysection{model/boats.c File Reference}
+\hypertarget{boats_8c}{}\label{boats_8c}\index{model/boats.c@{model/boats.c}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include "{}boats.\+h"{}}\newline
+Include dependency graph for boats.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{boats_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structBoat}{Boat}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{boats_8c_a53ecda37212e8cb10a4e0b03ee480178}{create\+\_\+boat}} (\mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*}sprite, \mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*}s\+\_\+sprite, \mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*}v\+\_\+sprite, \mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*}sv\+\_\+sprite, \mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*}small\+\_\+sprite, \mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*}small\+\_\+v\+\_\+sprite, \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{h}}, \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{w}}, \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} id)
+\begin{DoxyCompactList}\small\item\em Function that constructs and returns the boat created. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{boats_8c_aeb0beb1c033bb6b8296b5257ffd29f9f}{destroy\+\_\+boat}} (\mbox{\hyperlink{structBoat}{Boat}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{boat}})
+\begin{DoxyCompactList}\small\item\em Function that destroys a given boat. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{boats_8c_a2193e48de945895815551c92760fb0e4}{update\+Boat\+Pos}} (\mbox{\hyperlink{structBoat}{Boat}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{boat}}, \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{mouse_8c_a6150e0515f7202e2fb518f7206ed97dc}{x}}, \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{y}})
+\begin{DoxyCompactList}\small\item\em Function that updates the given boat\textquotesingle{}s position. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{boats_8c_a30b70b17eb1145743b12c162ea7d2cfb}{rotate\+Boat}} (\mbox{\hyperlink{structBoat}{Boat}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{boat}})
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{boats_8c_a22e98b0e1d6fbf7d0c03c366417078ec}{load\+\_\+boats}} ()
+\begin{DoxyCompactList}\small\item\em Function that loads and creates the different boats sprites and attributes. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{boats_8c_a1c183e0a7752db704948678ff5101423}{draw\+Selected}} (\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{b}})
+\begin{DoxyCompactList}\small\item\em Function that draws the selected boat with id b. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{boats_8c_af5c43372091bcc624a97b0840969c7ee}{fix\+The\+Selected}} ()
+\begin{DoxyCompactList}\small\item\em Function that fixes boats positions when overlapping. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{boats_8c_a0fa1a91e4149e9653b0cea449df78b0c}{move\+Selected}} (\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{mouse_8c_a6150e0515f7202e2fb518f7206ed97dc}{x}}, \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{y}})
+\begin{DoxyCompactList}\small\item\em Function that draws the boat in its new updated position. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{boats_8c_a10010e7fb44c1ae6848555ca8b746ae4}{rotate\+Selected}} ()
+\begin{DoxyCompactList}\small\item\em Function that rotates the selected boat. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{boats_8c_a283e28d26343249822bbe2fd8dd85606}{draw\+Boats}} ()
+\begin{DoxyCompactList}\small\item\em Function that draws that draws all the boats. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{boats_8c_a88b1c793d5cdec566a2c5e7d7e65e8f9}{draw\+Boat}} (\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{b}})
+\begin{DoxyCompactList}\small\item\em Function that draws the boat sprite by receiving its id. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{boats_8c_a02ba0098b9adf06a01132eaa2f7c18f4}{set\+Spots}} (\mbox{\hyperlink{structBoat}{Boat}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{boat}})
+\begin{DoxyCompactList}\small\item\em Function that sets the spots occupied by the boat as taken by it. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{boats_8c_a7019bbff2024069ff0e47c6efd15bfe6}{clear\+Spots}} (\mbox{\hyperlink{structBoat}{Boat}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{boat}})
+\begin{DoxyCompactList}\small\item\em Function that sets the spots occupied by the given boat of the board set as untaken. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{bool}} \mbox{\hyperlink{boats_8c_a3362bc80faa6573567b18abb4132c1cb}{overlap\+Boats}} (\mbox{\hyperlink{structBoat}{Boat}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{boat}})
+\begin{DoxyCompactList}\small\item\em Function that checks overlapping between selected boat and already placed boat. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{bool}} \mbox{\hyperlink{boats_8c_ae61b80a9aa83df556264f5a488217f39}{all\+Boats\+Fixed}} ()
+\begin{DoxyCompactList}\small\item\em Function that returns true if all the boats are fixed and false otherwise. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{boats_8c_a31ec930da7f9e6137502aa7cc2e94a8a}{s\+\_\+boat\+\_\+2p}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{boats_8c_a0ec46e5545c24f30475da7cbb02dfc85}{s\+\_\+boat\+\_\+3p1}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{boats_8c_aa34e186cb521be1f8fdb7cbcabafd17a}{s\+\_\+boat\+\_\+3p2}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{boats_8c_a8970d785c8b62146c4ff59f8b95e0470}{s\+\_\+boat\+\_\+4p}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{boats_8c_a20d5126f65fe326b3c0a20c7e58dfdaa}{s\+\_\+boat\+\_\+5p}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{boats_8c_a6291cb991ba8fa51f4727187a9644cb9}{s\+\_\+boat\+\_\+2p\+\_\+selected}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{boats_8c_a35277fc3268b413a203a5b81cd1f9872}{s\+\_\+boat\+\_\+3p1\+\_\+selected}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{boats_8c_aec90038f7a92780d4c0854df06ff0e40}{s\+\_\+boat\+\_\+3p2\+\_\+selected}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{boats_8c_a4bc3fe9aee287b265ce2d8ed99c574af}{s\+\_\+boat\+\_\+4p\+\_\+selected}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{boats_8c_a162b88a24b631571fd34514805032a6a}{s\+\_\+boat\+\_\+5p\+\_\+selected}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{boats_8c_a8baffbb274a21428a379fb5d36677c1f}{s\+\_\+boat\+\_\+2p\+\_\+V}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{boats_8c_aef0c8ecdb688a8b75ef41fa8ae29c615}{s\+\_\+boat\+\_\+3p1\+\_\+V}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{boats_8c_a578c878135a113b13655921c43509b1a}{s\+\_\+boat\+\_\+3p2\+\_\+V}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{boats_8c_a300bbc0c83917ac734e9e74dd8fec121}{s\+\_\+boat\+\_\+4p\+\_\+V}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{boats_8c_aa84758033aa2ac99ffec4ddc24acfeb0}{s\+\_\+boat\+\_\+5p\+\_\+V}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{boats_8c_ad2f362d5d7f9937d6a9395bb0190fc83}{s\+\_\+boat\+\_\+2p\+\_\+selected\+\_\+V}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{boats_8c_a6cacc3a59c5aca02c06bd22dde5c6696}{s\+\_\+boat\+\_\+3p1\+\_\+selected\+\_\+V}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{boats_8c_a6baef0fffc9b993edbc0cfbbb17cf468}{s\+\_\+boat\+\_\+3p2\+\_\+selected\+\_\+V}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{boats_8c_a10a5a0ac51ae5a787c0219e783b34d55}{s\+\_\+boat\+\_\+4p\+\_\+selected\+\_\+V}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{boats_8c_a41bc78bbd99888feb458dc7946beea7f}{s\+\_\+boat\+\_\+5p\+\_\+selected\+\_\+V}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{boats_8c_a1fab534ae48e8916524b6238ff36518a}{small\+\_\+s\+\_\+boat\+\_\+2p}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{boats_8c_a4484325ad5cbe7cf94fde21cfccaca35}{small\+\_\+s\+\_\+boat\+\_\+3p1}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{boats_8c_acce1e0224ad77ea0f3c3223ce4d21aaf}{small\+\_\+s\+\_\+boat\+\_\+3p2}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{boats_8c_aac45807296001b6371c4841dd3172525}{small\+\_\+s\+\_\+boat\+\_\+4p}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{boats_8c_ae6a841cd1810ac43f63e3a484cbd30d8}{small\+\_\+s\+\_\+boat\+\_\+5p}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{boats_8c_a773923c072a352f43387810f0f960467}{small\+\_\+s\+\_\+boat\+\_\+2p\+\_\+V}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{boats_8c_ae57180904e7aafff93bba2d8216f9af6}{small\+\_\+s\+\_\+boat\+\_\+3p1\+\_\+V}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{boats_8c_a037b9f06b72bed6be451d3882d2b7f14}{small\+\_\+s\+\_\+boat\+\_\+3p2\+\_\+V}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{boats_8c_a96d3075ac8016970a0ed1ef723221e59}{small\+\_\+s\+\_\+boat\+\_\+4p\+\_\+V}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{boats_8c_a4b5fc7cf018157d97868e87db26362a9}{small\+\_\+s\+\_\+boat\+\_\+5p\+\_\+V}}
+\item 
+\mbox{\hyperlink{structSpot}{Spot}} \mbox{\hyperlink{boats_8c_a3a10f59604a5f26f54a953ba3d1b5cd1}{matrix}} \mbox{[}\mbox{\hyperlink{macros_8h_a2bd32349fcbeb6ee86434a65226cba1a}{MATRIX\+\_\+\+SIZE}}\mbox{]}\mbox{[}\mbox{\hyperlink{macros_8h_a2bd32349fcbeb6ee86434a65226cba1a}{MATRIX\+\_\+\+SIZE}}\mbox{]}
+\item 
+\mbox{\hyperlink{structBoat}{Boat}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{boats_8c_a4752a3025dfb55d6bccc5352a30c94ed}{boat\+\_\+2p}}
+\item 
+\mbox{\hyperlink{structBoat}{Boat}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{boats_8c_a2eed0596eb78f002d5d76497a320a4b0}{boat\+\_\+3p1}}
+\item 
+\mbox{\hyperlink{structBoat}{Boat}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{boats_8c_acaae4ce98d433120032032eebab29b83}{boat\+\_\+3p2}}
+\item 
+\mbox{\hyperlink{structBoat}{Boat}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{boats_8c_ae590ad2a81a6628d3c2b36ea0ed8ebaf}{boat\+\_\+4p}}
+\item 
+\mbox{\hyperlink{structBoat}{Boat}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{boats_8c_aca812e1cf0515ae3438b2644f7b844bc}{boat\+\_\+5p}}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{bool}} \mbox{\hyperlink{boats_8c_ab67f2b1e1a5800c11585a29a34d38c29}{one\+Is\+Selected}} = \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{false}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{boats_8c_ae61b80a9aa83df556264f5a488217f39}\label{boats_8c_ae61b80a9aa83df556264f5a488217f39} 
+\index{boats.c@{boats.c}!allBoatsFixed@{allBoatsFixed}}
+\index{allBoatsFixed@{allBoatsFixed}!boats.c@{boats.c}}
+\doxysubsubsection{\texorpdfstring{allBoatsFixed()}{allBoatsFixed()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{bool}} all\+Boats\+Fixed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function that returns true if all the boats are fixed and false otherwise. 
+
+Evaluates if all boats are fixed.
+
+\begin{DoxyReturn}{Returns}
+bool \+: true if all fixed and false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{boats_8c_a7019bbff2024069ff0e47c6efd15bfe6}\label{boats_8c_a7019bbff2024069ff0e47c6efd15bfe6} 
+\index{boats.c@{boats.c}!clearSpots@{clearSpots}}
+\index{clearSpots@{clearSpots}!boats.c@{boats.c}}
+\doxysubsubsection{\texorpdfstring{clearSpots()}{clearSpots()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} clear\+Spots (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structBoat}{Boat}} \texorpdfstring{$\ast$}{*}}]{boat }\end{DoxyParamCaption})}
+
+
+
+Function that sets the spots occupied by the given boat of the board set as untaken. 
+
+Sets the spots occupied by the boat as untaken by it by setting the taken attribute to 0.
+
+
+\begin{DoxyParams}{Parameters}
+{\em boat} & \+: Spots occupied by the given boat will be set as untaken. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{boats_8c_a53ecda37212e8cb10a4e0b03ee480178}\label{boats_8c_a53ecda37212e8cb10a4e0b03ee480178} 
+\index{boats.c@{boats.c}!create\_boat@{create\_boat}}
+\index{create\_boat@{create\_boat}!boats.c@{boats.c}}
+\doxysubsubsection{\texorpdfstring{create\_boat()}{create\_boat()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structBoat}{Boat}} \texorpdfstring{$\ast$}{*} create\+\_\+boat (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*}}]{sprite,  }\item[{\mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*}}]{s\+\_\+sprite,  }\item[{\mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*}}]{v\+\_\+sprite,  }\item[{\mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*}}]{sv\+\_\+sprite,  }\item[{\mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*}}]{small\+\_\+sprite,  }\item[{\mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*}}]{small\+\_\+v\+\_\+sprite,  }\item[{\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}}}]{h,  }\item[{\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}}}]{w,  }\item[{\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}}}]{id }\end{DoxyParamCaption})}
+
+
+
+Function that constructs and returns the boat created. 
+
+It constructs the \doxylink{structBoat}{Boat}, allocates the boat object in a memory block and returns the boat that the construction fuction creates.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sprite} & \+: Horizontal boat\textquotesingle{}s sprite. \\
+\hline
+{\em s\+\_\+sprite} & \+: Horizontal selected boat\textquotesingle{}s sprite. \\
+\hline
+{\em v\+\_\+sprite} & \+: Vertical boat\textquotesingle{}s sprite. \\
+\hline
+{\em sv\+\_\+sprite} & \+: Vertical selected boat\textquotesingle{}s sprite. \\
+\hline
+{\em small\+\_\+sprite} & \+: Horizontal small boat\textquotesingle{}s sprite. \\
+\hline
+{\em small\+\_\+v\+\_\+sprite} & \+: Vertical small boat\textquotesingle{}s sprite. \\
+\hline
+{\em h} & \+: \doxylink{structBoat}{Boat}\textquotesingle{}s desired height. \\
+\hline
+{\em w} & \+: \doxylink{structBoat}{Boat}\textquotesingle{}s desired width. \\
+\hline
+{\em id} & \+: \doxylink{structBoat}{Boat}\textquotesingle{}s id. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Boat\texorpdfstring{$\ast$}{*} \+: \doxylink{structBoat}{Boat} created. 
+\end{DoxyReturn}
+\Hypertarget{boats_8c_aeb0beb1c033bb6b8296b5257ffd29f9f}\label{boats_8c_aeb0beb1c033bb6b8296b5257ffd29f9f} 
+\index{boats.c@{boats.c}!destroy\_boat@{destroy\_boat}}
+\index{destroy\_boat@{destroy\_boat}!boats.c@{boats.c}}
+\doxysubsubsection{\texorpdfstring{destroy\_boat()}{destroy\_boat()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} destroy\+\_\+boat (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structBoat}{Boat}} \texorpdfstring{$\ast$}{*}}]{boat }\end{DoxyParamCaption})}
+
+
+
+Function that destroys a given boat. 
+
+It destroys the boat and frees the block that was allocated for the boat.
+
+
+\begin{DoxyParams}{Parameters}
+{\em boat} & \+: \doxylink{structBoat}{Boat} to be destroyed. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{boats_8c_a88b1c793d5cdec566a2c5e7d7e65e8f9}\label{boats_8c_a88b1c793d5cdec566a2c5e7d7e65e8f9} 
+\index{boats.c@{boats.c}!drawBoat@{drawBoat}}
+\index{drawBoat@{drawBoat}!boats.c@{boats.c}}
+\doxysubsubsection{\texorpdfstring{drawBoat()}{drawBoat()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} draw\+Boat (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}}}]{b }\end{DoxyParamCaption})}
+
+
+
+Function that draws the boat sprite by receiving its id. 
+
+Receives boat\textquotesingle{}s id, checks its attributes and draws its sprite.
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & \+: \doxylink{structBoat}{Boat}\textquotesingle{}s id. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{boats_8c_a88b1c793d5cdec566a2c5e7d7e65e8f9_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{boats_8c_a283e28d26343249822bbe2fd8dd85606}\label{boats_8c_a283e28d26343249822bbe2fd8dd85606} 
+\index{boats.c@{boats.c}!drawBoats@{drawBoats}}
+\index{drawBoats@{drawBoats}!boats.c@{boats.c}}
+\doxysubsubsection{\texorpdfstring{drawBoats()}{drawBoats()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} draw\+Boats (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function that draws that draws all the boats. 
+
+Draws all the boats\textquotesingle{} sprites. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{boats_8c_a283e28d26343249822bbe2fd8dd85606_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{boats_8c_a1c183e0a7752db704948678ff5101423}\label{boats_8c_a1c183e0a7752db704948678ff5101423} 
+\index{boats.c@{boats.c}!drawSelected@{drawSelected}}
+\index{drawSelected@{drawSelected}!boats.c@{boats.c}}
+\doxysubsubsection{\texorpdfstring{drawSelected()}{drawSelected()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} draw\+Selected (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}}}]{b }\end{DoxyParamCaption})}
+
+
+
+Function that draws the selected boat with id b. 
+
+Draws selected boat.
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & \+: \doxylink{structBoat}{Boat}\textquotesingle{}s id. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{boats_8c_a1c183e0a7752db704948678ff5101423_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{boats_8c_af5c43372091bcc624a97b0840969c7ee}\label{boats_8c_af5c43372091bcc624a97b0840969c7ee} 
+\index{boats.c@{boats.c}!fixTheSelected@{fixTheSelected}}
+\index{fixTheSelected@{fixTheSelected}!boats.c@{boats.c}}
+\doxysubsubsection{\texorpdfstring{fixTheSelected()}{fixTheSelected()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} fix\+The\+Selected (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function that fixes boats positions when overlapping. 
+
+Bypasses overlap of Boats and adjusts their positions. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{boats_8c_af5c43372091bcc624a97b0840969c7ee_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{boats_8c_a22e98b0e1d6fbf7d0c03c366417078ec}\label{boats_8c_a22e98b0e1d6fbf7d0c03c366417078ec} 
+\index{boats.c@{boats.c}!load\_boats@{load\_boats}}
+\index{load\_boats@{load\_boats}!boats.c@{boats.c}}
+\doxysubsubsection{\texorpdfstring{load\_boats()}{load\_boats()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} load\+\_\+boats (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function that loads and creates the different boats sprites and attributes. 
+
+Creates all the different boats and loads them. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{boats_8c_a22e98b0e1d6fbf7d0c03c366417078ec_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{boats_8c_a0fa1a91e4149e9653b0cea449df78b0c}\label{boats_8c_a0fa1a91e4149e9653b0cea449df78b0c} 
+\index{boats.c@{boats.c}!moveSelected@{moveSelected}}
+\index{moveSelected@{moveSelected}!boats.c@{boats.c}}
+\doxysubsubsection{\texorpdfstring{moveSelected()}{moveSelected()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} move\+Selected (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}}}]{y,  }\item[{\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}}}]{x }\end{DoxyParamCaption})}
+
+
+
+Function that draws the boat in its new updated position. 
+
+Updates the boat position and redraws it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em y} & \+: \doxylink{structBoat}{Boat}\textquotesingle{}s vertical position. \\
+\hline
+{\em x} & \+: \doxylink{structBoat}{Boat}\textquotesingle{}s horizontal position. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{boats_8c_a0fa1a91e4149e9653b0cea449df78b0c_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{boats_8c_a3362bc80faa6573567b18abb4132c1cb}\label{boats_8c_a3362bc80faa6573567b18abb4132c1cb} 
+\index{boats.c@{boats.c}!overlapBoats@{overlapBoats}}
+\index{overlapBoats@{overlapBoats}!boats.c@{boats.c}}
+\doxysubsubsection{\texorpdfstring{overlapBoats()}{overlapBoats()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{bool}} overlap\+Boats (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structBoat}{Boat}} \texorpdfstring{$\ast$}{*}}]{boat }\end{DoxyParamCaption})}
+
+
+
+Function that checks overlapping between selected boat and already placed boat. 
+
+Checks if spot occuped by boat is already taken or not and returns true or false.
+
+
+\begin{DoxyParams}{Parameters}
+{\em boat} & \+: \doxylink{structBoat}{Boat} to be checked if overlaps with another one.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool \+: true if overlapps and false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{boats_8c_a30b70b17eb1145743b12c162ea7d2cfb}\label{boats_8c_a30b70b17eb1145743b12c162ea7d2cfb} 
+\index{boats.c@{boats.c}!rotateBoat@{rotateBoat}}
+\index{rotateBoat@{rotateBoat}!boats.c@{boats.c}}
+\doxysubsubsection{\texorpdfstring{rotateBoat()}{rotateBoat()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} rotate\+Boat (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structBoat}{Boat}} \texorpdfstring{$\ast$}{*}}]{boat }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=274pt]{boats_8c_a30b70b17eb1145743b12c162ea7d2cfb_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{boats_8c_a10010e7fb44c1ae6848555ca8b746ae4}\label{boats_8c_a10010e7fb44c1ae6848555ca8b746ae4} 
+\index{boats.c@{boats.c}!rotateSelected@{rotateSelected}}
+\index{rotateSelected@{rotateSelected}!boats.c@{boats.c}}
+\doxysubsubsection{\texorpdfstring{rotateSelected()}{rotateSelected()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} rotate\+Selected (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function that rotates the selected boat. 
+
+Rotates boat so player can change from vertical to horizontal position or vice versa. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{boats_8c_a10010e7fb44c1ae6848555ca8b746ae4_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{boats_8c_a02ba0098b9adf06a01132eaa2f7c18f4}\label{boats_8c_a02ba0098b9adf06a01132eaa2f7c18f4} 
+\index{boats.c@{boats.c}!setSpots@{setSpots}}
+\index{setSpots@{setSpots}!boats.c@{boats.c}}
+\doxysubsubsection{\texorpdfstring{setSpots()}{setSpots()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} set\+Spots (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structBoat}{Boat}} \texorpdfstring{$\ast$}{*}}]{boat }\end{DoxyParamCaption})}
+
+
+
+Function that sets the spots occupied by the boat as taken by it. 
+
+Sets the spots occupied by the boat as taken by it by setting the .taken attribute of the spot to the boat\textquotesingle{}s id.
+
+
+\begin{DoxyParams}{Parameters}
+{\em boat} & \+: Spots will be set as taken by the id of the given boat. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{boats_8c_a2193e48de945895815551c92760fb0e4}\label{boats_8c_a2193e48de945895815551c92760fb0e4} 
+\index{boats.c@{boats.c}!updateBoatPos@{updateBoatPos}}
+\index{updateBoatPos@{updateBoatPos}!boats.c@{boats.c}}
+\doxysubsubsection{\texorpdfstring{updateBoatPos()}{updateBoatPos()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} update\+Boat\+Pos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structBoat}{Boat}} \texorpdfstring{$\ast$}{*}}]{boat,  }\item[{\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}}}]{x,  }\item[{\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}}}]{y }\end{DoxyParamCaption})}
+
+
+
+Function that updates the given boat\textquotesingle{}s position. 
+
+Moves the boat to a given (x,y) coordinates.
+
+
+\begin{DoxyParams}{Parameters}
+{\em boat} & \+: \doxylink{structBoat}{Boat} to be positioned. \\
+\hline
+{\em x} & \+: Horizontal position. \\
+\hline
+{\em y} & \+: Vertical position. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{boats_8c_a4752a3025dfb55d6bccc5352a30c94ed}\label{boats_8c_a4752a3025dfb55d6bccc5352a30c94ed} 
+\index{boats.c@{boats.c}!boat\_2p@{boat\_2p}}
+\index{boat\_2p@{boat\_2p}!boats.c@{boats.c}}
+\doxysubsubsection{\texorpdfstring{boat\_2p}{boat\_2p}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structBoat}{Boat}}\texorpdfstring{$\ast$}{*} boat\+\_\+2p\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{boats_8c_a2eed0596eb78f002d5d76497a320a4b0}\label{boats_8c_a2eed0596eb78f002d5d76497a320a4b0} 
+\index{boats.c@{boats.c}!boat\_3p1@{boat\_3p1}}
+\index{boat\_3p1@{boat\_3p1}!boats.c@{boats.c}}
+\doxysubsubsection{\texorpdfstring{boat\_3p1}{boat\_3p1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structBoat}{Boat}}\texorpdfstring{$\ast$}{*} boat\+\_\+3p1\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{boats_8c_acaae4ce98d433120032032eebab29b83}\label{boats_8c_acaae4ce98d433120032032eebab29b83} 
+\index{boats.c@{boats.c}!boat\_3p2@{boat\_3p2}}
+\index{boat\_3p2@{boat\_3p2}!boats.c@{boats.c}}
+\doxysubsubsection{\texorpdfstring{boat\_3p2}{boat\_3p2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structBoat}{Boat}}\texorpdfstring{$\ast$}{*} boat\+\_\+3p2\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{boats_8c_ae590ad2a81a6628d3c2b36ea0ed8ebaf}\label{boats_8c_ae590ad2a81a6628d3c2b36ea0ed8ebaf} 
+\index{boats.c@{boats.c}!boat\_4p@{boat\_4p}}
+\index{boat\_4p@{boat\_4p}!boats.c@{boats.c}}
+\doxysubsubsection{\texorpdfstring{boat\_4p}{boat\_4p}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structBoat}{Boat}}\texorpdfstring{$\ast$}{*} boat\+\_\+4p\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{boats_8c_aca812e1cf0515ae3438b2644f7b844bc}\label{boats_8c_aca812e1cf0515ae3438b2644f7b844bc} 
+\index{boats.c@{boats.c}!boat\_5p@{boat\_5p}}
+\index{boat\_5p@{boat\_5p}!boats.c@{boats.c}}
+\doxysubsubsection{\texorpdfstring{boat\_5p}{boat\_5p}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structBoat}{Boat}}\texorpdfstring{$\ast$}{*} boat\+\_\+5p\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{boats_8c_a3a10f59604a5f26f54a953ba3d1b5cd1}\label{boats_8c_a3a10f59604a5f26f54a953ba3d1b5cd1} 
+\index{boats.c@{boats.c}!matrix@{matrix}}
+\index{matrix@{matrix}!boats.c@{boats.c}}
+\doxysubsubsection{\texorpdfstring{matrix}{matrix}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSpot}{Spot}} matrix\mbox{[}\mbox{\hyperlink{macros_8h_a2bd32349fcbeb6ee86434a65226cba1a}{MATRIX\+\_\+\+SIZE}}\mbox{]}\mbox{[}\mbox{\hyperlink{macros_8h_a2bd32349fcbeb6ee86434a65226cba1a}{MATRIX\+\_\+\+SIZE}}\mbox{]}\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{boats_8c_ab67f2b1e1a5800c11585a29a34d38c29}\label{boats_8c_ab67f2b1e1a5800c11585a29a34d38c29} 
+\index{boats.c@{boats.c}!oneIsSelected@{oneIsSelected}}
+\index{oneIsSelected@{oneIsSelected}!boats.c@{boats.c}}
+\doxysubsubsection{\texorpdfstring{oneIsSelected}{oneIsSelected}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{bool}} one\+Is\+Selected = \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{false}}}
+
+\Hypertarget{boats_8c_a31ec930da7f9e6137502aa7cc2e94a8a}\label{boats_8c_a31ec930da7f9e6137502aa7cc2e94a8a} 
+\index{boats.c@{boats.c}!s\_boat\_2p@{s\_boat\_2p}}
+\index{s\_boat\_2p@{s\_boat\_2p}!boats.c@{boats.c}}
+\doxysubsubsection{\texorpdfstring{s\_boat\_2p}{s\_boat\_2p}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}\texorpdfstring{$\ast$}{*} s\+\_\+boat\+\_\+2p\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{boats_8c_a6291cb991ba8fa51f4727187a9644cb9}\label{boats_8c_a6291cb991ba8fa51f4727187a9644cb9} 
+\index{boats.c@{boats.c}!s\_boat\_2p\_selected@{s\_boat\_2p\_selected}}
+\index{s\_boat\_2p\_selected@{s\_boat\_2p\_selected}!boats.c@{boats.c}}
+\doxysubsubsection{\texorpdfstring{s\_boat\_2p\_selected}{s\_boat\_2p\_selected}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}\texorpdfstring{$\ast$}{*} s\+\_\+boat\+\_\+2p\+\_\+selected\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{boats_8c_ad2f362d5d7f9937d6a9395bb0190fc83}\label{boats_8c_ad2f362d5d7f9937d6a9395bb0190fc83} 
+\index{boats.c@{boats.c}!s\_boat\_2p\_selected\_V@{s\_boat\_2p\_selected\_V}}
+\index{s\_boat\_2p\_selected\_V@{s\_boat\_2p\_selected\_V}!boats.c@{boats.c}}
+\doxysubsubsection{\texorpdfstring{s\_boat\_2p\_selected\_V}{s\_boat\_2p\_selected\_V}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}\texorpdfstring{$\ast$}{*} s\+\_\+boat\+\_\+2p\+\_\+selected\+\_\+V\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{boats_8c_a8baffbb274a21428a379fb5d36677c1f}\label{boats_8c_a8baffbb274a21428a379fb5d36677c1f} 
+\index{boats.c@{boats.c}!s\_boat\_2p\_V@{s\_boat\_2p\_V}}
+\index{s\_boat\_2p\_V@{s\_boat\_2p\_V}!boats.c@{boats.c}}
+\doxysubsubsection{\texorpdfstring{s\_boat\_2p\_V}{s\_boat\_2p\_V}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}\texorpdfstring{$\ast$}{*} s\+\_\+boat\+\_\+2p\+\_\+V\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{boats_8c_a0ec46e5545c24f30475da7cbb02dfc85}\label{boats_8c_a0ec46e5545c24f30475da7cbb02dfc85} 
+\index{boats.c@{boats.c}!s\_boat\_3p1@{s\_boat\_3p1}}
+\index{s\_boat\_3p1@{s\_boat\_3p1}!boats.c@{boats.c}}
+\doxysubsubsection{\texorpdfstring{s\_boat\_3p1}{s\_boat\_3p1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}\texorpdfstring{$\ast$}{*} s\+\_\+boat\+\_\+3p1\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{boats_8c_a35277fc3268b413a203a5b81cd1f9872}\label{boats_8c_a35277fc3268b413a203a5b81cd1f9872} 
+\index{boats.c@{boats.c}!s\_boat\_3p1\_selected@{s\_boat\_3p1\_selected}}
+\index{s\_boat\_3p1\_selected@{s\_boat\_3p1\_selected}!boats.c@{boats.c}}
+\doxysubsubsection{\texorpdfstring{s\_boat\_3p1\_selected}{s\_boat\_3p1\_selected}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}\texorpdfstring{$\ast$}{*} s\+\_\+boat\+\_\+3p1\+\_\+selected\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{boats_8c_a6cacc3a59c5aca02c06bd22dde5c6696}\label{boats_8c_a6cacc3a59c5aca02c06bd22dde5c6696} 
+\index{boats.c@{boats.c}!s\_boat\_3p1\_selected\_V@{s\_boat\_3p1\_selected\_V}}
+\index{s\_boat\_3p1\_selected\_V@{s\_boat\_3p1\_selected\_V}!boats.c@{boats.c}}
+\doxysubsubsection{\texorpdfstring{s\_boat\_3p1\_selected\_V}{s\_boat\_3p1\_selected\_V}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}\texorpdfstring{$\ast$}{*} s\+\_\+boat\+\_\+3p1\+\_\+selected\+\_\+V\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{boats_8c_aef0c8ecdb688a8b75ef41fa8ae29c615}\label{boats_8c_aef0c8ecdb688a8b75ef41fa8ae29c615} 
+\index{boats.c@{boats.c}!s\_boat\_3p1\_V@{s\_boat\_3p1\_V}}
+\index{s\_boat\_3p1\_V@{s\_boat\_3p1\_V}!boats.c@{boats.c}}
+\doxysubsubsection{\texorpdfstring{s\_boat\_3p1\_V}{s\_boat\_3p1\_V}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}\texorpdfstring{$\ast$}{*} s\+\_\+boat\+\_\+3p1\+\_\+V\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{boats_8c_aa34e186cb521be1f8fdb7cbcabafd17a}\label{boats_8c_aa34e186cb521be1f8fdb7cbcabafd17a} 
+\index{boats.c@{boats.c}!s\_boat\_3p2@{s\_boat\_3p2}}
+\index{s\_boat\_3p2@{s\_boat\_3p2}!boats.c@{boats.c}}
+\doxysubsubsection{\texorpdfstring{s\_boat\_3p2}{s\_boat\_3p2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}\texorpdfstring{$\ast$}{*} s\+\_\+boat\+\_\+3p2\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{boats_8c_aec90038f7a92780d4c0854df06ff0e40}\label{boats_8c_aec90038f7a92780d4c0854df06ff0e40} 
+\index{boats.c@{boats.c}!s\_boat\_3p2\_selected@{s\_boat\_3p2\_selected}}
+\index{s\_boat\_3p2\_selected@{s\_boat\_3p2\_selected}!boats.c@{boats.c}}
+\doxysubsubsection{\texorpdfstring{s\_boat\_3p2\_selected}{s\_boat\_3p2\_selected}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}\texorpdfstring{$\ast$}{*} s\+\_\+boat\+\_\+3p2\+\_\+selected\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{boats_8c_a6baef0fffc9b993edbc0cfbbb17cf468}\label{boats_8c_a6baef0fffc9b993edbc0cfbbb17cf468} 
+\index{boats.c@{boats.c}!s\_boat\_3p2\_selected\_V@{s\_boat\_3p2\_selected\_V}}
+\index{s\_boat\_3p2\_selected\_V@{s\_boat\_3p2\_selected\_V}!boats.c@{boats.c}}
+\doxysubsubsection{\texorpdfstring{s\_boat\_3p2\_selected\_V}{s\_boat\_3p2\_selected\_V}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}\texorpdfstring{$\ast$}{*} s\+\_\+boat\+\_\+3p2\+\_\+selected\+\_\+V\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{boats_8c_a578c878135a113b13655921c43509b1a}\label{boats_8c_a578c878135a113b13655921c43509b1a} 
+\index{boats.c@{boats.c}!s\_boat\_3p2\_V@{s\_boat\_3p2\_V}}
+\index{s\_boat\_3p2\_V@{s\_boat\_3p2\_V}!boats.c@{boats.c}}
+\doxysubsubsection{\texorpdfstring{s\_boat\_3p2\_V}{s\_boat\_3p2\_V}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}\texorpdfstring{$\ast$}{*} s\+\_\+boat\+\_\+3p2\+\_\+V\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{boats_8c_a8970d785c8b62146c4ff59f8b95e0470}\label{boats_8c_a8970d785c8b62146c4ff59f8b95e0470} 
+\index{boats.c@{boats.c}!s\_boat\_4p@{s\_boat\_4p}}
+\index{s\_boat\_4p@{s\_boat\_4p}!boats.c@{boats.c}}
+\doxysubsubsection{\texorpdfstring{s\_boat\_4p}{s\_boat\_4p}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}\texorpdfstring{$\ast$}{*} s\+\_\+boat\+\_\+4p\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{boats_8c_a4bc3fe9aee287b265ce2d8ed99c574af}\label{boats_8c_a4bc3fe9aee287b265ce2d8ed99c574af} 
+\index{boats.c@{boats.c}!s\_boat\_4p\_selected@{s\_boat\_4p\_selected}}
+\index{s\_boat\_4p\_selected@{s\_boat\_4p\_selected}!boats.c@{boats.c}}
+\doxysubsubsection{\texorpdfstring{s\_boat\_4p\_selected}{s\_boat\_4p\_selected}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}\texorpdfstring{$\ast$}{*} s\+\_\+boat\+\_\+4p\+\_\+selected\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{boats_8c_a10a5a0ac51ae5a787c0219e783b34d55}\label{boats_8c_a10a5a0ac51ae5a787c0219e783b34d55} 
+\index{boats.c@{boats.c}!s\_boat\_4p\_selected\_V@{s\_boat\_4p\_selected\_V}}
+\index{s\_boat\_4p\_selected\_V@{s\_boat\_4p\_selected\_V}!boats.c@{boats.c}}
+\doxysubsubsection{\texorpdfstring{s\_boat\_4p\_selected\_V}{s\_boat\_4p\_selected\_V}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}\texorpdfstring{$\ast$}{*} s\+\_\+boat\+\_\+4p\+\_\+selected\+\_\+V\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{boats_8c_a300bbc0c83917ac734e9e74dd8fec121}\label{boats_8c_a300bbc0c83917ac734e9e74dd8fec121} 
+\index{boats.c@{boats.c}!s\_boat\_4p\_V@{s\_boat\_4p\_V}}
+\index{s\_boat\_4p\_V@{s\_boat\_4p\_V}!boats.c@{boats.c}}
+\doxysubsubsection{\texorpdfstring{s\_boat\_4p\_V}{s\_boat\_4p\_V}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}\texorpdfstring{$\ast$}{*} s\+\_\+boat\+\_\+4p\+\_\+V\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{boats_8c_a20d5126f65fe326b3c0a20c7e58dfdaa}\label{boats_8c_a20d5126f65fe326b3c0a20c7e58dfdaa} 
+\index{boats.c@{boats.c}!s\_boat\_5p@{s\_boat\_5p}}
+\index{s\_boat\_5p@{s\_boat\_5p}!boats.c@{boats.c}}
+\doxysubsubsection{\texorpdfstring{s\_boat\_5p}{s\_boat\_5p}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}\texorpdfstring{$\ast$}{*} s\+\_\+boat\+\_\+5p\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{boats_8c_a162b88a24b631571fd34514805032a6a}\label{boats_8c_a162b88a24b631571fd34514805032a6a} 
+\index{boats.c@{boats.c}!s\_boat\_5p\_selected@{s\_boat\_5p\_selected}}
+\index{s\_boat\_5p\_selected@{s\_boat\_5p\_selected}!boats.c@{boats.c}}
+\doxysubsubsection{\texorpdfstring{s\_boat\_5p\_selected}{s\_boat\_5p\_selected}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}\texorpdfstring{$\ast$}{*} s\+\_\+boat\+\_\+5p\+\_\+selected\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{boats_8c_a41bc78bbd99888feb458dc7946beea7f}\label{boats_8c_a41bc78bbd99888feb458dc7946beea7f} 
+\index{boats.c@{boats.c}!s\_boat\_5p\_selected\_V@{s\_boat\_5p\_selected\_V}}
+\index{s\_boat\_5p\_selected\_V@{s\_boat\_5p\_selected\_V}!boats.c@{boats.c}}
+\doxysubsubsection{\texorpdfstring{s\_boat\_5p\_selected\_V}{s\_boat\_5p\_selected\_V}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}\texorpdfstring{$\ast$}{*} s\+\_\+boat\+\_\+5p\+\_\+selected\+\_\+V\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{boats_8c_aa84758033aa2ac99ffec4ddc24acfeb0}\label{boats_8c_aa84758033aa2ac99ffec4ddc24acfeb0} 
+\index{boats.c@{boats.c}!s\_boat\_5p\_V@{s\_boat\_5p\_V}}
+\index{s\_boat\_5p\_V@{s\_boat\_5p\_V}!boats.c@{boats.c}}
+\doxysubsubsection{\texorpdfstring{s\_boat\_5p\_V}{s\_boat\_5p\_V}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}\texorpdfstring{$\ast$}{*} s\+\_\+boat\+\_\+5p\+\_\+V\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{boats_8c_a1fab534ae48e8916524b6238ff36518a}\label{boats_8c_a1fab534ae48e8916524b6238ff36518a} 
+\index{boats.c@{boats.c}!small\_s\_boat\_2p@{small\_s\_boat\_2p}}
+\index{small\_s\_boat\_2p@{small\_s\_boat\_2p}!boats.c@{boats.c}}
+\doxysubsubsection{\texorpdfstring{small\_s\_boat\_2p}{small\_s\_boat\_2p}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}\texorpdfstring{$\ast$}{*} small\+\_\+s\+\_\+boat\+\_\+2p\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{boats_8c_a773923c072a352f43387810f0f960467}\label{boats_8c_a773923c072a352f43387810f0f960467} 
+\index{boats.c@{boats.c}!small\_s\_boat\_2p\_V@{small\_s\_boat\_2p\_V}}
+\index{small\_s\_boat\_2p\_V@{small\_s\_boat\_2p\_V}!boats.c@{boats.c}}
+\doxysubsubsection{\texorpdfstring{small\_s\_boat\_2p\_V}{small\_s\_boat\_2p\_V}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}\texorpdfstring{$\ast$}{*} small\+\_\+s\+\_\+boat\+\_\+2p\+\_\+V\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{boats_8c_a4484325ad5cbe7cf94fde21cfccaca35}\label{boats_8c_a4484325ad5cbe7cf94fde21cfccaca35} 
+\index{boats.c@{boats.c}!small\_s\_boat\_3p1@{small\_s\_boat\_3p1}}
+\index{small\_s\_boat\_3p1@{small\_s\_boat\_3p1}!boats.c@{boats.c}}
+\doxysubsubsection{\texorpdfstring{small\_s\_boat\_3p1}{small\_s\_boat\_3p1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}\texorpdfstring{$\ast$}{*} small\+\_\+s\+\_\+boat\+\_\+3p1\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{boats_8c_ae57180904e7aafff93bba2d8216f9af6}\label{boats_8c_ae57180904e7aafff93bba2d8216f9af6} 
+\index{boats.c@{boats.c}!small\_s\_boat\_3p1\_V@{small\_s\_boat\_3p1\_V}}
+\index{small\_s\_boat\_3p1\_V@{small\_s\_boat\_3p1\_V}!boats.c@{boats.c}}
+\doxysubsubsection{\texorpdfstring{small\_s\_boat\_3p1\_V}{small\_s\_boat\_3p1\_V}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}\texorpdfstring{$\ast$}{*} small\+\_\+s\+\_\+boat\+\_\+3p1\+\_\+V\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{boats_8c_acce1e0224ad77ea0f3c3223ce4d21aaf}\label{boats_8c_acce1e0224ad77ea0f3c3223ce4d21aaf} 
+\index{boats.c@{boats.c}!small\_s\_boat\_3p2@{small\_s\_boat\_3p2}}
+\index{small\_s\_boat\_3p2@{small\_s\_boat\_3p2}!boats.c@{boats.c}}
+\doxysubsubsection{\texorpdfstring{small\_s\_boat\_3p2}{small\_s\_boat\_3p2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}\texorpdfstring{$\ast$}{*} small\+\_\+s\+\_\+boat\+\_\+3p2\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{boats_8c_a037b9f06b72bed6be451d3882d2b7f14}\label{boats_8c_a037b9f06b72bed6be451d3882d2b7f14} 
+\index{boats.c@{boats.c}!small\_s\_boat\_3p2\_V@{small\_s\_boat\_3p2\_V}}
+\index{small\_s\_boat\_3p2\_V@{small\_s\_boat\_3p2\_V}!boats.c@{boats.c}}
+\doxysubsubsection{\texorpdfstring{small\_s\_boat\_3p2\_V}{small\_s\_boat\_3p2\_V}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}\texorpdfstring{$\ast$}{*} small\+\_\+s\+\_\+boat\+\_\+3p2\+\_\+V\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{boats_8c_aac45807296001b6371c4841dd3172525}\label{boats_8c_aac45807296001b6371c4841dd3172525} 
+\index{boats.c@{boats.c}!small\_s\_boat\_4p@{small\_s\_boat\_4p}}
+\index{small\_s\_boat\_4p@{small\_s\_boat\_4p}!boats.c@{boats.c}}
+\doxysubsubsection{\texorpdfstring{small\_s\_boat\_4p}{small\_s\_boat\_4p}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}\texorpdfstring{$\ast$}{*} small\+\_\+s\+\_\+boat\+\_\+4p\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{boats_8c_a96d3075ac8016970a0ed1ef723221e59}\label{boats_8c_a96d3075ac8016970a0ed1ef723221e59} 
+\index{boats.c@{boats.c}!small\_s\_boat\_4p\_V@{small\_s\_boat\_4p\_V}}
+\index{small\_s\_boat\_4p\_V@{small\_s\_boat\_4p\_V}!boats.c@{boats.c}}
+\doxysubsubsection{\texorpdfstring{small\_s\_boat\_4p\_V}{small\_s\_boat\_4p\_V}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}\texorpdfstring{$\ast$}{*} small\+\_\+s\+\_\+boat\+\_\+4p\+\_\+V\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{boats_8c_ae6a841cd1810ac43f63e3a484cbd30d8}\label{boats_8c_ae6a841cd1810ac43f63e3a484cbd30d8} 
+\index{boats.c@{boats.c}!small\_s\_boat\_5p@{small\_s\_boat\_5p}}
+\index{small\_s\_boat\_5p@{small\_s\_boat\_5p}!boats.c@{boats.c}}
+\doxysubsubsection{\texorpdfstring{small\_s\_boat\_5p}{small\_s\_boat\_5p}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}\texorpdfstring{$\ast$}{*} small\+\_\+s\+\_\+boat\+\_\+5p\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{boats_8c_a4b5fc7cf018157d97868e87db26362a9}\label{boats_8c_a4b5fc7cf018157d97868e87db26362a9} 
+\index{boats.c@{boats.c}!small\_s\_boat\_5p\_V@{small\_s\_boat\_5p\_V}}
+\index{small\_s\_boat\_5p\_V@{small\_s\_boat\_5p\_V}!boats.c@{boats.c}}
+\doxysubsubsection{\texorpdfstring{small\_s\_boat\_5p\_V}{small\_s\_boat\_5p\_V}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}\texorpdfstring{$\ast$}{*} small\+\_\+s\+\_\+boat\+\_\+5p\+\_\+V\hspace{0.3cm}{\ttfamily [extern]}}
+

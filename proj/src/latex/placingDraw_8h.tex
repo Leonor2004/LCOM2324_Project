@@ -1,0 +1,145 @@
+\doxysection{view/placing\+Draw.h File Reference}
+\hypertarget{placingDraw_8h}{}\label{placingDraw_8h}\index{view/placingDraw.h@{view/placingDraw.h}}
+
+
+This file contains the placing boats menu drawing functions.  
+
+
+{\ttfamily \#include "{}controllers/keyboard/kbd.\+h"{}}\newline
+{\ttfamily \#include "{}controllers/mouse/mouse.\+h"{}}\newline
+{\ttfamily \#include "{}controllers/video\+\_\+graphics/graphics.\+h"{}}\newline
+{\ttfamily \#include "{}controllers/timer/timer.\+h"{}}\newline
+{\ttfamily \#include "{}controllers/macros.\+h"{}}\newline
+{\ttfamily \#include "{}model/boats.\+h"{}}\newline
+{\ttfamily \#include "{}model/game.\+h"{}}\newline
+{\ttfamily \#include "{}asset\+Draw.\+h"{}}\newline
+Include dependency graph for placing\+Draw.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{placingDraw_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{placingDraw_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{placingDraw_8h_a86ea9f3c9ddbda5ecbb562dc0fa1663d}{PLACINGSTATE}} \{ \newline
+\mbox{\hyperlink{placingDraw_8h_a86ea9f3c9ddbda5ecbb562dc0fa1663dad0b5b4e8e0ad11e380736e5afa3a994d}{ASKINGQUIT}}
+, \mbox{\hyperlink{placingDraw_8h_a86ea9f3c9ddbda5ecbb562dc0fa1663da77d1b58e26a2a3d61ce38e09764cbc19}{PLAYER1}}
+, \mbox{\hyperlink{placingDraw_8h_a86ea9f3c9ddbda5ecbb562dc0fa1663dad6e173f26cc7f1be72f7a89adcdcafd2}{ASKINGPLAYER2}}
+, \mbox{\hyperlink{placingDraw_8h_a86ea9f3c9ddbda5ecbb562dc0fa1663da32a327d66c65387bb124f6c9408ff90b}{PLAYER2}}
+, \newline
+\mbox{\hyperlink{placingDraw_8h_a86ea9f3c9ddbda5ecbb562dc0fa1663da21cc3d9d403e6a8b796c19b00e15ed59}{ASKINGGAME}}
+ \}
+\begin{DoxyCompactList}\small\item\em Placing menu state enum. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{placingDraw_8h_a0a7e8b71d4f37a8d0bb4e53971d4e352}{draw\+Placing\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em Draws the placing menu on the screen. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{placingDraw_8h_a40b9640e92602cf1b054debb21a4bdc1}{draw\+Previous\+Placing\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em Draws the previous state of placing menu on the screen. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{placingDraw_8h_aa9b569c47a6d301fbb442f248fc498d8}{draw\+Placing\+Cursor}} ()
+\begin{DoxyCompactList}\small\item\em Draws the placing menu cursor on the screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file contains the placing boats menu drawing functions. 
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{placingDraw_8h_a86ea9f3c9ddbda5ecbb562dc0fa1663d}\label{placingDraw_8h_a86ea9f3c9ddbda5ecbb562dc0fa1663d} 
+\index{placingDraw.h@{placingDraw.h}!PLACINGSTATE@{PLACINGSTATE}}
+\index{PLACINGSTATE@{PLACINGSTATE}!placingDraw.h@{placingDraw.h}}
+\doxysubsubsection{\texorpdfstring{PLACINGSTATE}{PLACINGSTATE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{enum}} \mbox{\hyperlink{placingDraw_8h_a86ea9f3c9ddbda5ecbb562dc0fa1663d}{PLACINGSTATE}}}
+
+
+
+Placing menu state enum. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ASKINGQUIT@{ASKINGQUIT}!placingDraw.h@{placingDraw.h}}\index{placingDraw.h@{placingDraw.h}!ASKINGQUIT@{ASKINGQUIT}}}\Hypertarget{placingDraw_8h_a86ea9f3c9ddbda5ecbb562dc0fa1663dad0b5b4e8e0ad11e380736e5afa3a994d}\label{placingDraw_8h_a86ea9f3c9ddbda5ecbb562dc0fa1663dad0b5b4e8e0ad11e380736e5afa3a994d} 
+ASKINGQUIT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PLAYER1@{PLAYER1}!placingDraw.h@{placingDraw.h}}\index{placingDraw.h@{placingDraw.h}!PLAYER1@{PLAYER1}}}\Hypertarget{placingDraw_8h_a86ea9f3c9ddbda5ecbb562dc0fa1663da77d1b58e26a2a3d61ce38e09764cbc19}\label{placingDraw_8h_a86ea9f3c9ddbda5ecbb562dc0fa1663da77d1b58e26a2a3d61ce38e09764cbc19} 
+PLAYER1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ASKINGPLAYER2@{ASKINGPLAYER2}!placingDraw.h@{placingDraw.h}}\index{placingDraw.h@{placingDraw.h}!ASKINGPLAYER2@{ASKINGPLAYER2}}}\Hypertarget{placingDraw_8h_a86ea9f3c9ddbda5ecbb562dc0fa1663dad6e173f26cc7f1be72f7a89adcdcafd2}\label{placingDraw_8h_a86ea9f3c9ddbda5ecbb562dc0fa1663dad6e173f26cc7f1be72f7a89adcdcafd2} 
+ASKINGPLAYER2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PLAYER2@{PLAYER2}!placingDraw.h@{placingDraw.h}}\index{placingDraw.h@{placingDraw.h}!PLAYER2@{PLAYER2}}}\Hypertarget{placingDraw_8h_a86ea9f3c9ddbda5ecbb562dc0fa1663da32a327d66c65387bb124f6c9408ff90b}\label{placingDraw_8h_a86ea9f3c9ddbda5ecbb562dc0fa1663da32a327d66c65387bb124f6c9408ff90b} 
+PLAYER2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ASKINGGAME@{ASKINGGAME}!placingDraw.h@{placingDraw.h}}\index{placingDraw.h@{placingDraw.h}!ASKINGGAME@{ASKINGGAME}}}\Hypertarget{placingDraw_8h_a86ea9f3c9ddbda5ecbb562dc0fa1663da21cc3d9d403e6a8b796c19b00e15ed59}\label{placingDraw_8h_a86ea9f3c9ddbda5ecbb562dc0fa1663da21cc3d9d403e6a8b796c19b00e15ed59} 
+ASKINGGAME&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{placingDraw_8h_aa9b569c47a6d301fbb442f248fc498d8}\label{placingDraw_8h_aa9b569c47a6d301fbb442f248fc498d8} 
+\index{placingDraw.h@{placingDraw.h}!drawPlacingCursor@{drawPlacingCursor}}
+\index{drawPlacingCursor@{drawPlacingCursor}!placingDraw.h@{placingDraw.h}}
+\doxysubsubsection{\texorpdfstring{drawPlacingCursor()}{drawPlacingCursor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} draw\+Placing\+Cursor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws the placing menu cursor on the screen. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{placingDraw_8h_aa9b569c47a6d301fbb442f248fc498d8_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{placingDraw_8h_a0a7e8b71d4f37a8d0bb4e53971d4e352}\label{placingDraw_8h_a0a7e8b71d4f37a8d0bb4e53971d4e352} 
+\index{placingDraw.h@{placingDraw.h}!drawPlacingMenu@{drawPlacingMenu}}
+\index{drawPlacingMenu@{drawPlacingMenu}!placingDraw.h@{placingDraw.h}}
+\doxysubsubsection{\texorpdfstring{drawPlacingMenu()}{drawPlacingMenu()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} draw\+Placing\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws the placing menu on the screen. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{placingDraw_8h_a0a7e8b71d4f37a8d0bb4e53971d4e352_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{placingDraw_8h_a40b9640e92602cf1b054debb21a4bdc1}\label{placingDraw_8h_a40b9640e92602cf1b054debb21a4bdc1} 
+\index{placingDraw.h@{placingDraw.h}!drawPreviousPlacingMenu@{drawPreviousPlacingMenu}}
+\index{drawPreviousPlacingMenu@{drawPreviousPlacingMenu}!placingDraw.h@{placingDraw.h}}
+\doxysubsubsection{\texorpdfstring{drawPreviousPlacingMenu()}{drawPreviousPlacingMenu()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} draw\+Previous\+Placing\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws the previous state of placing menu on the screen. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{placingDraw_8h_a40b9640e92602cf1b054debb21a4bdc1_cgraph}
+\end{center}
+\end{figure}

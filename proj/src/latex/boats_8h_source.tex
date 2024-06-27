@@ -1,0 +1,47 @@
+\doxysection{boats.\+h}
+\hypertarget{boats_8h_source}{}\label{boats_8h_source}\index{model/boats.h@{model/boats.h}}
+\mbox{\hyperlink{boats_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ \_LCOM\_BOATS\_H\_}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ \_LCOM\_BOATS\_H\_}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{kbd_8h}{controllers/keyboard/kbd.h}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{mouse_8h}{controllers/mouse/mouse.h}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{graphics_8h}{controllers/video\_graphics/graphics.h}}"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{timer_8h}{controllers/timer/timer.h}}"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{sprite_8h}{controllers/sprites/sprite.h}}"{}}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{macros_8h}{controllers/macros.h}}"{}}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{placingDraw_8h}{view/placingDraw.h}}"{}}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{game_8h}{game.h}}"{}}}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00035\ \mbox{\hyperlink{structBoat}{Boat}}\ *\mbox{\hyperlink{boats_8h_a53ecda37212e8cb10a4e0b03ee480178}{create\_boat}}(\mbox{\hyperlink{structSprite}{Sprite}}\ *sprite,\ \mbox{\hyperlink{structSprite}{Sprite}}\ *s\_sprite,\ \mbox{\hyperlink{structSprite}{Sprite}}\ *v\_sprite,\ \mbox{\hyperlink{structSprite}{Sprite}}\ *sv\_sprite,\ \mbox{\hyperlink{structSprite}{Sprite}}\ *small\_sprite,\ \mbox{\hyperlink{structSprite}{Sprite}}\ *small\_v\_sprite,\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{h}},\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{w}},\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00044\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{boats_8h_aeb0beb1c033bb6b8296b5257ffd29f9f}{destroy\_boat}}(\mbox{\hyperlink{structBoat}{Boat}}\ *\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{boat}});}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00055\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{boats_8h_a2193e48de945895815551c92760fb0e4}{updateBoatPos}}(\mbox{\hyperlink{structBoat}{Boat}}\ *\ \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{boat}},\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{mouse_8c_a6150e0515f7202e2fb518f7206ed97dc}{x}},\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{y}});}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00063\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{boats_8h_a22e98b0e1d6fbf7d0c03c366417078ec}{load\_boats}}();}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00072\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{boats_8h_a1c183e0a7752db704948678ff5101423}{drawSelected}}(\textcolor{keywordtype}{int}\ \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{b}});}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00079\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{boats_8h_a283e28d26343249822bbe2fd8dd85606}{drawBoats}}();}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00086\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{boats_8h_af5c43372091bcc624a97b0840969c7ee}{fixTheSelected}}();}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00096\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{boats_8h_aaf196253a3fdd7bd12b7476ae7554f26}{moveSelected}}(\textcolor{keywordtype}{int}\ \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{y}},\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{mouse_8c_a6150e0515f7202e2fb518f7206ed97dc}{x}});}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00105\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{boats_8h_a88b1c793d5cdec566a2c5e7d7e65e8f9}{drawBoat}}(\textcolor{keywordtype}{int}\ \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{b}});}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00112\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{boats_8h_a10010e7fb44c1ae6848555ca8b746ae4}{rotateSelected}}();}
+\DoxyCodeLine{00113\ }
+\DoxyCodeLine{00123\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{boats_8h_a3362bc80faa6573567b18abb4132c1cb}{overlapBoats}}(\mbox{\hyperlink{structBoat}{Boat}}*\ \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{boat}});}
+\DoxyCodeLine{00124\ }
+\DoxyCodeLine{00133\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{boats_8h_a02ba0098b9adf06a01132eaa2f7c18f4}{setSpots}}(\mbox{\hyperlink{structBoat}{Boat}}*\ \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{boat}});}
+\DoxyCodeLine{00134\ }
+\DoxyCodeLine{00143\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{boats_8h_a7019bbff2024069ff0e47c6efd15bfe6}{clearSpots}}(\mbox{\hyperlink{structBoat}{Boat}}*\ \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{boat}});}
+\DoxyCodeLine{00144\ }
+\DoxyCodeLine{00152\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{boats_8h_ae61b80a9aa83df556264f5a488217f39}{allBoatsFixed}}();}
+\DoxyCodeLine{00153\ }
+\DoxyCodeLine{00154\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

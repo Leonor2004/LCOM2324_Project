@@ -1,0 +1,5 @@
+<map id="load_boat_sprites" name="load_boat_sprites">
+<area shape="rect" id="Node000001" title="Loads boat sprites." alt="" coords="5,5,143,31"/>
+<area shape="rect" id="Node000002" href="$sprite_8c.html#ad5648ba77a90e532ec556dda3a76716a" title="Create a sprite object." alt="" coords="191,5,297,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,15,177,15,177,21,143,21"/>
+</map>

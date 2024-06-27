@@ -1,0 +1,11 @@
+<map id="drawSelected" name="drawSelected">
+<area shape="rect" id="Node000001" title="Function that draws the selected boat with id b." alt="" coords="5,31,116,56"/>
+<area shape="rect" id="Node000002" href="$boats_8c.html#a7019bbff2024069ff0e47c6efd15bfe6" title="Function that sets the spots occupied by the given boat of the board set as untaken." alt="" coords="164,5,255,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="116,31,150,25,151,31,117,37"/>
+<area shape="rect" id="Node000003" href="$boats_8c.html#a88b1c793d5cdec566a2c5e7d7e65e8f9" title="Function that draws the boat sprite by receiving its id." alt="" coords="167,55,251,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="117,50,154,56,153,61,116,55"/>
+<area shape="rect" id="Node000004" href="$sprite_8c.html#a740994f8c16c38bf18eaabac1f5eeeb9" title="Draws a sprite on the screen." alt="" coords="303,55,401,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="252,65,289,65,289,70,252,70"/>
+<area shape="rect" id="Node000005" href="$graphics_8c.html#a6f895de9725f9f231f9a7f74b6087f60" title="Draws a pixel on the screen at the specified coordinates." alt="" coords="449,55,564,80"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="401,65,436,65,436,70,401,70"/>
+</map>

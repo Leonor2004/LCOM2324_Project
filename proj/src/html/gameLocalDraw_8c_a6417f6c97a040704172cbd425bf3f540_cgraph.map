@@ -1,0 +1,9 @@
+<map id="drawSunken" name="drawSunken">
+<area shape="rect" id="Node000001" title="Draws all sunken boats for a specified player." alt="" coords="5,5,107,31"/>
+<area shape="rect" id="Node000002" href="$gameLocalDraw_8c.html#a489a9e82ff19241b8d425a338d0362ca" title="Draws a sunken boat on the screen." alt="" coords="155,5,285,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,15,141,15,141,21,107,21"/>
+<area shape="rect" id="Node000003" href="$sprite_8c.html#a740994f8c16c38bf18eaabac1f5eeeb9" title="Draws a sprite on the screen." alt="" coords="333,5,432,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="285,15,319,15,319,21,285,21"/>
+<area shape="rect" id="Node000004" href="$graphics_8c.html#a6f895de9725f9f231f9a7f74b6087f60" title="Draws a pixel on the screen at the specified coordinates." alt="" coords="480,5,595,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="432,15,466,15,466,21,432,21"/>
+</map>

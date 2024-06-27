@@ -1,0 +1,178 @@
+\doxysection{macros.\+h}
+\hypertarget{macros_8h_source}{}\label{macros_8h_source}\index{controllers/macros.h@{controllers/macros.h}}
+\mbox{\hyperlink{macros_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ \_LCOM\_MACRO\_H\_}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ \_LCOM\_MACRO\_H\_}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#define\ BIT(n)\ (1\ <<\ (n))}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{comment}{//\ i8254\ (timer\ controller)}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ TIMER\_FREQ\ 1193182\ }}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ TIMER0\_IRQ\ 0\ }}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{comment}{/*\ I/O\ port\ addresses\ */}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#define\ TIMER\_0\ \ \ \ 0x40\ }}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#define\ TIMER\_1\ \ \ \ 0x41\ }}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#define\ TIMER\_2\ \ \ \ 0x42\ }}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#define\ TIMER\_CTRL\ 0x43\ }}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#define\ SPEAKER\_CTRL\ 0x61\ }}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{comment}{/*\ Timer\ control\ */}}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{comment}{/*\ Timer\ selection:\ bits\ 7\ and\ 6\ */}}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#define\ TIMER\_SEL0\ \ \ 0x00\ \ \ \ \ \ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#define\ TIMER\_SEL1\ \ \ BIT(6)\ \ \ \ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#define\ TIMER\_SEL2\ \ \ BIT(7)\ \ \ \ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#define\ TIMER\_RB\_CMD\ (BIT(7)\ |\ BIT(6))\ }}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#define\ TIMER\_LSB\ \ \ \ \ BIT(4)\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#define\ TIMER\_MSB\ \ \ \ \ BIT(5)\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#define\ TIMER\_LSB\_MSB\ (TIMER\_LSB\ |\ TIMER\_MSB)\ }}
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#define\ TIMER\_SQR\_WAVE\ (BIT(2)\ |\ BIT(1))\ }}
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#define\ TIMER\_RATE\_GEN\ BIT(2)\ \ \ \ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#define\ TIMER\_BCD\ 0x01\ }}
+\DoxyCodeLine{00033\ \textcolor{preprocessor}{\#define\ TIMER\_BIN\ 0x00\ }}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{comment}{/*\ READ-\/BACK\ COMMAND\ FORMAT\ */}}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#define\ TIMER\_RB\_COUNT\_\ \ BIT(5)}}
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#define\ TIMER\_RB\_STATUS\_\ BIT(4)}}
+\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#define\ TIMER\_RB\_SEL(n)\ \ BIT((n)\ +\ 1)}}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \textcolor{comment}{//\ i8042\ (keyboard\ controller)}}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{comment}{//\ adresses}}
+\DoxyCodeLine{00044\ \textcolor{preprocessor}{\#define\ IN\_BUF\_COMMANDS\ \ \ \ \ \ \ \ \ \ \ \ \ 0x64}}
+\DoxyCodeLine{00045\ \textcolor{preprocessor}{\#define\ IN\_BUF\_ARGUMENTS\ \ \ \ \ \ \ \ \ \ \ \ 0x60}}
+\DoxyCodeLine{00046\ \textcolor{preprocessor}{\#define\ OUT\_BUF\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 0x60}}
+\DoxyCodeLine{00047\ \textcolor{preprocessor}{\#define\ ESC\_BREAKCODE\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 0x81}}
+\DoxyCodeLine{00048\ \textcolor{preprocessor}{\#define\ READ\_COMMAND\_BACK\ \ \ \ \ \ \ \ \ \ \ 0x20}}
+\DoxyCodeLine{00049\ \textcolor{preprocessor}{\#define\ WRITE\_COMAND\_BACK\ \ \ \ \ \ \ \ \ \ \ 0x60}}
+\DoxyCodeLine{00050\ \textcolor{preprocessor}{\#define\ ST\_REG\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 0x64}}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{comment}{//\ status-\/register\ bit\ definitions}}
+\DoxyCodeLine{00053\ \textcolor{preprocessor}{\#define\ OBF\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ BIT(0)}}
+\DoxyCodeLine{00054\ \textcolor{preprocessor}{\#define\ IBF\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ BIT(1)}}
+\DoxyCodeLine{00055\ \textcolor{preprocessor}{\#define\ AUX\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ BIT(5)\ \ }\textcolor{comment}{//\ mouse\ data}}
+\DoxyCodeLine{00056\ \textcolor{preprocessor}{\#define\ TIMEOUT\_ERROR\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ BIT(6)}}
+\DoxyCodeLine{00057\ \textcolor{preprocessor}{\#define\ PARITY\_ERROR\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ BIT(7)}}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \textcolor{preprocessor}{\#define\ KEYBOARD\_IRQ\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 1}}
+\DoxyCodeLine{00060\ \textcolor{preprocessor}{\#define\ KBD\_SCANCODE\_BRK\ \ \ \ \ \ \ \ \ \ \ \ BIT(7)}}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \textcolor{preprocessor}{\#define\ MAX\_ATTEMPS\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 10}}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ \textcolor{comment}{//\ mouse}}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \textcolor{preprocessor}{\#define\ MOUSE\_IRQ\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 12}}
+\DoxyCodeLine{00067\ \textcolor{preprocessor}{\#define\ MOUSE\_LB\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ BIT(0)}}
+\DoxyCodeLine{00068\ \textcolor{preprocessor}{\#define\ MOUSE\_RB\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ BIT(1)}}
+\DoxyCodeLine{00069\ \textcolor{preprocessor}{\#define\ MOUSE\_MB\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ BIT(2)}}
+\DoxyCodeLine{00070\ \textcolor{preprocessor}{\#define\ FIRST\_BYTE\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ BIT(3)}}
+\DoxyCodeLine{00071\ \textcolor{preprocessor}{\#define\ MSB\_X\_DELTA\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ BIT(4)}}
+\DoxyCodeLine{00072\ \textcolor{preprocessor}{\#define\ MSB\_Y\_DELTA\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ BIT(5)}}
+\DoxyCodeLine{00073\ \textcolor{preprocessor}{\#define\ X\_OVFL\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ BIT(6)}}
+\DoxyCodeLine{00074\ \textcolor{preprocessor}{\#define\ Y\_OVFL\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ BIT(7)}}
+\DoxyCodeLine{00075\ \textcolor{preprocessor}{\#define\ DISABLE\_CMD\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 0xF5}}
+\DoxyCodeLine{00076\ \textcolor{preprocessor}{\#define\ ENABLE\_CMD\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 0xF4}}
+\DoxyCodeLine{00077\ \textcolor{preprocessor}{\#define\ SET\_STREAM\_MODE\ \ \ \ \ \ \ \ \ \ \ \ \ 0xEA}}
+\DoxyCodeLine{00078\ \textcolor{preprocessor}{\#define\ READ\_DATA\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 0xEB}}
+\DoxyCodeLine{00079\ \textcolor{preprocessor}{\#define\ WRITE\_BYTE\_TO\_AUX\_DEVICE\ \ \ \ 0xD4}}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00081\ \textcolor{preprocessor}{\#define\ ACK\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 0xFA\ \ \ \ }}
+\DoxyCodeLine{00082\ \textcolor{preprocessor}{\#define\ NACK\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 0xFE}}
+\DoxyCodeLine{00083\ \textcolor{preprocessor}{\#define\ ERROR\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 0xFC}}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00085\ \textcolor{comment}{//\ graphics}}
+\DoxyCodeLine{00086\ \textcolor{preprocessor}{\#define\ SET\_VBE\_MODE\ 0x4F}}
+\DoxyCodeLine{00087\ \textcolor{preprocessor}{\#define\ RETURN\_VBE\_MODE\_INFO\ 0X4F}}
+\DoxyCodeLine{00088\ \textcolor{preprocessor}{\#define\ RETURN\_VBE\_CTRL\_INFO\ 0x4F}}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00090\ \textcolor{comment}{//\ rtc}}
+\DoxyCodeLine{00091\ \textcolor{preprocessor}{\#define\ HOUR\ 0x04}}
+\DoxyCodeLine{00092\ \textcolor{preprocessor}{\#define\ MONTH\ 0x08}}
+\DoxyCodeLine{00093\ \textcolor{preprocessor}{\#define\ REGISTER\_INPUT\ 0x70}}
+\DoxyCodeLine{00094\ \textcolor{preprocessor}{\#define\ REGISTER\_OUTPUT\ 0x71}}
+\DoxyCodeLine{00095\ \textcolor{preprocessor}{\#define\ REG\_A\ 0x0A}}
+\DoxyCodeLine{00096\ \textcolor{preprocessor}{\#define\ REG\_B\ 0x0B}}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00098\ \textcolor{comment}{//\ fifo}}
+\DoxyCodeLine{00099\ \textcolor{preprocessor}{\#define\ MAXSIZE\ 100}}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00101\ \textcolor{comment}{//\ serial\ port}}
+\DoxyCodeLine{00102\ \textcolor{preprocessor}{\#define\ COM1\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 0x3F8}}
+\DoxyCodeLine{00103\ \textcolor{preprocessor}{\#define\ COM1\_IRQ\ \ \ \ \ \ \ \ \ \ \ \ \ \ 4}}
+\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00105\ \textcolor{comment}{//\ uart\ registers}}
+\DoxyCodeLine{00106\ \textcolor{preprocessor}{\#define\ RBR\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 0x00}}
+\DoxyCodeLine{00107\ \textcolor{preprocessor}{\#define\ THR\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 0x00}}
+\DoxyCodeLine{00108\ \textcolor{preprocessor}{\#define\ IER\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 0x01}}
+\DoxyCodeLine{00109\ \textcolor{preprocessor}{\#define\ IIR\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 0x02}}
+\DoxyCodeLine{00110\ \textcolor{preprocessor}{\#define\ FCR\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 0x02}}
+\DoxyCodeLine{00111\ \textcolor{preprocessor}{\#define\ LCR\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 0x03}}
+\DoxyCodeLine{00112\ \textcolor{preprocessor}{\#define\ MCR\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 0x04}}
+\DoxyCodeLine{00113\ \textcolor{preprocessor}{\#define\ LSR\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 0x05}}
+\DoxyCodeLine{00114\ \textcolor{preprocessor}{\#define\ MSR\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 0x06}}
+\DoxyCodeLine{00115\ \textcolor{preprocessor}{\#define\ SCRATCHPAD\_REG\ \ \ \ \ \ \ \ 0x07}}
+\DoxyCodeLine{00116\ }
+\DoxyCodeLine{00117\ \textcolor{preprocessor}{\#define\ DIVISOR\_LATCH\_LSB\ \ \ \ \ 0x00}}
+\DoxyCodeLine{00118\ \textcolor{preprocessor}{\#define\ DIVISOR\_LATCH\_MSB\ \ \ \ \ 0x01}}
+\DoxyCodeLine{00119\ }
+\DoxyCodeLine{00120\ \textcolor{preprocessor}{\#define\ LSR\_RECEIVER\_DATA\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ BIT(0)}}
+\DoxyCodeLine{00121\ \textcolor{preprocessor}{\#define\ LSR\_OVERRUN\_ERROR\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ BIT(1)}}
+\DoxyCodeLine{00122\ \textcolor{preprocessor}{\#define\ LSR\_PARITY\_ERROR\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ BIT(2)}}
+\DoxyCodeLine{00123\ \textcolor{preprocessor}{\#define\ LSR\_FRAMING\_ERROR\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ BIT(3)}}
+\DoxyCodeLine{00124\ \textcolor{preprocessor}{\#define\ LSR\_BREAK\_INT\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ BIT(4)}}
+\DoxyCodeLine{00125\ \textcolor{preprocessor}{\#define\ LSR\_TRANSMITTER\_HOLDING\_REG\_EMPTY\ \ \ \ \ \ \ BIT(5)}}
+\DoxyCodeLine{00126\ \textcolor{preprocessor}{\#define\ LSR\_TRANSMITTER\_EMPTY\_REG\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ BIT(6)}}
+\DoxyCodeLine{00127\ \textcolor{preprocessor}{\#define\ LSR\_FIFO\_ERROR\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ BIT(7)}}
+\DoxyCodeLine{00128\ }
+\DoxyCodeLine{00129\ \textcolor{preprocessor}{\#define\ IER\_ENABLES\_RECEIVED\_DATA\_AVAILABLE\_INT\ BIT(0)}}
+\DoxyCodeLine{00130\ \textcolor{preprocessor}{\#define\ IER\_ENABLES\_TRANSMIT\_HOLD\_REG\_EMPTY\_INT\ BIT(1)}}
+\DoxyCodeLine{00131\ \textcolor{preprocessor}{\#define\ IER\_ENABLES\_RECEIVER\_LINE\_STATUS\_INT\ \ \ \ BIT(2)}}
+\DoxyCodeLine{00132\ }
+\DoxyCodeLine{00133\ \textcolor{preprocessor}{\#define\ IIR\_NO\_INT\_PENDING\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ BIT(0)}}
+\DoxyCodeLine{00134\ \textcolor{preprocessor}{\#define\ IIR\_INT\_PENDING\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ BIT(1)\ |\ BIT(2)\ |\ BIT(3)}}
+\DoxyCodeLine{00135\ \textcolor{preprocessor}{\#define\ IIR\_RECEIVER\_LINE\_STATUS\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ BIT(1)\ |\ BIT(2)}}
+\DoxyCodeLine{00136\ \textcolor{preprocessor}{\#define\ IIR\_RECEIVED\_DATA\_AVAILABLE\ \ \ \ \ \ \ \ \ \ \ \ \ BIT(2)}}
+\DoxyCodeLine{00137\ \textcolor{preprocessor}{\#define\ IIR\_CHAR\_TIMEOUT\_FIFO\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ BIT(3)\ |\ BIT(2)}}
+\DoxyCodeLine{00138\ \textcolor{preprocessor}{\#define\ IIR\_TRANSMITTER\_HOLDING\_REG\_EMPTY\ \ \ \ \ \ \ BIT(1)}}
+\DoxyCodeLine{00139\ \textcolor{preprocessor}{\#define\ IIR\_MODEM\_STATUS\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 0x00}}
+\DoxyCodeLine{00140\ }
+\DoxyCodeLine{00141\ \textcolor{preprocessor}{\#define\ FCR\_ENABLE\_BOTH\_FIFO\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ BIT(0)}}
+\DoxyCodeLine{00142\ \textcolor{preprocessor}{\#define\ FCR\_CLEAR\_RCVR\_FIFO\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ BIT(1)}}
+\DoxyCodeLine{00143\ \textcolor{preprocessor}{\#define\ FCR\_CLEAR\_XMIT\_FIFO\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ BIT(2)}}
+\DoxyCodeLine{00144\ \textcolor{preprocessor}{\#define\ FCR\_ENABLE\_64\_BYTE\_FIFO\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ BIT(5)}}
+\DoxyCodeLine{00145\ }
+\DoxyCodeLine{00146\ \textcolor{preprocessor}{\#define\ LCR\_DLAB\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ BIT(7)}}
+\DoxyCodeLine{00147\ }
+\DoxyCodeLine{00148\ \textcolor{comment}{//\ game\ macros}}
+\DoxyCodeLine{00149\ \textcolor{preprocessor}{\#define\ LOCAL\ 0x26\ \ \ \ \ \ \ \ \ \ }\textcolor{comment}{//\ L}}
+\DoxyCodeLine{00150\ \textcolor{preprocessor}{\#define\ REMOTE\ 0x13\ \ \ \ \ \ \ \ \ }\textcolor{comment}{//\ R}}
+\DoxyCodeLine{00151\ \textcolor{preprocessor}{\#define\ BOAT\_2P\ 0x12\ \ \ \ \ \ \ \ }\textcolor{comment}{//\ E}}
+\DoxyCodeLine{00152\ \textcolor{preprocessor}{\#define\ BOAT\_3P\_1\ 0x20\ \ \ \ \ \ }\textcolor{comment}{//\ D}}
+\DoxyCodeLine{00153\ \textcolor{preprocessor}{\#define\ BOAT\_3P\_2\ 0x2E\ \ \ \ \ \ }\textcolor{comment}{//\ C}}
+\DoxyCodeLine{00154\ \textcolor{preprocessor}{\#define\ BOAT\_4P\ 0x30\ \ \ \ \ \ \ \ }\textcolor{comment}{//\ B}}
+\DoxyCodeLine{00155\ \textcolor{preprocessor}{\#define\ BOAT\_5P\ 0x1E\ \ \ \ \ \ \ \ }\textcolor{comment}{//\ A}}
+\DoxyCodeLine{00156\ \textcolor{preprocessor}{\#define\ ENTER\ 0x1C\ \ \ \ \ \ \ \ \ \ }\textcolor{comment}{//\ Enter}}
+\DoxyCodeLine{00157\ \textcolor{preprocessor}{\#define\ ARROW\ 0xE0}}
+\DoxyCodeLine{00158\ \textcolor{preprocessor}{\#define\ UP\ 0x48}}
+\DoxyCodeLine{00159\ \textcolor{preprocessor}{\#define\ DOWN\ 0x50}}
+\DoxyCodeLine{00160\ \textcolor{preprocessor}{\#define\ LEFT\ 0x4b}}
+\DoxyCodeLine{00161\ \textcolor{preprocessor}{\#define\ RIGTH\ 0x4d}}
+\DoxyCodeLine{00162\ \textcolor{preprocessor}{\#define\ ROTATE\ 0x13\ \ \ \ \ \ \ \ \ }\textcolor{comment}{//\ R}}
+\DoxyCodeLine{00163\ \textcolor{preprocessor}{\#define\ NEXT\ 0x0f\ \ \ \ \ \ \ \ \ \ \ }\textcolor{comment}{//\ Tab}}
+\DoxyCodeLine{00164\ \textcolor{preprocessor}{\#define\ H\ 0x23\ \ \ \ \ \ \ \ \ \ \ \ \ \ }\textcolor{comment}{//\ H}}
+\DoxyCodeLine{00165\ }
+\DoxyCodeLine{00166\ \textcolor{preprocessor}{\#define\ MATRIX\_SIZE\ 10}}
+\DoxyCodeLine{00167\ \textcolor{preprocessor}{\#define\ BIG\_BOARD\_X\ 117}}
+\DoxyCodeLine{00168\ \textcolor{preprocessor}{\#define\ BIG\_BOARD\_Y\ 140}}
+\DoxyCodeLine{00169\ \textcolor{preprocessor}{\#define\ BIG\_BOARD\_SQUARE\ 68}}
+\DoxyCodeLine{00170\ \textcolor{preprocessor}{\#define\ SMALL\_BOARD\_X\ 813}}
+\DoxyCodeLine{00171\ \textcolor{preprocessor}{\#define\ SMALL\_BOARD\_Y\ 482}}
+\DoxyCodeLine{00172\ \textcolor{preprocessor}{\#define\ SMALL\_BOARD\_SQUARE\ 33}}
+\DoxyCodeLine{00173\ }
+\DoxyCodeLine{00174\ \textcolor{preprocessor}{\#define\ TRANSPARENT\ 0xfffffa}}
+\DoxyCodeLine{00175\ }
+\DoxyCodeLine{00176\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,62 @@
+\doxysection{controllers/utils/utils.c File Reference}
+\hypertarget{utils_8c}{}\label{utils_8c}\index{controllers/utils/utils.c@{controllers/utils/utils.c}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+Include dependency graph for utils.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{utils_8c__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{utils_8c__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{utils_8c_a31ab374573517f8a5ba31c52a49a8606}{util\+\_\+get\+\_\+\+LSB}} (\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint16\+\_\+t}} \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{val}}, \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint8\+\_\+t}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{lsb}})
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{utils_8c_afc6ca7a9a39943ff1792d206da514a59}{util\+\_\+get\+\_\+\+MSB}} (\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint16\+\_\+t}} \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{val}}, \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint8\+\_\+t}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{msb}})
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{utils_8c_a2b56f50ba159e9d5115ed1a75eff15d9}{util\+\_\+sys\+\_\+inb}} (\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{port}}, \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint8\+\_\+t}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{value}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{utils_8c_ad43c3812e6d13e0518d9f8b8f463ffcf}{count}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{utils_8c_a31ab374573517f8a5ba31c52a49a8606}\label{utils_8c_a31ab374573517f8a5ba31c52a49a8606} 
+\index{utils.c@{utils.c}!util\_get\_LSB@{util\_get\_LSB}}
+\index{util\_get\_LSB@{util\_get\_LSB}!utils.c@{utils.c}}
+\doxysubsubsection{\texorpdfstring{util\_get\_LSB()}{util\_get\_LSB()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} util\+\_\+get\+\_\+\+LSB (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint16\+\_\+t}}}]{val,  }\item[{\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint8\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{lsb }\end{DoxyParamCaption})}
+
+\Hypertarget{utils_8c_afc6ca7a9a39943ff1792d206da514a59}\label{utils_8c_afc6ca7a9a39943ff1792d206da514a59} 
+\index{utils.c@{utils.c}!util\_get\_MSB@{util\_get\_MSB}}
+\index{util\_get\_MSB@{util\_get\_MSB}!utils.c@{utils.c}}
+\doxysubsubsection{\texorpdfstring{util\_get\_MSB()}{util\_get\_MSB()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} util\+\_\+get\+\_\+\+MSB (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint16\+\_\+t}}}]{val,  }\item[{\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint8\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{msb }\end{DoxyParamCaption})}
+
+\Hypertarget{utils_8c_a2b56f50ba159e9d5115ed1a75eff15d9}\label{utils_8c_a2b56f50ba159e9d5115ed1a75eff15d9} 
+\index{utils.c@{utils.c}!util\_sys\_inb@{util\_sys\_inb}}
+\index{util\_sys\_inb@{util\_sys\_inb}!utils.c@{utils.c}}
+\doxysubsubsection{\texorpdfstring{util\_sys\_inb()}{util\_sys\_inb()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} util\+\_\+sys\+\_\+inb (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}}}]{port,  }\item[{\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint8\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{value }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{utils_8c_ad43c3812e6d13e0518d9f8b8f463ffcf}\label{utils_8c_ad43c3812e6d13e0518d9f8b8f463ffcf} 
+\index{utils.c@{utils.c}!count@{count}}
+\index{count@{count}!utils.c@{utils.c}}
+\doxysubsubsection{\texorpdfstring{count}{count}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} count = 0}
+

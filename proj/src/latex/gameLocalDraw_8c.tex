@@ -1,0 +1,274 @@
+\doxysection{view/game\+Local\+Draw.c File Reference}
+\hypertarget{gameLocalDraw_8c}{}\label{gameLocalDraw_8c}\index{view/gameLocalDraw.c@{view/gameLocalDraw.c}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include "{}game\+Local\+Draw.\+h"{}}\newline
+{\ttfamily \#include "{}controllers/timer/timer.\+h"{}}\newline
+Include dependency graph for game\+Local\+Draw.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{gameLocalDraw_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{gameLocalDraw_8c_a25747824dc02d3fe7652792fe5a91057}{draw\+Game\+Local}} ()
+\begin{DoxyCompactList}\small\item\em Draws the local game state on the screen. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{gameLocalDraw_8c_ac91fc4f78c6375eb03552f81654b6b5d}{draw\+Game\+Cursor}} ()
+\begin{DoxyCompactList}\small\item\em Draws the game cursor on the screen. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{bool}} \mbox{\hyperlink{gameLocalDraw_8c_a306e0f6aab0c984cce0a162786fe140d}{draw\+Player\+Secret\+Board}} (\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{p}})
+\begin{DoxyCompactList}\small\item\em Draws the secret board for a specified player. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{gameLocalDraw_8c_abc63dbd12568254cb7a0ba64d5b1413e}{draw\+Player\+Small\+Secret\+Board}} (\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{p}})
+\begin{DoxyCompactList}\small\item\em Draws the small secret board for a specified player. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{gameLocalDraw_8c_a489a9e82ff19241b8d425a338d0362ca}{draw\+Sunken\+Boat}} (\mbox{\hyperlink{structBoat}{Boat}} \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{boat}})
+\begin{DoxyCompactList}\small\item\em Draws a sunken boat on the screen. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{gameLocalDraw_8c_a6417f6c97a040704172cbd425bf3f540}{draw\+Sunken}} (\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{p}})
+\begin{DoxyCompactList}\small\item\em Draws all sunken boats for a specified player. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{gameLocalDraw_8c_a42d8e02c2634ad2b3387a5788270b88a}{draw\+Small\+Sunken\+Boat}} (\mbox{\hyperlink{structBoat}{Boat}} \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{boat}})
+\begin{DoxyCompactList}\small\item\em Draws a small version of a sunken boat on the screen. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{gameLocalDraw_8c_a7bced453140d78d6957d3b15cc3b2f3f}{draw\+Small\+Sunken}} (\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{p}})
+\begin{DoxyCompactList}\small\item\em Draws all small sunken boats for a specified player. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{bool}} \mbox{\hyperlink{gameLocalDraw_8c_a57a516bba0298057ffbc3433a650fad3}{cursor\+\_\+active}} = \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{true}}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{bool}} \mbox{\hyperlink{gameLocalDraw_8c_a45db2c516196555094ced25c526d5d9b}{keyboard}} = \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{false}}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{gameLocalDraw_8c_aa135bb051c7a68877c688aaa5a9c64ab}{global\+\_\+counter}}
+\item 
+\mbox{\hyperlink{structPlayer}{Player}} \mbox{\hyperlink{gameLocalDraw_8c_a84ca794211044aa1810646b2e9b6177e}{p1}}
+\item 
+\mbox{\hyperlink{structPlayer}{Player}} \mbox{\hyperlink{gameLocalDraw_8c_a5b2fd7a008c2231968a9736a14aab00f}{p2}}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{enum}} \mbox{\hyperlink{gameLocalDraw_8h_a4fafe7abe8f831b458c3e05384a3fff6}{GAMESTATE}} \mbox{\hyperlink{gameLocalDraw_8c_ac65f21024c62203b384b8c36d88a7d7a}{game\+State}} = \mbox{\hyperlink{gameLocalDraw_8h_a4fafe7abe8f831b458c3e05384a3fff6a2884693247786bd3ade63a8dca2a4630}{TURN1}}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{bool}} \mbox{\hyperlink{gameLocalDraw_8c_a651940b4926afd229740c05195719e06}{change\+Turn}} = \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{false}}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{gameLocalDraw_8c_ac3897a350075920efc6bab8d04cc1215}{winner}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{gameLocalDraw_8c_ac91fc4f78c6375eb03552f81654b6b5d}\label{gameLocalDraw_8c_ac91fc4f78c6375eb03552f81654b6b5d} 
+\index{gameLocalDraw.c@{gameLocalDraw.c}!drawGameCursor@{drawGameCursor}}
+\index{drawGameCursor@{drawGameCursor}!gameLocalDraw.c@{gameLocalDraw.c}}
+\doxysubsubsection{\texorpdfstring{drawGameCursor()}{drawGameCursor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} draw\+Game\+Cursor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws the game cursor on the screen. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{gameLocalDraw_8c_ac91fc4f78c6375eb03552f81654b6b5d_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{gameLocalDraw_8c_a25747824dc02d3fe7652792fe5a91057}\label{gameLocalDraw_8c_a25747824dc02d3fe7652792fe5a91057} 
+\index{gameLocalDraw.c@{gameLocalDraw.c}!drawGameLocal@{drawGameLocal}}
+\index{drawGameLocal@{drawGameLocal}!gameLocalDraw.c@{gameLocalDraw.c}}
+\doxysubsubsection{\texorpdfstring{drawGameLocal()}{drawGameLocal()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} draw\+Game\+Local (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws the local game state on the screen. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{gameLocalDraw_8c_a25747824dc02d3fe7652792fe5a91057_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{gameLocalDraw_8c_a306e0f6aab0c984cce0a162786fe140d}\label{gameLocalDraw_8c_a306e0f6aab0c984cce0a162786fe140d} 
+\index{gameLocalDraw.c@{gameLocalDraw.c}!drawPlayerSecretBoard@{drawPlayerSecretBoard}}
+\index{drawPlayerSecretBoard@{drawPlayerSecretBoard}!gameLocalDraw.c@{gameLocalDraw.c}}
+\doxysubsubsection{\texorpdfstring{drawPlayerSecretBoard()}{drawPlayerSecretBoard()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{bool}} draw\+Player\+Secret\+Board (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}}}]{p }\end{DoxyParamCaption})}
+
+
+
+Draws the secret board for a specified player. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \+: The player number (1 or 2). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool \+: Returns true if the player has all boats sunk, otherwise false. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{gameLocalDraw_8c_a306e0f6aab0c984cce0a162786fe140d_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{gameLocalDraw_8c_abc63dbd12568254cb7a0ba64d5b1413e}\label{gameLocalDraw_8c_abc63dbd12568254cb7a0ba64d5b1413e} 
+\index{gameLocalDraw.c@{gameLocalDraw.c}!drawPlayerSmallSecretBoard@{drawPlayerSmallSecretBoard}}
+\index{drawPlayerSmallSecretBoard@{drawPlayerSmallSecretBoard}!gameLocalDraw.c@{gameLocalDraw.c}}
+\doxysubsubsection{\texorpdfstring{drawPlayerSmallSecretBoard()}{drawPlayerSmallSecretBoard()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} draw\+Player\+Small\+Secret\+Board (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}}}]{p }\end{DoxyParamCaption})}
+
+
+
+Draws the small secret board for a specified player. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \+: The player number (1 or 2). \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{gameLocalDraw_8c_abc63dbd12568254cb7a0ba64d5b1413e_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{gameLocalDraw_8c_a7bced453140d78d6957d3b15cc3b2f3f}\label{gameLocalDraw_8c_a7bced453140d78d6957d3b15cc3b2f3f} 
+\index{gameLocalDraw.c@{gameLocalDraw.c}!drawSmallSunken@{drawSmallSunken}}
+\index{drawSmallSunken@{drawSmallSunken}!gameLocalDraw.c@{gameLocalDraw.c}}
+\doxysubsubsection{\texorpdfstring{drawSmallSunken()}{drawSmallSunken()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} draw\+Small\+Sunken (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}}}]{p }\end{DoxyParamCaption})}
+
+
+
+Draws all small sunken boats for a specified player. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \+: The player number (1 or 2). \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{gameLocalDraw_8c_a7bced453140d78d6957d3b15cc3b2f3f_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{gameLocalDraw_8c_a42d8e02c2634ad2b3387a5788270b88a}\label{gameLocalDraw_8c_a42d8e02c2634ad2b3387a5788270b88a} 
+\index{gameLocalDraw.c@{gameLocalDraw.c}!drawSmallSunkenBoat@{drawSmallSunkenBoat}}
+\index{drawSmallSunkenBoat@{drawSmallSunkenBoat}!gameLocalDraw.c@{gameLocalDraw.c}}
+\doxysubsubsection{\texorpdfstring{drawSmallSunkenBoat()}{drawSmallSunkenBoat()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} draw\+Small\+Sunken\+Boat (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structBoat}{Boat}}}]{boat }\end{DoxyParamCaption})}
+
+
+
+Draws a small version of a sunken boat on the screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em boat} & \+: The boat to be drawn. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{gameLocalDraw_8c_a42d8e02c2634ad2b3387a5788270b88a_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{gameLocalDraw_8c_a6417f6c97a040704172cbd425bf3f540}\label{gameLocalDraw_8c_a6417f6c97a040704172cbd425bf3f540} 
+\index{gameLocalDraw.c@{gameLocalDraw.c}!drawSunken@{drawSunken}}
+\index{drawSunken@{drawSunken}!gameLocalDraw.c@{gameLocalDraw.c}}
+\doxysubsubsection{\texorpdfstring{drawSunken()}{drawSunken()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} draw\+Sunken (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}}}]{p }\end{DoxyParamCaption})}
+
+
+
+Draws all sunken boats for a specified player. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \+: The player number (1 or 2). \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{gameLocalDraw_8c_a6417f6c97a040704172cbd425bf3f540_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{gameLocalDraw_8c_a489a9e82ff19241b8d425a338d0362ca}\label{gameLocalDraw_8c_a489a9e82ff19241b8d425a338d0362ca} 
+\index{gameLocalDraw.c@{gameLocalDraw.c}!drawSunkenBoat@{drawSunkenBoat}}
+\index{drawSunkenBoat@{drawSunkenBoat}!gameLocalDraw.c@{gameLocalDraw.c}}
+\doxysubsubsection{\texorpdfstring{drawSunkenBoat()}{drawSunkenBoat()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} draw\+Sunken\+Boat (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structBoat}{Boat}}}]{boat }\end{DoxyParamCaption})}
+
+
+
+Draws a sunken boat on the screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em boat} & \+: The boat to be drawn. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{gameLocalDraw_8c_a489a9e82ff19241b8d425a338d0362ca_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{gameLocalDraw_8c_a651940b4926afd229740c05195719e06}\label{gameLocalDraw_8c_a651940b4926afd229740c05195719e06} 
+\index{gameLocalDraw.c@{gameLocalDraw.c}!changeTurn@{changeTurn}}
+\index{changeTurn@{changeTurn}!gameLocalDraw.c@{gameLocalDraw.c}}
+\doxysubsubsection{\texorpdfstring{changeTurn}{changeTurn}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{bool}} change\+Turn = \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{false}}}
+
+\Hypertarget{gameLocalDraw_8c_a57a516bba0298057ffbc3433a650fad3}\label{gameLocalDraw_8c_a57a516bba0298057ffbc3433a650fad3} 
+\index{gameLocalDraw.c@{gameLocalDraw.c}!cursor\_active@{cursor\_active}}
+\index{cursor\_active@{cursor\_active}!gameLocalDraw.c@{gameLocalDraw.c}}
+\doxysubsubsection{\texorpdfstring{cursor\_active}{cursor\_active}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{bool}} cursor\+\_\+active = \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{true}}}
+
+\Hypertarget{gameLocalDraw_8c_ac65f21024c62203b384b8c36d88a7d7a}\label{gameLocalDraw_8c_ac65f21024c62203b384b8c36d88a7d7a} 
+\index{gameLocalDraw.c@{gameLocalDraw.c}!gameState@{gameState}}
+\index{gameState@{gameState}!gameLocalDraw.c@{gameLocalDraw.c}}
+\doxysubsubsection{\texorpdfstring{gameState}{gameState}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{enum}} \mbox{\hyperlink{gameLocalDraw_8h_a4fafe7abe8f831b458c3e05384a3fff6}{GAMESTATE}} game\+State = \mbox{\hyperlink{gameLocalDraw_8h_a4fafe7abe8f831b458c3e05384a3fff6a2884693247786bd3ade63a8dca2a4630}{TURN1}}}
+
+\Hypertarget{gameLocalDraw_8c_aa135bb051c7a68877c688aaa5a9c64ab}\label{gameLocalDraw_8c_aa135bb051c7a68877c688aaa5a9c64ab} 
+\index{gameLocalDraw.c@{gameLocalDraw.c}!global\_counter@{global\_counter}}
+\index{global\_counter@{global\_counter}!gameLocalDraw.c@{gameLocalDraw.c}}
+\doxysubsubsection{\texorpdfstring{global\_counter}{global\_counter}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} global\+\_\+counter\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{gameLocalDraw_8c_a45db2c516196555094ced25c526d5d9b}\label{gameLocalDraw_8c_a45db2c516196555094ced25c526d5d9b} 
+\index{gameLocalDraw.c@{gameLocalDraw.c}!keyboard@{keyboard}}
+\index{keyboard@{keyboard}!gameLocalDraw.c@{gameLocalDraw.c}}
+\doxysubsubsection{\texorpdfstring{keyboard}{keyboard}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{bool}} keyboard = \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{false}}}
+
+\Hypertarget{gameLocalDraw_8c_a84ca794211044aa1810646b2e9b6177e}\label{gameLocalDraw_8c_a84ca794211044aa1810646b2e9b6177e} 
+\index{gameLocalDraw.c@{gameLocalDraw.c}!p1@{p1}}
+\index{p1@{p1}!gameLocalDraw.c@{gameLocalDraw.c}}
+\doxysubsubsection{\texorpdfstring{p1}{p1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPlayer}{Player}} p1\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{gameLocalDraw_8c_a5b2fd7a008c2231968a9736a14aab00f}\label{gameLocalDraw_8c_a5b2fd7a008c2231968a9736a14aab00f} 
+\index{gameLocalDraw.c@{gameLocalDraw.c}!p2@{p2}}
+\index{p2@{p2}!gameLocalDraw.c@{gameLocalDraw.c}}
+\doxysubsubsection{\texorpdfstring{p2}{p2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPlayer}{Player}} p2\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{gameLocalDraw_8c_ac3897a350075920efc6bab8d04cc1215}\label{gameLocalDraw_8c_ac3897a350075920efc6bab8d04cc1215} 
+\index{gameLocalDraw.c@{gameLocalDraw.c}!winner@{winner}}
+\index{winner@{winner}!gameLocalDraw.c@{gameLocalDraw.c}}
+\doxysubsubsection{\texorpdfstring{winner}{winner}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} winner}
+

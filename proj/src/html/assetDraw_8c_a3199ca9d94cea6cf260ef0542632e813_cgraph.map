@@ -1,0 +1,7 @@
+<map id="drawNamePlayer1" name="drawNamePlayer1">
+<area shape="rect" id="Node000001" title="Draws the name sprite for player 1 on the screen." alt="" coords="5,5,148,31"/>
+<area shape="rect" id="Node000002" href="$sprite_8c.html#a740994f8c16c38bf18eaabac1f5eeeb9" title="Draws a sprite on the screen." alt="" coords="196,5,295,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="148,15,182,15,182,21,148,21"/>
+<area shape="rect" id="Node000003" href="$graphics_8c.html#a6f895de9725f9f231f9a7f74b6087f60" title="Draws a pixel on the screen at the specified coordinates." alt="" coords="343,5,457,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="295,15,329,15,329,21,295,21"/>
+</map>

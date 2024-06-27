@@ -1,0 +1,212 @@
+\doxysection{handler/main\+Controller.h File Reference}
+\hypertarget{mainController_8h}{}\label{mainController_8h}\index{handler/mainController.h@{handler/mainController.h}}
+
+
+This file contains the main controllers.  
+
+
+{\ttfamily \#include "{}controllers/keyboard/kbd.\+h"{}}\newline
+{\ttfamily \#include "{}controllers/mouse/mouse.\+h"{}}\newline
+{\ttfamily \#include "{}controllers/video\+\_\+graphics/graphics.\+h"{}}\newline
+{\ttfamily \#include "{}controllers/timer/timer.\+h"{}}\newline
+{\ttfamily \#include "{}controllers/sprites/sprite.\+h"{}}\newline
+{\ttfamily \#include "{}controllers/serialport/serialport.\+h"{}}\newline
+{\ttfamily \#include "{}controllers/macros.\+h"{}}\newline
+{\ttfamily \#include "{}model/game.\+h"{}}\newline
+{\ttfamily \#include "{}view/game\+Remote\+Draw.\+h"{}}\newline
+{\ttfamily \#include "{}handler/game\+Remote\+Controller.\+h"{}}\newline
+{\ttfamily \#include "{}view/game\+Local\+Draw.\+h"{}}\newline
+{\ttfamily \#include "{}handler/game\+Local\+Controller.\+h"{}}\newline
+{\ttfamily \#include "{}view/help\+Draw.\+h"{}}\newline
+{\ttfamily \#include "{}handler/help\+Controller.\+h"{}}\newline
+{\ttfamily \#include "{}view/menu\+Draw.\+h"{}}\newline
+{\ttfamily \#include "{}handler/menu\+Controller.\+h"{}}\newline
+{\ttfamily \#include "{}view/placing\+Draw.\+h"{}}\newline
+{\ttfamily \#include "{}handler/placing\+Controller.\+h"{}}\newline
+Include dependency graph for main\+Controller.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mainController_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mainController_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{mainController_8h_a7eabd788dcab19ca586663bf73deddf5}{MODE}} \{ \newline
+\mbox{\hyperlink{mainController_8h_a7eabd788dcab19ca586663bf73deddf5a4308178099d62c4081c711b763591792}{MAINMENU}}
+, \mbox{\hyperlink{mainController_8h_a7eabd788dcab19ca586663bf73deddf5ae63600306178e1c8dfafad2d169dba72}{PLACINGMENU}}
+, \mbox{\hyperlink{mainController_8h_a7eabd788dcab19ca586663bf73deddf5a9f5cb747b2e1f0ea781d2b1f2a5b4824}{HELP}}
+, \mbox{\hyperlink{mainController_8h_a7eabd788dcab19ca586663bf73deddf5a76bdc8adfd6c6463ab269ff4c06be9b4}{QUIT}}
+, \newline
+\mbox{\hyperlink{mainController_8h_a7eabd788dcab19ca586663bf73deddf5a55c292faee2db8ee7e2c23135cd217ce}{GAMELOCAL}}
+, \mbox{\hyperlink{mainController_8h_a7eabd788dcab19ca586663bf73deddf5a0b7913a7f0d698bfe9ee9b304e6c7150}{GAMEREMOTE}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enum for the different modes in the menu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{mainController_8h_a54b55b119fdadc6ceabfead41ef23be7}{controller}} ()
+\begin{DoxyCompactList}\small\item\em This function is the main function of the game, this is the function that checks the type of interrupt and calls the game functions. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{mainController_8h_a853d85b3114e5306ef95b66e82c4940a}{subscribe\+\_\+int}} ()
+\begin{DoxyCompactList}\small\item\em This function is used to subscribe the interrupts. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{mainController_8h_a7292452071354d9475097b1d1a858723}{unsubscribe\+\_\+int}} ()
+\begin{DoxyCompactList}\small\item\em This function is used to unsubscribe the interrupts. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{mainController_8h_a3dfa1abec858bf54bfb0b555a054fd1c}{change\+Mouse\+Position}} ()
+\begin{DoxyCompactList}\small\item\em This function is used to change the mouse position. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{mainController_8h_aab7430a217db9969c46ead48adffbd05}{draw\+Mouse}} ()
+\begin{DoxyCompactList}\small\item\em This function is used to draw the mouse. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{bool}} \mbox{\hyperlink{mainController_8h_a565ad7ccf48ae9f509fd64d69224cf18}{check\+Click}} ()
+\begin{DoxyCompactList}\small\item\em This function is used to check mouse click. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file contains the main controllers. 
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{mainController_8h_a7eabd788dcab19ca586663bf73deddf5}\label{mainController_8h_a7eabd788dcab19ca586663bf73deddf5} 
+\index{mainController.h@{mainController.h}!MODE@{MODE}}
+\index{MODE@{MODE}!mainController.h@{mainController.h}}
+\doxysubsubsection{\texorpdfstring{MODE}{MODE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{enum}} \mbox{\hyperlink{mainController_8h_a7eabd788dcab19ca586663bf73deddf5}{MODE}}}
+
+
+
+Enum for the different modes in the menu. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MAINMENU@{MAINMENU}!mainController.h@{mainController.h}}\index{mainController.h@{mainController.h}!MAINMENU@{MAINMENU}}}\Hypertarget{mainController_8h_a7eabd788dcab19ca586663bf73deddf5a4308178099d62c4081c711b763591792}\label{mainController_8h_a7eabd788dcab19ca586663bf73deddf5a4308178099d62c4081c711b763591792} 
+MAINMENU&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PLACINGMENU@{PLACINGMENU}!mainController.h@{mainController.h}}\index{mainController.h@{mainController.h}!PLACINGMENU@{PLACINGMENU}}}\Hypertarget{mainController_8h_a7eabd788dcab19ca586663bf73deddf5ae63600306178e1c8dfafad2d169dba72}\label{mainController_8h_a7eabd788dcab19ca586663bf73deddf5ae63600306178e1c8dfafad2d169dba72} 
+PLACINGMENU&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{HELP@{HELP}!mainController.h@{mainController.h}}\index{mainController.h@{mainController.h}!HELP@{HELP}}}\Hypertarget{mainController_8h_a7eabd788dcab19ca586663bf73deddf5a9f5cb747b2e1f0ea781d2b1f2a5b4824}\label{mainController_8h_a7eabd788dcab19ca586663bf73deddf5a9f5cb747b2e1f0ea781d2b1f2a5b4824} 
+HELP&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{QUIT@{QUIT}!mainController.h@{mainController.h}}\index{mainController.h@{mainController.h}!QUIT@{QUIT}}}\Hypertarget{mainController_8h_a7eabd788dcab19ca586663bf73deddf5a76bdc8adfd6c6463ab269ff4c06be9b4}\label{mainController_8h_a7eabd788dcab19ca586663bf73deddf5a76bdc8adfd6c6463ab269ff4c06be9b4} 
+QUIT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GAMELOCAL@{GAMELOCAL}!mainController.h@{mainController.h}}\index{mainController.h@{mainController.h}!GAMELOCAL@{GAMELOCAL}}}\Hypertarget{mainController_8h_a7eabd788dcab19ca586663bf73deddf5a55c292faee2db8ee7e2c23135cd217ce}\label{mainController_8h_a7eabd788dcab19ca586663bf73deddf5a55c292faee2db8ee7e2c23135cd217ce} 
+GAMELOCAL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GAMEREMOTE@{GAMEREMOTE}!mainController.h@{mainController.h}}\index{mainController.h@{mainController.h}!GAMEREMOTE@{GAMEREMOTE}}}\Hypertarget{mainController_8h_a7eabd788dcab19ca586663bf73deddf5a0b7913a7f0d698bfe9ee9b304e6c7150}\label{mainController_8h_a7eabd788dcab19ca586663bf73deddf5a0b7913a7f0d698bfe9ee9b304e6c7150} 
+GAMEREMOTE&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{mainController_8h_a3dfa1abec858bf54bfb0b555a054fd1c}\label{mainController_8h_a3dfa1abec858bf54bfb0b555a054fd1c} 
+\index{mainController.h@{mainController.h}!changeMousePosition@{changeMousePosition}}
+\index{changeMousePosition@{changeMousePosition}!mainController.h@{mainController.h}}
+\doxysubsubsection{\texorpdfstring{changeMousePosition()}{changeMousePosition()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} change\+Mouse\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function is used to change the mouse position. 
+
+\Hypertarget{mainController_8h_a565ad7ccf48ae9f509fd64d69224cf18}\label{mainController_8h_a565ad7ccf48ae9f509fd64d69224cf18} 
+\index{mainController.h@{mainController.h}!checkClick@{checkClick}}
+\index{checkClick@{checkClick}!mainController.h@{mainController.h}}
+\doxysubsubsection{\texorpdfstring{checkClick()}{checkClick()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{bool}} check\+Click (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function is used to check mouse click. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mainController_8h_a565ad7ccf48ae9f509fd64d69224cf18_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{mainController_8h_a54b55b119fdadc6ceabfead41ef23be7}\label{mainController_8h_a54b55b119fdadc6ceabfead41ef23be7} 
+\index{mainController.h@{mainController.h}!controller@{controller}}
+\index{controller@{controller}!mainController.h@{mainController.h}}
+\doxysubsubsection{\texorpdfstring{controller()}{controller()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} controller (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function is the main function of the game, this is the function that checks the type of interrupt and calls the game functions. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mainController_8h_a54b55b119fdadc6ceabfead41ef23be7_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{mainController_8h_aab7430a217db9969c46ead48adffbd05}\label{mainController_8h_aab7430a217db9969c46ead48adffbd05} 
+\index{mainController.h@{mainController.h}!drawMouse@{drawMouse}}
+\index{drawMouse@{drawMouse}!mainController.h@{mainController.h}}
+\doxysubsubsection{\texorpdfstring{drawMouse()}{drawMouse()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} draw\+Mouse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function is used to draw the mouse. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mainController_8h_aab7430a217db9969c46ead48adffbd05_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{mainController_8h_a853d85b3114e5306ef95b66e82c4940a}\label{mainController_8h_a853d85b3114e5306ef95b66e82c4940a} 
+\index{mainController.h@{mainController.h}!subscribe\_int@{subscribe\_int}}
+\index{subscribe\_int@{subscribe\_int}!mainController.h@{mainController.h}}
+\doxysubsubsection{\texorpdfstring{subscribe\_int()}{subscribe\_int()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} subscribe\+\_\+int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function is used to subscribe the interrupts. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mainController_8h_a853d85b3114e5306ef95b66e82c4940a_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{mainController_8h_a7292452071354d9475097b1d1a858723}\label{mainController_8h_a7292452071354d9475097b1d1a858723} 
+\index{mainController.h@{mainController.h}!unsubscribe\_int@{unsubscribe\_int}}
+\index{unsubscribe\_int@{unsubscribe\_int}!mainController.h@{mainController.h}}
+\doxysubsubsection{\texorpdfstring{unsubscribe\_int()}{unsubscribe\_int()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} unsubscribe\+\_\+int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function is used to unsubscribe the interrupts. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mainController_8h_a7292452071354d9475097b1d1a858723_cgraph}
+\end{center}
+\end{figure}

@@ -1,0 +1,253 @@
+\doxysection{handler/main\+Controller.c File Reference}
+\hypertarget{mainController_8c}{}\label{mainController_8c}\index{handler/mainController.c@{handler/mainController.c}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include "{}main\+Controller.\+h"{}}\newline
+Include dependency graph for main\+Controller.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mainController_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{mainController_8c_a54b55b119fdadc6ceabfead41ef23be7}{controller}} ()
+\begin{DoxyCompactList}\small\item\em This function is the main function of the game, this is the function that checks the type of interrupt and calls the game functions. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{mainController_8c_a853d85b3114e5306ef95b66e82c4940a}{subscribe\+\_\+int}} ()
+\begin{DoxyCompactList}\small\item\em This function is used to subscribe the interrupts. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{mainController_8c_a7292452071354d9475097b1d1a858723}{unsubscribe\+\_\+int}} ()
+\begin{DoxyCompactList}\small\item\em This function is used to unsubscribe the interrupts. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{mainController_8c_a3dfa1abec858bf54bfb0b555a054fd1c}{change\+Mouse\+Position}} ()
+\begin{DoxyCompactList}\small\item\em This function is used to change the mouse position. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{mainController_8c_aab7430a217db9969c46ead48adffbd05}{draw\+Mouse}} ()
+\begin{DoxyCompactList}\small\item\em This function is used to draw the mouse. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{bool}} \mbox{\hyperlink{mainController_8c_a565ad7ccf48ae9f509fd64d69224cf18}{check\+Click}} ()
+\begin{DoxyCompactList}\small\item\em This function is used to check mouse click. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{mainController_8c_a3a7ea4305773abf5347bb261a8a5c16b}{cursor}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{mainController_8c_abb237c399c863f3d0669d8564f6b6466}{hand\+\_\+cursor}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{mainController_8c_af37a893f866053706519a828940184d7}{crosshair}}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{struct}} \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{packet}} \mbox{\hyperlink{mainController_8c_aab02d402b9696f537e8b6791f50456ff}{mpacket}}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{bool}} \mbox{\hyperlink{mainController_8c_a651940b4926afd229740c05195719e06}{change\+Turn}}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{mainController_8c_aa135bb051c7a68877c688aaa5a9c64ab}{global\+\_\+counter}}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{mainController_8c_a6150e0515f7202e2fb518f7206ed97dc}{x}}
+\item 
+int \mbox{\hyperlink{mainController_8c_a0a2f84ed7838f07779ae24c5a9086d33}{y}}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint8\+\_\+t}} \mbox{\hyperlink{mainController_8c_a3c3f9b11f30efcaaea7455fd72ea7491}{irq\+\_\+mouse}}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint8\+\_\+t}} \mbox{\hyperlink{mainController_8c_a1ef0aca28da6802b9154fc936bca3902}{irq\+\_\+kbd}}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint8\+\_\+t}} \mbox{\hyperlink{mainController_8c_ac85fe64c6a12697cafee2e1a3e1de4c1}{irq\+\_\+timer}}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint8\+\_\+t}} \mbox{\hyperlink{mainController_8c_a88c4246035b72d19a37fef92bb44deff}{irq\+\_\+ser}}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint8\+\_\+t}} \mbox{\hyperlink{mainController_8c_aa1de7a5557e9d96b83cf03f73c92163f}{scancode}}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{enum}} \mbox{\hyperlink{mainController_8h_a7eabd788dcab19ca586663bf73deddf5}{MODE}} \mbox{\hyperlink{mainController_8c_a992aeab9e3be201c5a129b90e4a3a10d}{menu}} = \mbox{\hyperlink{mainController_8h_a7eabd788dcab19ca586663bf73deddf5a4308178099d62c4081c711b763591792}{MAINMENU}}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{enum}} \mbox{\hyperlink{gameRemoteController_8h_aeedefe5b5e9c6b92d0cb54739df45e93}{THISPLAYER}} \mbox{\hyperlink{mainController_8c_a0d249cce3fd13d6e3b6fe1ad3c4995ff}{player\+\_\+status}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{mainController_8c_a3dfa1abec858bf54bfb0b555a054fd1c}\label{mainController_8c_a3dfa1abec858bf54bfb0b555a054fd1c} 
+\index{mainController.c@{mainController.c}!changeMousePosition@{changeMousePosition}}
+\index{changeMousePosition@{changeMousePosition}!mainController.c@{mainController.c}}
+\doxysubsubsection{\texorpdfstring{changeMousePosition()}{changeMousePosition()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} change\+Mouse\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function is used to change the mouse position. 
+
+\Hypertarget{mainController_8c_a565ad7ccf48ae9f509fd64d69224cf18}\label{mainController_8c_a565ad7ccf48ae9f509fd64d69224cf18} 
+\index{mainController.c@{mainController.c}!checkClick@{checkClick}}
+\index{checkClick@{checkClick}!mainController.c@{mainController.c}}
+\doxysubsubsection{\texorpdfstring{checkClick()}{checkClick()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{bool}} check\+Click (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function is used to check mouse click. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mainController_8c_a565ad7ccf48ae9f509fd64d69224cf18_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{mainController_8c_a54b55b119fdadc6ceabfead41ef23be7}\label{mainController_8c_a54b55b119fdadc6ceabfead41ef23be7} 
+\index{mainController.c@{mainController.c}!controller@{controller}}
+\index{controller@{controller}!mainController.c@{mainController.c}}
+\doxysubsubsection{\texorpdfstring{controller()}{controller()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} controller (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function is the main function of the game, this is the function that checks the type of interrupt and calls the game functions. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mainController_8c_a54b55b119fdadc6ceabfead41ef23be7_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{mainController_8c_aab7430a217db9969c46ead48adffbd05}\label{mainController_8c_aab7430a217db9969c46ead48adffbd05} 
+\index{mainController.c@{mainController.c}!drawMouse@{drawMouse}}
+\index{drawMouse@{drawMouse}!mainController.c@{mainController.c}}
+\doxysubsubsection{\texorpdfstring{drawMouse()}{drawMouse()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} draw\+Mouse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function is used to draw the mouse. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mainController_8c_aab7430a217db9969c46ead48adffbd05_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{mainController_8c_a853d85b3114e5306ef95b66e82c4940a}\label{mainController_8c_a853d85b3114e5306ef95b66e82c4940a} 
+\index{mainController.c@{mainController.c}!subscribe\_int@{subscribe\_int}}
+\index{subscribe\_int@{subscribe\_int}!mainController.c@{mainController.c}}
+\doxysubsubsection{\texorpdfstring{subscribe\_int()}{subscribe\_int()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} subscribe\+\_\+int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function is used to subscribe the interrupts. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mainController_8c_a853d85b3114e5306ef95b66e82c4940a_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{mainController_8c_a7292452071354d9475097b1d1a858723}\label{mainController_8c_a7292452071354d9475097b1d1a858723} 
+\index{mainController.c@{mainController.c}!unsubscribe\_int@{unsubscribe\_int}}
+\index{unsubscribe\_int@{unsubscribe\_int}!mainController.c@{mainController.c}}
+\doxysubsubsection{\texorpdfstring{unsubscribe\_int()}{unsubscribe\_int()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} unsubscribe\+\_\+int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function is used to unsubscribe the interrupts. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mainController_8c_a7292452071354d9475097b1d1a858723_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{mainController_8c_a651940b4926afd229740c05195719e06}\label{mainController_8c_a651940b4926afd229740c05195719e06} 
+\index{mainController.c@{mainController.c}!changeTurn@{changeTurn}}
+\index{changeTurn@{changeTurn}!mainController.c@{mainController.c}}
+\doxysubsubsection{\texorpdfstring{changeTurn}{changeTurn}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{bool}} change\+Turn\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{mainController_8c_af37a893f866053706519a828940184d7}\label{mainController_8c_af37a893f866053706519a828940184d7} 
+\index{mainController.c@{mainController.c}!crosshair@{crosshair}}
+\index{crosshair@{crosshair}!mainController.c@{mainController.c}}
+\doxysubsubsection{\texorpdfstring{crosshair}{crosshair}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}\texorpdfstring{$\ast$}{*} crosshair\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{mainController_8c_a3a7ea4305773abf5347bb261a8a5c16b}\label{mainController_8c_a3a7ea4305773abf5347bb261a8a5c16b} 
+\index{mainController.c@{mainController.c}!cursor@{cursor}}
+\index{cursor@{cursor}!mainController.c@{mainController.c}}
+\doxysubsubsection{\texorpdfstring{cursor}{cursor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}\texorpdfstring{$\ast$}{*} cursor\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{mainController_8c_aa135bb051c7a68877c688aaa5a9c64ab}\label{mainController_8c_aa135bb051c7a68877c688aaa5a9c64ab} 
+\index{mainController.c@{mainController.c}!global\_counter@{global\_counter}}
+\index{global\_counter@{global\_counter}!mainController.c@{mainController.c}}
+\doxysubsubsection{\texorpdfstring{global\_counter}{global\_counter}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} global\+\_\+counter\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{mainController_8c_abb237c399c863f3d0669d8564f6b6466}\label{mainController_8c_abb237c399c863f3d0669d8564f6b6466} 
+\index{mainController.c@{mainController.c}!hand\_cursor@{hand\_cursor}}
+\index{hand\_cursor@{hand\_cursor}!mainController.c@{mainController.c}}
+\doxysubsubsection{\texorpdfstring{hand\_cursor}{hand\_cursor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}\texorpdfstring{$\ast$}{*} hand\+\_\+cursor\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{mainController_8c_a1ef0aca28da6802b9154fc936bca3902}\label{mainController_8c_a1ef0aca28da6802b9154fc936bca3902} 
+\index{mainController.c@{mainController.c}!irq\_kbd@{irq\_kbd}}
+\index{irq\_kbd@{irq\_kbd}!mainController.c@{mainController.c}}
+\doxysubsubsection{\texorpdfstring{irq\_kbd}{irq\_kbd}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint8\+\_\+t}} irq\+\_\+kbd}
+
+\Hypertarget{mainController_8c_a3c3f9b11f30efcaaea7455fd72ea7491}\label{mainController_8c_a3c3f9b11f30efcaaea7455fd72ea7491} 
+\index{mainController.c@{mainController.c}!irq\_mouse@{irq\_mouse}}
+\index{irq\_mouse@{irq\_mouse}!mainController.c@{mainController.c}}
+\doxysubsubsection{\texorpdfstring{irq\_mouse}{irq\_mouse}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint8\+\_\+t}} irq\+\_\+mouse}
+
+\Hypertarget{mainController_8c_a88c4246035b72d19a37fef92bb44deff}\label{mainController_8c_a88c4246035b72d19a37fef92bb44deff} 
+\index{mainController.c@{mainController.c}!irq\_ser@{irq\_ser}}
+\index{irq\_ser@{irq\_ser}!mainController.c@{mainController.c}}
+\doxysubsubsection{\texorpdfstring{irq\_ser}{irq\_ser}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint8\+\_\+t}} irq\+\_\+ser}
+
+\Hypertarget{mainController_8c_ac85fe64c6a12697cafee2e1a3e1de4c1}\label{mainController_8c_ac85fe64c6a12697cafee2e1a3e1de4c1} 
+\index{mainController.c@{mainController.c}!irq\_timer@{irq\_timer}}
+\index{irq\_timer@{irq\_timer}!mainController.c@{mainController.c}}
+\doxysubsubsection{\texorpdfstring{irq\_timer}{irq\_timer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint8\+\_\+t}} irq\+\_\+timer}
+
+\Hypertarget{mainController_8c_a992aeab9e3be201c5a129b90e4a3a10d}\label{mainController_8c_a992aeab9e3be201c5a129b90e4a3a10d} 
+\index{mainController.c@{mainController.c}!menu@{menu}}
+\index{menu@{menu}!mainController.c@{mainController.c}}
+\doxysubsubsection{\texorpdfstring{menu}{menu}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{enum}} \mbox{\hyperlink{mainController_8h_a7eabd788dcab19ca586663bf73deddf5}{MODE}} menu = \mbox{\hyperlink{mainController_8h_a7eabd788dcab19ca586663bf73deddf5a4308178099d62c4081c711b763591792}{MAINMENU}}}
+
+\Hypertarget{mainController_8c_aab02d402b9696f537e8b6791f50456ff}\label{mainController_8c_aab02d402b9696f537e8b6791f50456ff} 
+\index{mainController.c@{mainController.c}!mpacket@{mpacket}}
+\index{mpacket@{mpacket}!mainController.c@{mainController.c}}
+\doxysubsubsection{\texorpdfstring{mpacket}{mpacket}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{struct}} \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{packet}} mpacket\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{mainController_8c_a0d249cce3fd13d6e3b6fe1ad3c4995ff}\label{mainController_8c_a0d249cce3fd13d6e3b6fe1ad3c4995ff} 
+\index{mainController.c@{mainController.c}!player\_status@{player\_status}}
+\index{player\_status@{player\_status}!mainController.c@{mainController.c}}
+\doxysubsubsection{\texorpdfstring{player\_status}{player\_status}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{enum}} \mbox{\hyperlink{gameRemoteController_8h_aeedefe5b5e9c6b92d0cb54739df45e93}{THISPLAYER}} player\+\_\+status\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{mainController_8c_aa1de7a5557e9d96b83cf03f73c92163f}\label{mainController_8c_aa1de7a5557e9d96b83cf03f73c92163f} 
+\index{mainController.c@{mainController.c}!scancode@{scancode}}
+\index{scancode@{scancode}!mainController.c@{mainController.c}}
+\doxysubsubsection{\texorpdfstring{scancode}{scancode}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint8\+\_\+t}} scancode}
+
+\Hypertarget{mainController_8c_a6150e0515f7202e2fb518f7206ed97dc}\label{mainController_8c_a6150e0515f7202e2fb518f7206ed97dc} 
+\index{mainController.c@{mainController.c}!x@{x}}
+\index{x@{x}!mainController.c@{mainController.c}}
+\doxysubsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} x\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{mainController_8c_a0a2f84ed7838f07779ae24c5a9086d33}\label{mainController_8c_a0a2f84ed7838f07779ae24c5a9086d33} 
+\index{mainController.c@{mainController.c}!y@{y}}
+\index{y@{y}!mainController.c@{mainController.c}}
+\doxysubsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily int y\hspace{0.3cm}{\ttfamily [extern]}}
+

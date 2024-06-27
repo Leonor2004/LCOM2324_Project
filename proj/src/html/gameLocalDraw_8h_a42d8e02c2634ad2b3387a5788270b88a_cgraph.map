@@ -1,0 +1,7 @@
+<map id="drawSmallSunkenBoat" name="drawSmallSunkenBoat">
+<area shape="rect" id="Node000001" title="Draws a small version of a sunken boat on the screen." alt="" coords="5,5,173,31"/>
+<area shape="rect" id="Node000002" href="$sprite_8c.html#a740994f8c16c38bf18eaabac1f5eeeb9" title="Draws a sprite on the screen." alt="" coords="221,5,320,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="174,15,208,15,208,21,174,21"/>
+<area shape="rect" id="Node000003" href="$graphics_8c.html#a6f895de9725f9f231f9a7f74b6087f60" title="Draws a pixel on the screen at the specified coordinates." alt="" coords="368,5,483,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="320,15,354,15,354,21,320,21"/>
+</map>

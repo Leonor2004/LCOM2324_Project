@@ -1,0 +1,9 @@
+<map id="checkPlacingClick" name="checkPlacingClick">
+<area shape="rect" id="Node000001" title="Checks and processes mouse clicks in pop up menus in placing menu." alt="" coords="448,5,587,31"/>
+<area shape="rect" id="Node000002" href="$mainController_8c.html#a565ad7ccf48ae9f509fd64d69224cf18" title="This function is used to check mouse click." alt="" coords="308,5,400,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="434,21,400,21,400,15,434,15"/>
+<area shape="rect" id="Node000003" href="$mainController_8c.html#a54b55b119fdadc6ceabfead41ef23be7" title="This function is the main function of the game, this is the function that checks the type of interrup..." alt="" coords="176,5,260,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="295,21,260,21,260,15,295,15"/>
+<area shape="rect" id="Node000004" href="$main_8c.html#a7a72220d8366dd84709e79ce415862e5" title=" " alt="" coords="5,5,128,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="162,21,128,21,128,15,162,15"/>
+</map>

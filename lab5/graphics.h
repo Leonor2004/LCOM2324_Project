@@ -1,0 +1,9 @@
+#ifndef _LCOM_GRAPHICS_H_
+#define _LCOM_GRAPHICS_H_
+
+#define VBE_MODE 0x105
+#define SET_VBE_MODE 0x4F
+#define RETURN_VBE_MODE_INFO 0X4F
+#define RETURN_VBE_CTRL_INFO 0x4F
+
+#endif

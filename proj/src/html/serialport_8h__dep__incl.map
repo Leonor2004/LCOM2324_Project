@@ -1,0 +1,28 @@
+<map id="controllers/serialport/serialport.h" name="controllers/serialport/serialport.h">
+<area shape="rect" id="Node000001" title="This file contains the serial port functions." alt="" coords="429,5,587,45"/>
+<area shape="rect" id="Node000002" href="$serialport_8c.html" title=" " alt="" coords="5,93,163,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="416,48,163,99,162,94,415,43"/>
+<area shape="rect" id="Node000003" href="$gameRemoteController_8c.html" title=" " alt="" coords="427,255,664,280"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="417,50,334,76,294,92,259,111,232,132,216,154,213,166,213,178,227,205,255,217,311,230,451,252,450,257,309,235,253,222,223,209,208,180,208,166,211,152,228,128,256,106,291,87,332,71,415,45"/>
+<area shape="rect" id="Node000004" href="$mainController_8h.html" title="This file contains the main controllers." alt="" coords="417,101,599,126"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="511,59,511,100,505,100,505,59"/>
+<area shape="rect" id="Node000007" href="$menuController_8c.html" title=" " alt="" coords="691,255,877,280"/>
+<area shape="poly" id="edge14_Node000001_Node000007" title=" " alt="" coords="601,32,677,47,760,74,800,93,838,117,871,146,900,180,905,193,904,206,887,228,857,244,825,257,823,252,855,240,883,223,899,204,900,194,895,183,867,149,834,121,797,98,758,79,676,52,600,37"/>
+<area shape="rect" id="Node000008" href="$gameRemoteDraw_8c.html" title=" " alt="" coords="901,255,1091,280"/>
+<area shape="poly" id="edge15_Node000001_Node000008" title=" " alt="" coords="601,27,657,34,719,45,782,64,841,91,893,130,937,176,970,220,992,253,987,256,966,223,933,179,890,134,839,96,780,69,718,51,657,39,600,32"/>
+<area shape="rect" id="Node000005" href="$mainController_8c.html" title=" " alt="" coords="491,181,674,207"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="530,134,574,179,570,183,526,138"/>
+<area shape="rect" id="Node000006" href="$menuController_8h.html" title="This file contains the menu controllers." alt="" coords="699,181,885,207"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="556,127,745,179,743,184,555,132"/>
+<area shape="rect" id="Node000009" href="$main_8c.html" title=" " alt="" coords="400,181,467,207"/>
+<area shape="poly" id="edge10_Node000004_Node000009" title=" " alt="" coords="490,138,446,183,442,179,486,134"/>
+<area shape="rect" id="Node000010" href="$menuDraw_8h.html" title="This file contains the menu drawing functions." alt="" coords="237,181,376,207"/>
+<area shape="poly" id="edge11_Node000004_Node000010" title=" " alt="" coords="460,133,330,184,328,179,458,128"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="740,213,586,257,585,252,739,208"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="744,180,555,129,557,123,745,175"/>
+<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="792,221,788,255,783,254,787,220"/>
+<area shape="poly" id="edge9_Node000006_Node000008" title=" " alt="" coords="838,209,964,252,962,257,837,214"/>
+<area shape="poly" id="edge12_Node000010_Node000004" title=" " alt="" coords="354,174,484,124,486,128,356,179"/>
+<area shape="rect" id="Node000011" href="$menuDraw_8c.html" title=" " alt="" coords="237,255,376,280"/>
+<area shape="poly" id="edge13_Node000010_Node000011" title=" " alt="" coords="309,220,309,255,304,255,304,220"/>
+</map>

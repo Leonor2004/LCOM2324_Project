@@ -1,0 +1,132 @@
+<map id="checkKeyboardInputMainMenu" name="checkKeyboardInputMainMenu">
+<area shape="rect" id="Node000001" title="Handles keyboard input in the main menu." alt="" coords="5,633,228,658"/>
+<area shape="rect" id="Node000002" href="$mainController_8c.html#a3dfa1abec858bf54bfb0b555a054fd1c" title="This function is used to change the mouse position." alt="" coords="276,608,440,633"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="228,631,262,628,263,633,229,637"/>
+<area shape="rect" id="Node000003" href="$mainController_8c.html#aab7430a217db9969c46ead48adffbd05" title="This function is used to draw the mouse." alt="" coords="309,657,407,682"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="229,654,295,661,295,666,228,659"/>
+<area shape="rect" id="Node000004" href="$gameLocalDraw_8c.html#a25747824dc02d3fe7652792fe5a91057" title="Draws the local game state on the screen." alt="" coords="493,505,620,530"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="406,657,439,642,469,619,496,592,537,540,541,544,500,595,472,623,441,647,408,662"/>
+<area shape="rect" id="Node000020" href="$gameRemoteDraw_8c.html#aed93e22654c3131a9b15dcc9999bd8c0" title="Draws the remote game state on the screen." alt="" coords="707,657,851,682"/>
+<area shape="poly" id="edge28_Node000003_Node000020" title=" " alt="" coords="407,667,693,667,693,672,407,672"/>
+<area shape="rect" id="Node000033" href="$helpDraw_8c.html#a879287e331940c91b6b6b9dbb65474de" title="Draws the help menu on the screen." alt="" coords="497,1382,617,1408"/>
+<area shape="poly" id="edge48_Node000003_Node000033" title=" " alt="" coords="363,683,376,805,402,1000,420,1105,441,1203,464,1285,490,1343,504,1359,520,1373,517,1377,500,1363,486,1346,459,1287,436,1204,415,1106,397,1001,371,805,358,683"/>
+<area shape="rect" id="Node000034" href="$menuDraw_8c.html#af350fdd8d7eff205664291fb435669a1" title="Draws the appropriate cursor based on its position relative to menu buttons." alt="" coords="493,150,621,176"/>
+<area shape="poly" id="edge50_Node000003_Node000034" title=" " alt="" coords="406,662,424,654,438,643,467,600,481,560,485,521,482,482,472,397,474,349,485,296,510,236,537,186,542,189,515,238,491,297,479,350,478,397,487,481,490,521,486,561,471,603,442,646,426,659,408,667"/>
+<area shape="rect" id="Node000035" href="$menuDraw_8c.html#a06326bc3ce2fdfe90cb6eb3172159fd0" title="Draws the main menu with different themes based on the current time." alt="" coords="495,1308,618,1333"/>
+<area shape="poly" id="edge52_Node000003_Node000035" title=" " alt="" coords="366,682,550,1294,545,1295,361,684"/>
+<area shape="rect" id="Node000041" href="$placingDraw_8c.html#aa9b569c47a6d301fbb442f248fc498d8" title="Draws the placing menu cursor on the screen." alt="" coords="707,176,850,201"/>
+<area shape="poly" id="edge59_Node000003_Node000041" title=" " alt="" coords="406,660,423,653,438,642,453,625,462,608,468,573,471,535,476,514,486,491,526,412,562,351,606,297,672,237,699,218,727,204,729,209,701,223,675,241,610,301,566,354,531,414,490,494,481,516,477,536,473,574,467,609,457,628,442,646,426,658,408,665"/>
+<area shape="rect" id="Node000044" href="$placingDraw_8c.html#a0a7e8b71d4f37a8d0bb4e53971d4e352" title="Draws the placing menu on the screen." alt="" coords="488,961,625,986"/>
+<area shape="poly" id="edge64_Node000003_Node000044" title=" " alt="" coords="370,681,542,948,537,951,365,684"/>
+<area shape="rect" id="Node000005" href="$assetDraw_8c.html#aa2648feb6214b44043894f872d019cb6" title="Draws the end game sprite based on the winning player." alt="" coords="1192,480,1309,505"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="620,503,673,496,813,488,953,485,1179,487,1179,493,953,490,814,493,674,502,620,509"/>
+<area shape="rect" id="Node000008" href="$assetDraw_8c.html#a96cd32b56c00f559fd63ee06de41502d" title="Draws the game board sprite on the screen." alt="" coords="1185,556,1316,581"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="620,515,841,520,980,527,1119,540,1180,550,1179,556,1118,546,979,533,841,525,620,520"/>
+<area shape="rect" id="Node000009" href="$gameLocalDraw_8c.html#ac91fc4f78c6375eb03552f81654b6b5d" title="Draws the game cursor on the screen." alt="" coords="711,581,846,606"/>
+<area shape="poly" id="edge9_Node000004_Node000009" title=" " alt="" coords="596,528,728,574,727,579,594,533"/>
+<area shape="rect" id="Node000011" href="$assetDraw_8c.html#a3199ca9d94cea6cf260ef0542632e813" title="Draws the name sprite for player 1 on the screen." alt="" coords="954,857,1097,882"/>
+<area shape="poly" id="edge12_Node000004_Node000011" title=" " alt="" coords="565,530,579,563,602,606,634,652,675,692,703,708,729,716,780,719,831,723,858,732,886,750,904,774,911,798,917,821,934,842,943,849,940,853,930,846,912,823,905,799,899,776,882,754,855,737,830,728,780,724,728,721,701,713,672,696,630,656,598,609,574,565,560,532"/>
+<area shape="rect" id="Node000012" href="$assetDraw_8c.html#a39346da9b816678a434a3f083d19d882" title="Draws the name sprite for player 2 on the screen." alt="" coords="954,956,1097,981"/>
+<area shape="poly" id="edge14_Node000004_Node000012" title=" " alt="" coords="564,530,578,570,601,628,634,691,675,751,702,779,727,799,775,828,826,855,886,896,909,920,919,931,933,941,950,949,948,953,931,945,915,935,905,924,882,900,823,859,772,833,724,804,698,782,671,754,629,694,596,630,573,572,559,532"/>
+<area shape="rect" id="Node000013" href="$gameLocalDraw_8c.html#a306e0f6aab0c984cce0a162786fe140d" title="Draws the secret board for a specified player." alt="" coords="691,252,866,277"/>
+<area shape="poly" id="edge16_Node000004_Node000013" title=" " alt="" coords="562,504,603,430,635,383,671,339,707,307,742,282,745,287,710,311,675,342,639,386,608,433,567,506"/>
+<area shape="rect" id="Node000016" href="$gameLocalDraw_8c.html#abc63dbd12568254cb7a0ba64d5b1413e" title="Draws the small secret board for a specified player." alt="" coords="673,353,884,378"/>
+<area shape="poly" id="edge21_Node000004_Node000016" title=" " alt="" coords="564,503,605,448,636,416,672,389,688,381,690,386,675,393,639,420,609,451,568,507"/>
+<area shape="rect" id="Node000019" href="$assetDraw_8c.html#adc5d4ba9ffd0f297f903ce1f17338dd4" title="Draws the time left for player&#39;s turn to end." alt="" coords="735,404,822,429"/>
+<area shape="poly" id="edge26_Node000004_Node000019" title=" " alt="" coords="575,503,618,475,672,446,721,428,723,433,674,451,621,479,577,507"/>
+<area shape="rect" id="Node000006" href="$sprite_8c.html#a740994f8c16c38bf18eaabac1f5eeeb9" title="Draws a sprite on the screen." alt="" coords="1387,657,1485,682"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1279,503,1308,520,1336,541,1385,594,1422,644,1417,647,1381,597,1333,545,1305,524,1276,507"/>
+<area shape="rect" id="Node000007" href="$graphics_8c.html#a6f895de9725f9f231f9a7f74b6087f60" title="Draws a pixel on the screen at the specified coordinates." alt="" coords="1537,657,1652,682"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="1485,667,1523,667,1523,672,1485,672"/>
+<area shape="poly" id="edge8_Node000008_Node000006" title=" " alt="" coords="1291,579,1336,598,1375,622,1409,646,1406,650,1372,626,1333,603,1289,584"/>
+<area shape="rect" id="Node000010" href="$assetDraw_8c.html#a16e95c1aa375ed27180585335be4c819" title="Draws the crosshair sprite on the screen." alt="" coords="1193,657,1308,682"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="847,600,1119,642,1180,653,1179,658,1118,647,846,605"/>
+<area shape="poly" id="edge11_Node000010_Node000006" title=" " alt="" coords="1308,667,1373,667,1373,672,1308,672"/>
+<area shape="poly" id="edge13_Node000011_Node000006" title=" " alt="" coords="1096,858,1230,834,1291,818,1333,801,1362,777,1387,749,1421,693,1425,696,1391,752,1366,781,1336,805,1293,823,1231,839,1097,863"/>
+<area shape="poly" id="edge15_Node000012_Node000006" title=" " alt="" coords="1097,969,1153,966,1215,957,1278,937,1307,922,1333,904,1356,881,1374,856,1403,798,1420,742,1429,696,1434,697,1425,743,1408,800,1379,859,1360,885,1336,908,1309,927,1280,942,1217,962,1154,972,1097,975"/>
+<area shape="poly" id="edge17_Node000013_Node000006" title=" " alt="" coords="866,254,987,246,1126,245,1192,249,1252,257,1301,269,1336,288,1357,313,1375,352,1403,453,1423,561,1434,643,1429,644,1418,562,1398,455,1370,354,1352,316,1333,292,1299,274,1251,262,1192,254,1126,251,988,252,866,259"/>
+<area shape="rect" id="Node000014" href="$gameLocalDraw_8c.html#a6417f6c97a040704172cbd425bf3f540" title="Draws all sunken boats for a specified player." alt="" coords="975,201,1076,226"/>
+<area shape="poly" id="edge18_Node000013_Node000014" title=" " alt="" coords="841,249,961,224,962,229,842,254"/>
+<area shape="rect" id="Node000015" href="$gameLocalDraw_8c.html#a489a9e82ff19241b8d425a338d0362ca" title="Draws a sunken boat on the screen." alt="" coords="1185,201,1316,226"/>
+<area shape="poly" id="edge19_Node000014_Node000015" title=" " alt="" coords="1076,211,1172,211,1172,216,1076,216"/>
+<area shape="poly" id="edge20_Node000015_Node000006" title=" " alt="" coords="1308,224,1323,232,1337,244,1356,276,1373,321,1402,436,1422,554,1434,643,1429,644,1417,555,1397,437,1368,323,1351,278,1333,247,1320,237,1306,229"/>
+<area shape="poly" id="edge22_Node000016_Node000006" title=" " alt="" coords="884,359,1005,359,1137,365,1200,372,1256,382,1303,396,1336,414,1361,439,1382,467,1398,498,1411,531,1428,593,1435,643,1430,643,1423,594,1406,532,1393,501,1377,470,1357,442,1333,419,1301,401,1255,388,1199,378,1137,371,1005,365,884,365"/>
+<area shape="rect" id="Node000017" href="$gameLocalDraw_8c.html#a7bced453140d78d6957d3b15cc3b2f3f" title="Draws all small sunken boats for a specified player." alt="" coords="956,302,1095,328"/>
+<area shape="poly" id="edge23_Node000016_Node000017" title=" " alt="" coords="841,350,949,328,950,333,842,356"/>
+<area shape="rect" id="Node000018" href="$gameLocalDraw_8c.html#a42d8e02c2634ad2b3387a5788270b88a" title="Draws a small version of a sunken boat on the screen." alt="" coords="1167,302,1335,328"/>
+<area shape="poly" id="edge24_Node000017_Node000018" title=" " alt="" coords="1095,312,1153,312,1153,318,1095,318"/>
+<area shape="poly" id="edge25_Node000018_Node000006" title=" " alt="" coords="1307,326,1336,345,1364,381,1386,420,1403,462,1416,504,1431,583,1437,643,1431,644,1426,584,1411,506,1398,464,1381,422,1360,384,1333,349,1304,330"/>
+<area shape="poly" id="edge27_Node000019_Node000006" title=" " alt="" coords="822,405,921,391,985,386,1055,386,1128,392,1201,406,1272,430,1336,465,1358,483,1376,505,1404,553,1423,602,1433,643,1428,644,1417,604,1399,556,1372,508,1354,487,1333,469,1269,434,1200,411,1128,397,1055,392,986,392,922,396,823,410"/>
+<area shape="rect" id="Node000021" href="$assetDraw_8c.html#a435ba4a0d4fc47fbf7b4e13acaa312e4" title="Draws the board sprite on the screen." alt="" coords="979,1005,1071,1030"/>
+<area shape="poly" id="edge29_Node000020_Node000021" title=" " alt="" coords="788,681,869,856,934,991,949,1000,967,1007,965,1012,947,1005,930,994,864,859,783,684"/>
+<area shape="rect" id="Node000022" href="$boats_8c.html#a283e28d26343249822bbe2fd8dd85606" title="Function that draws that draws all the boats." alt="" coords="980,906,1071,932"/>
+<area shape="poly" id="edge31_Node000020_Node000022" title=" " alt="" coords="805,680,846,709,868,729,886,751,897,771,903,790,907,826,912,859,920,875,934,892,949,903,968,910,966,915,947,907,930,896,915,878,907,861,902,827,898,792,893,773,882,754,864,732,843,713,802,685"/>
+<area shape="rect" id="Node000024" href="$gameRemoteDraw_8c.html#a3134fe0682c1c1c338821f52430c0f52" title="Draws the game remote cursor state on the screen." alt="" coords="932,706,1119,732"/>
+<area shape="poly" id="edge34_Node000020_Node000024" title=" " alt="" coords="843,680,948,701,947,706,842,685"/>
+<area shape="rect" id="Node000025" href="$assetDraw_8c.html#ac7fd4bf9849e876154c6ded6c4dc6025" title="Draws the myTurn sprite on the screen." alt="" coords="1200,708,1301,733"/>
+<area shape="poly" id="edge36_Node000020_Node000025" title=" " alt="" coords="837,680,885,699,900,711,909,722,919,732,933,741,967,750,1002,756,1074,756,1141,747,1197,734,1198,739,1142,753,1074,762,1002,761,966,756,931,746,915,736,905,726,896,714,883,704,835,685"/>
+<area shape="rect" id="Node000026" href="$gameRemoteDraw_8c.html#adc42a114a522b76970f9bd78050a5054" title="Draws the remote board state on the screen." alt="" coords="954,556,1097,581"/>
+<area shape="poly" id="edge38_Node000020_Node000026" title=" " alt="" coords="810,654,980,584,982,589,812,659"/>
+<area shape="rect" id="Node000027" href="$assetDraw_8c.html#ae6eff9d8f2ea3166b8e3aeb31a188e08" title="Draws the waiting sprite on the screen." alt="" coords="974,808,1077,833"/>
+<area shape="poly" id="edge41_Node000020_Node000027" title=" " alt="" coords="849,680,886,700,904,722,911,744,917,766,934,786,962,803,960,808,930,790,913,768,906,746,899,724,882,704,847,685"/>
+<area shape="rect" id="Node000028" href="$boats_8c.html#a22e98b0e1d6fbf7d0c03c366417078ec" title="Function that loads and creates the different boats sprites and attributes." alt="" coords="979,1054,1072,1080"/>
+<area shape="poly" id="edge43_Node000020_Node000028" title=" " alt="" coords="789,682,832,771,887,897,898,940,902,975,910,1007,919,1023,934,1040,949,1050,966,1058,964,1062,946,1055,930,1044,915,1026,905,1010,896,976,892,941,881,899,827,773,784,684"/>
+<area shape="rect" id="Node000032" href="$graphics_8c.html#a0d157d997329169f936545f9985e334b" title="Swaps the contents of the double buffer with the actual video memory." alt="" coords="971,657,1079,682"/>
+<area shape="poly" id="edge47_Node000020_Node000032" title=" " alt="" coords="851,667,958,667,958,672,851,672"/>
+<area shape="poly" id="edge30_Node000021_Node000006" title=" " alt="" coords="1072,1022,1130,1026,1200,1023,1235,1017,1270,1007,1303,992,1333,972,1361,942,1384,907,1401,869,1413,830,1428,755,1432,696,1437,696,1433,755,1419,831,1406,871,1388,910,1366,945,1336,976,1306,997,1272,1012,1237,1022,1200,1028,1130,1032,1072,1028"/>
+<area shape="rect" id="Node000023" href="$boats_8c.html#a88b1c793d5cdec566a2c5e7d7e65e8f9" title="Function that draws the boat sprite by receiving its id." alt="" coords="1209,869,1293,894"/>
+<area shape="poly" id="edge32_Node000022_Node000023" title=" " alt="" coords="1071,909,1195,888,1196,893,1072,914"/>
+<area shape="poly" id="edge33_Node000023_Node000006" title=" " alt="" coords="1292,867,1313,856,1333,842,1365,807,1390,766,1424,694,1428,696,1395,769,1369,810,1336,846,1316,861,1294,872"/>
+<area shape="poly" id="edge35_Node000024_Node000010" title=" " alt="" coords="1083,704,1179,683,1180,688,1085,709"/>
+<area shape="poly" id="edge37_Node000025_Node000006" title=" " alt="" coords="1297,705,1375,684,1376,689,1299,710"/>
+<area shape="poly" id="edge39_Node000026_Node000006" title=" " alt="" coords="1079,579,1335,642,1374,652,1373,657,1334,647,1078,584"/>
+<area shape="poly" id="edge40_Node000026_Node000008" title=" " alt="" coords="1097,566,1171,566,1171,571,1097,571"/>
+<area shape="poly" id="edge42_Node000027_Node000006" title=" " alt="" coords="1076,812,1196,789,1266,769,1333,742,1375,717,1409,690,1412,694,1378,722,1336,747,1268,774,1198,794,1077,817"/>
+<area shape="rect" id="Node000029" href="$boats_8c.html#a53ecda37212e8cb10a4e0b03ee480178" title="Function that constructs and returns the boat created." alt="" coords="1201,1054,1300,1080"/>
+<area shape="poly" id="edge44_Node000028_Node000029" title=" " alt="" coords="1072,1064,1188,1064,1188,1070,1072,1070"/>
+<area shape="rect" id="Node000030" href="$sprite_8c.html#a1ee15a80618d000d7d451c09f4ed347e" title="Loads boat sprites." alt="" coords="1182,1257,1319,1282"/>
+<area shape="poly" id="edge45_Node000028_Node000030" title=" " alt="" coords="1042,1078,1227,1246,1224,1250,1039,1082"/>
+<area shape="rect" id="Node000031" href="$sprite_8c.html#ad5648ba77a90e532ec556dda3a76716a" title="Create a sprite object." alt="" coords="1383,1257,1489,1282"/>
+<area shape="poly" id="edge46_Node000030_Node000031" title=" " alt="" coords="1319,1267,1369,1267,1369,1272,1319,1272"/>
+<area shape="poly" id="edge49_Node000033_Node000006" title=" " alt="" coords="617,1397,784,1404,889,1405,999,1402,1106,1395,1203,1380,1281,1358,1310,1343,1333,1327,1349,1306,1363,1279,1386,1206,1404,1117,1416,1019,1429,829,1432,696,1437,696,1434,829,1421,1020,1409,1118,1391,1208,1368,1281,1353,1309,1337,1330,1313,1348,1283,1363,1204,1386,1107,1400,1000,1408,889,1410,784,1409,617,1402"/>
+<area shape="poly" id="edge51_Node000034_Node000006" title=" " alt="" coords="580,148,632,122,709,88,803,53,909,23,965,12,1021,5,1078,3,1134,5,1189,14,1241,30,1291,54,1336,86,1352,104,1366,128,1389,190,1406,268,1419,354,1433,522,1437,643,1432,643,1428,523,1414,354,1401,269,1384,192,1361,130,1348,107,1333,90,1288,59,1239,35,1187,20,1133,11,1078,8,1022,11,966,18,910,28,805,58,711,93,635,126,582,153"/>
+<area shape="poly" id="edge53_Node000035_Node000006" title=" " alt="" coords="619,1320,796,1325,1022,1325,1130,1322,1224,1316,1295,1306,1319,1299,1333,1292,1349,1273,1363,1248,1386,1181,1404,1097,1416,1005,1429,824,1432,696,1437,696,1434,824,1421,1006,1409,1098,1391,1182,1368,1251,1353,1276,1336,1296,1321,1304,1296,1311,1225,1322,1131,1328,1022,1331,796,1330,618,1325"/>
+<area shape="rect" id="Node000036" href="$rtc_8c.html#a6d24a0e2c6824a269b0f859d3cc1c3af" title="Test the results of the rtc to find the adequate background for main menu." alt="" coords="741,1358,817,1384"/>
+<area shape="poly" id="edge54_Node000035_Node000036" title=" " alt="" coords="614,1331,728,1357,727,1362,613,1336"/>
+<area shape="rect" id="Node000037" href="$rtc_8c.html#ab9433da44c1754d5b1df443d08832c1c" title="Read a register from the RTC." alt="" coords="988,1460,1063,1485"/>
+<area shape="poly" id="edge55_Node000036_Node000037" title=" " alt="" coords="812,1381,982,1452,980,1457,810,1386"/>
+<area shape="rect" id="Node000038" href="$rtc_8c.html#a304cf3d62230335c63a17a8328a90677" title="Check if the number of the RTC is in binary&#45;coded decimal (BCD)." alt="" coords="1207,1509,1295,1534"/>
+<area shape="poly" id="edge56_Node000037_Node000038" title=" " alt="" coords="1064,1478,1194,1507,1193,1512,1062,1483"/>
+<area shape="rect" id="Node000040" href="$rtc_8c.html#ab22b4f35e8577da01f7112e637be079f" title="Transform the RTC from BCD to binary." alt="" coords="1212,1460,1289,1485"/>
+<area shape="poly" id="edge58_Node000037_Node000040" title=" " alt="" coords="1063,1470,1199,1470,1199,1475,1063,1475"/>
+<area shape="rect" id="Node000039" href="$utils_8c.html#a2b56f50ba159e9d5115ed1a75eff15d9" title=" " alt="" coords="1387,1509,1485,1534"/>
+<area shape="poly" id="edge57_Node000038_Node000039" title=" " alt="" coords="1295,1519,1373,1519,1373,1524,1295,1524"/>
+<area shape="rect" id="Node000042" href="$assetDraw_8c.html#af8d7cbfa968959baff86edbd3ca36c01" title="Draws the cursor sprite on the screen." alt="" coords="1203,150,1299,176"/>
+<area shape="poly" id="edge60_Node000041_Node000042" title=" " alt="" coords="850,182,1188,164,1188,169,850,187"/>
+<area shape="rect" id="Node000043" href="$assetDraw_8c.html#a8cc3dfc68649cb8144885b11120b00a8" title="Draws the hand cursor sprite on the screen." alt="" coords="1185,101,1316,126"/>
+<area shape="poly" id="edge62_Node000041_Node000043" title=" " alt="" coords="835,173,932,154,1172,120,1172,125,932,159,836,178"/>
+<area shape="poly" id="edge61_Node000042_Node000006" title=" " alt="" coords="1300,166,1320,174,1337,187,1359,223,1378,275,1394,338,1407,407,1426,543,1435,643,1430,643,1420,544,1402,408,1388,339,1373,276,1354,225,1333,190,1317,178,1298,171"/>
+<area shape="poly" id="edge63_Node000043_Node000006" title=" " alt="" coords="1318,122,1337,136,1361,176,1381,235,1397,305,1410,383,1428,534,1436,643,1431,644,1423,535,1405,383,1392,306,1376,236,1356,178,1333,140,1315,127"/>
+<area shape="poly" id="edge69_Node000044_Node000011" title=" " alt="" coords="565,959,607,913,638,888,672,870,742,851,815,845,884,846,945,852,945,858,884,851,815,850,743,857,674,875,641,893,611,917,569,963"/>
+<area shape="poly" id="edge70_Node000044_Node000012" title=" " alt="" coords="626,970,940,967,940,972,626,976"/>
+<area shape="poly" id="edge65_Node000044_Node000021" title=" " alt="" coords="626,977,966,1010,965,1015,626,983"/>
+<area shape="poly" id="edge66_Node000044_Node000022" title=" " alt="" coords="570,959,613,925,642,908,673,895,711,886,751,881,831,881,906,889,967,901,966,906,905,894,831,886,752,886,712,891,674,900,644,913,616,929,573,963"/>
+<area shape="poly" id="edge82_Node000044_Node000028" title=" " alt="" coords="595,984,674,1007,831,1038,965,1057,964,1063,830,1043,673,1012,593,989"/>
+<area shape="poly" id="edge73_Node000044_Node000041" title=" " alt="" coords="557,961,671,238,691,218,715,204,718,209,694,222,676,240,563,961"/>
+<area shape="rect" id="Node000045" href="$assetDraw_8c.html#a1de89a090f9e55b6f7cc8a3e5acd0b75" title="Draws the go to game text text sprite on the screen." alt="" coords="709,1113,848,1138"/>
+<area shape="poly" id="edge67_Node000044_Node000045" title=" " alt="" coords="569,985,611,1037,641,1066,675,1091,706,1106,703,1111,672,1096,637,1070,607,1040,565,988"/>
+<area shape="rect" id="Node000046" href="$assetDraw_8c.html#aa397c407dfafda85a13a2089b2a39bac" title="Draws the go to next player text sprite on the screen." alt="" coords="702,1162,855,1188"/>
+<area shape="poly" id="edge71_Node000044_Node000046" title=" " alt="" coords="565,986,579,1019,602,1063,634,1109,675,1148,690,1156,688,1161,672,1152,630,1112,597,1066,574,1021,560,988"/>
+<area shape="rect" id="Node000047" href="$placingDraw_8c.html#a40b9640e92602cf1b054debb21a4bdc1" title="Draws the previous state of placing menu on the screen." alt="" coords="682,910,875,936"/>
+<area shape="poly" id="edge74_Node000044_Node000047" title=" " alt="" coords="613,958,708,936,710,941,614,964"/>
+<area shape="rect" id="Node000048" href="$assetDraw_8c.html#ab2eb2696b133afbe8e58c53db488f993" title="Draws the quit text sprite on the screen." alt="" coords="725,1212,833,1237"/>
+<area shape="poly" id="edge80_Node000044_Node000048" title=" " alt="" coords="563,986,574,1028,595,1085,628,1146,650,1173,675,1197,692,1207,712,1215,710,1220,690,1212,672,1201,646,1177,624,1149,591,1087,569,1029,558,988"/>
+<area shape="poly" id="edge68_Node000045_Node000006" title=" " alt="" coords="848,1129,970,1135,1114,1134,1184,1130,1246,1121,1298,1108,1333,1089,1354,1061,1372,1018,1388,965,1401,905,1420,786,1430,696,1435,697,1425,786,1406,906,1393,966,1377,1020,1358,1064,1336,1093,1300,1113,1247,1127,1184,1135,1114,1140,970,1140,848,1134"/>
+<area shape="poly" id="edge72_Node000046_Node000006" title=" " alt="" coords="856,1178,978,1184,1119,1183,1188,1178,1249,1170,1299,1156,1333,1137,1356,1106,1375,1057,1392,996,1405,929,1422,795,1430,696,1436,696,1427,796,1410,930,1397,998,1380,1059,1361,1108,1336,1141,1301,1161,1250,1175,1188,1184,1120,1189,978,1189,856,1184"/>
+<area shape="poly" id="edge77_Node000047_Node000011" title=" " alt="" coords="838,908,952,883,954,888,839,913"/>
+<area shape="poly" id="edge78_Node000047_Node000012" title=" " alt="" coords="849,933,943,951,942,956,848,938"/>
+<area shape="poly" id="edge75_Node000047_Node000021" title=" " alt="" coords="806,933,863,961,933,990,967,1001,965,1006,931,995,861,966,804,938"/>
+<area shape="poly" id="edge76_Node000047_Node000022" title=" " alt="" coords="875,919,966,917,966,923,875,924"/>
+<area shape="poly" id="edge79_Node000047_Node000028" title=" " alt="" coords="794,934,852,985,891,1014,933,1039,966,1052,964,1057,931,1044,888,1019,848,989,791,938"/>
+<area shape="poly" id="edge81_Node000048_Node000006" title=" " alt="" coords="833,1226,953,1233,1103,1234,1176,1229,1242,1221,1296,1207,1333,1186,1346,1172,1358,1151,1379,1096,1395,1029,1408,954,1424,805,1431,696,1436,697,1430,805,1413,954,1400,1030,1384,1098,1363,1153,1350,1175,1336,1190,1298,1212,1243,1226,1177,1235,1103,1239,953,1238,833,1231"/>
+</map>

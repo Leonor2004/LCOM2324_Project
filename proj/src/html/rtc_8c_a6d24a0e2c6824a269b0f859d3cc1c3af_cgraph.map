@@ -1,0 +1,11 @@
+<map id="timeRTC" name="timeRTC">
+<area shape="rect" id="Node000001" title="Test the results of the rtc to find the adequate background for main menu." alt="" coords="5,31,81,56"/>
+<area shape="rect" id="Node000002" href="$rtc_8c.html#ab9433da44c1754d5b1df443d08832c1c" title="Read a register from the RTC." alt="" coords="129,31,204,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="82,41,116,41,116,46,82,46"/>
+<area shape="rect" id="Node000003" href="$rtc_8c.html#a304cf3d62230335c63a17a8328a90677" title="Check if the number of the RTC is in binary&#45;coded decimal (BCD)." alt="" coords="252,5,340,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="204,33,238,27,239,32,205,39"/>
+<area shape="rect" id="Node000005" href="$rtc_8c.html#ab22b4f35e8577da01f7112e637be079f" title="Transform the RTC from BCD to binary." alt="" coords="257,55,335,80"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="205,48,244,55,243,60,204,53"/>
+<area shape="rect" id="Node000004" href="$utils_8c.html#a2b56f50ba159e9d5115ed1a75eff15d9" title=" " alt="" coords="388,5,487,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="340,15,374,15,374,21,340,21"/>
+</map>

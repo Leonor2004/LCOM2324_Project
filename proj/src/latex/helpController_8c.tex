@@ -1,0 +1,38 @@
+\doxysection{handler/help\+Controller.c File Reference}
+\hypertarget{helpController_8c}{}\label{helpController_8c}\index{handler/helpController.c@{handler/helpController.c}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include "{}help\+Controller.\+h"{}}\newline
+Include dependency graph for help\+Controller.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{helpController_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{helpController_8c_ad352355588997a5ac0255eb518b31880}{check\+Keyboard\+Input\+Help}} (\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint8\+\_\+t}} \mbox{\hyperlink{mainController_8c_aa1de7a5557e9d96b83cf03f73c92163f}{scancode}})
+\begin{DoxyCompactList}\small\item\em Checks if a given scancode corresponds to the ESC key break code. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{helpController_8c_ad352355588997a5ac0255eb518b31880}\label{helpController_8c_ad352355588997a5ac0255eb518b31880} 
+\index{helpController.c@{helpController.c}!checkKeyboardInputHelp@{checkKeyboardInputHelp}}
+\index{checkKeyboardInputHelp@{checkKeyboardInputHelp}!helpController.c@{helpController.c}}
+\doxysubsubsection{\texorpdfstring{checkKeyboardInputHelp()}{checkKeyboardInputHelp()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} check\+Keyboard\+Input\+Help (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint8\+\_\+t}}}]{scancode }\end{DoxyParamCaption})}
+
+
+
+Checks if a given scancode corresponds to the ESC key break code. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scancode} & \+: The scancode to be checked. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int \+: Returns 1 if the ESC key was pressed, otherwise returns 0. 
+\end{DoxyReturn}

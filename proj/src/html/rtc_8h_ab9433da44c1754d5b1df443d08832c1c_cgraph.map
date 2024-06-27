@@ -1,0 +1,9 @@
+<map id="readRTC" name="readRTC">
+<area shape="rect" id="Node000001" title="Read a register from the RTC." alt="" coords="5,31,80,56"/>
+<area shape="rect" id="Node000002" href="$rtc_8c.html#a304cf3d62230335c63a17a8328a90677" title="Check if the number of the RTC is in binary&#45;coded decimal (BCD)." alt="" coords="128,5,216,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="80,33,114,27,115,32,81,39"/>
+<area shape="rect" id="Node000004" href="$rtc_8c.html#ab22b4f35e8577da01f7112e637be079f" title="Transform the RTC from BCD to binary." alt="" coords="133,55,211,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="81,48,120,55,119,60,80,53"/>
+<area shape="rect" id="Node000003" href="$utils_8c.html#a2b56f50ba159e9d5115ed1a75eff15d9" title=" " alt="" coords="264,5,363,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="216,15,250,15,250,21,216,21"/>
+</map>

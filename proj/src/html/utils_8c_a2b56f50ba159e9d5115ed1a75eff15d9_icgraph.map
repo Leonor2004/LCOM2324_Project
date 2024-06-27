@@ -1,0 +1,64 @@
+<map id="util_sys_inb" name="util_sys_inb">
+<area shape="rect" id="Node000001" title=" " alt="" coords="1552,283,1651,308"/>
+<area shape="rect" id="Node000002" href="$mouse_8c.html#a737402ed874a7e20677ef6495f6cd0d3" title="Sends a mouse command and waits for an acknowledgment." alt="" coords="1177,157,1325,183"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1582,273,1549,233,1527,213,1503,198,1459,182,1413,172,1368,168,1326,167,1326,162,1368,162,1414,167,1461,176,1505,193,1531,209,1553,229,1587,270"/>
+<area shape="rect" id="Node000007" href="$kbd_8c.html#a5d86607e1025febd59f2b9d2738bbb1a" title="Reads the output from the specified port and checks for errors." alt="" coords="641,56,741,81"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="1586,272,1552,218,1529,189,1502,164,1440,119,1387,91,1328,76,1253,71,1062,71,742,71,742,66,1062,66,1253,66,1329,71,1388,86,1443,115,1506,160,1533,185,1557,215,1590,269"/>
+<area shape="rect" id="Node000009" href="$kbd_8c.html#ab9e6a05785f0f86cb2cdb7be9cfd5850" title="Restore the keyboard." alt="" coords="1393,208,1489,233"/>
+<area shape="poly" id="edge11_Node000001_Node000009" title=" " alt="" coords="1565,279,1503,247,1476,236,1478,231,1505,242,1567,274"/>
+<area shape="rect" id="Node000010" href="$rtc_8c.html#a304cf3d62230335c63a17a8328a90677" title="Check if the number of the RTC is in binary&#45;coded decimal (BCD)." alt="" coords="1397,307,1485,332"/>
+<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="1539,307,1486,316,1485,310,1538,302"/>
+<area shape="rect" id="Node000016" href="$serialport_8c.html#ab6648184bd83982ac14d483b7642f20f" title="Function that sends a byte through serial port." alt="" coords="865,384,919,409"/>
+<area shape="poly" id="edge21_Node000001_Node000016" title=" " alt="" coords="1570,317,1539,333,1505,346,1420,366,1332,381,1161,398,1015,402,919,401,919,395,1015,397,1161,392,1332,376,1419,361,1503,341,1537,328,1567,313"/>
+<area shape="rect" id="Node000022" href="$serialport_8c.html#ae086212af0dffcb3ba6c4cacbb6a2f0b" title="Serial port interrupt handler." alt="" coords="864,484,920,509"/>
+<area shape="poly" id="edge31_Node000001_Node000022" title=" " alt="" coords="1581,320,1547,351,1505,378,1424,412,1338,438,1251,459,1167,475,1020,493,921,499,920,493,1019,487,1167,469,1250,454,1336,433,1422,407,1503,373,1544,346,1577,316"/>
+<area shape="rect" id="Node000023" href="$timer_8c.html#afafc1891c876602d55b894103b1841a7" title="This function is intended to get the configuration of a timer specified by &#39;timer&#39;." alt="" coords="1381,459,1501,484"/>
+<area shape="poly" id="edge33_Node000001_Node000023" title=" " alt="" coords="1591,322,1557,380,1533,412,1506,442,1476,461,1473,456,1502,437,1529,409,1553,377,1586,319"/>
+<area shape="rect" id="Node000025" href="$mouse_8c.html#aee5c2370851934948db8bdb3004e3070" title="Writes a command to the specified port." alt="" coords="1377,257,1504,283"/>
+<area shape="poly" id="edge36_Node000001_Node000025" title=" " alt="" coords="1538,288,1504,283,1505,278,1539,283"/>
+<area shape="rect" id="Node000003" href="$mainController_8c.html#a853d85b3114e5306ef95b66e82c4940a" title="This function is used to subscribe the interrupts." alt="" coords="1009,107,1117,132"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1190,156,1111,135,1112,130,1191,151"/>
+<area shape="rect" id="Node000006" href="$mainController_8c.html#a7292452071354d9475097b1d1a858723" title="This function is used to unsubscribe the interrupts." alt="" coords="1001,157,1125,183"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="1164,173,1126,173,1126,167,1164,167"/>
+<area shape="rect" id="Node000004" href="$mainController_8c.html#a54b55b119fdadc6ceabfead41ef23be7" title="This function is the main function of the game, this is the function that checks the type of interrup..." alt="" coords="176,284,260,309"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="996,119,836,115,634,118,534,124,442,135,365,151,309,172,279,197,255,229,226,285,222,283,251,226,275,194,307,168,363,145,441,129,533,119,634,113,836,110,996,114"/>
+<area shape="rect" id="Node000005" href="$main_8c.html#a7a72220d8366dd84709e79ce415862e5" title=" " alt="" coords="5,284,128,309"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="162,299,128,299,128,294,162,294"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="987,162,855,151,772,148,683,149,589,155,493,168,399,190,309,221,285,234,263,251,231,286,227,282,259,247,282,230,307,216,397,185,492,163,588,150,682,144,772,142,855,145,988,157"/>
+<area shape="poly" id="edge8_Node000007_Node000004" title=" " alt="" coords="648,53,578,29,535,18,489,11,442,8,395,12,350,24,310,46,283,70,262,101,247,135,236,170,224,237,222,284,216,284,219,236,230,169,242,133,257,98,279,67,306,41,348,19,394,7,442,3,490,5,536,13,580,24,650,48"/>
+<area shape="rect" id="Node000008" href="$mouse_8c.html#a834b6d7efe311484d6da234db333cb97" title="Mouse interrupt handler." alt="" coords="387,56,473,81"/>
+<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="627,71,473,71,473,66,627,66"/>
+<area shape="poly" id="edge10_Node000008_Node000004" title=" " alt="" coords="374,76,340,85,310,103,290,123,273,147,247,199,232,248,224,285,219,283,226,247,242,197,268,144,285,120,306,99,338,80,373,71"/>
+<area shape="rect" id="Node000011" href="$rtc_8c.html#ab9433da44c1754d5b1df443d08832c1c" title="Read a register from the RTC." alt="" coords="1214,300,1289,325"/>
+<area shape="poly" id="edge13_Node000010_Node000011" title=" " alt="" coords="1383,320,1289,317,1289,311,1383,315"/>
+<area shape="rect" id="Node000012" href="$rtc_8c.html#a6d24a0e2c6824a269b0f859d3cc1c3af" title="Test the results of the rtc to find the adequate background for main menu." alt="" coords="1025,288,1101,313"/>
+<area shape="poly" id="edge14_Node000011_Node000012" title=" " alt="" coords="1200,312,1101,306,1102,301,1200,307"/>
+<area shape="rect" id="Node000013" href="$menuDraw_8c.html#a06326bc3ce2fdfe90cb6eb3172159fd0" title="Draws the main menu with different themes based on the current time." alt="" coords="831,283,953,308"/>
+<area shape="poly" id="edge15_Node000012_Node000013" title=" " alt="" coords="1011,302,953,300,954,295,1012,297"/>
+<area shape="poly" id="edge16_Node000013_Node000004" title=" " alt="" coords="817,298,260,299,260,294,817,293"/>
+<area shape="rect" id="Node000014" href="$mainController_8c.html#aab7430a217db9969c46ead48adffbd05" title="This function is used to draw the mouse." alt="" coords="643,232,740,257"/>
+<area shape="poly" id="edge17_Node000013_Node000014" title=" " alt="" coords="827,282,740,260,741,254,828,277"/>
+<area shape="poly" id="edge20_Node000014_Node000004" title=" " alt="" coords="629,238,562,232,481,229,394,233,309,249,269,265,237,286,234,282,267,261,307,244,394,228,481,224,562,226,629,233"/>
+<area shape="rect" id="Node000015" href="$menuController_8c.html#a7fa55fb20c2221fee17768c091656800" title="Handles keyboard input in the main menu." alt="" coords="319,259,541,284"/>
+<area shape="poly" id="edge18_Node000014_Node000015" title=" " alt="" coords="629,254,542,263,542,257,629,248"/>
+<area shape="poly" id="edge19_Node000015_Node000004" title=" " alt="" coords="310,288,261,294,260,289,309,283"/>
+<area shape="rect" id="Node000017" href="$gameRemoteController_8c.html#a480128a793bcc06ba123bf9938c647d8" title="Checks and processes mouse clicks during the remote game." alt="" coords="600,433,783,459"/>
+<area shape="poly" id="edge22_Node000016_Node000017" title=" " alt="" coords="853,409,744,436,743,431,851,404"/>
+<area shape="rect" id="Node000019" href="$gameRemoteController_8c.html#aadc111b67a5257791c96975feb9bf4cf" title="Checks the keyboard input during the remote game." alt="" coords="308,360,552,385"/>
+<area shape="poly" id="edge25_Node000016_Node000019" title=" " alt="" coords="851,388,782,374,664,367,552,368,552,363,664,361,783,369,853,383"/>
+<area shape="rect" id="Node000020" href="$menuController_8c.html#a38f56dd6aff5e254e2d7a950a5315e6f" title="Checks if a click is within the bounds of any main menu button." alt="" coords="629,384,753,409"/>
+<area shape="poly" id="edge27_Node000016_Node000020" title=" " alt="" coords="852,399,753,399,753,394,852,394"/>
+<area shape="rect" id="Node000021" href="$gameRemoteController_8c.html#aeffc8e6ce1fc081fe37077e72444fedc" title="Function that receives the byte and uses it." alt="" coords="391,459,469,484"/>
+<area shape="poly" id="edge29_Node000016_Node000021" title=" " alt="" coords="869,421,831,450,784,473,741,483,697,490,610,494,530,489,469,481,470,476,531,484,610,488,696,485,740,478,782,468,828,445,866,417"/>
+<area shape="rect" id="Node000018" href="$mainController_8c.html#a565ad7ccf48ae9f509fd64d69224cf18" title="This function is used to check mouse click." alt="" coords="384,409,476,435"/>
+<area shape="poly" id="edge23_Node000017_Node000018" title=" " alt="" coords="586,439,476,429,476,424,587,434"/>
+<area shape="poly" id="edge24_Node000018_Node000004" title=" " alt="" coords="370,420,338,412,307,399,280,379,256,355,225,311,229,308,260,351,283,375,309,394,339,407,371,415"/>
+<area shape="poly" id="edge26_Node000019_Node000004" title=" " alt="" coords="357,359,307,343,241,312,243,307,309,338,359,354"/>
+<area shape="poly" id="edge28_Node000020_Node000018" title=" " alt="" coords="615,407,476,420,476,415,615,401"/>
+<area shape="poly" id="edge30_Node000021_Node000004" title=" " alt="" coords="376,472,340,465,306,448,273,416,248,377,231,339,221,311,226,309,236,337,253,374,277,412,310,444,342,460,377,467"/>
+<area shape="poly" id="edge32_Node000022_Node000004" title=" " alt="" coords="851,513,748,540,680,552,606,560,529,562,451,554,376,534,340,518,306,499,283,480,264,456,238,402,224,349,218,310,223,309,229,348,243,400,269,453,287,476,310,495,343,513,378,529,452,548,529,556,606,555,680,547,747,535,850,508"/>
+<area shape="rect" id="Node000024" href="$timer_8c.html#aca1506be74dfc71c6f90772ca269c619" title="This function sets the frequency of a timer specified by &#39;timer&#39; to the value &#39;freq&#39;." alt="" coords="1173,521,1329,547"/>
+<area shape="poly" id="edge34_Node000023_Node000024" title=" " alt="" coords="1390,491,1292,524,1290,519,1388,486"/>
+<area shape="poly" id="edge35_Node000024_Node000004" title=" " alt="" coords="1194,553,1058,584,976,596,893,601,690,601,630,604,578,610,485,624,442,624,399,617,355,599,306,567,278,538,257,505,241,468,230,430,219,359,216,310,222,309,224,358,235,428,246,466,261,502,282,535,310,563,357,594,401,612,443,619,485,618,577,605,630,598,690,595,893,595,976,591,1057,579,1193,548"/>
+<area shape="poly" id="edge37_Node000025_Node000002" title=" " alt="" coords="1392,255,1376,247,1318,215,1271,185,1273,181,1321,210,1379,242,1394,250"/>
+</map>

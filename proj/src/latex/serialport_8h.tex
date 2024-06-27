@@ -1,0 +1,119 @@
+\doxysection{controllers/serialport/serialport.h File Reference}
+\hypertarget{serialport_8h}{}\label{serialport_8h}\index{controllers/serialport/serialport.h@{controllers/serialport/serialport.h}}
+
+
+This file contains the serial port functions.  
+
+
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{serialport_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{serialport_8h_a1d2f19b387e47405df3a4a1ece626ebd}{ser\+\_\+subscribe\+\_\+int}} (\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint8\+\_\+t}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{bitno}})
+\begin{DoxyCompactList}\small\item\em Subscribes to serial port interrupts. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{serialport_8h_a7d7df555d50a59b9ee60efb23e95d550}{ser\+\_\+unsubscribe\+\_\+int}} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribes to serial port interrupts. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint8\+\_\+t}} \mbox{\hyperlink{serialport_8h_ae086212af0dffcb3ba6c4cacbb6a2f0b}{sp\+\_\+ih}} ()
+\begin{DoxyCompactList}\small\item\em Serial port interrupt handler. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{serialport_8h_ab6648184bd83982ac14d483b7642f20f}{send}} (\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint8\+\_\+t}} \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{val}})
+\begin{DoxyCompactList}\small\item\em Function that sends a byte through serial port. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{serialport_8h_a017e1971a537b144e5a0f05d6a17e571}{serial\+\_\+clear}} ()
+\begin{DoxyCompactList}\small\item\em Function that clears serial port interrupts. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file contains the serial port functions. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{serialport_8h_ab6648184bd83982ac14d483b7642f20f}\label{serialport_8h_ab6648184bd83982ac14d483b7642f20f} 
+\index{serialport.h@{serialport.h}!send@{send}}
+\index{send@{send}!serialport.h@{serialport.h}}
+\doxysubsubsection{\texorpdfstring{send()}{send()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} send (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint8\+\_\+t}}}]{val }\end{DoxyParamCaption})}
+
+
+
+Function that sends a byte through serial port. 
+
+\begin{DoxyReturn}{Returns}
+int \+: 0 if sucess and 1 otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{serialport_8h_ab6648184bd83982ac14d483b7642f20f_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{serialport_8h_a1d2f19b387e47405df3a4a1ece626ebd}\label{serialport_8h_a1d2f19b387e47405df3a4a1ece626ebd} 
+\index{serialport.h@{serialport.h}!ser\_subscribe\_int@{ser\_subscribe\_int}}
+\index{ser\_subscribe\_int@{ser\_subscribe\_int}!serialport.h@{serialport.h}}
+\doxysubsubsection{\texorpdfstring{ser\_subscribe\_int()}{ser\_subscribe\_int()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} ser\+\_\+subscribe\+\_\+int (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint8\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{bitno }\end{DoxyParamCaption})}
+
+
+
+Subscribes to serial port interrupts. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bitno} & \+: IRQ. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int \+: 0 if sucess and 1 otherwise. 
+\end{DoxyReturn}
+\Hypertarget{serialport_8h_a7d7df555d50a59b9ee60efb23e95d550}\label{serialport_8h_a7d7df555d50a59b9ee60efb23e95d550} 
+\index{serialport.h@{serialport.h}!ser\_unsubscribe\_int@{ser\_unsubscribe\_int}}
+\index{ser\_unsubscribe\_int@{ser\_unsubscribe\_int}!serialport.h@{serialport.h}}
+\doxysubsubsection{\texorpdfstring{ser\_unsubscribe\_int()}{ser\_unsubscribe\_int()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} ser\+\_\+unsubscribe\+\_\+int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Unsubscribes to serial port interrupts. 
+
+\begin{DoxyReturn}{Returns}
+int \+: 0 if sucess and 1 otherwise. 
+\end{DoxyReturn}
+\Hypertarget{serialport_8h_a017e1971a537b144e5a0f05d6a17e571}\label{serialport_8h_a017e1971a537b144e5a0f05d6a17e571} 
+\index{serialport.h@{serialport.h}!serial\_clear@{serial\_clear}}
+\index{serial\_clear@{serial\_clear}!serialport.h@{serialport.h}}
+\doxysubsubsection{\texorpdfstring{serial\_clear()}{serial\_clear()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} serial\+\_\+clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function that clears serial port interrupts. 
+
+\begin{DoxyReturn}{Returns}
+int \+: 0 if sucess and 1 otherwise. 
+\end{DoxyReturn}
+\Hypertarget{serialport_8h_ae086212af0dffcb3ba6c4cacbb6a2f0b}\label{serialport_8h_ae086212af0dffcb3ba6c4cacbb6a2f0b} 
+\index{serialport.h@{serialport.h}!sp\_ih@{sp\_ih}}
+\index{sp\_ih@{sp\_ih}!serialport.h@{serialport.h}}
+\doxysubsubsection{\texorpdfstring{sp\_ih()}{sp\_ih()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint8\+\_\+t}} sp\+\_\+ih (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Serial port interrupt handler. 
+
+\begin{DoxyReturn}{Returns}
+uint8\+\_\+t \+: received byte. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{serialport_8h_ae086212af0dffcb3ba6c4cacbb6a2f0b_cgraph}
+\end{center}
+\end{figure}

@@ -1,0 +1,75 @@
+\doxysection{game.\+h}
+\hypertarget{game_8h_source}{}\label{game_8h_source}\index{model/game.h@{model/game.h}}
+\mbox{\hyperlink{game_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ \_LCOM\_GAME\_H\_}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ \_LCOM\_GAME\_H\_}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{sprite_8h}{controllers/sprites/sprite.h}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{macros_8h}{controllers/macros.h}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}assets/popups/explosion.xpm"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}assets/popups/miss.xpm"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}assets/popups/small\_explosion.xpm"{}}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}assets/popups/small\_miss.xpm"{}}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structSpot_a962bf2bdc4c661246347389bf64dc5f9}{line}};}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structSpot_ae0bcc413f84ea9ca47bcff103218d60a}{column}};}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structSpot_a25dbe9baa1c5687318de8ad0daa3706e}{x\_pixel}};}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structSpot_a52c4ab046fc2d7eb1d9f29021286e5d2}{y\_pixel}};}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structSpot_a42e5cb24162aff9189b977c648f6a0df}{small\_x\_pixel}};}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structSpot_a790728505f564faa6847fbac1ad49ef3}{small\_y\_pixel}};}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structSpot_ac8737bd9b2f06b1b70902aa78b51898d}{l}};}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structSpot_ae39c09077c4ea39533db3b4510d4ae74}{taken}};}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structSpot_ab779e771f24dd30cc2c28c908fa031f7}{attacked}};}
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{structSprite}{Sprite}}\ *\mbox{\hyperlink{structSpot_a6292f4cf21cff93e25e054d2cdd7bd42}{missed}};}
+\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{structSprite}{Sprite}}\ *\mbox{\hyperlink{structSpot_aa973a4c42f87a15d858f9e8e5b7ee3fd}{hit}};}
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{structSprite}{Sprite}}\ *\mbox{\hyperlink{structSpot_a2c73151cc7c28ec893a77c016cbcacbb}{small\_missed}};}
+\DoxyCodeLine{00034\ \ \ \ \ \mbox{\hyperlink{structSprite}{Sprite}}\ *\mbox{\hyperlink{structSpot_aa3d961d64b0b21513e83533fbc28b4f5}{small\_hit}};}
+\DoxyCodeLine{00035\ \}\ \mbox{\hyperlink{structSpot}{Spot}};}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00041\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{structBoat_a518af9d555fe7eb4cc366efa37dd17d9}{fixed}};}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{structBoat_a4ba875615e856b7862eeec530d87f747}{rotated}};}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{structBoat_a872dc7601a27b3f925c6a7c01ca153bc}{selected}};}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{structBoat_a49c20b593ee31b0869c6575497842afb}{sunk}};}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structBoat_a1c8dd3349e6b4db3ae68a7c962fc1e72}{id}};}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structBoat_a7f8f953fa4e77c6216cd4ebeca7fe6f6}{health}};}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structBoat_a79eaeecbbe55ca01b915d91866d3d39c}{damage}};}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structBoat_a6143dafd2fffd8864ba743c743edc834}{height}};}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structBoat_ad69fb880187814a524b5e0a1b7b0bf13}{width}};}
+\DoxyCodeLine{00051\ \ \ \ \ \mbox{\hyperlink{structSprite}{Sprite}}\ *\mbox{\hyperlink{structBoat_a5a4181e11a2fe0e5b5aaef35e6802ae8}{sprite}};}
+\DoxyCodeLine{00052\ \ \ \ \ \mbox{\hyperlink{structSprite}{Sprite}}\ *\mbox{\hyperlink{structBoat_a16f8276414e2f0104aa62ba0788ef1c6}{s\_sprite}};}
+\DoxyCodeLine{00053\ \ \ \ \ \mbox{\hyperlink{structSprite}{Sprite}}\ *\mbox{\hyperlink{structBoat_a2f19c234232c15041226bb30b8b7f814}{v\_sprite}};}
+\DoxyCodeLine{00054\ \ \ \ \ \mbox{\hyperlink{structSprite}{Sprite}}\ *\mbox{\hyperlink{structBoat_a840c59feb523957efd840b89113b1f80}{sv\_sprite}};}
+\DoxyCodeLine{00055\ \ \ \ \ \mbox{\hyperlink{structSprite}{Sprite}}\ *\mbox{\hyperlink{structBoat_ac6d3104ad3497ca4effd6c225c05c1c2}{small\_sprite}};}
+\DoxyCodeLine{00056\ \ \ \ \ \mbox{\hyperlink{structSprite}{Sprite}}\ *\mbox{\hyperlink{structBoat_acf4fd32493c8ad683140561e9fbe7025}{small\_v\_sprite}};}
+\DoxyCodeLine{00057\ \ \ \ \ \mbox{\hyperlink{structSpot}{Spot}}\ \mbox{\hyperlink{structBoat_adcdf8b7791f1b8670a210d684166f77f}{first}};}
+\DoxyCodeLine{00058\ \}\ \mbox{\hyperlink{structBoat}{Boat}};\ }
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00064\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00065\ \ \ \ \ \mbox{\hyperlink{structSpot}{Spot}}\ \mbox{\hyperlink{gameRemoteController_8c_a2e5dc26fdbee50113bc04e638c865dad}{matrix}}[\mbox{\hyperlink{macros_8h_a2bd32349fcbeb6ee86434a65226cba1a}{MATRIX\_SIZE}}][\mbox{\hyperlink{macros_8h_a2bd32349fcbeb6ee86434a65226cba1a}{MATRIX\_SIZE}}];}
+\DoxyCodeLine{00066\ \ \ \ \ \mbox{\hyperlink{structBoat}{Boat}}\ \mbox{\hyperlink{structPlayer_a87346deba90366d7806f84c9ef752e32}{boatA}};}
+\DoxyCodeLine{00067\ \ \ \ \ \mbox{\hyperlink{structBoat}{Boat}}\ \mbox{\hyperlink{structPlayer_ac2d491b00ada0122fd1d42190e67f9d8}{boatB}};}
+\DoxyCodeLine{00068\ \ \ \ \ \mbox{\hyperlink{structBoat}{Boat}}\ \mbox{\hyperlink{structPlayer_a4f433057d171ff3ec7f00f1cf8c8302d}{boatC}};}
+\DoxyCodeLine{00069\ \ \ \ \ \mbox{\hyperlink{structBoat}{Boat}}\ \mbox{\hyperlink{structPlayer_ad6ee9db60452d32f492f65d72c60e468}{boatD}};}
+\DoxyCodeLine{00070\ \ \ \ \ \mbox{\hyperlink{structBoat}{Boat}}\ \mbox{\hyperlink{structPlayer_a180fab461221a02c8c886c477ab11efd}{boatE}};}
+\DoxyCodeLine{00071\ \}\ \mbox{\hyperlink{structPlayer}{Player}};}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00076\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{game_8h_ab305be39fd96600d4e529ba4e73f6360}{savePlayer1}}();}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00081\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{game_8h_a78c123d7a0a50be09784f9f2c422702c}{savePlayer2}}();}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00088\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{game_8h_a92d59b43b0145d881f3463337ab94e95}{adjustBoard}}(\mbox{\hyperlink{structBoat}{Boat}}\ \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{boat}});}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00093\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{game_8h_aa28fe08993f286a9e0e82fc84e94e9b8}{clearBoard}}();}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00102\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{game_8h_a74a9dc049e8db47fa98c771368c0a463}{createMatrix}}(\textcolor{keywordtype}{int}\ \mbox{\hyperlink{mouse_8c_a6150e0515f7202e2fb518f7206ed97dc}{x}},\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{y}},\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{size}});}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00110\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{game_8h_a3eaa5a99d28d862ab7d2bc59e27ab3cf}{updateDamage}}(\textcolor{keywordtype}{int}\ taken,\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{p}});}
+\DoxyCodeLine{00111\ }
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00113\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00114\ }
+
+\end{DoxyCode}

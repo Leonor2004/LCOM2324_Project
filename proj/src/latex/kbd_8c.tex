@@ -1,0 +1,122 @@
+\doxysection{controllers/keyboard/kbd.c File Reference}
+\hypertarget{kbd_8c}{}\label{kbd_8c}\index{controllers/keyboard/kbd.c@{controllers/keyboard/kbd.c}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include $<$lcom/lab3.\+h$>$}\newline
+{\ttfamily \#include "{}kbd.\+h"{}}\newline
+{\ttfamily \#include "{}../macros.\+h"{}}\newline
+{\ttfamily \#include "{}../utils/utils.\+c"{}}\newline
+Include dependency graph for kbd.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{kbd_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{kbd_8c_a5ef7c45085e7f8027af702a7b5de444c}{kbd\+\_\+subscribe\+\_\+int}} (\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint8\+\_\+t}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{IRQ}})
+\begin{DoxyCompactList}\small\item\em Subscribes to keyboard interrupts. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{kbd_8c_a5bdf6cfb570c375192b0d87913b65c57}{kbd\+\_\+unsubscribe\+\_\+int}} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribes to keyboard interrupts. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{kbd_8c_a5d86607e1025febd59f2b9d2738bbb1a}{read\+\_\+output}} (\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint8\+\_\+t}} \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{port}}, \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint8\+\_\+t}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{mainController_8c_aa1de7a5557e9d96b83cf03f73c92163f}{scancode}}, \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint8\+\_\+t}} \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{mouse}})
+\begin{DoxyCompactList}\small\item\em Reads the output from the specified port and checks for errors. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{kbd_8c_ab9e6a05785f0f86cb2cdb7be9cfd5850}{restore\+KBD}} ()
+\begin{DoxyCompactList}\small\item\em Restore the keyboard. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{kbd_8c_a4017d9521177279f305f29157dfe1657}{hook\+\_\+kbc}} = 1
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{kbd_8c_a5ef7c45085e7f8027af702a7b5de444c}\label{kbd_8c_a5ef7c45085e7f8027af702a7b5de444c} 
+\index{kbd.c@{kbd.c}!kbd\_subscribe\_int@{kbd\_subscribe\_int}}
+\index{kbd\_subscribe\_int@{kbd\_subscribe\_int}!kbd.c@{kbd.c}}
+\doxysubsubsection{\texorpdfstring{kbd\_subscribe\_int()}{kbd\_subscribe\_int()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} kbd\+\_\+subscribe\+\_\+int (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint8\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{IRQ }\end{DoxyParamCaption})}
+
+
+
+Subscribes to keyboard interrupts. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em IRQ} & \+: IRQ. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int \+: 0 if sucess and 1 otherwise. 
+\end{DoxyReturn}
+\Hypertarget{kbd_8c_a5bdf6cfb570c375192b0d87913b65c57}\label{kbd_8c_a5bdf6cfb570c375192b0d87913b65c57} 
+\index{kbd.c@{kbd.c}!kbd\_unsubscribe\_int@{kbd\_unsubscribe\_int}}
+\index{kbd\_unsubscribe\_int@{kbd\_unsubscribe\_int}!kbd.c@{kbd.c}}
+\doxysubsubsection{\texorpdfstring{kbd\_unsubscribe\_int()}{kbd\_unsubscribe\_int()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} kbd\+\_\+unsubscribe\+\_\+int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Unsubscribes to keyboard interrupts. 
+
+\begin{DoxyReturn}{Returns}
+int \+: 0 if sucess and 1 otherwise. 
+\end{DoxyReturn}
+\Hypertarget{kbd_8c_a5d86607e1025febd59f2b9d2738bbb1a}\label{kbd_8c_a5d86607e1025febd59f2b9d2738bbb1a} 
+\index{kbd.c@{kbd.c}!read\_output@{read\_output}}
+\index{read\_output@{read\_output}!kbd.c@{kbd.c}}
+\doxysubsubsection{\texorpdfstring{read\_output()}{read\_output()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} read\+\_\+output (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint8\+\_\+t}}}]{port,  }\item[{\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint8\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{scancode,  }\item[{\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint8\+\_\+t}}}]{mouse }\end{DoxyParamCaption})}
+
+
+
+Reads the output from the specified port and checks for errors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em port} & \+: The I/O port to read from. \\
+\hline
+{\em scancode} & \+: Variable where the read scancode will be stored. \\
+\hline
+{\em mouse} & \+: Non-\/zero value if the data read should be from the mouse. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int \+: 0 if sucess and 1 otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=265pt]{kbd_8c_a5d86607e1025febd59f2b9d2738bbb1a_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{kbd_8c_ab9e6a05785f0f86cb2cdb7be9cfd5850}\label{kbd_8c_ab9e6a05785f0f86cb2cdb7be9cfd5850} 
+\index{kbd.c@{kbd.c}!restoreKBD@{restoreKBD}}
+\index{restoreKBD@{restoreKBD}!kbd.c@{kbd.c}}
+\doxysubsubsection{\texorpdfstring{restoreKBD()}{restoreKBD()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} restore\+KBD (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Restore the keyboard. 
+
+\begin{DoxyReturn}{Returns}
+int \+: 0 if sucess and 1 otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{kbd_8c_ab9e6a05785f0f86cb2cdb7be9cfd5850_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{kbd_8c_a4017d9521177279f305f29157dfe1657}\label{kbd_8c_a4017d9521177279f305f29157dfe1657} 
+\index{kbd.c@{kbd.c}!hook\_kbc@{hook\_kbc}}
+\index{hook\_kbc@{hook\_kbc}!kbd.c@{kbd.c}}
+\doxysubsubsection{\texorpdfstring{hook\_kbc}{hook\_kbc}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} hook\+\_\+kbc = 1}
+

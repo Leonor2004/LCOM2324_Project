@@ -1,0 +1,23 @@
+var searchData=
+[
+  ['board_0',['board',['../sprite_8c.html#a5fac8105223c65bc1ccef5589fac0301',1,'board:&#160;sprite.c'],['../assetDraw_8c.html#a5fac8105223c65bc1ccef5589fac0301',1,'board:&#160;sprite.c']]],
+  ['boat_5f2p_1',['boat_2p',['../boats_8c.html#a4752a3025dfb55d6bccc5352a30c94ed',1,'boat_2p:&#160;game.c'],['../game_8c.html#a4752a3025dfb55d6bccc5352a30c94ed',1,'boat_2p:&#160;game.c']]],
+  ['boat_5f3p1_2',['boat_3p1',['../boats_8c.html#a2eed0596eb78f002d5d76497a320a4b0',1,'boat_3p1:&#160;game.c'],['../game_8c.html#a2eed0596eb78f002d5d76497a320a4b0',1,'boat_3p1:&#160;game.c']]],
+  ['boat_5f3p2_3',['boat_3p2',['../boats_8c.html#acaae4ce98d433120032032eebab29b83',1,'boat_3p2:&#160;game.c'],['../game_8c.html#acaae4ce98d433120032032eebab29b83',1,'boat_3p2:&#160;game.c']]],
+  ['boat_5f4p_4',['boat_4p',['../game_8c.html#ae590ad2a81a6628d3c2b36ea0ed8ebaf',1,'boat_4p:&#160;game.c'],['../boats_8c.html#ae590ad2a81a6628d3c2b36ea0ed8ebaf',1,'boat_4p:&#160;game.c']]],
+  ['boat_5f5p_5',['boat_5p',['../game_8c.html#aca812e1cf0515ae3438b2644f7b844bc',1,'boat_5p:&#160;game.c'],['../boats_8c.html#aca812e1cf0515ae3438b2644f7b844bc',1,'boat_5p:&#160;game.c']]],
+  ['boata_6',['boatA',['../structPlayer.html#a87346deba90366d7806f84c9ef752e32',1,'Player']]],
+  ['boatb_7',['boatB',['../structPlayer.html#ac2d491b00ada0122fd1d42190e67f9d8',1,'Player']]],
+  ['boatc_8',['boatC',['../structPlayer.html#a4f433057d171ff3ec7f00f1cf8c8302d',1,'Player']]],
+  ['boatd_9',['boatD',['../structPlayer.html#ad6ee9db60452d32f492f65d72c60e468',1,'Player']]],
+  ['boate_10',['boatE',['../structPlayer.html#a180fab461221a02c8c886c477ab11efd',1,'Player']]],
+  ['boatsdrawn_11',['boatsDrawn',['../gameRemoteDraw_8c.html#a113876f97f3819f5ad5124b9d982fc11',1,'gameRemoteDraw.c']]],
+  ['button_5fhelp_12',['button_help',['../menuController_8c.html#a083ce299d172c679414dc2ff5149bce3',1,'button_help:&#160;sprite.c'],['../menuDraw_8c.html#a083ce299d172c679414dc2ff5149bce3',1,'button_help:&#160;sprite.c'],['../sprite_8c.html#a083ce299d172c679414dc2ff5149bce3',1,'button_help:&#160;sprite.c']]],
+  ['button_5flocal_13',['button_local',['../sprite_8c.html#a2fc98c5bc0ab49c37bf712236e3992b6',1,'button_local:&#160;sprite.c'],['../menuController_8c.html#a2fc98c5bc0ab49c37bf712236e3992b6',1,'button_local:&#160;sprite.c'],['../menuDraw_8c.html#a2fc98c5bc0ab49c37bf712236e3992b6',1,'button_local:&#160;sprite.c']]],
+  ['button_5fnext_14',['button_next',['../sprite_8c.html#a9160ec32be088e9a25b056a10d97d75a',1,'sprite.c']]],
+  ['button_5fquit_15',['button_quit',['../menuController_8c.html#a63138439bc782b0b68997c28cc4a9952',1,'button_quit:&#160;sprite.c'],['../menuDraw_8c.html#a63138439bc782b0b68997c28cc4a9952',1,'button_quit:&#160;sprite.c'],['../sprite_8c.html#a63138439bc782b0b68997c28cc4a9952',1,'button_quit:&#160;sprite.c']]],
+  ['button_5fremote_16',['button_remote',['../sprite_8c.html#ad73a51d2fac4744f4d942f9f37512492',1,'button_remote:&#160;sprite.c'],['../menuController_8c.html#ad73a51d2fac4744f4d942f9f37512492',1,'button_remote:&#160;sprite.c'],['../menuDraw_8c.html#ad73a51d2fac4744f4d942f9f37512492',1,'button_remote:&#160;sprite.c']]],
+  ['byteidx_17',['byteIdx',['../mouse_8c.html#acc00a2b0be9a47e6791e8ec4101d2e9b',1,'mouse.c']]],
+  ['bytes_18',['bytes',['../mouse_8c.html#a89fe01e2d4cf73b27993d65029aff235',1,'mouse.c']]],
+  ['bytes_5fper_5fpixel_19',['bytes_per_pixel',['../sprite_8c.html#a144d9a9cabab9de0142a6baee835ca6b',1,'bytes_per_pixel:&#160;graphics.c'],['../graphics_8c.html#a144d9a9cabab9de0142a6baee835ca6b',1,'bytes_per_pixel:&#160;graphics.c']]]
+];

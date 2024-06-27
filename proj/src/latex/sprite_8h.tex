@@ -1,0 +1,262 @@
+\doxysection{controllers/sprites/sprite.h File Reference}
+\hypertarget{sprite_8h}{}\label{sprite_8h}\index{controllers/sprites/sprite.h@{controllers/sprites/sprite.h}}
+
+
+This file contains the sprite\textquotesingle{}s functions.  
+
+
+{\ttfamily \#include "{}../macros.\+h"{}}\newline
+{\ttfamily \#include "{}assets/images/dark\+Main.\+xpm"{}}\newline
+{\ttfamily \#include "{}assets/images/light\+Main.\+xpm"{}}\newline
+{\ttfamily \#include "{}assets/images/sunset\+Main.\+xpm"{}}\newline
+{\ttfamily \#include "{}assets/title.\+xpm"{}}\newline
+{\ttfamily \#include "{}assets/board.\+xpm"{}}\newline
+{\ttfamily \#include "{}assets/images/help\+Menu.\+xpm"{}}\newline
+{\ttfamily \#include "{}assets/cursor/cursor.\+xpm"{}}\newline
+{\ttfamily \#include "{}assets/cursor/hand\+\_\+cursor.\+xpm"{}}\newline
+{\ttfamily \#include "{}assets/cursor/crosshair.\+xpm"{}}\newline
+{\ttfamily \#include "{}assets/buttons/button\+\_\+local.\+xpm"{}}\newline
+{\ttfamily \#include "{}assets/buttons/button\+\_\+help.\+xpm"{}}\newline
+{\ttfamily \#include "{}assets/buttons/button\+\_\+quit.\+xpm"{}}\newline
+{\ttfamily \#include "{}assets/buttons/button\+\_\+next.\+xpm"{}}\newline
+{\ttfamily \#include "{}assets/buttons/button\+\_\+remote.\+xpm"{}}\newline
+{\ttfamily \#include "{}assets/boats/boat\+\_\+2p\+\_\+w.\+xpm"{}}\newline
+{\ttfamily \#include "{}assets/boats/boat\+\_\+3p\+\_\+w.\+xpm"{}}\newline
+{\ttfamily \#include "{}assets/boats/boat\+\_\+4p\+\_\+w.\+xpm"{}}\newline
+{\ttfamily \#include "{}assets/boats/boat\+\_\+5p\+\_\+w.\+xpm"{}}\newline
+{\ttfamily \#include "{}assets/boats/boat\+\_\+2p\+\_\+b.\+xpm"{}}\newline
+{\ttfamily \#include "{}assets/boats/boat\+\_\+3p\+\_\+b.\+xpm"{}}\newline
+{\ttfamily \#include "{}assets/boats/boat\+\_\+4p\+\_\+b.\+xpm"{}}\newline
+{\ttfamily \#include "{}assets/boats/boat\+\_\+5p\+\_\+b.\+xpm"{}}\newline
+{\ttfamily \#include "{}assets/boats/boat\+\_\+2p\+\_\+w\+\_\+\+V.\+xpm"{}}\newline
+{\ttfamily \#include "{}assets/boats/boat\+\_\+3p\+\_\+w\+\_\+\+V.\+xpm"{}}\newline
+{\ttfamily \#include "{}assets/boats/boat\+\_\+4p\+\_\+w\+\_\+\+V.\+xpm"{}}\newline
+{\ttfamily \#include "{}assets/boats/boat\+\_\+5p\+\_\+w\+\_\+\+V.\+xpm"{}}\newline
+{\ttfamily \#include "{}assets/boats/boat\+\_\+2p\+\_\+b\+\_\+\+V.\+xpm"{}}\newline
+{\ttfamily \#include "{}assets/boats/boat\+\_\+3p\+\_\+b\+\_\+\+V.\+xpm"{}}\newline
+{\ttfamily \#include "{}assets/boats/boat\+\_\+4p\+\_\+b\+\_\+\+V.\+xpm"{}}\newline
+{\ttfamily \#include "{}assets/boats/boat\+\_\+5p\+\_\+b\+\_\+\+V.\+xpm"{}}\newline
+{\ttfamily \#include "{}assets/popups/sure\+\_\+quit\+\_\+text.\+xpm"{}}\newline
+{\ttfamily \#include "{}assets/popups/sure\+\_\+next\+\_\+player.\+xpm"{}}\newline
+{\ttfamily \#include "{}assets/popups/sure\+\_\+go\+\_\+game.\+xpm"{}}\newline
+{\ttfamily \#include "{}assets/popups/player1.\+xpm"{}}\newline
+{\ttfamily \#include "{}assets/popups/player2.\+xpm"{}}\newline
+{\ttfamily \#include "{}assets/popups/player1\+\_\+won.\+xpm"{}}\newline
+{\ttfamily \#include "{}assets/popups/player2\+\_\+won.\+xpm"{}}\newline
+{\ttfamily \#include "{}assets/popups/waiting1.\+xpm"{}}\newline
+{\ttfamily \#include "{}assets/popups/my\+Turn.\+xpm"{}}\newline
+{\ttfamily \#include "{}assets/choosing.\+xpm"{}}\newline
+{\ttfamily \#include "{}assets/game\+\_\+board.\+xpm"{}}\newline
+{\ttfamily \#include "{}assets/small\+\_\+boats/small\+\_\+boat\+\_\+2p\+\_\+b.\+xpm"{}}\newline
+{\ttfamily \#include "{}assets/small\+\_\+boats/small\+\_\+boat\+\_\+3p\+\_\+b.\+xpm"{}}\newline
+{\ttfamily \#include "{}assets/small\+\_\+boats/small\+\_\+boat\+\_\+4p\+\_\+b.\+xpm"{}}\newline
+{\ttfamily \#include "{}assets/small\+\_\+boats/small\+\_\+boat\+\_\+5p\+\_\+b.\+xpm"{}}\newline
+{\ttfamily \#include "{}assets/small\+\_\+boats/small\+\_\+boat\+\_\+2p\+\_\+b\+\_\+\+V.\+xpm"{}}\newline
+{\ttfamily \#include "{}assets/small\+\_\+boats/small\+\_\+boat\+\_\+3p\+\_\+b\+\_\+\+V.\+xpm"{}}\newline
+{\ttfamily \#include "{}assets/small\+\_\+boats/small\+\_\+boat\+\_\+4p\+\_\+b\+\_\+\+V.\+xpm"{}}\newline
+{\ttfamily \#include "{}assets/small\+\_\+boats/small\+\_\+boat\+\_\+5p\+\_\+b\+\_\+\+V.\+xpm"{}}\newline
+{\ttfamily \#include "{}assets/numbers/zero.\+xpm"{}}\newline
+{\ttfamily \#include "{}assets/numbers/one.\+xpm"{}}\newline
+{\ttfamily \#include "{}assets/numbers/two.\+xpm"{}}\newline
+{\ttfamily \#include "{}assets/numbers/three.\+xpm"{}}\newline
+{\ttfamily \#include "{}assets/numbers/four.\+xpm"{}}\newline
+{\ttfamily \#include "{}assets/numbers/five.\+xpm"{}}\newline
+{\ttfamily \#include "{}assets/numbers/six.\+xpm"{}}\newline
+{\ttfamily \#include "{}assets/numbers/seven.\+xpm"{}}\newline
+{\ttfamily \#include "{}assets/numbers/eight.\+xpm"{}}\newline
+{\ttfamily \#include "{}assets/numbers/nine.\+xpm"{}}\newline
+{\ttfamily \#include "{}assets/numbers/ten.\+xpm"{}}\newline
+{\ttfamily \#include "{}../video\+\_\+graphics/graphics.\+h"{}}\newline
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sprite_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structSprite}{Sprite}}
+\begin{DoxyCompactList}\small\item\em Struct that has information about a \doxylink{structSprite}{Sprite}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{typedef}} \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{struct}} \mbox{\hyperlink{structSprite}{Sprite}} \mbox{\hyperlink{sprite_8h_abb1060e0b7ecf8b4eba2c1bb55cfe5e2}{Sprite}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{sprite_8h_ad5648ba77a90e532ec556dda3a76716a}{create\+\_\+sprite}} (\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{xpm\+\_\+map\+\_\+t}} sprite, \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{mouse_8c_a6150e0515f7202e2fb518f7206ed97dc}{x}}, \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{y}})
+\begin{DoxyCompactList}\small\item\em Create a sprite object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{sprite_8h_af16c6befaac9ffb673b9e3c798d542ed}{destroy\+\_\+sprite}} (\mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{sp}})
+\begin{DoxyCompactList}\small\item\em Destroys a sprite object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{sprite_8h_a0c563ef8fad5087ec7af8a790a283203}{load\+\_\+game\+\_\+sprites}} ()
+\begin{DoxyCompactList}\small\item\em Loads all game sprites. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{sprite_8h_a1ee15a80618d000d7d451c09f4ed347e}{load\+\_\+boat\+\_\+sprites}} (\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{mouse_8c_a6150e0515f7202e2fb518f7206ed97dc}{x}}, \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{y}})
+\begin{DoxyCompactList}\small\item\em Loads boat sprites. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{sprite_8h_a9dfa3ebee661298759b6509e8b5ff335}{load\+\_\+small\+\_\+boat\+\_\+sprites}} (\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{mouse_8c_a6150e0515f7202e2fb518f7206ed97dc}{x}}, \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{y}})
+\begin{DoxyCompactList}\small\item\em Loads small boat sprites. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{sprite_8h_ab400ea69c15b7ebc9a5cc15b26d7429b}{destroy\+\_\+game\+\_\+sprites}} ()
+\begin{DoxyCompactList}\small\item\em Destroys all game sprites. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{sprite_8h_a740994f8c16c38bf18eaabac1f5eeeb9}{draw\+\_\+sprite}} (\mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{sp}})
+\begin{DoxyCompactList}\small\item\em Draws a sprite on the screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file contains the sprite\textquotesingle{}s functions. 
+
+
+
+\doxysubsection{Typedef Documentation}
+\Hypertarget{sprite_8h_abb1060e0b7ecf8b4eba2c1bb55cfe5e2}\label{sprite_8h_abb1060e0b7ecf8b4eba2c1bb55cfe5e2} 
+\index{sprite.h@{sprite.h}!Sprite@{Sprite}}
+\index{Sprite@{Sprite}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{Sprite}{Sprite}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{typedef}} \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{struct}} \mbox{\hyperlink{structSprite}{Sprite}} \mbox{\hyperlink{structSprite}{Sprite}}}
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{sprite_8h_ad5648ba77a90e532ec556dda3a76716a}\label{sprite_8h_ad5648ba77a90e532ec556dda3a76716a} 
+\index{sprite.h@{sprite.h}!create\_sprite@{create\_sprite}}
+\index{create\_sprite@{create\_sprite}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{create\_sprite()}{create\_sprite()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*} create\+\_\+sprite (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{xpm\+\_\+map\+\_\+t}}}]{sprite,  }\item[{\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}}}]{x,  }\item[{\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}}}]{y }\end{DoxyParamCaption})}
+
+
+
+Create a sprite object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sprite} & \+: Strite. \\
+\hline
+{\em x} & \+: The initial X position of the sprite. \\
+\hline
+{\em y} & \+: The initial Y position of the sprite. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{structSprite}{Sprite} \+: The created \doxylink{structSprite}{Sprite}, or NULL if allocation fails. 
+\end{DoxyReturn}
+\Hypertarget{sprite_8h_ab400ea69c15b7ebc9a5cc15b26d7429b}\label{sprite_8h_ab400ea69c15b7ebc9a5cc15b26d7429b} 
+\index{sprite.h@{sprite.h}!destroy\_game\_sprites@{destroy\_game\_sprites}}
+\index{destroy\_game\_sprites@{destroy\_game\_sprites}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{destroy\_game\_sprites()}{destroy\_game\_sprites()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} destroy\+\_\+game\+\_\+sprites (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroys all game sprites. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{sprite_8h_ab400ea69c15b7ebc9a5cc15b26d7429b_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{sprite_8h_af16c6befaac9ffb673b9e3c798d542ed}\label{sprite_8h_af16c6befaac9ffb673b9e3c798d542ed} 
+\index{sprite.h@{sprite.h}!destroy\_sprite@{destroy\_sprite}}
+\index{destroy\_sprite@{destroy\_sprite}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{destroy\_sprite()}{destroy\_sprite()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} destroy\+\_\+sprite (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*}}]{sp }\end{DoxyParamCaption})}
+
+
+
+Destroys a sprite object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sp} & \+: \doxylink{structSprite}{Sprite} to be destroyed. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{sprite_8h_a740994f8c16c38bf18eaabac1f5eeeb9}\label{sprite_8h_a740994f8c16c38bf18eaabac1f5eeeb9} 
+\index{sprite.h@{sprite.h}!draw\_sprite@{draw\_sprite}}
+\index{draw\_sprite@{draw\_sprite}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{draw\_sprite()}{draw\_sprite()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} draw\+\_\+sprite (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structSprite}{Sprite}} \texorpdfstring{$\ast$}{*}}]{sp }\end{DoxyParamCaption})}
+
+
+
+Draws a sprite on the screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sp} & \+: \doxylink{structSprite}{Sprite} do be drawn. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{sprite_8h_a740994f8c16c38bf18eaabac1f5eeeb9_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{sprite_8h_a1ee15a80618d000d7d451c09f4ed347e}\label{sprite_8h_a1ee15a80618d000d7d451c09f4ed347e} 
+\index{sprite.h@{sprite.h}!load\_boat\_sprites@{load\_boat\_sprites}}
+\index{load\_boat\_sprites@{load\_boat\_sprites}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{load\_boat\_sprites()}{load\_boat\_sprites()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} load\+\_\+boat\+\_\+sprites (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}}}]{x,  }\item[{\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}}}]{y }\end{DoxyParamCaption})}
+
+
+
+Loads boat sprites. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The initial X position of the boat sprites. \\
+\hline
+{\em y} & The initial Y position of the boat sprites. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=299pt]{sprite_8h_a1ee15a80618d000d7d451c09f4ed347e_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{sprite_8h_a0c563ef8fad5087ec7af8a790a283203}\label{sprite_8h_a0c563ef8fad5087ec7af8a790a283203} 
+\index{sprite.h@{sprite.h}!load\_game\_sprites@{load\_game\_sprites}}
+\index{load\_game\_sprites@{load\_game\_sprites}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{load\_game\_sprites()}{load\_game\_sprites()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} load\+\_\+game\+\_\+sprites (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Loads all game sprites. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sprite_8h_a0c563ef8fad5087ec7af8a790a283203_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{sprite_8h_a9dfa3ebee661298759b6509e8b5ff335}\label{sprite_8h_a9dfa3ebee661298759b6509e8b5ff335} 
+\index{sprite.h@{sprite.h}!load\_small\_boat\_sprites@{load\_small\_boat\_sprites}}
+\index{load\_small\_boat\_sprites@{load\_small\_boat\_sprites}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{load\_small\_boat\_sprites()}{load\_small\_boat\_sprites()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} load\+\_\+small\+\_\+boat\+\_\+sprites (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}}}]{x,  }\item[{\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}}}]{y }\end{DoxyParamCaption})}
+
+
+
+Loads small boat sprites. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The initial X position of the small boat sprites. \\
+\hline
+{\em y} & The initial Y position of the small boat sprites. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=331pt]{sprite_8h_a9dfa3ebee661298759b6509e8b5ff335_cgraph}
+\end{center}
+\end{figure}

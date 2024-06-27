@@ -1,0 +1,263 @@
+\doxysection{controllers/video\+\_\+graphics/graphics.c File Reference}
+\hypertarget{graphics_8c}{}\label{graphics_8c}\index{controllers/video\_graphics/graphics.c@{controllers/video\_graphics/graphics.c}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include "{}graphics.\+h"{}}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+Include dependency graph for graphics.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=299pt]{graphics_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{graphics_8c_a0d157d997329169f936545f9985e334b}{swap\+\_\+buffers}} ()
+\begin{DoxyCompactList}\small\item\em Swaps the contents of the double buffer with the actual video memory. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{graphics_8c_aecc943bbac07879ecdb8e7d952e022d2}{\+\_\+vg\+\_\+init}} (\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint16\+\_\+t}} \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{mode}})
+\begin{DoxyCompactList}\small\item\em Initializes the video graphics mode. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{graphics_8c_a8d36c75e0b2229e17fdbb63815586663}{enter\+\_\+video\+\_\+mode}} (\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint16\+\_\+t}} \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{mode}})
+\begin{DoxyCompactList}\small\item\em Enters the specified video mode. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{graphics_8c_a6f895de9725f9f231f9a7f74b6087f60}{vg\+\_\+draw\+\_\+pixel}} (\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint16\+\_\+t}} \mbox{\hyperlink{mouse_8c_a6150e0515f7202e2fb518f7206ed97dc}{x}}, \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint16\+\_\+t}} \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{y}}, \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint32\+\_\+t}} \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{color}})
+\begin{DoxyCompactList}\small\item\em Draws a pixel on the screen at the specified coordinates. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{graphics_8c_a987f665378e364226a7902d80604246c}{bits\+Per\+Pixel}} ()
+\begin{DoxyCompactList}\small\item\em Gets the bits per pixel for the current video mode. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{graphics_8c_acd87d57dac7df4f54a5cfda0b3179386}{print\+XPM}} (\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint16\+\_\+t}} \mbox{\hyperlink{mouse_8c_a6150e0515f7202e2fb518f7206ed97dc}{x}}, \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint16\+\_\+t}} \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{y}}, \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint8\+\_\+t}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{pixmap}}, \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{xpm\+\_\+image\+\_\+t}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{img}})
+\begin{DoxyCompactList}\small\item\em Prints an XPM image at the specified coordinates. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{graphics_8c_af9979d37c4242c6c107dfdaa4dd89c8f}{vg\+\_\+draw\+\_\+xpm}} (\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{xpm\+\_\+map\+\_\+t}} \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{xpm}}, \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint16\+\_\+t}} \mbox{\hyperlink{mouse_8c_a6150e0515f7202e2fb518f7206ed97dc}{x}}, \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint16\+\_\+t}} \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{y}})
+\begin{DoxyCompactList}\small\item\em Draws an XPM image at the specified coordinates. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint8\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{graphics_8c_a51ca412bef7e65e7fb0a170abe47b36b}{video\+\_\+mem}}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint8\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{graphics_8c_a65128df3097897fdd842e6ec28cd4747}{second\+\_\+video\+\_\+mem}}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{unsigned}} \mbox{\hyperlink{graphics_8c_a43e7e5a0a8f9069e6413b2066ca52f3e}{h\+\_\+res}}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{unsigned}} \mbox{\hyperlink{graphics_8c_a5bda1b499253a8fbf3cab646f8760391}{v\+\_\+res}}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{unsigned}} \mbox{\hyperlink{graphics_8c_a144d9a9cabab9de0142a6baee835ca6b}{bytes\+\_\+per\+\_\+pixel}}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{unsigned}} \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{graphics_8c_af856b4fb3e3f77e7beed552fb48a7c3a}{vram\+\_\+base}}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{unsigned}} \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{graphics_8c_a17b12b87c65aaa04215d9bdb7e9e84dd}{vram\+\_\+size}}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{vbe\+\_\+mode\+\_\+info\+\_\+t}} \mbox{\hyperlink{graphics_8c_a9fcc2243068f8e628648febc0909c509}{mode\+\_\+info}}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{struct}} \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{minix\+\_\+mem\+\_\+range}} \mbox{\hyperlink{graphics_8c_a439de1d29c81d1a6440221b77d0575e5}{addr}}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{graphics_8c_acab531abaa74a7e664e3986f2522b33a}{r}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{graphics_8c_aecc943bbac07879ecdb8e7d952e022d2}\label{graphics_8c_aecc943bbac07879ecdb8e7d952e022d2} 
+\index{graphics.c@{graphics.c}!\_vg\_init@{\_vg\_init}}
+\index{\_vg\_init@{\_vg\_init}!graphics.c@{graphics.c}}
+\doxysubsubsection{\texorpdfstring{\_vg\_init()}{\_vg\_init()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \+\_\+vg\+\_\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint16\+\_\+t}}}]{mode }\end{DoxyParamCaption})}
+
+
+
+Initializes the video graphics mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & The video mode to set. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int \+: 0 if sucess and 1 otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{graphics_8c_aecc943bbac07879ecdb8e7d952e022d2_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{graphics_8c_a987f665378e364226a7902d80604246c}\label{graphics_8c_a987f665378e364226a7902d80604246c} 
+\index{graphics.c@{graphics.c}!bitsPerPixel@{bitsPerPixel}}
+\index{bitsPerPixel@{bitsPerPixel}!graphics.c@{graphics.c}}
+\doxysubsubsection{\texorpdfstring{bitsPerPixel()}{bitsPerPixel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} bits\+Per\+Pixel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the bits per pixel for the current video mode. 
+
+\begin{DoxyReturn}{Returns}
+int \+: The number of bits per pixel. 
+\end{DoxyReturn}
+\Hypertarget{graphics_8c_a8d36c75e0b2229e17fdbb63815586663}\label{graphics_8c_a8d36c75e0b2229e17fdbb63815586663} 
+\index{graphics.c@{graphics.c}!enter\_video\_mode@{enter\_video\_mode}}
+\index{enter\_video\_mode@{enter\_video\_mode}!graphics.c@{graphics.c}}
+\doxysubsubsection{\texorpdfstring{enter\_video\_mode()}{enter\_video\_mode()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} enter\+\_\+video\+\_\+mode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint16\+\_\+t}}}]{mode }\end{DoxyParamCaption})}
+
+
+
+Enters the specified video mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & \+: The video mode to set. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int \+: 0 if sucess and 1 otherwise. 
+\end{DoxyReturn}
+\Hypertarget{graphics_8c_acd87d57dac7df4f54a5cfda0b3179386}\label{graphics_8c_acd87d57dac7df4f54a5cfda0b3179386} 
+\index{graphics.c@{graphics.c}!printXPM@{printXPM}}
+\index{printXPM@{printXPM}!graphics.c@{graphics.c}}
+\doxysubsubsection{\texorpdfstring{printXPM()}{printXPM()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} print\+XPM (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint16\+\_\+t}}}]{x,  }\item[{\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint16\+\_\+t}}}]{y,  }\item[{\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint8\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{pixmap,  }\item[{\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{xpm\+\_\+image\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{img }\end{DoxyParamCaption})}
+
+
+
+Prints an XPM image at the specified coordinates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x-\/coordinate of the top-\/left corner of the image. \\
+\hline
+{\em y} & The y-\/coordinate of the top-\/left corner of the image. \\
+\hline
+{\em pixmap} & The XPM image data. \\
+\hline
+{\em img} & The XPM image information. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=263pt]{graphics_8c_acd87d57dac7df4f54a5cfda0b3179386_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{graphics_8c_a0d157d997329169f936545f9985e334b}\label{graphics_8c_a0d157d997329169f936545f9985e334b} 
+\index{graphics.c@{graphics.c}!swap\_buffers@{swap\_buffers}}
+\index{swap\_buffers@{swap\_buffers}!graphics.c@{graphics.c}}
+\doxysubsubsection{\texorpdfstring{swap\_buffers()}{swap\_buffers()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} swap\+\_\+buffers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Swaps the contents of the double buffer with the actual video memory. 
+
+\Hypertarget{graphics_8c_a6f895de9725f9f231f9a7f74b6087f60}\label{graphics_8c_a6f895de9725f9f231f9a7f74b6087f60} 
+\index{graphics.c@{graphics.c}!vg\_draw\_pixel@{vg\_draw\_pixel}}
+\index{vg\_draw\_pixel@{vg\_draw\_pixel}!graphics.c@{graphics.c}}
+\doxysubsubsection{\texorpdfstring{vg\_draw\_pixel()}{vg\_draw\_pixel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} vg\+\_\+draw\+\_\+pixel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint16\+\_\+t}}}]{x,  }\item[{\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint16\+\_\+t}}}]{y,  }\item[{\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint32\+\_\+t}}}]{color }\end{DoxyParamCaption})}
+
+
+
+Draws a pixel on the screen at the specified coordinates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x-\/coordinate of the pixel. \\
+\hline
+{\em y} & The y-\/coordinate of the pixel. \\
+\hline
+{\em color} & The color to set the pixel to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int \+: 0 if sucess and 1 otherwise. 
+\end{DoxyReturn}
+\Hypertarget{graphics_8c_af9979d37c4242c6c107dfdaa4dd89c8f}\label{graphics_8c_af9979d37c4242c6c107dfdaa4dd89c8f} 
+\index{graphics.c@{graphics.c}!vg\_draw\_xpm@{vg\_draw\_xpm}}
+\index{vg\_draw\_xpm@{vg\_draw\_xpm}!graphics.c@{graphics.c}}
+\doxysubsubsection{\texorpdfstring{vg\_draw\_xpm()}{vg\_draw\_xpm()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} vg\+\_\+draw\+\_\+xpm (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{xpm\+\_\+map\+\_\+t}}}]{xpm,  }\item[{\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint16\+\_\+t}}}]{x,  }\item[{\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint16\+\_\+t}}}]{y }\end{DoxyParamCaption})}
+
+
+
+Draws an XPM image at the specified coordinates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em xpm} & The XPM image to draw. \\
+\hline
+{\em x} & The x-\/coordinate of the top-\/left corner of the image. \\
+\hline
+{\em y} & The y-\/coordinate of the top-\/left corner of the image. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int \+: 0 if sucess and 1 otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=287pt]{graphics_8c_af9979d37c4242c6c107dfdaa4dd89c8f_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{graphics_8c_a439de1d29c81d1a6440221b77d0575e5}\label{graphics_8c_a439de1d29c81d1a6440221b77d0575e5} 
+\index{graphics.c@{graphics.c}!addr@{addr}}
+\index{addr@{addr}!graphics.c@{graphics.c}}
+\doxysubsubsection{\texorpdfstring{addr}{addr}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{struct}} \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{minix\+\_\+mem\+\_\+range}} addr}
+
+\Hypertarget{graphics_8c_a144d9a9cabab9de0142a6baee835ca6b}\label{graphics_8c_a144d9a9cabab9de0142a6baee835ca6b} 
+\index{graphics.c@{graphics.c}!bytes\_per\_pixel@{bytes\_per\_pixel}}
+\index{bytes\_per\_pixel@{bytes\_per\_pixel}!graphics.c@{graphics.c}}
+\doxysubsubsection{\texorpdfstring{bytes\_per\_pixel}{bytes\_per\_pixel}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{unsigned}} bytes\+\_\+per\+\_\+pixel}
+
+\Hypertarget{graphics_8c_a43e7e5a0a8f9069e6413b2066ca52f3e}\label{graphics_8c_a43e7e5a0a8f9069e6413b2066ca52f3e} 
+\index{graphics.c@{graphics.c}!h\_res@{h\_res}}
+\index{h\_res@{h\_res}!graphics.c@{graphics.c}}
+\doxysubsubsection{\texorpdfstring{h\_res}{h\_res}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{unsigned}} h\+\_\+res}
+
+\Hypertarget{graphics_8c_a9fcc2243068f8e628648febc0909c509}\label{graphics_8c_a9fcc2243068f8e628648febc0909c509} 
+\index{graphics.c@{graphics.c}!mode\_info@{mode\_info}}
+\index{mode\_info@{mode\_info}!graphics.c@{graphics.c}}
+\doxysubsubsection{\texorpdfstring{mode\_info}{mode\_info}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{vbe\+\_\+mode\+\_\+info\+\_\+t}} mode\+\_\+info}
+
+\Hypertarget{graphics_8c_acab531abaa74a7e664e3986f2522b33a}\label{graphics_8c_acab531abaa74a7e664e3986f2522b33a} 
+\index{graphics.c@{graphics.c}!r@{r}}
+\index{r@{r}!graphics.c@{graphics.c}}
+\doxysubsubsection{\texorpdfstring{r}{r}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} r}
+
+\Hypertarget{graphics_8c_a65128df3097897fdd842e6ec28cd4747}\label{graphics_8c_a65128df3097897fdd842e6ec28cd4747} 
+\index{graphics.c@{graphics.c}!second\_video\_mem@{second\_video\_mem}}
+\index{second\_video\_mem@{second\_video\_mem}!graphics.c@{graphics.c}}
+\doxysubsubsection{\texorpdfstring{second\_video\_mem}{second\_video\_mem}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint8\+\_\+t}}\texorpdfstring{$\ast$}{*} second\+\_\+video\+\_\+mem}
+
+\Hypertarget{graphics_8c_a5bda1b499253a8fbf3cab646f8760391}\label{graphics_8c_a5bda1b499253a8fbf3cab646f8760391} 
+\index{graphics.c@{graphics.c}!v\_res@{v\_res}}
+\index{v\_res@{v\_res}!graphics.c@{graphics.c}}
+\doxysubsubsection{\texorpdfstring{v\_res}{v\_res}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{unsigned}} v\+\_\+res}
+
+\Hypertarget{graphics_8c_a51ca412bef7e65e7fb0a170abe47b36b}\label{graphics_8c_a51ca412bef7e65e7fb0a170abe47b36b} 
+\index{graphics.c@{graphics.c}!video\_mem@{video\_mem}}
+\index{video\_mem@{video\_mem}!graphics.c@{graphics.c}}
+\doxysubsubsection{\texorpdfstring{video\_mem}{video\_mem}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint8\+\_\+t}}\texorpdfstring{$\ast$}{*} video\+\_\+mem}
+
+\Hypertarget{graphics_8c_af856b4fb3e3f77e7beed552fb48a7c3a}\label{graphics_8c_af856b4fb3e3f77e7beed552fb48a7c3a} 
+\index{graphics.c@{graphics.c}!vram\_base@{vram\_base}}
+\index{vram\_base@{vram\_base}!graphics.c@{graphics.c}}
+\doxysubsubsection{\texorpdfstring{vram\_base}{vram\_base}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{unsigned}} \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} vram\+\_\+base}
+
+\Hypertarget{graphics_8c_a17b12b87c65aaa04215d9bdb7e9e84dd}\label{graphics_8c_a17b12b87c65aaa04215d9bdb7e9e84dd} 
+\index{graphics.c@{graphics.c}!vram\_size@{vram\_size}}
+\index{vram\_size@{vram\_size}!graphics.c@{graphics.c}}
+\doxysubsubsection{\texorpdfstring{vram\_size}{vram\_size}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{unsigned}} \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} vram\+\_\+size}
+

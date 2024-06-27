@@ -1,0 +1,142 @@
+\doxysection{handler/placing\+Controller.c File Reference}
+\hypertarget{placingController_8c}{}\label{placingController_8c}\index{handler/placingController.c@{handler/placingController.c}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include "{}placing\+Controller.\+h"{}}\newline
+Include dependency graph for placing\+Controller.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{placingController_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{placingController_8c_ade9c0cf310675c8eb75f86b239cb013d}{check\+Placing\+Click}} ()
+\begin{DoxyCompactList}\small\item\em Checks and processes mouse clicks in pop up menus in placing menu. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{placingController_8c_a8962834b25ea0f03b0bcbf36836a9000}{check\+Keyboard\+Input\+Placing}} (\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint8\+\_\+t}} \mbox{\hyperlink{mainController_8c_aa1de7a5557e9d96b83cf03f73c92163f}{scancode}})
+\begin{DoxyCompactList}\small\item\em Checks the keyboard input during the placing menu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{bool}} \mbox{\hyperlink{placingController_8c_a454baf7c33faf51c07b5f44d29da48b9}{cursor\+Active}}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{bool}} \mbox{\hyperlink{placingController_8c_af770af97ebec7ffde447956a6c207f93}{keyboard\+Active}}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{bool}} \mbox{\hyperlink{placingController_8c_a8d91e25a674104ae23d71b57da4718d2}{drawn}}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{enum}} \mbox{\hyperlink{placingDraw_8h_a86ea9f3c9ddbda5ecbb562dc0fa1663d}{PLACINGSTATE}} \mbox{\hyperlink{placingController_8c_ab881c84bd946a9b28e98d533b31df680}{state}}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{enum}} \mbox{\hyperlink{placingDraw_8h_a86ea9f3c9ddbda5ecbb562dc0fa1663d}{PLACINGSTATE}} \mbox{\hyperlink{placingController_8c_ad96d2c0a642b29108768ba8aaa618487}{previous\+State}}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{placingController_8c_a6150e0515f7202e2fb518f7206ed97dc}{x}}
+\item 
+int \mbox{\hyperlink{placingController_8c_a0a2f84ed7838f07779ae24c5a9086d33}{y}}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{placingController_8c_aa135bb051c7a68877c688aaa5a9c64ab}{global\+\_\+counter}}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{bool}} \mbox{\hyperlink{placingController_8c_ab67f2b1e1a5800c11585a29a34d38c29}{one\+Is\+Selected}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{placingController_8c_a8962834b25ea0f03b0bcbf36836a9000}\label{placingController_8c_a8962834b25ea0f03b0bcbf36836a9000} 
+\index{placingController.c@{placingController.c}!checkKeyboardInputPlacing@{checkKeyboardInputPlacing}}
+\index{checkKeyboardInputPlacing@{checkKeyboardInputPlacing}!placingController.c@{placingController.c}}
+\doxysubsubsection{\texorpdfstring{checkKeyboardInputPlacing()}{checkKeyboardInputPlacing()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} check\+Keyboard\+Input\+Placing (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{uint8\+\_\+t}}}]{scancode }\end{DoxyParamCaption})}
+
+
+
+Checks the keyboard input during the placing menu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scancode} & \+: The scancode of the key pressed. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{placingController_8c_a8962834b25ea0f03b0bcbf36836a9000_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{placingController_8c_ade9c0cf310675c8eb75f86b239cb013d}\label{placingController_8c_ade9c0cf310675c8eb75f86b239cb013d} 
+\index{placingController.c@{placingController.c}!checkPlacingClick@{checkPlacingClick}}
+\index{checkPlacingClick@{checkPlacingClick}!placingController.c@{placingController.c}}
+\doxysubsubsection{\texorpdfstring{checkPlacingClick()}{checkPlacingClick()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} check\+Placing\+Click (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks and processes mouse clicks in pop up menus in placing menu. 
+
+\begin{DoxyReturn}{Returns}
+int \+: -\/1 to go to main menu, 0 to stay in placing menu and 1 to start the game. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{placingController_8c_ade9c0cf310675c8eb75f86b239cb013d_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{placingController_8c_a454baf7c33faf51c07b5f44d29da48b9}\label{placingController_8c_a454baf7c33faf51c07b5f44d29da48b9} 
+\index{placingController.c@{placingController.c}!cursorActive@{cursorActive}}
+\index{cursorActive@{cursorActive}!placingController.c@{placingController.c}}
+\doxysubsubsection{\texorpdfstring{cursorActive}{cursorActive}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{bool}} cursor\+Active\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{placingController_8c_a8d91e25a674104ae23d71b57da4718d2}\label{placingController_8c_a8d91e25a674104ae23d71b57da4718d2} 
+\index{placingController.c@{placingController.c}!drawn@{drawn}}
+\index{drawn@{drawn}!placingController.c@{placingController.c}}
+\doxysubsubsection{\texorpdfstring{drawn}{drawn}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{bool}} drawn\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{placingController_8c_aa135bb051c7a68877c688aaa5a9c64ab}\label{placingController_8c_aa135bb051c7a68877c688aaa5a9c64ab} 
+\index{placingController.c@{placingController.c}!global\_counter@{global\_counter}}
+\index{global\_counter@{global\_counter}!placingController.c@{placingController.c}}
+\doxysubsubsection{\texorpdfstring{global\_counter}{global\_counter}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} global\+\_\+counter\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{placingController_8c_af770af97ebec7ffde447956a6c207f93}\label{placingController_8c_af770af97ebec7ffde447956a6c207f93} 
+\index{placingController.c@{placingController.c}!keyboardActive@{keyboardActive}}
+\index{keyboardActive@{keyboardActive}!placingController.c@{placingController.c}}
+\doxysubsubsection{\texorpdfstring{keyboardActive}{keyboardActive}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{bool}} keyboard\+Active\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{placingController_8c_ab67f2b1e1a5800c11585a29a34d38c29}\label{placingController_8c_ab67f2b1e1a5800c11585a29a34d38c29} 
+\index{placingController.c@{placingController.c}!oneIsSelected@{oneIsSelected}}
+\index{oneIsSelected@{oneIsSelected}!placingController.c@{placingController.c}}
+\doxysubsubsection{\texorpdfstring{oneIsSelected}{oneIsSelected}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{bool}} one\+Is\+Selected\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{placingController_8c_ad96d2c0a642b29108768ba8aaa618487}\label{placingController_8c_ad96d2c0a642b29108768ba8aaa618487} 
+\index{placingController.c@{placingController.c}!previousState@{previousState}}
+\index{previousState@{previousState}!placingController.c@{placingController.c}}
+\doxysubsubsection{\texorpdfstring{previousState}{previousState}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{enum}} \mbox{\hyperlink{placingDraw_8h_a86ea9f3c9ddbda5ecbb562dc0fa1663d}{PLACINGSTATE}} previous\+State\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{placingController_8c_ab881c84bd946a9b28e98d533b31df680}\label{placingController_8c_ab881c84bd946a9b28e98d533b31df680} 
+\index{placingController.c@{placingController.c}!state@{state}}
+\index{state@{state}!placingController.c@{placingController.c}}
+\doxysubsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{enum}} \mbox{\hyperlink{placingDraw_8h_a86ea9f3c9ddbda5ecbb562dc0fa1663d}{PLACINGSTATE}} state\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{placingController_8c_a6150e0515f7202e2fb518f7206ed97dc}\label{placingController_8c_a6150e0515f7202e2fb518f7206ed97dc} 
+\index{placingController.c@{placingController.c}!x@{x}}
+\index{x@{x}!placingController.c@{placingController.c}}
+\doxysubsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} x\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{placingController_8c_a0a2f84ed7838f07779ae24c5a9086d33}\label{placingController_8c_a0a2f84ed7838f07779ae24c5a9086d33} 
+\index{placingController.c@{placingController.c}!y@{y}}
+\index{y@{y}!placingController.c@{placingController.c}}
+\doxysubsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily int y\hspace{0.3cm}{\ttfamily [extern]}}
+

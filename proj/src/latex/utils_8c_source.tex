@@ -1,0 +1,69 @@
+\doxysection{utils.\+c}
+\hypertarget{utils_8c_source}{}\label{utils_8c_source}\index{controllers/utils/utils.c@{controllers/utils/utils.c}}
+\mbox{\hyperlink{utils_8c}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#include\ <lcom/lcf.h>}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <stdint.h>}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{utils_8c_ad43c3812e6d13e0518d9f8b8f463ffcf}{count}}\ =\ 0;}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{comment}{//\ This\ function\ is\ intended\ to\ retrieve\ the\ least\ significant\ byte\ (LSB)}}
+\DoxyCodeLine{00008\ \textcolor{comment}{//\ of\ a\ 16-\/bit\ unsigned\ integer\ 'val'\ and\ store\ it\ in\ the\ memory\ location}}
+\DoxyCodeLine{00009\ \textcolor{comment}{//\ pointed\ to\ by\ the\ pointer\ 'lsb'.}}
+\DoxyCodeLine{00010\ int(\mbox{\hyperlink{utils_8c_a31ab374573517f8a5ba31c52a49a8606}{util\_get\_LSB}})(uint16\_t\ val,\ uint8\_t\ *lsb)\ \{}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keywordflow}{if}\ (lsb\ ==\ NULL)\ \textcolor{keywordflow}{return}\ 1;}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{comment}{//\ Set\ the\ value\ pointed\ to\ by\ 'lsb'\ to\ 0xff\ (possibly\ as\ a\ default\ or\ initialization)\ 0x11111111}}
+\DoxyCodeLine{00015\ \ \ \ \ *lsb\ =\ 0xff;\ \ }
+\DoxyCodeLine{00016\ \ \ \ \ }
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{comment}{//\ Retrieve\ the\ least\ significant\ byte\ of\ 'val'\ by\ performing\ a\ bitwise\ AND\ operation}}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{comment}{//\ between\ the\ byte\ pointed\ to\ by\ 'lsb'\ and\ 'val'.\ Store\ the\ result\ in\ the\ memory}}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{comment}{//\ location\ pointed\ to\ by\ 'lsb'.}}
+\DoxyCodeLine{00020\ \ \ \ \ *lsb\ =\ *lsb\ \&\ val;\ \ }
+\DoxyCodeLine{00021\ \ \ \ \ }
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{00023\ \}}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{comment}{//\ This\ function\ is\ intended\ to\ retrieve\ the\ most\ significant\ byte\ (MSB)}}
+\DoxyCodeLine{00026\ \textcolor{comment}{//\ of\ a\ 16-\/bit\ unsigned\ integer\ 'val'\ and\ store\ it\ in\ the\ memory\ location}}
+\DoxyCodeLine{00027\ \textcolor{comment}{//\ pointed\ to\ by\ the\ pointer\ 'msb'.}}
+\DoxyCodeLine{00028\ int(\mbox{\hyperlink{utils_8c_afc6ca7a9a39943ff1792d206da514a59}{util\_get\_MSB}})(uint16\_t\ val,\ uint8\_t\ *msb)\ \{}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordflow}{if}\ (msb\ ==\ NULL)\ \textcolor{keywordflow}{return}\ 1;}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{comment}{//\ Shift\ the\ bits\ of\ 'val'\ 8\ positions\ to\ the\ right\ to\ get\ the\ most\ significant\ byte,}}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{comment}{//\ then\ cast\ the\ result\ to\ an\ unsigned\ 8-\/bit\ integer\ and\ store\ it\ in\ the\ memory}}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{comment}{//\ location\ pointed\ to\ by\ 'msb'.}}
+\DoxyCodeLine{00035\ \ \ \ \ *msb\ =\ (uint8\_t)(val\ >>\ 8);}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{00037\ \}}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \textcolor{comment}{//\ This\ function\ is\ intended\ to\ read\ a\ byte\ from\ an\ I/O\ port\ specified\ by\ 'port'}}
+\DoxyCodeLine{00040\ \textcolor{comment}{//\ and\ store\ the\ 8lsb\ of\ the\ result\ in\ the\ memory\ location\ pointed\ to\ by\ the\ pointer\ 'value'.}}
+\DoxyCodeLine{00041\ int\ (\mbox{\hyperlink{utils_8c_a2b56f50ba159e9d5115ed1a75eff15d9}{util\_sys\_inb}})(\textcolor{keywordtype}{int}\ port,\ uint8\_t\ *value)\ \{}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \ \ \textcolor{keywordflow}{if}\ (value\ ==\ NULL)\ \textcolor{keywordflow}{return}\ 1;}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \ \ \textcolor{comment}{//\ Declare\ an\ unsigned\ 32-\/bit\ integer\ 'aux'\ to\ temporarily\ store\ the\ read\ value}}
+\DoxyCodeLine{00046\ \ \ uint32\_t\ aux;\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00047\ \ \ }
+\DoxyCodeLine{00048\ \ \ \textcolor{comment}{//\ Call\ the\ system\ function\ sys\_inb()\ to\ read\ a\ byte\ from\ the\ specified\ \ I/O\ port\ 'port'.}}
+\DoxyCodeLine{00049\ \ \ \textcolor{keywordflow}{if}\ (sys\_inb(port,\ \&aux)\ !=\ 0)\ \{}
+\DoxyCodeLine{00050\ \ \ \ \ printf(\textcolor{stringliteral}{"{}Error\ (util\_sys\_inb)"{}});}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordflow}{return}\ 1;}
+\DoxyCodeLine{00052\ \ \ \}}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \ \ \textcolor{comment}{//\ Store\ the\ result\ in\ the\ memory\ location\ pointed\ to\ by\ 'aux'.}}
+\DoxyCodeLine{00055\ \ \ \textcolor{comment}{//\ Extract\ the\ least\ significant\ byte\ of\ the\ value\ stored\ in\ 'aux'\ by\ performing}}
+\DoxyCodeLine{00056\ \ \ \textcolor{comment}{//\ a\ bitwise\ AND\ operation\ with\ 0xff.\ Store\ the\ result\ in\ the\ memory\ location}}
+\DoxyCodeLine{00057\ \ \ \textcolor{comment}{//\ pointed\ to\ by\ 'value'.}}
+\DoxyCodeLine{00058\ \ \ *value\ =\ aux\ \&\ 0xff;}
+\DoxyCodeLine{00059\ \ \ }
+\DoxyCodeLine{00060\ \ \ \mbox{\hyperlink{utils_8c_ad43c3812e6d13e0518d9f8b8f463ffcf}{count}}++;}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{00063\ \}}
+
+\end{DoxyCode}

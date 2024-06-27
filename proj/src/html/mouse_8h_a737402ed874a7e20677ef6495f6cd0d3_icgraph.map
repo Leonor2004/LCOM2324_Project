@@ -1,0 +1,12 @@
+<map id="mouse_data_report" name="mouse_data_report">
+<area shape="rect" id="Node000001" title="Sends a mouse command and waits for an acknowledgment." alt="" coords="480,31,628,56"/>
+<area shape="rect" id="Node000002" href="$mainController_8c.html#a853d85b3114e5306ef95b66e82c4940a" title="This function is used to subscribe the interrupts." alt="" coords="316,5,424,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="466,34,424,28,425,23,467,29"/>
+<area shape="rect" id="Node000005" href="$mainController_8c.html#a7292452071354d9475097b1d1a858723" title="This function is used to unsubscribe the interrupts." alt="" coords="308,55,432,80"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="467,57,433,62,432,57,466,52"/>
+<area shape="rect" id="Node000003" href="$mainController_8c.html#a54b55b119fdadc6ceabfead41ef23be7" title="This function is the main function of the game, this is the function that checks the type of interrup..." alt="" coords="176,31,260,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="303,32,260,39,260,34,302,27"/>
+<area shape="rect" id="Node000004" href="$main_8c.html#a7a72220d8366dd84709e79ce415862e5" title=" " alt="" coords="5,31,128,56"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="162,46,128,46,128,41,162,41"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="294,58,260,53,261,47,295,53"/>
+</map>

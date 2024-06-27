@@ -1,0 +1,21 @@
+<map id="view/menuDraw.h" name="view/menuDraw.h">
+<area shape="rect" id="Node000001" title="This file contains the menu drawing functions." alt="" coords="291,5,429,31"/>
+<area shape="rect" id="Node000002" href="$mainController_8h.html" title="This file contains the main controllers." alt="" coords="269,79,451,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="354,44,356,78,350,79,349,45"/>
+<area shape="rect" id="Node000009" href="$menuDraw_8c.html" title=" " alt="" coords="476,79,615,104"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="403,33,516,76,514,81,401,38"/>
+<area shape="poly" id="edge9_Node000002_Node000001" title=" " alt="" coords="366,65,364,31,370,31,371,65"/>
+<area shape="rect" id="Node000003" href="$mainController_8c.html" title=" " alt="" coords="59,152,242,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="314,111,185,154,184,149,312,106"/>
+<area shape="rect" id="Node000004" href="$menuController_8h.html" title="This file contains the menu controllers." alt="" coords="267,152,453,177"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="354,118,356,152,350,152,349,118"/>
+<area shape="rect" id="Node000008" href="$main_8c.html" title=" " alt="" coords="477,152,544,177"/>
+<area shape="poly" id="edge8_Node000002_Node000008" title=" " alt="" coords="398,107,487,149,485,154,395,112"/>
+<area shape="poly" id="edge5_Node000004_Node000002" title=" " alt="" coords="366,139,364,104,370,104,371,138"/>
+<area shape="rect" id="Node000005" href="$gameRemoteController_8c.html" title=" " alt="" coords="5,225,243,251"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="310,184,163,228,161,223,308,179"/>
+<area shape="rect" id="Node000006" href="$menuController_8c.html" title=" " alt="" coords="267,225,453,251"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="363,191,363,225,357,225,357,191"/>
+<area shape="rect" id="Node000007" href="$gameRemoteDraw_8c.html" title=" " alt="" coords="477,225,667,251"/>
+<area shape="poly" id="edge7_Node000004_Node000007" title=" " alt="" coords="408,179,539,223,537,228,406,184"/>
+</map>

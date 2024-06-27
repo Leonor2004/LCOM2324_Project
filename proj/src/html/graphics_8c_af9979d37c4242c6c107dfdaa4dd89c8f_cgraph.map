@@ -1,0 +1,5 @@
+<map id="vg_draw_xpm" name="vg_draw_xpm">
+<area shape="rect" id="Node000001" title="Draws an XPM image at the specified coordinates." alt="" coords="5,5,119,31"/>
+<area shape="rect" id="Node000002" href="$graphics_8c.html#a6f895de9725f9f231f9a7f74b6087f60" title="Draws a pixel on the screen at the specified coordinates." alt="" coords="167,5,281,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,15,153,15,153,21,119,21"/>
+</map>

@@ -1,0 +1,137 @@
+\doxysection{view/placing\+Draw.c File Reference}
+\hypertarget{placingDraw_8c}{}\label{placingDraw_8c}\index{view/placingDraw.c@{view/placingDraw.c}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include "{}placing\+Draw.\+h"{}}\newline
+Include dependency graph for placing\+Draw.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{placingDraw_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{placingDraw_8c_a0a7e8b71d4f37a8d0bb4e53971d4e352}{draw\+Placing\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em Draws the placing menu on the screen. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{placingDraw_8c_a40b9640e92602cf1b054debb21a4bdc1}{draw\+Previous\+Placing\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em Draws the previous state of placing menu on the screen. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} \mbox{\hyperlink{placingDraw_8c_aa9b569c47a6d301fbb442f248fc498d8}{draw\+Placing\+Cursor}} ()
+\begin{DoxyCompactList}\small\item\em Draws the placing menu cursor on the screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{enum}} \mbox{\hyperlink{placingDraw_8h_a86ea9f3c9ddbda5ecbb562dc0fa1663d}{PLACINGSTATE}} \mbox{\hyperlink{placingDraw_8c_ab881c84bd946a9b28e98d533b31df680}{state}} = \mbox{\hyperlink{placingDraw_8h_a86ea9f3c9ddbda5ecbb562dc0fa1663da77d1b58e26a2a3d61ce38e09764cbc19}{PLAYER1}}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{enum}} \mbox{\hyperlink{placingDraw_8h_a86ea9f3c9ddbda5ecbb562dc0fa1663d}{PLACINGSTATE}} \mbox{\hyperlink{placingDraw_8c_ad96d2c0a642b29108768ba8aaa618487}{previous\+State}} = \mbox{\hyperlink{placingDraw_8h_a86ea9f3c9ddbda5ecbb562dc0fa1663da77d1b58e26a2a3d61ce38e09764cbc19}{PLAYER1}}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{bool}} \mbox{\hyperlink{placingDraw_8c_a454baf7c33faf51c07b5f44d29da48b9}{cursor\+Active}} = \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{false}}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{bool}} \mbox{\hyperlink{placingDraw_8c_af770af97ebec7ffde447956a6c207f93}{keyboard\+Active}} = \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{true}}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{bool}} \mbox{\hyperlink{placingDraw_8c_a8d91e25a674104ae23d71b57da4718d2}{drawn}} = \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{false}}
+\item 
+\mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} \mbox{\hyperlink{placingDraw_8c_a6150e0515f7202e2fb518f7206ed97dc}{x}}
+\item 
+int \mbox{\hyperlink{placingDraw_8c_a0a2f84ed7838f07779ae24c5a9086d33}{y}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{placingDraw_8c_aa9b569c47a6d301fbb442f248fc498d8}\label{placingDraw_8c_aa9b569c47a6d301fbb442f248fc498d8} 
+\index{placingDraw.c@{placingDraw.c}!drawPlacingCursor@{drawPlacingCursor}}
+\index{drawPlacingCursor@{drawPlacingCursor}!placingDraw.c@{placingDraw.c}}
+\doxysubsubsection{\texorpdfstring{drawPlacingCursor()}{drawPlacingCursor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} draw\+Placing\+Cursor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws the placing menu cursor on the screen. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{placingDraw_8c_aa9b569c47a6d301fbb442f248fc498d8_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{placingDraw_8c_a0a7e8b71d4f37a8d0bb4e53971d4e352}\label{placingDraw_8c_a0a7e8b71d4f37a8d0bb4e53971d4e352} 
+\index{placingDraw.c@{placingDraw.c}!drawPlacingMenu@{drawPlacingMenu}}
+\index{drawPlacingMenu@{drawPlacingMenu}!placingDraw.c@{placingDraw.c}}
+\doxysubsubsection{\texorpdfstring{drawPlacingMenu()}{drawPlacingMenu()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} draw\+Placing\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws the placing menu on the screen. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{placingDraw_8c_a0a7e8b71d4f37a8d0bb4e53971d4e352_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{placingDraw_8c_a40b9640e92602cf1b054debb21a4bdc1}\label{placingDraw_8c_a40b9640e92602cf1b054debb21a4bdc1} 
+\index{placingDraw.c@{placingDraw.c}!drawPreviousPlacingMenu@{drawPreviousPlacingMenu}}
+\index{drawPreviousPlacingMenu@{drawPreviousPlacingMenu}!placingDraw.c@{placingDraw.c}}
+\doxysubsubsection{\texorpdfstring{drawPreviousPlacingMenu()}{drawPreviousPlacingMenu()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{void}} draw\+Previous\+Placing\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws the previous state of placing menu on the screen. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{placingDraw_8c_a40b9640e92602cf1b054debb21a4bdc1_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{placingDraw_8c_a454baf7c33faf51c07b5f44d29da48b9}\label{placingDraw_8c_a454baf7c33faf51c07b5f44d29da48b9} 
+\index{placingDraw.c@{placingDraw.c}!cursorActive@{cursorActive}}
+\index{cursorActive@{cursorActive}!placingDraw.c@{placingDraw.c}}
+\doxysubsubsection{\texorpdfstring{cursorActive}{cursorActive}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{bool}} cursor\+Active = \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{false}}}
+
+\Hypertarget{placingDraw_8c_a8d91e25a674104ae23d71b57da4718d2}\label{placingDraw_8c_a8d91e25a674104ae23d71b57da4718d2} 
+\index{placingDraw.c@{placingDraw.c}!drawn@{drawn}}
+\index{drawn@{drawn}!placingDraw.c@{placingDraw.c}}
+\doxysubsubsection{\texorpdfstring{drawn}{drawn}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{bool}} drawn = \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{false}}}
+
+\Hypertarget{placingDraw_8c_af770af97ebec7ffde447956a6c207f93}\label{placingDraw_8c_af770af97ebec7ffde447956a6c207f93} 
+\index{placingDraw.c@{placingDraw.c}!keyboardActive@{keyboardActive}}
+\index{keyboardActive@{keyboardActive}!placingDraw.c@{placingDraw.c}}
+\doxysubsubsection{\texorpdfstring{keyboardActive}{keyboardActive}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{bool}} keyboard\+Active = \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{true}}}
+
+\Hypertarget{placingDraw_8c_ad96d2c0a642b29108768ba8aaa618487}\label{placingDraw_8c_ad96d2c0a642b29108768ba8aaa618487} 
+\index{placingDraw.c@{placingDraw.c}!previousState@{previousState}}
+\index{previousState@{previousState}!placingDraw.c@{placingDraw.c}}
+\doxysubsubsection{\texorpdfstring{previousState}{previousState}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{enum}} \mbox{\hyperlink{placingDraw_8h_a86ea9f3c9ddbda5ecbb562dc0fa1663d}{PLACINGSTATE}} previous\+State = \mbox{\hyperlink{placingDraw_8h_a86ea9f3c9ddbda5ecbb562dc0fa1663da77d1b58e26a2a3d61ce38e09764cbc19}{PLAYER1}}}
+
+\Hypertarget{placingDraw_8c_ab881c84bd946a9b28e98d533b31df680}\label{placingDraw_8c_ab881c84bd946a9b28e98d533b31df680} 
+\index{placingDraw.c@{placingDraw.c}!state@{state}}
+\index{state@{state}!placingDraw.c@{placingDraw.c}}
+\doxysubsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{enum}} \mbox{\hyperlink{placingDraw_8h_a86ea9f3c9ddbda5ecbb562dc0fa1663d}{PLACINGSTATE}} state = \mbox{\hyperlink{placingDraw_8h_a86ea9f3c9ddbda5ecbb562dc0fa1663da77d1b58e26a2a3d61ce38e09764cbc19}{PLAYER1}}}
+
+\Hypertarget{placingDraw_8c_a6150e0515f7202e2fb518f7206ed97dc}\label{placingDraw_8c_a6150e0515f7202e2fb518f7206ed97dc} 
+\index{placingDraw.c@{placingDraw.c}!x@{x}}
+\index{x@{x}!placingDraw.c@{placingDraw.c}}
+\doxysubsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mouse_8c_a0a2f84ed7838f07779ae24c5a9086d33}{int}} x\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{placingDraw_8c_a0a2f84ed7838f07779ae24c5a9086d33}\label{placingDraw_8c_a0a2f84ed7838f07779ae24c5a9086d33} 
+\index{placingDraw.c@{placingDraw.c}!y@{y}}
+\index{y@{y}!placingDraw.c@{placingDraw.c}}
+\doxysubsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily int y\hspace{0.3cm}{\ttfamily [extern]}}
+

@@ -1,0 +1,8 @@
+<map id="mouse_data_report" name="mouse_data_report">
+<area shape="rect" id="Node000001" title="Sends a mouse command and waits for an acknowledgment." alt="" coords="5,5,153,31"/>
+<area shape="rect" id="Node000002" href="$utils_8c.html#a2b56f50ba159e9d5115ed1a75eff15d9" title=" " alt="" coords="376,5,475,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="153,15,362,15,362,21,153,21"/>
+<area shape="rect" id="Node000003" href="$mouse_8c.html#aee5c2370851934948db8bdb3004e3070" title="Writes a command to the specified port." alt="" coords="201,31,328,56"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="154,25,188,30,187,35,153,31"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="328,31,362,25,363,31,329,36"/>
+</map>
